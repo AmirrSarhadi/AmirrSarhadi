@@ -109,6 +109,10 @@ A business CRM focused on lead lifecycle, sales follow-up, communication, and op
 
 **Stack:** Full-stack web application · REST APIs · Role-based workflows
 
+[**View technical case study →**](projects/crm-lead-management.md)
+
+> Production source remains private; the public case study documents workflows, architecture, and engineering decisions.
+
 ---
 
 ### ContentFlow
