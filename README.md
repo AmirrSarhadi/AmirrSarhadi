@@ -6,6 +6,7 @@
 
 <a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github" /></a>
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/LIVE-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+<a href="showcase/fullstack-portfolio-lab/README.md"><img src="https://img.shields.io/badge/CODE-Full--Stack_Showcase-7c3aed?style=for-the-badge&logo=codefactor&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Open%20to-Software%20%26%20Product%20Opportunities-0891b2?style=for-the-badge" />
 
 <br/><br/>
@@ -29,6 +30,25 @@
 ![YOLO](https://img.shields.io/badge/YOLO-Computer_Vision-111F68?style=flat-square)
 ![PaddleOCR](https://img.shields.io/badge/PaddleOCR-Multilingual_OCR-0062FF?style=flat-square)
 ![Chart.js](https://img.shields.io/badge/Chart.js-Data_Visualization-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
+
+</div>
+
+---
+
+## 💻 Public Code Showcase
+
+<div align="center">
+
+**Review real code patterns from backend to frontend — without exposing private production repositories.**
+
+[![Django](https://img.shields.io/badge/Backend-Django%20%2B%20DRF-092E20?style=for-the-badge&logo=django)](showcase/fullstack-portfolio-lab/README.md)
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](showcase/fullstack-portfolio-lab/README.md)
+[![Tests](https://img.shields.io/badge/Quality-Tests%20%2B%20Validation-2563eb?style=for-the-badge)](showcase/fullstack-portfolio-lab/backend/finance/tests/test_transfer_service.py)
+[![Architecture](https://img.shields.io/badge/Docs-Architecture-7c3aed?style=for-the-badge)](showcase/fullstack-portfolio-lab/docs/architecture.md)
+
+<br/>
+
+[**→ Open Full-Stack Engineering Showcase**](showcase/fullstack-portfolio-lab/README.md)
 
 </div>
 
@@ -171,6 +191,7 @@ Idea → Product Architecture → Backend/API → Frontend UX → Data → Testi
 ### 🌍 Build. Ship. Improve.
 
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/Visit-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+<a href="showcase/fullstack-portfolio-lab/README.md"><img src="https://img.shields.io/badge/Review-My%20Code-7c3aed?style=for-the-badge&logo=github" /></a>
 <a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/Explore-My%20GitHub-181717?style=for-the-badge&logo=github" /></a>
 
 <br/><br/>
