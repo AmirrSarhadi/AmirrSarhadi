@@ -6,7 +6,7 @@
 
 <a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github" /></a>
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/LIVE-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-<a href="showcase/fullstack-portfolio-lab/README.md"><img src="https://img.shields.io/badge/CODE-Full--Stack_Showcase-7c3aed?style=for-the-badge&logo=codefactor&logoColor=white" /></a>
+<a href="showcase/erp-accounting-real/README.md"><img src="https://img.shields.io/badge/CODE-Real_ERP_Showcase-7c3aed?style=for-the-badge&logo=codefactor&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Open%20to-Software%20%26%20Product%20Opportunities-0891b2?style=for-the-badge" />
 
 <br/><br/>
@@ -39,16 +39,19 @@
 
 <div align="center">
 
-**Review real code patterns from backend to frontend — without exposing private production repositories.**
+**Production-derived, sanitized code samples from real private projects.**
 
-[![Django](https://img.shields.io/badge/Backend-Django%20%2B%20DRF-092E20?style=for-the-badge&logo=django)](showcase/fullstack-portfolio-lab/README.md)
-[![React](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](showcase/fullstack-portfolio-lab/README.md)
-[![Tests](https://img.shields.io/badge/Quality-Tests%20%2B%20Validation-2563eb?style=for-the-badge)](showcase/fullstack-portfolio-lab/backend/finance/tests/test_transfer_service.py)
-[![Architecture](https://img.shields.io/badge/Docs-Architecture-7c3aed?style=for-the-badge)](showcase/fullstack-portfolio-lab/docs/architecture.md)
+[![ERP](https://img.shields.io/badge/REAL%20CODE-ERP%20Accounting-0f766e?style=for-the-badge&logo=django&logoColor=white)](showcase/erp-accounting-real/README.md)
+[![Lifecycle](https://img.shields.io/badge/Domain-Document%20Lifecycle-2563eb?style=for-the-badge)](showcase/erp-accounting-real/snippets/document-lifecycle.md)
+[![Treasury](https://img.shields.io/badge/Domain-Treasury%20Reversal-7c3aed?style=for-the-badge)](showcase/erp-accounting-real/snippets/treasury-reversal.md)
+[![Tests](https://img.shields.io/badge/Quality-Financial%20Invariant%20Tests-e11d48?style=for-the-badge)](showcase/erp-accounting-real/snippets/financial-invariants-tests.md)
+[![React](https://img.shields.io/badge/Frontend-Accounting%20Form-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](showcase/erp-accounting-real/snippets/frontend-accounting-form.md)
 
 <br/>
 
-[**→ Open Full-Stack Engineering Showcase**](showcase/fullstack-portfolio-lab/README.md)
+[**→ Browse Verified ERP Code Showcase**](showcase/erp-accounting-real/README.md)
+&nbsp;&nbsp;•&nbsp;&nbsp;
+[**General Full-Stack Showcase →**](showcase/fullstack-portfolio-lab/README.md)
 
 </div>
 
@@ -66,7 +69,7 @@
 <td width="50%" align="center" valign="top">
 <a href="projects/accounting-erp.md"><img width="100%" src="assets/project-accounting-erp.svg" alt="Accounting and ERP project" /></a>
 <br/>
-<a href="projects/accounting-erp.md"><b>Technical Case Study →</b></a>
+<a href="projects/accounting-erp.md"><b>Technical Case Study →</b></a> · <a href="showcase/erp-accounting-real/README.md"><b>Real Code</b></a>
 </td>
 </tr>
 <tr>
@@ -191,7 +194,7 @@ Idea → Product Architecture → Backend/API → Frontend UX → Data → Testi
 ### 🌍 Build. Ship. Improve.
 
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/Visit-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-<a href="showcase/fullstack-portfolio-lab/README.md"><img src="https://img.shields.io/badge/Review-My%20Code-7c3aed?style=for-the-badge&logo=github" /></a>
+<a href="showcase/erp-accounting-real/README.md"><img src="https://img.shields.io/badge/Review-Real%20ERP%20Code-7c3aed?style=for-the-badge&logo=github" /></a>
 <a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/Explore-My%20GitHub-181717?style=for-the-badge&logo=github" /></a>
 
 <br/><br/>
