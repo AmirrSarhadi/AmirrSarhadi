@@ -152,9 +152,12 @@ Research and engineering work on automatically evaluating user-interface screens
 - OCR for Persian, Arabic, and Latin interfaces
 - OpenCV-based component detection
 - Automated UI/UX metrics and scoring
-- Large-scale comparison dataset of Iranian and international websites
+- Balanced 200-site dataset: Iranian and international websites
+- Full-page bilingual / RTL-aware evaluation pipeline
 
 **Stack:** Python · PaddleOCR · OpenCV · UIED · YOLO
+
+[**View research case study →**](projects/automatic-ui-evaluation.md)
 
 ---
 
