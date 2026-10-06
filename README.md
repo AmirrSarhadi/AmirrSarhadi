@@ -38,87 +38,39 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### 🎓 School LMS
-
-Full-stack school operations + learning platform.
-
-`Next.js` `Django REST` `PostgreSQL` `Redis` `Docker`
-
-**Attendance · Exams · Finance · Messaging · Admissions · Reports**
-
-[**→ Case Study**](projects/school-lms.md)
-
+<td width="50%" align="center" valign="top">
+<a href="projects/school-lms.md"><img width="100%" src="assets/project-school-lms.svg" alt="School LMS project" /></a>
+<br/>
+<a href="projects/school-lms.md"><b>Technical Case Study →</b></a>
 </td>
-<td width="50%" valign="top">
-
-### 💼 Accounting & ERP
-
-Modular Persian business and financial management system.
-
-`React` `Django` `PostgreSQL` `Chart.js`
-
-**Accounting · Banking · Sales · Inventory · Persons · Dashboards**
-
-[**→ Case Study**](projects/accounting-erp.md)
-
+<td width="50%" align="center" valign="top">
+<a href="projects/accounting-erp.md"><img width="100%" src="assets/project-accounting-erp.svg" alt="Accounting and ERP project" /></a>
+<br/>
+<a href="projects/accounting-erp.md"><b>Technical Case Study →</b></a>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🎯 CRM & Lead Management
-
-Lead lifecycle, sales follow-up and operational CRM workflows.
-
-`REST APIs` `Role-Based Access` `Automation`
-
-**Lead Board · History · Notes · Alerts · SMS Triggers**
-
-[**→ Case Study**](projects/crm-lead-management.md)
-
+<td width="50%" align="center" valign="top">
+<a href="projects/crm-lead-management.md"><img width="100%" src="assets/project-crm.svg" alt="CRM and lead management project" /></a>
+<br/>
+<a href="projects/crm-lead-management.md"><b>Technical Case Study →</b></a>
 </td>
-<td width="50%" valign="top">
-
-### 🔄 ContentFlow
-
-Workflow platform for content review and approvals.
-
-`Frontend Architecture` `REST APIs` `Workflow UX`
-
-**Versions · Reviews · Approvals · Comments · Roles**
-
-[**→ Case Study**](projects/contentflow.md)
-
+<td width="50%" align="center" valign="top">
+<a href="projects/contentflow.md"><img width="100%" src="assets/project-contentflow.svg" alt="ContentFlow project" /></a>
+<br/>
+<a href="projects/contentflow.md"><b>Technical Case Study →</b></a>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🌐 Laitco
-
-My commercial software & digital-product company website.
-
-`RTL` `Responsive UI` `cPanel Deployment` `Brand UX`
-
-**Custom Software · SaaS · Automation · Digital Products**
-
-[**→ Live Website**](https://laitco.ir) · [**Case Study**](projects/laitco.md)
-
+<td width="50%" align="center" valign="top">
+<a href="https://laitco.ir"><img width="100%" src="assets/project-laitco.svg" alt="Laitco company website" /></a>
+<br/>
+<a href="https://laitco.ir"><b>Live Website →</b></a> · <a href="projects/laitco.md"><b>Case Study</b></a>
 </td>
-<td width="50%" valign="top">
-
-### 🧠 Automatic UI Evaluation
-
-Research pipeline for screenshot-based UI scoring.
-
-`Python` `PaddleOCR` `OpenCV` `UIED` `YOLO`
-
-**200 Websites · OCR · CV · RTL · UI Metrics · Scoring**
-
-[**→ Research Case Study**](projects/automatic-ui-evaluation.md)
-
+<td width="50%" align="center" valign="top">
+<a href="projects/automatic-ui-evaluation.md"><img width="100%" src="assets/project-ui-evaluation.svg" alt="Automatic UI Evaluation research project" /></a>
+<br/>
+<a href="projects/automatic-ui-evaluation.md"><b>Research Case Study →</b></a>
 </td>
 </tr>
 </table>
@@ -202,13 +154,13 @@ Idea → Product Architecture → Backend/API → Frontend UX → Data → Testi
 <table>
 <tr>
 <td>🧱 <b>Architecture</b><br/>Modular, maintainable systems</td>
-<td>🔐 <b>Security</b><br/>Role-based access & safe workflows</td>
+<td>🔐 <b>Security</b><br/>Role-based access &amp; safe workflows</td>
 <td>🎨 <b>Product UX</b><br/>Business-first, RTL-aware interfaces</td>
 </tr>
 <tr>
-<td>🗄️ <b>Data</b><br/>Relational modeling & reporting</td>
-<td>🧪 <b>Quality</b><br/>Testing, validation & reliability</td>
-<td>🚀 <b>Delivery</b><br/>Docker, CI/CD & production deployment</td>
+<td>🗄️ <b>Data</b><br/>Relational modeling &amp; reporting</td>
+<td>🧪 <b>Quality</b><br/>Testing, validation &amp; reliability</td>
+<td>🚀 <b>Delivery</b><br/>Docker, CI/CD &amp; production deployment</td>
 </tr>
 </table>
 
