@@ -133,6 +133,8 @@ Research pipeline for screenshot-based UI scoring.
 
 Autonomous UV disinfection robot with **YOLOv5 + Python**.
 
+[**→ Case Study**](projects/uv-disinfection-robot.md)
+
 </td>
 <td align="center" width="33%">
 
@@ -140,12 +142,16 @@ Autonomous UV disinfection robot with **YOLOv5 + Python**.
 
 Machine-learning prediction system with chatbot interaction.
 
+[**→ Case Study**](projects/disease-prediction-chatbot.md)
+
 </td>
 <td align="center" width="33%">
 
 ### 👁️ UI Intelligence
 
 OCR + computer vision research for automated interface evaluation.
+
+[**→ Research**](projects/automatic-ui-evaluation.md)
 
 </td>
 </tr>
