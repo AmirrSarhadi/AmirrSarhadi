@@ -1,227 +1,222 @@
 <div align="center">
 
-# Hi, I'm Amir Sarhadi
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,45:0f766e,100:06b6d4&text=Amir%20Sarhadi&fontColor=ffffff&fontSize=50&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20Software%20Engineer%20%E2%80%A2%20Product%20Builder&descAlignY=60&descSize=18" />
 
-### Full-Stack Developer · Software Engineer · Product Builder
+<a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github" /></a>
+<a href="https://laitco.ir"><img src="https://img.shields.io/badge/LIVE-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/Open%20to-Software%20%26%20Product%20Opportunities-0891b2?style=for-the-badge" />
 
-I build production-oriented web applications, business platforms, automation systems, and data-driven products — with a strong focus on clean architecture, usable interfaces, and solving real operational problems.
+<br/><br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github)](https://github.com/AmirrSarhadi)
-[![Laitco](https://img.shields.io/badge/Laitco-laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://laitco.ir)
+**I build real products — from business workflows and APIs to polished interfaces and production deployment.**
 
 </div>
 
 ---
 
-## About Me
+## ⚡ Tech Arsenal
 
-- Full-stack developer working across **backend, frontend, databases, deployment, and product architecture**.
-- Experienced in building **ERP, CRM, LMS, SaaS, automation, financial, and business management systems**.
-- I work primarily with **Python / Django** on the backend and **React / Next.js** on the frontend.
-- Comfortable taking a product from requirements and UI design through implementation, testing, deployment, and iteration.
-- Interested in **software architecture, AI-assisted products, automation, computer vision, data systems, and scalable SaaS platforms**.
+<div align="center">
 
----
+<img src="https://skillicons.dev/icons?i=python,django,react,nextjs,js,ts,html,css,postgres,redis,docker,git,github,githubactions,opencv&perline=8" />
 
-## Tech Stack
+<br/>
 
-### Backend
+![DRF](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white)
+![REST API](https://img.shields.io/badge/REST-APIs-005571?style=flat-square)
+![YOLO](https://img.shields.io/badge/YOLO-Computer_Vision-111F68?style=flat-square)
+![PaddleOCR](https://img.shields.io/badge/PaddleOCR-Multilingual_OCR-0062FF?style=flat-square)
+![Chart.js](https://img.shields.io/badge/Chart.js-Data_Visualization-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Django REST Framework](https://img.shields.io/badge/Django_REST_Framework-A30000?style=flat-square&logo=django&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_APIs-005571?style=flat-square)
-
-### Frontend
-
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-### Data & Infrastructure
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-### AI / Computer Vision / Data
-
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-111F68?style=flat-square)
-![PaddleOCR](https://img.shields.io/badge/PaddleOCR-0062FF?style=flat-square)
-![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
+</div>
 
 ---
 
-## Selected Projects
+## 🚀 Featured Work
 
-### School LMS & Management Platform
-A full-stack school management and learning platform designed around real school workflows.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Highlights**
-- Multi-role authentication and permission model
-- Student, teacher, parent, manager, and accounting workflows
-- Attendance, assignments, exams, grading, finance, messaging, admissions, and reporting
-- Excel/PDF data exchange and management reports
-- Production deployment architecture with PostgreSQL, Redis, Docker, Gunicorn, Next.js, and automated HTTPS
+### 🎓 School LMS
 
-**Stack:** Django REST Framework · Next.js · PostgreSQL · Redis · Docker
+Full-stack school operations + learning platform.
 
-[**View technical case study →**](projects/school-lms.md)
+`Next.js` `Django REST` `PostgreSQL` `Redis` `Docker`
 
-> Production source remains private; the public case study is sanitized for portfolio review.
+**Attendance · Exams · Finance · Messaging · Admissions · Reports**
 
----
+[**→ Case Study**](projects/school-lms.md)
 
-### Accounting & ERP Web Application
-A modular accounting and business management platform with a React frontend and Django backend.
+</td>
+<td width="50%" valign="top">
 
-**Modules include:**
-Accounting · Banking · Persons · Sales · Income · Warehousing · Services · Costs · Dashboards · Settings
+### 💼 Accounting & ERP
 
-**Highlights**
-- Voucher and document accounting
-- Bank, cashbox, imprest, transfer, cheque, and payment workflows
-- Sales, returns, discounts, installments, customers, vendors, staff, and inventory
-- Persian/RTL business UI and Jalali date support
-- Dashboard KPIs and operational reports
+Modular Persian business and financial management system.
 
-**Stack:** React · Django · PostgreSQL · Chart.js
+`React` `Django` `PostgreSQL` `Chart.js`
 
-[**View technical case study →**](projects/accounting-erp.md)
+**Accounting · Banking · Sales · Inventory · Persons · Dashboards**
 
-> Full source remains private; the public case study focuses on architecture and representative workflows.
+[**→ Case Study**](projects/accounting-erp.md)
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### CRM & Lead Management Platform
-A business CRM focused on lead lifecycle, sales follow-up, communication, and operational visibility.
+### 🎯 CRM & Lead Management
 
-**Highlights**
-- Lead board and table workflows
-- Lead status lifecycle and low-value lead separation
-- Multi-entry notes with author and timestamp history
-- Filtering and loading-state UX for large datasets
-- Manager notifications and SMS triggers when leads reach quotation stage
+Lead lifecycle, sales follow-up and operational CRM workflows.
 
-**Stack:** Full-stack web application · REST APIs · Role-based workflows
+`REST APIs` `Role-Based Access` `Automation`
 
-[**View technical case study →**](projects/crm-lead-management.md)
+**Lead Board · History · Notes · Alerts · SMS Triggers**
 
-> Production source remains private; the public case study documents workflows, architecture, and engineering decisions.
+[**→ Case Study**](projects/crm-lead-management.md)
 
----
+</td>
+<td width="50%" valign="top">
 
-### ContentFlow
-A content workflow and management application designed to organize content operations and internal review processes.
+### 🔄 ContentFlow
 
-**Focus areas:** workflow UX · review processes · content lifecycle · admin operations · maintainable frontend architecture
+Workflow platform for content review and approvals.
 
-[**View technical case study →**](projects/contentflow.md)
+`Frontend Architecture` `REST APIs` `Workflow UX`
 
-> Source remains private; the public case study focuses on workflow modeling, review architecture, and frontend engineering.
+**Versions · Reviews · Approvals · Comments · Roles**
 
----
+[**→ Case Study**](projects/contentflow.md)
 
-### Laitco — Company Website & Digital Products
-Public company website and commercial digital-product presence for Laitco.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**Highlights**
-- Persian-first RTL company website
-- Responsive frontend implementation
-- Custom typography, logo, favicon, and branded visuals
-- Mobile layout and accordion refinement
-- cPanel production deployment and routing
-- Public-facing home for custom software, SaaS, and automation products
+### 🌐 Laitco
 
-**Live:** [laitco.ir](https://laitco.ir)
+My commercial software & digital-product company website.
 
-[**View case study →**](projects/laitco.md) · [**Visit live website →**](https://laitco.ir)
+`RTL` `Responsive UI` `cPanel Deployment` `Brand UX`
 
----
+**Custom Software · SaaS · Automation · Digital Products**
 
-### Automatic UI Evaluation Research
-Research and engineering work on automatically evaluating user-interface screenshots using OCR and computer vision.
+[**→ Live Website**](https://laitco.ir) · [**Case Study**](projects/laitco.md)
 
-**Highlights**
-- UI element extraction from screenshots
-- OCR for Persian, Arabic, and Latin interfaces
-- OpenCV-based component detection
-- Automated UI/UX metrics and scoring
-- Balanced 200-site dataset: Iranian and international websites
-- Full-page bilingual / RTL-aware evaluation pipeline
+</td>
+<td width="50%" valign="top">
 
-**Stack:** Python · PaddleOCR · OpenCV · UIED · YOLO
+### 🧠 Automatic UI Evaluation
 
-[**View research case study →**](projects/automatic-ui-evaluation.md)
+Research pipeline for screenshot-based UI scoring.
+
+`Python` `PaddleOCR` `OpenCV` `UIED` `YOLO`
+
+**200 Websites · OCR · CV · RTL · UI Metrics · Scoring**
+
+[**→ Research Case Study**](projects/automatic-ui-evaluation.md)
+
+</td>
+</tr>
+</table>
 
 ---
 
-### Autonomous UV Disinfection Robot
-Computer-vision-based robotics project using object detection to support autonomous UV disinfection workflows.
+## 🤖 AI / Research Highlights
 
-**Stack:** Python · YOLOv5 · Computer Vision
+<table>
+<tr>
+<td align="center" width="33%">
+
+### 🦾 UV Robot
+
+Autonomous UV disinfection robot with **YOLOv5 + Python**.
+
+</td>
+<td align="center" width="33%">
+
+### 🩺 Disease Prediction
+
+Machine-learning prediction system with chatbot interaction.
+
+</td>
+<td align="center" width="33%">
+
+### 👁️ UI Intelligence
+
+OCR + computer vision research for automated interface evaluation.
+
+</td>
+</tr>
+</table>
 
 ---
 
-### Disease Prediction & Chatbot
-Machine-learning and conversational-system project focused on health-related prediction and user interaction.
+## 🧩 What I Build
 
-**Focus:** machine learning · prediction systems · chatbot interaction · applied research
+<div align="center">
 
----
+![ERP](https://img.shields.io/badge/ERP-Systems-0f766e?style=for-the-badge)
+![CRM](https://img.shields.io/badge/CRM-Platforms-0891b2?style=for-the-badge)
+![LMS](https://img.shields.io/badge/LMS-Platforms-2563eb?style=for-the-badge)
+![SaaS](https://img.shields.io/badge/SaaS-Products-7c3aed?style=for-the-badge)
+![AI](https://img.shields.io/badge/AI%20%2F%20CV-OCR%20%26%20Vision-c026d3?style=for-the-badge)
+![Automation](https://img.shields.io/badge/Automation-Business%20Workflows-e11d48?style=for-the-badge)
 
-## What I Build
+</div>
+
+<br/>
 
 ```text
-Business Platforms   → ERP · CRM · Accounting · LMS
-Web Applications     → React · Next.js · Django · REST APIs
-Data Systems         → PostgreSQL · Reporting · Dashboards · Excel/PDF
-Automation           → Workflows · Notifications · Business Operations
-AI / Vision          → OCR · OpenCV · YOLO · UI Analysis
-Deployment           → Docker · CI/CD · Production Architecture
+Idea → Product Architecture → Backend/API → Frontend UX → Data → Testing → Deployment
 ```
 
 ---
 
-## Engineering Priorities
-
-- Clean and maintainable architecture
-- Secure authentication and role-based access
-- Good UX for real operational workflows
-- API-first backend design
-- Reliable relational data modeling
-- Testability and deployment readiness
-- Iterative product development based on real user needs
-
----
-
-## GitHub Activity
+## 📊 GitHub Snapshot
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AmirrSarhadi&show_icons=true&hide_border=true&include_all_commits=true&count_private=true)
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=AmirrSarhadi&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmirrSarhadi&layout=compact&hide_border=true&theme=transparent" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AmirrSarhadi&layout=compact&hide_border=true)
+<br/>
+
+<img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=AmirrSarhadi&hide_border=true&theme=transparent" />
 
 </div>
 
 ---
 
-## Current Focus
+## 🏗️ Engineering Focus
 
-I am currently organizing my production and research work into public, sanitized GitHub showcases so that architecture, implementation decisions, screenshots, and technical documentation can be reviewed without exposing private client or production data.
+<table>
+<tr>
+<td>🧱 <b>Architecture</b><br/>Modular, maintainable systems</td>
+<td>🔐 <b>Security</b><br/>Role-based access & safe workflows</td>
+<td>🎨 <b>Product UX</b><br/>Business-first, RTL-aware interfaces</td>
+</tr>
+<tr>
+<td>🗄️ <b>Data</b><br/>Relational modeling & reporting</td>
+<td>🧪 <b>Quality</b><br/>Testing, validation & reliability</td>
+<td>🚀 <b>Delivery</b><br/>Docker, CI/CD & production deployment</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
-### Let's build useful software.
+### 🌍 Build. Ship. Improve.
 
-**Amir Sarhadi** · Full-Stack Developer & Software Engineer
+<a href="https://laitco.ir"><img src="https://img.shields.io/badge/Visit-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+<a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/Explore-My%20GitHub-181717?style=for-the-badge&logo=github" /></a>
+
+<br/><br/>
+
+**Amir Sarhadi** · Full-Stack Developer · Software Engineer · Product Builder
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:0f172a,45:0f766e,100:06b6d4" />
 
 </div>
