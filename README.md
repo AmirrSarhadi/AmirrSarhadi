@@ -70,7 +70,9 @@ A full-stack school management and learning platform designed around real school
 
 **Stack:** Django REST Framework · Next.js · PostgreSQL · Redis · Docker
 
-> The production source is currently maintained privately. A sanitized public showcase will be added to this profile.
+[**View technical case study →**](projects/school-lms.md)
+
+> Production source remains private; the public case study is sanitized for portfolio review.
 
 ---
 
