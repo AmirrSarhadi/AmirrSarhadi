@@ -1,306 +1,350 @@
-# CRM & Lead Management Platform
+# CRM & Sales Operations Platform
 
-> Business CRM focused on lead lifecycle, sales follow-up, operational visibility, communication history, and conversion workflows.
+> Source-verified CRM/ERP for lead qualification, opportunity tracking, project conversion, delivery workflows, support, reporting, and operational automation.
 
 [← Back to profile](../README.md)
 
 ---
 
+## Source-Verified
+
+This case study was revised after reviewing the actual customer project source.
+
+**Verified stack:**
+
+- React 19.2
+- TypeScript 5.9
+- Vite 7
+- Django 6
+- Django REST Framework 3.16
+- PostgreSQL for production
+- SQLite for local development
+
+[**Browse sanitized real-code showcase →**](../showcase/crm-real/README.md)
+
+---
+
 ## Overview
 
-This project is a business CRM designed around the full operational lifecycle of a lead — from first contact through qualification, follow-up, quotation, archival, and low-value classification.
+The project is a project-centric CRM/ERP designed for a business workflow that starts with customer acquisition and continues through execution and after-sales service.
 
-The product is built for teams that need to work with a large number of leads while preserving context, history, ownership, and status transitions across the sales process.
-
-The original production application is private. This page is a sanitized portfolio case study describing the product architecture, workflow design, and engineering challenges without exposing customer data or internal business configuration.
-
----
-
-## My Role
-
-**Full-Stack Product Development / Workflow Engineering**
-
-Key areas of work include:
-
-- Designing lead-management workflows
-- Implementing lead list and board experiences
-- Building edit and status-transition flows
-- Creating lead history and note structures
-- Designing archive and low-value lead separation
-- Integrating notifications and communication triggers
-- Debugging REST API contracts and state transitions
-- Improving filtering, loading, and interaction states for large datasets
-- Maintaining Persian RTL business UX
-
----
-
-## Product Scope
-
-### Lead Lifecycle
-
-The CRM manages leads across operational states rather than treating them as static contact records.
-
-Representative lifecycle:
+The application is not limited to static lead records. The verified domain spans:
 
 ```text
-New Lead
-   ↓
-Initial Review
-   ↓
-Follow-up
-   ↓
-Qualified
-   ↓
-Quotation / Offer
-   ↓
-Won / Lost / Archived
+Lead
+  ↓
+Qualification / Follow-up
+  ↓
+Site Visit / Design
+  ↓
+BOM / Proposal
+  ↓
+Contract
+  ↓
+Procurement / Installation
+  ↓
+Handover
+  ↓
+Warranty / Support / Periodic Service
 ```
 
-Low-value and archived leads are intentionally separated from the active operational workflow so sales teams can keep their main workspace focused.
+---
+
+## CRM Domain
+
+Lead records include operational sales fields such as:
+
+- source
+- lifecycle status
+- estimated budget and currency
+- building area and type
+- project use
+- build type and construction phase
+- decision maker
+- lead score
+- opportunity stage
+- probability percentage
+- expected opportunity value
+- expected close date
+- next action and due time
+- win/loss reason
+- expected project start date
+- assignee
+- notes
+
+The system also models customer contacts and interaction records with follow-up dates.
 
 ---
 
-## Major Functional Areas
+## Lead Workspace
 
-### Lead Management
+The React frontend contains both board and table workflows.
 
-- Lead creation
-- Lead editing
-- Lead detail view
-- Lead status changes
-- Lead ownership and assignment
-- Lead categorization
-- Active, archived, and low-value lead separation
+Verified UX includes:
 
-### Lead History
+- Persian RTL interface
+- search across lead/customer fields
+- status filters
+- source filters
+- drag-and-drop lead status changes
+- hot / warm / cold visual scoring
+- opportunity stage and probability display
+- next-action visibility
+- customer follow-up interactions
+- proposal creation from a lead
+- guarded project conversion
+- XLSX import and export
 
-Each lead can maintain an operational history containing actions and changes over time.
-
-The history is designed to answer questions such as:
-
-- Who changed the lead?
-- What changed?
-- When did it change?
-- What follow-up information was recorded?
-- What happened before a lead reached its current stage?
-
-### Notes
-
-Notes are modeled as timeline entries rather than a single overwriteable text field.
-
-Each note can preserve:
-
-- Author
-- Timestamp
-- Content
-- Relationship to the lead
-
-This makes the CRM useful as a shared operational record instead of only a personal sales notebook.
-
-### Archival
-
-Leads that should no longer appear in the active workflow can be archived without being permanently deleted.
-
-This preserves historical information while keeping current sales views clean.
-
-### Low-Value Lead Workflow
-
-Low-value leads have their own dedicated workflow and listing instead of being mixed into archived records or normal active sales leads.
-
-This allows the business to retain the lead while keeping active pipelines focused on higher-priority opportunities.
+The UI intentionally blocks moving a lead directly into the `converted` state through drag-and-drop. Conversion must use the dedicated domain action so the project and related data are created consistently.
 
 ---
 
-## Sales Workflow Automation
+## Lead → Project Conversion
 
-The platform supports event-driven behavior as a lead progresses through the sales process.
+One of the strongest verified workflows is lead conversion.
 
-For example, when a lead reaches a quotation-related stage, the system can trigger downstream actions such as:
+The backend conversion action can:
+
+1. enforce role permissions,
+2. require a customer,
+3. return the existing project if conversion already happened,
+4. run the mutation inside `transaction.atomic`,
+5. select the initial project stage,
+6. carry an accepted proposal into the project,
+7. create a building snapshot when relevant,
+8. write project stage history,
+9. create a draft contract from an accepted proposal,
+10. generate a default payment schedule,
+11. create the first operational task,
+12. mark the lead as converted.
+
+This makes conversion a real business workflow instead of a simple status update.
+
+[**View sanitized conversion sample →**](../showcase/crm-real/snippets/lead-conversion.md)
+
+---
+
+## CRM Pipeline Analytics
+
+The verified backend contains a dedicated CRM pipeline report.
+
+It supports filters for:
+
+- date range / as-of date
+- source
+- status
+- project use
+- build kind
+- currency
+- assignee
+- minimum lead score
+- stale threshold
+
+The report calculates:
+
+- total leads
+- active leads
+- converted leads
+- conversion rate
+- hot leads
+- stale leads
+- overdue follow-ups
+- overdue next actions
+- estimated budget by currency
+- weighted opportunity value by currency
+- status breakdown
+- source breakdown
+- opportunity-stage breakdown
+- follow-up queue
+
+The test suite includes assertions for these sales metrics and weighted pipeline calculations.
+
+[**View sanitized analytics sample →**](../showcase/crm-real/snippets/pipeline-analytics.md)
+
+---
+
+## Permissions
+
+Authorization is enforced server-side.
+
+The verified permission layer supports:
+
+- explicit user roles
+- module-level read/write grants
+- fallback role sets
+- system-admin override
+- mapping from API resources to access modules
+
+This means hiding a frontend menu is not considered sufficient authorization.
+
+[**View RBAC pattern →**](../showcase/crm-real/snippets/rbac-audit.md)
+
+---
+
+## Auditability
+
+The workflow subsystem includes audit context and model diff helpers.
+
+Representative capabilities include:
+
+- actor attribution
+- create/update/delete audit actions
+- structured before/after changes
+- project association where possible
+- entity type + object ID lookups
+- audit indexes for operational history queries
+
+---
+
+## Notifications & Work Queues
+
+The project also contains workflow automation and system notification logic for events such as:
+
+- overdue tickets
+- ending warranties
+- overdue invoices
+- low inventory
+- upcoming periodic services
+- project tasks approaching their deadline
+
+The work subsystem supports assignee, project, ticket, customer, status and due-time filtering.
+
+---
+
+## Performance Hardening
+
+The supplied source contains explicit performance-stabilization work.
+
+### Optional pagination
+
+List endpoints can retain the original plain-array response unless the caller supplies `page` or `page_size`.
+
+When pagination is requested, standard DRF pagination is used with:
 
 ```text
-Lead reaches quotation stage
-            ↓
-Business rule evaluation
-            ↓
-Manager notification
-            ↓
-Optional SMS / communication trigger
-            ↓
-Follow-up visibility in CRM
+Default page size: 50
+Maximum page size: 250
 ```
 
-This reduces dependency on manual reminders and helps ensure important sales transitions are visible to management.
+This approach was introduced to improve large-list behavior without breaking older frontend contracts.
 
----
+### Query optimization
 
-## Lead Workspace UX
+The project includes targeted use of:
 
-A CRM used daily by sales teams needs to make high-volume interaction efficient.
+- `select_related`
+- `prefetch_related`
+- `Prefetch`
+- aggregation / annotations
+- reuse of prefetched data
+- serializer-level calculation caching
 
-Important interface areas include:
+### Database indexes
 
-- Fast filtering
-- Status-based views
-- Board and table perspectives
-- Loading states for large datasets
-- Search and sorting
-- Clearly separated archived and low-value leads
-- Inline actions and edit flows
-- Accessible lead history
-
-The goal is to reduce unnecessary navigation while keeping the lead's current state and next action obvious.
-
----
-
-## High-Level Architecture
-
-```mermaid
-flowchart LR
-    U[Sales User] --> F[CRM Frontend]
-    F --> A[REST API]
-    A --> D[(Lead Database)]
-
-    F --> L[Lead Workspace]
-    F --> H[History & Notes]
-    F --> Q[Quotation Flow]
-    F --> R[Archive / Low-Value Views]
-
-    A --> N[Notification Logic]
-    N --> M[Manager Alerts]
-    N --> S[SMS / Communication]
-```
-
-The frontend is responsible for operational usability while the backend remains the source of truth for status transitions, lead history, and business rules.
-
----
-
-## Engineering Challenges
-
-### 1. Status transitions must persist correctly
-
-Lead status changes affect downstream workflows, filters, notifications, and reporting. This means status editing cannot be treated as a simple visual change; the backend contract, accepted values, and validation must remain aligned with the frontend.
-
-### 2. History is an operational feature
-
-A CRM becomes significantly less useful if previous actions are lost. History endpoints and timeline data need to remain reliable because they provide context for sales decisions and accountability.
-
-### 3. Archive and low-value are different concepts
-
-A low-value lead may still deserve future follow-up, while an archived lead may simply be inactive. Keeping these concepts separate improves both reporting and day-to-day sales UX.
-
-### 4. Large lead datasets require deliberate UX
-
-Filtering, pagination/loading behavior, clear state indicators, and separate views become increasingly important as the number of leads grows.
-
-### 5. Workflow changes affect multiple screens
-
-Adding a lead state is not only a database change. It can affect:
+Composite indexes are present for high-use workflow and support lookups, including:
 
 ```text
-Forms
-Filters
-Board columns
-Lists
-History
+notifications: recipient + status + created_at
+work items: assignee + status + due date
+work items: project + status + due date
+chat messages: thread + created_at
+audit logs: project + created_at
+audit logs: entity type + object ID
+tickets: project + status + created_at
+tickets: assignee + status + due date
+ticket events: ticket + created_at
+periodic services: project / assignee + scheduled date
+```
+
+The project includes source-check scripts for these performance changes. Both relevant checks passed against the uploaded snapshot:
+
+```text
+V5 pagination/index checks: OK
+Query optimization source checks: OK
+```
+
+[**View scalability notes →**](../showcase/crm-real/snippets/scalability.md)
+
+---
+
+## Current Scalability Boundary
+
+The backend already exposes pagination infrastructure, but the current lead workspace still loads a lead collection into React state and performs some search/status/source filtering client-side.
+
+Therefore I do **not** claim that the uploaded snapshot already has complete server-side pagination for the lead board itself.
+
+For a very large lead dataset, the next step is to wire the existing backend pagination/search primitives directly into the lead workspace and stop depending on an all-leads dashboard payload.
+
+This distinction is deliberately documented to keep the portfolio technically accurate.
+
+---
+
+## Testing
+
+The backend test suite covers real CRM behavior, including:
+
+- successful lead conversion
+- idempotent re-conversion
+- permission denial for unauthorized roles
+- customer requirement before conversion
+- carrying an accepted proposal into the project
+- contract generation
+- payment schedule generation
+- initial project task generation
+- complete lead fields
+- lead score / probability validation
+- XLSX lead import
+- CRM pipeline analytics
+- customer duplicate checks
+
+---
+
+## Broader Product Modules
+
+The reviewed repository also contains modules for:
+
+```text
+CRM
+Projects
+Workflow
+Accounting
+Inventory
+Operations / Installation
+Support
 Notifications
-Reports
-Permissions
+Communications / SMS
+Configuration
+Audit logging
 ```
 
-This requires workflow changes to be treated as cross-cutting product changes rather than isolated frontend patches.
-
----
-
-## API & Integration Concerns
-
-Representative REST interactions include:
-
-- Lead list retrieval
-- Lead detail retrieval
-- Lead creation
-- Lead update / PATCH
-- Lead history retrieval
-- Filtering by status
-- Archive and low-value queries
-- Notification-triggering state changes
-
-A significant part of maintaining this type of application is keeping frontend state, accepted backend values, and API routes synchronized as the business model evolves.
-
----
-
-## Reliability & Debugging
-
-Real production CRM development includes diagnosing issues such as:
-
-- `400 Bad Request` on lead updates
-- Missing or incorrect status mappings
-- `404` history endpoints
-- Service availability failures on supporting APIs
-- UI states that no longer match backend workflow states
-
-The development approach is to identify whether each issue originates from:
-
-```text
-Frontend payload
-API route
-Serializer / validation
-Database model
-Business rule
-Deployment / service availability
-```
-
-This keeps fixes targeted and avoids masking backend problems with frontend workarounds.
-
----
-
-## Product Design Principles
-
-- Preserve lead history
-- Keep active sales views focused
-- Separate distinct business states explicitly
-- Make the next sales action visible
-- Enforce status rules in the backend
-- Keep notification logic tied to business events
-- Avoid destructive deletion for operational records
-- Design for high-volume daily use
-
----
-
-## Representative Engineering Areas
-
-```text
-Lead Lifecycle       Statuses, qualification, archival, low-value flows
-Sales UX             Tables, boards, filtering, search, loading states
-History              Notes, authorship, timestamps, activity timeline
-Automation           Manager alerts, SMS triggers, stage-based actions
-API Integration      REST endpoints, PATCH flows, validation handling
-Data Integrity       Persistent state transitions and historical context
-Localization         Persian RTL business interfaces
-Debugging            400/404/503 diagnosis across frontend and backend
-```
+The CRM is therefore part of a wider operational platform rather than an isolated sales screen.
 
 ---
 
 ## Repository Visibility
 
-The production source remains private because it contains business-specific logic, customer workflows, and operational configuration.
+The customer source remains private.
 
-This public case study excludes:
+The public showcase intentionally excludes:
 
-- Customer and lead data
-- Internal phone numbers and contact details
-- Private business rules
-- Authentication secrets
-- Production environment configuration
-- Proprietary organization-specific logic
+- customer and lead records
+- private contact information
+- environment secrets
+- local database contents
+- backup files
+- production configuration
+- organization-specific deployment paths
+- internal credentials
+
+Only sanitized, representative engineering patterns are published.
 
 ---
 
 ## Status
 
-**Active development / production maintenance**
+**Active development / performance refinement**
 
-The platform continues to evolve as lead workflow rules, reporting needs, sales states, and business automation requirements change.
+[**Browse verified CRM code showcase →**](../showcase/crm-real/README.md)
 
 ---
 
