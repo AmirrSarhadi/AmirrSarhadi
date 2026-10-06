@@ -1,6 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,45:0f766e,100:06b6d4&text=Amir%20Sarhadi&fontColor=ffffff&fontSize=50&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20Software%20Engineer%20%E2%80%A2%20Product%20Builder&descAlignY=60&descSize=18" />
+<img width="100%" src="assets/hero.svg" alt="Amir Sarhadi — Full-Stack Developer and Software Engineer" />
+
+<br/>
 
 <a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github" /></a>
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/LIVE-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
@@ -222,7 +224,5 @@ Idea → Product Architecture → Backend/API → Frontend UX → Data → Testi
 <br/><br/>
 
 **Amir Sarhadi** · Full-Stack Developer · Software Engineer · Product Builder
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:0f172a,45:0f766e,100:06b6d4" />
 
 </div>
