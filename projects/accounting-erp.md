@@ -1,395 +1,280 @@
 # Accounting & ERP Web Application
 
-> Modular business management platform covering accounting, banking, sales, persons, warehousing, services, and operational reporting.
+> Production-oriented Persian ERP covering accounting, treasury, sales, persons, warehousing, services, reporting, and controlled financial workflows.
 
-[← Back to profile](../README.md)
+[← Back to profile](../README.md) · [View sanitized real-code showcase →](../showcase/erp-accounting-real/README.md)
 
 ---
 
 ## Overview
 
-This project is a full-stack ERP-style business application built around day-to-day accounting and operational workflows.
+This case study is now based on direct review of the project source code.
 
-The platform combines financial documents, banking operations, customer/vendor management, sales, returns, inventory, services, discounts, installment workflows, and management dashboards in a single system.
-
-The application is designed for Persian-speaking business users and includes RTL interfaces, Jalali date support, and domain-specific financial workflows.
+The platform is a modular full-stack ERP with a Persian RTL frontend and a Django-based backend. Its financial domain goes beyond CRUD: accounting documents have explicit lifecycle rules, numbering, locking, reversal, period controls, audit trails, and automated treasury-to-accounting integration.
 
 ---
 
-## My Role
-
-**Frontend Lead / Full-Stack Product Development**
-
-Primary responsibilities include:
-
-- Translating accounting workflows into usable product interfaces
-- Building React-based operational screens
-- Integrating frontend flows with Django REST APIs
-- Designing reusable forms and dynamic transaction workflows
-- Coordinating route structure and module-level frontend architecture
-- Debugging API integration and data-contract issues
-- Building dashboards and business-oriented UX
-- Contributing to backend models and API alignment where required
-
----
-
-## Core Stack
+## Verified Stack
 
 ### Frontend
 
-- React 19
-- Vite
-- React Router
-- JavaScript / JSX
-- Chart.js
-- Jalali calendar support
+- React **18.3.1**
+- Vite 7
+- React Router 7
+- Axios
+- React Hook Form
+- Ant Design
+- Chart.js / Recharts
+- Jalali date libraries
 - Persian RTL UI
 
 ### Backend
 
 - Python
-- Django 5
+- Django
 - Django REST Framework
+- Relational accounting / ERP domain models
+- Transaction-aware service layer
 
-### Data
+### Data & Delivery
 
-- PostgreSQL
+- PostgreSQL-oriented data model
+- GitHub Actions workflow present in the project
+- Environment-based configuration
 
 ---
 
-## High-Level Architecture
+## Core Accounting Engine
 
-```mermaid
-flowchart LR
-    U[Business User] --> F[React Frontend]
-    F --> A[Django REST API]
-    A --> P[(PostgreSQL)]
+The source implements real accounting invariants rather than treating documents as generic records.
 
-    F --> AC[Accounting]
-    F --> BK[Banking]
-    F --> PR[Persons]
-    F --> SL[Sales & Income]
-    F --> WH[Warehousing]
-    F --> SV[Services]
-    F --> DB[Dashboards]
+### Document numbering
 
-    AC --> A
-    BK --> A
-    PR --> A
-    SL --> A
-    WH --> A
-    SV --> A
-    DB --> A
+Accounting document numbers are generated per fiscal year using a sequence service. The implementation uses database transactions and row locking so concurrent writers do not casually race on the same sequence boundary.
+
+Representative behavior:
+
+```text
+Fiscal Year
+    ↓ lock
+Sequence Counter ← reconcile → Max Persisted Sequence
+    ↓
+Next Sequence
+    ↓
+Formatted Document Number
 ```
 
-The frontend is organized around domain modules while the backend exposes business-specific REST endpoints for each operational area.
+### Balanced journal validation
+
+Before document creation, the service validates that:
+
+- At least one accounting row exists
+- Debit and credit values are non-negative
+- A row cannot contain both debit and credit
+- A row cannot contain neither debit nor credit
+- Total debit equals total credit
+- Posting is only made to postable accounts
+
+### Fiscal controls
+
+Financial posting checks:
+
+- Fiscal year must be open
+- Document date must fall inside the fiscal year
+- Accounting period must not be locked
+- New documents start as drafts
 
 ---
 
-## Major Functional Areas
+## Document Lifecycle
 
-### Accounting
+The project implements an explicit state machine:
 
-- Create accounting vouchers/documents
-- Document listing and status workflows
-- Opening balance workflows
-- Fiscal-year operations
-- Chart of accounts
-- Aggregate accounting views
-- Debit / credit line-item modeling
-- Project and reference metadata
+```text
+DRAFT
+  ↓
+PENDING
+  ├──→ APPROVED
+  └──→ REJECTED
+          ↓
+        DRAFT
+```
 
-### Banking
+Approved documents do not transition further through normal status changes.
 
-- Bank accounts
-- Cashboxes
-- Imprest / petty cash
-- Bank transfers
-- Transfer history
-- Received cheques
-- Paid cheques
-- Referral/reference numbers
-- Bank fee handling
+Status mutations also create audit log records, which means document history is part of the domain model rather than temporary frontend state.
 
-### Persons
-
-- Customers
-- Vendors
-- Sellers
-- Staff
-- Drivers
-- Shareholders
-- Payment workflows
-- Receipt workflows
-- Dynamic payer / receiver selection
-
-### Sales & Income
-
-- Sales invoices
-- Sales lists
-- Sales returns
-- Income entries
-- Discounts
-- Installment contracts
-- Seller assignment
-- Shipping-related data
-- Payment status and payment method handling
-
-### Warehousing
-
-- Warehouses
-- Warehouse transfers
-- Transfer details and editing
-- Stock items
-- Cross-warehouse visibility
-
-### Services
-
-- Material / service records
-- Add and manage service items
-- Integration with transactional business flows
-
-### Dashboard
-
-- Bank and cashbox totals
-- Sales KPIs
-- Top customers
-- Top vendors
-- Sales charts
-- Operational summaries
+[View sanitized lifecycle excerpt →](../showcase/erp-accounting-real/snippets/document-lifecycle.md)
 
 ---
 
-## Representative Data Model
+## Locked Documents & Reversal
 
-### Accounting Document
+Approved accounting records are protected from arbitrary mutation.
 
-A financial document is modeled with:
+The project contains explicit reversal behavior:
 
-- Fiscal year
-- Document number
-- Automatic number
-- Date
-- Reference
-- Project
-- Description
-- Currency
-- Approval status
-- Source metadata
+1. Validate that the original document is approved and not already reversed.
+2. Ensure the fiscal year and accounting period are still valid.
+3. Generate a new document number.
+4. Copy accounting rows while swapping debit and credit.
+5. Move the reversal document through the required lifecycle.
+6. Lock the generated reversal document.
+7. Mark the original document as reversed.
+8. Write audit events for both records.
 
-Each document contains line items with debit / credit values and account references.
+This preserves accounting history rather than deleting or silently rewriting approved financial records.
 
-### Banking Transaction
+---
 
-Banking transactions support generic sender and receiver entities, enabling transfers between different financial sources such as:
+## Treasury → Accounting Integration
+
+Treasury vouchers can operate against multiple treasury account types including:
 
 ```text
 Bank
 Cashbox
 Imprest
-Person
-Other Accounting Destinations
 ```
 
-The transaction flow can also track fees and independent sender/receiver references.
+When a treasury voucher generates its accounting document, the service:
 
-### Sales Invoice
+- Validates the treasury object and linked accounting account
+- Validates the detail account
+- Finds the applicable open fiscal year
+- Enforces accounting-period locks
+- Checks available treasury balance for payments
+- Builds balanced debit / credit lines
+- Creates an automatic accounting document
+- Approves and locks the accounting document
+- Updates the treasury balance
+- Links the accounting document back to the voucher
 
-Sales invoices include operational fields for:
-
-- Customer
-- Seller
-- Currency
-- Discounts
-- Tax
-- Shipping
-- Payment details
-- Returns
-- Invoice items
-
-This provides a richer operational model than a simple invoice header + total structure.
+Balance mutation uses row locking in the treasury workflow.
 
 ---
 
-## Dynamic Payment Workflow
+## Treasury Reversal
 
-One of the more complex frontend areas is the payment form.
+Voucher reversal coordinates both the treasury ledger and accounting ledger.
 
-A single transaction can dynamically route money toward different receiver types:
+A reversal is rejected when:
+
+- The voucher was already reversed
+- The voucher is not approved
+- The approved voucher is unexpectedly unlocked
+- No accounting document is linked
+- The fiscal year / period is closed
+- The treasury account is inactive or invalid
+- Reversing a receipt would produce an invalid balance
+
+The operation then generates the accounting reversal, restores the treasury balance, creates a linked reverse voucher, and marks the original record as reversed.
+
+[View sanitized treasury reversal excerpt →](../showcase/erp-accounting-real/snippets/treasury-reversal.md)
+
+---
+
+## Permission Model
+
+The treasury module contains object-aware permissions.
+
+Representative rules found in source:
+
+- Authenticated users are required for voucher-owner actions.
+- Admin / super-admin roles can act across vouchers.
+- Non-admin submission/reopen behavior is restricted to the voucher creator.
+- Approval, rejection, and reversal are limited to financial-review roles such as accountant/admin.
+
+This keeps workflow authorization on the backend even when frontend controls are also permission-aware.
+
+---
+
+## Automated Tests
+
+The source includes tests for important financial invariants, including scenarios such as:
+
+- Closed accounting periods blocking posting
+- Reversal allowed only once
+- Approved vouchers requiring lock + approver state
+- Non-approved vouchers not being allowed to masquerade as locked approved records
+- PUT/PATCH protection for vouchers that already generated accounting documents
+- Ownership restrictions around workflow actions
+
+[View sanitized test excerpts →](../showcase/erp-accounting-real/snippets/financial-invariants-tests.md)
+
+---
+
+## Frontend Accounting UX
+
+The React accounting-document form mirrors key accounting concepts for usability:
+
+- Dynamic journal rows
+- Live debit total
+- Live credit total
+- Difference calculation
+- Balanced/unbalanced state
+- Mutual exclusion between debit and credit in a single row
+- Minimum valid-row checks
+- Fiscal year selection
+- Automatic next-document-number preview
+- Multi-dataset loading for accounts, details, cost centers, branches, and departments
+
+[View sanitized React excerpt →](../showcase/erp-accounting-real/snippets/frontend-accounting-form.md)
+
+The frontend validation improves user feedback, while the backend remains the authority for financial correctness.
+
+---
+
+## Broader ERP Scope
+
+Beyond the verified accounting / treasury engine, the application contains modules for:
 
 ```text
-Cashbox
-Imprest
-Bank
-Cheque
-Outgoing Cheque
-Person
-Accounting Account
+Accounting       Fiscal years, documents, ledgers, opening balance, reports
+Treasury         Banks, cashboxes, imprest, vouchers, transfers, cheques
+Persons          Customers, vendors, sellers, staff and related workflows
+Sales            Sales invoices, returns, discounts and installments
+Purchases        Purchase invoices and returns
+Warehousing      Warehouses, stock and internal transfers
+Services         Materials / service records and pricing workflows
+Reports          Financial and operational reporting
+Dashboards       Accounting, treasury and business KPIs
 ```
 
-Each payment row can manage its own:
-
-- Receiver type
-- Receiver identity
-- Amount
-- Bank fee
-- Reference
-- Description
-
-This requires coordinated frontend state, validation, entity loading, and backend payload design.
+The frontend source also includes dedicated views for trial balance, balance sheet, profit/loss, document summary, treasury ledger, cheque audit, fiscal years, period locks, year-end operations, and document audit timelines.
 
 ---
 
-## Banking Transfer UX
+## Security / Sanitization Note
 
-The transfer flow uses segmented source/destination categories and dynamically loads eligible entities.
+The private archive contains local development configuration and test credentials. Those values are **not** published in the portfolio.
 
-Representative flow:
+The public showcase intentionally removes:
 
-```text
-Select source type
-      ↓
-Select source entity
-      ↓
-Select destination type
-      ↓
-Select destination entity
-      ↓
-Enter amount / fees / references
-      ↓
-Review deducted and credited totals
-      ↓
-Submit transaction
-```
+- Local secret keys
+- Test passwords
+- Private environment configuration
+- Internal identifiers
+- Customer/business data
+- Full proprietary implementation
 
-The UI exposes both the deducted amount and credited amount so fees remain visible to the user before submission.
+Only representative engineering patterns are exposed.
 
 ---
 
-## Localization & UX
+## Public Code Showcase
 
-The application is designed for Persian accounting workflows rather than being a generic English admin panel translated afterward.
+### [Browse production-derived ERP code excerpts →](../showcase/erp-accounting-real/README.md)
 
-Key localization decisions include:
-
-- RTL layout
-- Persian business terminology
-- Jalali dates
-- Persian-friendly forms
-- Business-specific dropdown labels
-- Local accounting concepts and workflows
-
----
-
-## Frontend Engineering Challenges
-
-### 1. Large modular route structure
-
-The application contains many operational pages across accounting, banking, persons, sales, and warehousing. Route organization and navigation consistency are important to prevent the frontend from becoming a collection of unrelated screens.
-
-### 2. Dynamic financial forms
-
-Payment and transfer forms change fields based on source and destination types. This requires controlled state models rather than static forms.
-
-### 3. API contract consistency
-
-Large systems often accumulate inconsistent endpoint naming. During development, integration issues such as route mismatches and required-field differences need to be identified and normalized without breaking adjacent workflows.
-
-### 4. Financial correctness in the UI
-
-Accounting interfaces must make money movement understandable before submission. Summaries, source/destination clarity, fees, totals, and references are part of correctness—not only presentation.
-
-### 5. RTL responsiveness
-
-Business tables, forms, dropdowns, sidebars, and dashboards all need to remain readable on smaller screens while preserving RTL behavior.
-
----
-
-## Backend Domain Design
-
-Representative backend entities include:
-
-```text
-FiscalYear
-Project
-Account
-Document
-DocumentItem
-Bank
-CashBox
-Imprest
-Transaction
-SalesInvoice
-SalesInvoiceItem
-IncomeDiscount
-Person Types
-```
-
-The backend is structured around explicit domain models rather than storing business operations as loosely typed generic records.
-
----
-
-## API Integration Examples
-
-The frontend consumes dedicated APIs for:
-
-- Customers
-- Vendors
-- Staff
-- Sellers
-- Banks
-- Cashboxes
-- Imprests
-- Payments
-- Sales invoices
-- Returned sales
-- Materials / services
-
-This keeps domain data loading independent while allowing composite transaction screens to combine multiple datasets.
-
----
-
-## Product Design Principles
-
-- Financial clarity before submission
-- Reusable transaction patterns
-- Explicit domain modeling
-- Persian-first UX
-- Modular architecture
-- Operational workflows over demo dashboards
-- API-driven frontend
-- Progressive expansion by business module
-
----
-
-## Representative Engineering Areas
-
-```text
-Accounting         Documents, vouchers, debit/credit items, fiscal years
-Banking            Banks, cashboxes, imprest, transfers, cheques
-People             Customers, vendors, staff, sellers, shareholders
-Sales              Invoices, returns, discounts, installments
-Warehousing        Stock, warehouses, internal transfers
-Frontend            React, routing, dynamic forms, RTL interfaces
-Data Visualization  KPIs, charts, operational summaries
-Backend             Django, DRF, PostgreSQL domain models
-```
-
----
-
-## Repository Visibility
-
-The full source is maintained privately because the project contains product-specific business logic and deployment-specific implementation.
-
-This case study is intentionally limited to architecture, product scope, technical decisions, and representative workflows.
+The showcase contains sanitized samples derived from the actual application source rather than fabricated portfolio-only examples.
 
 ---
 
 ## Status
 
-**Active development**
+**Active development / production-oriented system**
 
-The platform already includes the core accounting and operational modules and continues to evolve around additional workflows, reporting, and integration refinement.
+The current source demonstrates a substantial accounting and treasury domain with explicit financial invariants, workflow controls, permissions, automated tests, and Persian business UX.
 
 ---
 
