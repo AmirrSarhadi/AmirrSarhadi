@@ -1,6 +1,6 @@
 # School LMS & Management Platform
 
-> Production-oriented full-stack school management and learning platform.
+> Source-verified, production-oriented school management and learning platform.
 
 [← Back to profile](../README.md)
 
@@ -8,59 +8,44 @@
 
 ## Overview
 
-This project is a full-stack LMS and school operations platform designed around real administrative, educational, financial, and communication workflows.
+This is a real customer LMS and school-operations platform built around educational, administrative, financial, communication, reporting, and production workflows.
 
-The system goes beyond course delivery. It brings together student administration, role-based access, attendance, assignments, exams, grading, finance, messaging, admissions, reporting, and production operations in one platform.
+The source review confirms that the system goes well beyond a simple course portal. It implements role-aware school operations, controlled data exchange, exams, grading, corrections, attendance, finance, messaging, admissions, reporting, and a production deployment stack.
 
-The original production repository is private. This page is a sanitized technical case study intended to demonstrate the architecture, engineering decisions, and product scope without exposing private organizational data, credentials, or production configuration.
-
----
-
-## My Role
-
-**Full-Stack Development / Product Engineering**
-
-Work across the system includes:
-
-- Backend architecture and REST APIs
-- Frontend application development
-- Relational data modeling
-- Authentication and role-based authorization
-- Operational workflows
-- Reporting and document generation
-- Automated testing
-- Production deployment architecture
-- Security and data-access boundaries
+The original repository remains private. This case study and the linked code showcase are sanitized to remove customer identity, demo credentials, environment values, and organization-specific configuration.
 
 ---
 
-## Core Stack
+## Verified Stack
 
 ### Frontend
 
-- Next.js 16
+- Next.js 16.3.6
 - React 19
-- TypeScript
-- Vazirmatn RTL typography
-- Playwright end-to-end testing
+- TypeScript 5.7
+- Playwright
+- Vazirmatn
+- lucide-react
 
 ### Backend
 
 - Python
 - Django 5.2
-- Django REST Framework
+- Django REST Framework 3.16
 - Gunicorn
 - ReportLab
 - OpenPyXL
 
-### Data & Infrastructure
+### Infrastructure
 
 - PostgreSQL 17
 - Redis 7
-- Docker / Docker Compose
-- Caddy reverse proxy
-- Automated HTTPS
-- Persistent private media and database volumes
+- Docker Compose
+- Caddy
+- Private persistent media
+- Health / readiness checks
+- Background maintenance worker
+- Optional SMS worker
 
 ---
 
@@ -68,241 +53,255 @@ Work across the system includes:
 
 ```mermaid
 flowchart LR
-    U[Users] --> C[Caddy / HTTPS]
+    U[Students / Families / Staff] --> C[Caddy / HTTPS]
     C --> F[Next.js Frontend]
     F --> B[Django REST API]
     B --> P[(PostgreSQL)]
     B --> R[(Redis)]
     B --> M[Private Media]
-    B --> X[Excel / PDF Reports]
-    B --> S[SMS Outbox]
-    S --> W[SMS Worker]
-    T[Maintenance Worker] --> B
+    B --> X[Excel / PDF]
+    B --> Q[Outbox / Background Work]
 ```
 
-The production stack separates frontend, backend, database, cache, reverse proxy, and maintenance workloads while keeping user-uploaded media private and persistent.
+---
+
+## Source-Verified Engineering Highlights
+
+### 1. Safe XLSX Import: Preview → Apply
+
+Bulk imports are intentionally split into two phases:
+
+```text
+Upload
+  ↓
+Validate structure and rows
+  ↓
+Create preview batch
+  ↓
+Explicit apply using the same file
+  ↓
+Transactional database mutation
+  ↓
+Audit record
+```
+
+Verified implementation details include:
+
+- XLSX-only input
+- file-size and expanded-archive limits
+- row-count limits
+- formula rejection
+- exact header validation
+- per-row validation and warnings
+- content fingerprinting
+- expiring preview batches
+- one-time apply semantics
+- row locking during apply
+- `transaction.atomic`
+- audit trail after successful mutation
+
+This is a strong example of defensive handling for high-impact administrative operations.
+
+---
+
+### 2. Online Exam Lifecycle
+
+The exam engine implements more than question rendering.
+
+Verified behaviors include:
+
+- exam start / end windows
+- per-attempt deadlines
+- single-choice and descriptive questions
+- optional negative marking
+- answer snapshots
+- automatic scoring for objective questions
+- manual grading for descriptive answers
+- attempt versioning
+- stale-write rejection through `expected_version`
+- controlled result publication
+- answer visibility policies
+- retake grants
+- overdue-attempt finalization
+- audit logging
+
+A simplified attempt lifecycle:
+
+```text
+Not Started
+    ↓
+Active Attempt
+    ↓
+Submit
+    ↓
+Auto Grade ───────────────┐
+    ↓                     │
+Manual Grading Required   │
+    ↓                     │
+Graded ◀──────────────────┘
+    ↓
+Controlled Result Publication
+```
+
+---
+
+### 3. Grade Correction Workflow
+
+Published academic results are not overwritten casually.
+
+The source contains a controlled correction workflow where:
+
+```text
+Teacher proposes correction
+        ↓
+Existing published result remains visible
+        ↓
+Manager reviews old vs proposed result
+        ↓
+Approve / Reject
+        ↓
+Approved value becomes published result
+        ↓
+Decision history remains traceable
+```
+
+The frontend explicitly compares the current and proposed state, while the backend uses version-aware workflow rules to reduce stale or duplicate updates.
+
+---
+
+### 4. Role & Scope Enforcement
+
+The system supports multiple roles such as:
+
+- Student
+- Family
+- Teacher
+- Manager
+- Deputy
+- Finance / accounting users
+
+Authorization is enforced at API level rather than depending only on hidden menu items.
+
+---
+
+### 5. Historical Data Preservation
+
+School structure uses lifecycle/archive semantics where appropriate so historical attendance, assignments, grades, enrollment, and relationships are not destroyed by administrative changes.
+
+---
+
+### 6. Production Operations
+
+The production compose configuration verifies:
+
+- PostgreSQL health checks
+- Redis with persistence and authentication
+- Django backend health endpoint
+- Next.js health checks
+- Caddy edge proxy
+- persistent static/private-media volumes
+- maintenance worker
+- optional SMS worker
+- restart policies
+
+This makes deployment reproducible instead of relying on ad-hoc server state.
 
 ---
 
 ## Major Functional Areas
 
-### Identity & Access
-
-- Multi-role user accounts
-- Explicit active-role handling
-- Student, parent, teacher, management, and finance workflows
-- Role-aware API access
-- First-login password-change controls
-- Session and CSRF protections
-- Captcha and OTP-based flows
-
-### School Structure
-
-- Academic years
-- Classes
-- Subjects
-- Teacher assignments
-- Student enrollment
-- Parent/student relationships
-- Safe archive lifecycle instead of destructive deletion
-
-### Attendance
-
-- Student attendance
-- Teacher attendance
-- Scheduled sessions
-- Review and approval workflows
-- Audit-aware corrections
-
-### Assignments & Exams
-
-- Assignment creation and submission
-- Teacher review
-- Exam management
-- Assessment and grading
-- Course correction workflows
-- Student-facing academic information
-
-### Finance
-
-- School financial operations
-- Account-level workflows
-- Structured finance reporting
-- Role-based finance access
-
-### Communication
-
-- Direct and group messaging
-- Notification workflows
-- SMS outbox architecture
-- Background SMS processing
-
-### Admissions
-
-- Configurable admission fields
-- Document submission
-- Controlled retention and expiry
-- Administrative review workflows
-
-### Reporting & Data Exchange
-
-- Management dashboards
-- Excel imports with preview-before-apply workflow
-- Excel exports
-- PDF reporting
-- Validation before mutation
-- Audit records for data-import operations
-
----
-
-## Data Import Safety
-
-A key engineering requirement was making bulk data operations safer than a simple spreadsheet upload.
-
-The import workflow uses a staged model:
-
 ```text
-Upload
-  ↓
-Validation
-  ↓
-Preview
-  ↓
-Explicit Apply
-  ↓
-Transactional Database Update
-  ↓
-Audit Record
+Identity & Roles
+School Structure
+Attendance
+Assignments
+Online Exams
+Grade Corrections
+Report Cards
+Finance
+Messaging
+Announcements
+SMS Queue
+Admissions
+Public Website
+Excel Import / Export
+PDF Reporting
+Management Dashboards
 ```
-
-The system is designed to reject malformed structures, conflicting records, invalid account states, and duplicate domain data before changes are committed.
-
----
-
-## Production Architecture
-
-The deployment design includes:
-
-- PostgreSQL service with health checks
-- Password-protected Redis
-- Django/Gunicorn backend
-- Next.js standalone frontend
-- Caddy edge proxy and HTTPS termination
-- Persistent database, cache, static, and private-media volumes
-- Readiness and liveness health endpoints
-- Background maintenance process
-- Optional SMS worker profile
-- Restart policies for core services
-
-This keeps the production topology reproducible and avoids coupling deployment to a single manually configured server.
-
----
-
-## Reliability & Operations
-
-Operational concerns handled by the platform include:
-
-- Health/readiness checks
-- Structured deployment services
-- Persistent storage
-- Background maintenance tasks
-- SMS queue processing
-- Data cleanup jobs
-- Backup and restore procedures
-- Release-oriented production configuration
-- CI-oriented frontend and backend verification
 
 ---
 
 ## Testing Strategy
 
-The project uses both backend and browser-level verification.
+The repository contains broad backend and browser-level coverage.
 
-### Backend
+### Django tests
 
-Django test suites cover domain workflows, access rules, reports, imports, and school operations.
+Verified test areas include:
 
-### Frontend / E2E
+- exams
+- grade corrections
+- attendance reporting
+- assignments
+- assignment progress
+- finance
+- admissions
+- role behavior
+- password flows
+- structure lifecycle
+- reporting
+- data exchange
+- communications
+- production readiness
 
-Playwright is used for browser-level workflow tests.
+### Playwright
 
-### Static Verification
+Browser-level tests cover real user workflows across the school panel and public site.
 
-TypeScript type checking and production builds are part of the frontend verification workflow.
+### Frontend checks
 
----
-
-## Engineering Challenges
-
-### 1. Multi-role authorization
-
-School applications contain overlapping user types and responsibilities. A user can have access to different operational scopes, so authorization must be enforced server-side rather than relying on navigation visibility alone.
-
-### 2. Preserving historical academic data
-
-Deleting a class, assignment relationship, or enrollment can destroy historical context. The platform therefore favors lifecycle/archive semantics where historical records need to remain auditable.
-
-### 3. Safe bulk imports
-
-Spreadsheet imports are operationally powerful but risky. The solution separates preview from apply and validates the import before a database transaction is performed.
-
-### 4. Private file handling
-
-Student and admission files must not be treated as ordinary public static assets. Production storage separates private media from publicly served static files.
-
-### 5. Production observability
-
-The deployment includes application and dependency health checks so service readiness can be evaluated independently of whether a container process merely exists.
+- TypeScript typecheck
+- production build
+- Playwright E2E
 
 ---
 
-## Product Design Principles
+## Representative Public Code
 
-- Real workflows over demo-only screens
-- Server-side authorization
-- Non-destructive historical data handling
-- Explicit validation before bulk mutations
-- Clear role boundaries
-- Responsive RTL user experience
-- Production deployment considered during development, not after it
+A sanitized subset of real engineering patterns is available here:
 
----
+[**→ Open Real LMS Code Showcase**](../showcase/lms-real/README.md)
 
-## Representative Engineering Areas
+Included examples cover:
 
-```text
-Authentication        Role-aware access, OTP, sessions, CSRF
-School Operations     Classes, enrollment, schedules, attendance
-Learning              Assignments, exams, grading, report cards
-Finance               Financial operations and reporting
-Communication         Messages, SMS workflows, notifications
-Data Engineering      XLSX import/export, validation, reporting
-Infrastructure        Docker, PostgreSQL, Redis, Caddy, Gunicorn
-Quality               Django tests, Playwright, TypeScript checks
-```
+- exam lifecycle and version conflict handling
+- grade-correction UI workflow
+- workflow invariant tests
+- documented safe-import architecture
 
 ---
 
-## Repository Visibility
+## Privacy & Sanitization
 
-The full repository remains private because it contains product-specific implementation and organization-specific configuration and documentation.
+The uploaded customer source contains local demo accounts and customer-specific naming. None of those are reproduced in this public portfolio.
 
-This public case study intentionally excludes:
+The public showcase excludes:
 
-- Credentials and secrets
-- Test-account passwords
-- Organization-specific identifiers
-- Production environment values
-- Private user or school data
-- Proprietary implementation details that are not required to evaluate the engineering work
+- customer / school identity
+- passwords and demo credentials
+- SMS credentials
+- environment secrets
+- private content
+- internal deployment values
+- student or staff data
 
 ---
 
 ## Status
 
-**Active development / production preparation**
+**Feature-rich implementation / production-preparation stage**
 
-The system already covers the primary school-management and learning workflows, while production-specific integrations and organization-specific data mappings can be completed independently of the core platform.
+The source includes the core LMS and school-management workflows together with production deployment tooling. Customer-specific content, final server provisioning, and external data mappings are separate deployment concerns.
 
 ---
 
