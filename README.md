@@ -7,6 +7,7 @@
 I build production-oriented web applications, business platforms, automation systems, and data-driven products — with a strong focus on clean architecture, usable interfaces, and solving real operational problems.
 
 [![GitHub](https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github)](https://github.com/AmirrSarhadi)
+[![Laitco](https://img.shields.io/badge/Laitco-laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://laitco.ir)
 
 </div>
 
@@ -126,10 +127,20 @@ A content workflow and management application designed to organize content opera
 
 ---
 
-### Laitco Digital Products
-A collection of commercial web products and digital experiences, including company websites, SaaS concepts, automation products, and digital service platforms.
+### Laitco — Company Website & Digital Products
+Public company website and commercial digital-product presence for Laitco.
 
-**Focus areas:** product design · responsive UI · Persian RTL experiences · business automation · SaaS architecture
+**Highlights**
+- Persian-first RTL company website
+- Responsive frontend implementation
+- Custom typography, logo, favicon, and branded visuals
+- Mobile layout and accordion refinement
+- cPanel production deployment and routing
+- Public-facing home for custom software, SaaS, and automation products
+
+**Live:** [laitco.ir](https://laitco.ir)
+
+[**View case study →**](projects/laitco.md) · [**Visit live website →**](https://laitco.ir)
 
 ---
 
