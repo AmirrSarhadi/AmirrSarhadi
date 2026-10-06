@@ -7,6 +7,7 @@
 <a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=for-the-badge&logo=github" /></a>
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/LIVE-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
 <a href="showcase/erp-accounting-real/README.md"><img src="https://img.shields.io/badge/CODE-Real_ERP_Showcase-7c3aed?style=for-the-badge&logo=codefactor&logoColor=white" /></a>
+<a href="showcase/crm-real/README.md"><img src="https://img.shields.io/badge/CODE-Real_CRM_Showcase-0891b2?style=for-the-badge&logo=codefactor&logoColor=white" /></a>
 <img src="https://img.shields.io/badge/Open%20to-Software%20%26%20Product%20Opportunities-0891b2?style=for-the-badge" />
 
 <br/><br/>
@@ -42,16 +43,16 @@
 **Production-derived, sanitized code samples from real private projects.**
 
 [![ERP](https://img.shields.io/badge/REAL%20CODE-ERP%20Accounting-0f766e?style=for-the-badge&logo=django&logoColor=white)](showcase/erp-accounting-real/README.md)
-[![Lifecycle](https://img.shields.io/badge/Domain-Document%20Lifecycle-2563eb?style=for-the-badge)](showcase/erp-accounting-real/snippets/document-lifecycle.md)
-[![Treasury](https://img.shields.io/badge/Domain-Treasury%20Reversal-7c3aed?style=for-the-badge)](showcase/erp-accounting-real/snippets/treasury-reversal.md)
-[![Tests](https://img.shields.io/badge/Quality-Financial%20Invariant%20Tests-e11d48?style=for-the-badge)](showcase/erp-accounting-real/snippets/financial-invariants-tests.md)
-[![React](https://img.shields.io/badge/Frontend-Accounting%20Form-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](showcase/erp-accounting-real/snippets/frontend-accounting-form.md)
+[![CRM](https://img.shields.io/badge/REAL%20CODE-CRM%20%2F%20Sales-0891b2?style=for-the-badge&logo=react&logoColor=white)](showcase/crm-real/README.md)
+[![LMS](https://img.shields.io/badge/REAL%20CODE-School%20LMS-2563eb?style=for-the-badge&logo=nextdotjs&logoColor=white)](showcase/lms-real/README.md)
 
 <br/>
 
-[**→ Browse Verified ERP Code Showcase**](showcase/erp-accounting-real/README.md)
+[**→ Verified ERP Code**](showcase/erp-accounting-real/README.md)
 &nbsp;&nbsp;•&nbsp;&nbsp;
-[**General Full-Stack Showcase →**](showcase/fullstack-portfolio-lab/README.md)
+[**→ Verified CRM Code**](showcase/crm-real/README.md)
+&nbsp;&nbsp;•&nbsp;&nbsp;
+[**→ Verified LMS Code**](showcase/lms-real/README.md)
 
 </div>
 
@@ -64,7 +65,7 @@
 <td width="50%" align="center" valign="top">
 <a href="projects/school-lms.md"><img width="100%" src="assets/project-school-lms.svg" alt="School LMS project" /></a>
 <br/>
-<a href="projects/school-lms.md"><b>Technical Case Study →</b></a>
+<a href="projects/school-lms.md"><b>Technical Case Study →</b></a> · <a href="showcase/lms-real/README.md"><b>Real Code</b></a>
 </td>
 <td width="50%" align="center" valign="top">
 <a href="projects/accounting-erp.md"><img width="100%" src="assets/project-accounting-erp.svg" alt="Accounting and ERP project" /></a>
@@ -76,7 +77,7 @@
 <td width="50%" align="center" valign="top">
 <a href="projects/crm-lead-management.md"><img width="100%" src="assets/project-crm.svg" alt="CRM and lead management project" /></a>
 <br/>
-<a href="projects/crm-lead-management.md"><b>Technical Case Study →</b></a>
+<a href="projects/crm-lead-management.md"><b>Technical Case Study →</b></a> · <a href="showcase/crm-real/README.md"><b>Real Code</b></a>
 </td>
 <td width="50%" align="center" valign="top">
 <a href="projects/contentflow.md"><img width="100%" src="assets/project-contentflow.svg" alt="ContentFlow project" /></a>
@@ -194,8 +195,9 @@ Idea → Product Architecture → Backend/API → Frontend UX → Data → Testi
 ### 🌍 Build. Ship. Improve.
 
 <a href="https://laitco.ir"><img src="https://img.shields.io/badge/Visit-Laitco.ir-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-<a href="showcase/erp-accounting-real/README.md"><img src="https://img.shields.io/badge/Review-Real%20ERP%20Code-7c3aed?style=for-the-badge&logo=github" /></a>
-<a href="https://github.com/AmirrSarhadi"><img src="https://img.shields.io/badge/Explore-My%20GitHub-181717?style=for-the-badge&logo=github" /></a>
+<a href="showcase/erp-accounting-real/README.md"><img src="https://img.shields.io/badge/Review-ERP%20Code-0f766e?style=for-the-badge&logo=github" /></a>
+<a href="showcase/crm-real/README.md"><img src="https://img.shields.io/badge/Review-CRM%20Code-0891b2?style=for-the-badge&logo=github" /></a>
+<a href="showcase/lms-real/README.md"><img src="https://img.shields.io/badge/Review-LMS%20Code-2563eb?style=for-the-badge&logo=github" /></a>
 
 <br/><br/>
 
