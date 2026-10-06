@@ -120,6 +120,10 @@ A content workflow and management application designed to organize content opera
 
 **Focus areas:** workflow UX · review processes · content lifecycle · admin operations · maintainable frontend architecture
 
+[**View technical case study →**](projects/contentflow.md)
+
+> Source remains private; the public case study focuses on workflow modeling, review architecture, and frontend engineering.
+
 ---
 
 ### Laitco Digital Products
