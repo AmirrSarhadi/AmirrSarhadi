@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Amir Sarhadi — Full-Stack Developer and Software Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" rx="32" fill="url(#bg)"/>
+  <circle cx="1040" cy="85" r="150" fill="#22d3ee" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="1100" cy="330" r="120" fill="#14b8a6" opacity="0.08" filter="url(#glow)"/>
+  <g opacity="0.22" stroke="#67e8f9" fill="none">
+    <path d="M760 80h210c35 0 50 20 50 48v28c0 28 15 48 50 48h70"/>
+    <path d="M730 145h160c35 0 50 18 50 46v22c0 28 15 46 50 46h130"/>
+    <path d="M790 235h120c35 0 50 18 50 46v15c0 28 15 46 50 46h85"/>
+  </g>
+  <g fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="16">
+    <text x="80" y="70" letter-spacing="3">FULL-STACK • SOFTWARE • PRODUCT</text>
+  </g>
+  <text x="80" y="155" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="700">Amir Sarhadi</text>
+  <rect x="80" y="182" width="360" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="80" y="235" fill="#dbeafe" font-family="Arial,Helvetica,sans-serif" font-size="25">I build production-ready software systems</text>
+  <text x="80" y="273" fill="#94a3b8" font-family="Arial,Helvetica,sans-serif" font-size="20">ERP • CRM • LMS • SaaS • Automation • AI / Computer Vision</text>
+  <g font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700">
+    <rect x="80" y="320" width="118" height="38" rx="19" fill="#0b2536" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="104" y="344" fill="#67e8f9">PYTHON</text>
+    <rect x="210" y="320" width="118" height="38" rx="19" fill="#0b2536" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="234" y="344" fill="#67e8f9">DJANGO</text>
+    <rect x="340" y="320" width="118" height="38" rx="19" fill="#0b2536" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="368" y="344" fill="#67e8f9">REACT</text>
+    <rect x="470" y="320" width="138" height="38" rx="19" fill="#0b2536" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <text x="494" y="344" fill="#67e8f9">POSTGRES</text>
+  </g>
+  <g transform="translate(875 110)">
+    <rect width="220" height="150" rx="20" fill="#08111f" stroke="#1e293b"/>
+    <circle cx="35" cy="28" r="5" fill="#fb7185"/><circle cx="53" cy="28" r="5" fill="#facc15"/><circle cx="71" cy="28" r="5" fill="#4ade80"/>
+    <text x="28" y="70" fill="#67e8f9" font-family="monospace" font-size="16">$ build --ship</text>
+    <text x="28" y="98" fill="#cbd5e1" font-family="monospace" font-size="14">✓ architecture</text>
+    <text x="28" y="120" fill="#cbd5e1" font-family="monospace" font-size="14">✓ product ux</text>
+    <text x="28" y="142" fill="#cbd5e1" font-family="monospace" font-size="14">✓ production</text>
+  </g>
+</svg>
