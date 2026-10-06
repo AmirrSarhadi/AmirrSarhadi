@@ -91,6 +91,10 @@ Accounting · Banking · Persons · Sales · Income · Warehousing · Services �
 
 **Stack:** React · Django · PostgreSQL · Chart.js
 
+[**View technical case study →**](projects/accounting-erp.md)
+
+> Full source remains private; the public case study focuses on architecture and representative workflows.
+
 ---
 
 ### CRM & Lead Management Platform
