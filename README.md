@@ -2,14 +2,28 @@
 
 # Amir Sarhadi
 
-### Full-Stack Developer · Software Engineer · Product Builder
+### Full-Stack Developer · Software Engineer
 
-I build production-oriented software across **ERP, CRM, LMS, SaaS, automation, and applied AI** — from architecture and APIs to frontend UX and deployment.
+I’m a software developer with **7+ years of experience** building reliable, maintainable, and production-oriented software.
+
+My main stack is **Django, React, and Next.js**, with a strong focus on backend architecture, modern frontend development, APIs, automation, and scalable business software.
+
+🎓 **B.Sc. in Computer Engineering — Shahid Bahonar University of Kerman**
 
 [![GitHub](https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=flat-square&logo=github)](https://github.com/AmirrSarhadi)
 [![Laitco](https://img.shields.io/badge/Laitco-laitco.ir-181717?style=flat-square&logo=googlechrome&logoColor=white)](https://laitco.ir)
 
 </div>
+
+---
+
+## About Me
+
+I work across the full software development lifecycle — from system design and backend architecture to frontend implementation, testing, deployment, and continuous improvement.
+
+I enjoy turning complex requirements into practical products with clean architecture, clear user experiences, and maintainable code. My engineering approach is centered on reliability, scalability, security, and real-world usability.
+
+**Core technologies:** Django · Django REST Framework · React · Next.js · JavaScript · TypeScript · PostgreSQL · Redis · Docker · Git
 
 ---
 
