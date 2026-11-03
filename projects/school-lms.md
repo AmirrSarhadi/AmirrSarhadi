@@ -8,9 +8,9 @@
 
 ## Overview
 
-This is a real customer LMS and school-operations platform built around educational, administrative, financial, communication, reporting, and production workflows.
+This is a real customer LMS and school-operations platform built around educational, administrative, communication, reporting, and delivery workflows.
 
-The source review confirms that the system goes well beyond a simple course portal. It implements role-aware school operations, controlled data exchange, exams, grading, corrections, attendance, finance, messaging, admissions, reporting, and a production deployment stack.
+The source review confirms that the system goes well beyond a simple course portal. It implements role-aware school operations, controlled data exchange, exams, grading, corrections, attendance, messaging, admissions, reporting, and a production deployment stack.
 
 The original repository remains private. This case study and the linked code showcase are sanitized to remove customer identity, demo credentials, environment values, and organization-specific configuration.
 
@@ -20,7 +20,7 @@ The original repository remains private. This case study and the linked code sho
 
 ### Frontend
 
-- Next.js 16.3.6
+- Next.js 16.4.3
 - React 19
 - TypeScript 5.7
 - Playwright
@@ -31,7 +31,7 @@ The original repository remains private. This case study and the linked code sho
 
 - Python
 - Django 5.2
-- Django REST Framework 3.16
+- Django REST Framework 3.18
 - Gunicorn
 - ReportLab
 - OpenPyXL
@@ -178,7 +178,6 @@ The system supports multiple roles such as:
 - Teacher
 - Manager
 - Deputy
-- Finance / accounting users
 
 Authorization is enforced at API level rather than depending only on hidden menu items.
 
@@ -218,7 +217,6 @@ Assignments
 Online Exams
 Grade Corrections
 Report Cards
-Finance
 Messaging
 Announcements
 SMS Queue
@@ -244,7 +242,6 @@ Verified test areas include:
 - attendance reporting
 - assignments
 - assignment progress
-- finance
 - admissions
 - role behavior
 - password flows

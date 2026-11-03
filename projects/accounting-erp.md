@@ -18,7 +18,7 @@ The platform is a modular full-stack ERP with a Persian RTL frontend and a Djang
 
 ### Frontend
 
-- React **18.3.1**
+- React **19.1**
 - Vite 7
 - React Router 7
 - Axios

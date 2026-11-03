@@ -1,202 +1,83 @@
-<div align="center">
-
 # Amir Sarhadi
 
-### Full-Stack Developer · Software Engineer
+### Full-Stack Developer · Django / React / Next.js · Applied AI
 
-I’m a software developer with **7+ years of experience** building reliable, maintainable, and production-oriented software.
+I build business web applications with **7+ years of software development experience**. My work spans accounting and inventory systems, CRM, school operations and marketplaces, from data models and REST APIs to responsive interfaces and operational workflows.
 
-My main stack is **Django, React, and Next.js**, with a strong focus on backend architecture, modern frontend development, APIs, automation, and scalable business software.
+I focus on clear domain boundaries, explicit validation and maintainable frontend/backend integration. My AI-related work includes OCR/computer-vision research and a human-reviewed floor-plan prototype.
 
-🎓 **B.Sc. in Computer Engineering — Shahid Bahonar University of Kerman**
+**30+ projects developed · 10+ active projects and websites · Open to remote opportunities worldwide**
 
-[![GitHub](https://img.shields.io/badge/GitHub-AmirrSarhadi-181717?style=flat-square&logo=github)](https://github.com/AmirrSarhadi)
-[![Laitco](https://img.shields.io/badge/Laitco-laitco.ir-181717?style=flat-square&logo=googlechrome&logoColor=white)](https://laitco.ir)
+[amirsarrhadii@gmail.com](mailto:amirsarrhadii@gmail.com) · **[Resume — PDF](resume/Amir-Sarhadi-Resume.pdf)** · [Editable Word](resume/Amir-Sarhadi-Resume.docx) · [Text version](RESUME.md) · [GitHub](https://github.com/AmirrSarhadi)
 
-</div>
+## Technical Skills
 
----
+| Area | Technologies & practice |
+| --- | --- |
+| **Backend** | Python, Django, Django REST Framework, REST APIs, relational modeling, service-layer design, Oracle APEX |
+| **Frontend** | JavaScript, TypeScript, React, Next.js, form validation, typed API clients, responsive UI |
+| **Data & delivery** | PostgreSQL, Redis, Git, Docker, GitHub Actions |
+| **Quality & workflows** | Backend tests, Playwright, transactions, version-aware updates, reporting, import/review flows |
+| **Localization** | Persian RTL interfaces, Jalali calendars, exact money and inventory-unit inputs |
+| **Applied AI** | OpenCV, PaddleOCR, YOLO-based experiments, screenshot analysis, human-reviewed AI workflows |
 
-## About Me
+## Work Experience
 
-I work across the full software development lifecycle — from system design and backend architecture to frontend implementation, testing, deployment, and continuous improvement.
-
-I enjoy turning complex requirements into practical products with clean architecture, clear user experiences, and maintainable code. My engineering approach is centered on reliability, scalability, security, and real-world usability.
-
-**Core technologies:** Django · Django REST Framework · React · Next.js · JavaScript · TypeScript · PostgreSQL · Redis · Docker · Git
-
----
-
-## Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,django,react,nextjs,js,ts,postgres,redis,docker,git,github,githubactions,opencv&perline=13" />
-
-<br/><br/>
-
-`Django REST Framework` · `REST APIs` · `PaddleOCR` · `YOLO` · `Chart.js` · `RTL / Jalali UX`
-
-</div>
-
----
-
-## Project Code & Screenshots
-
-Explore complete selected source files, implementation details and actual interface captures. The expanded collections contain **818 files across six projects**, with customer data and private operational implementation areas excluded.
-
-| Project | Focus | Explore |
+| Role & organization | Work | Dates |
 | --- | --- | --- |
-| **School LMS** | Educational workflows, attendance, grading and reporting | [Code & gallery](showcase/lms-real/README.md) |
-| **Kerman Cars** | Vehicle marketplace, listing discovery and management | [Case study](projects/kerman-cars.md) · [Code & gallery](showcase/kerman-cars/README.md) |
-| **Local Accounting** | ERP workspace, inventory, catalog and financial dashboards | [Case study](projects/accounting-erp.md) · [Code & gallery](showcase/local-accounting/README.md) |
-| **Cafe Accounting** | Cafe orders, inventory, menu and operational forms | [Case study](projects/cafe-accounting.md) · [Code & gallery](showcase/cafe-accounting/README.md) |
-| **NewCRM** | Multi-organization customers, leads, sales and activities | [Case study](projects/newcrm.md) · [Code & gallery](showcase/newcrm-real/README.md) |
-| **Smart Home AI** | Human-reviewed architectural plan interface | [Case study](projects/smart-home-ai.md) · [Code & gallery](showcase/smart-home-ai/README.md) |
+| **Programmer — Nexio Smart-Home Representative, Kerman** | IoT and smart-home software development/programming. | 2025–2026 · Mehr 1404–Esfand 1404 |
+| **Full-Stack Web Developer — Paydar Tech, Kerman** | Website and web application development with Django, React and Next.js. | 2025 · Bahman 1403–Mehr 1404 |
+| **Programmer & Web Developer — Shahid Bahonar Copper Industries, Kerman** | Oracle APEX web application development. | 2023–2025 · Khordad 1402–Esfand 1403 |
+
+Dates preserve the supplied Solar Hijri months; Gregorian years are shown for reference.
+
+## Selected Project Experience
+
+| Project | Engineering work | Evidence |
+| --- | --- | --- |
+| **Local Accounting / ERP** | Accounting, treasury, catalog and inventory workflows; document lifecycles, reversal patterns and operational reports. | [Case study](projects/accounting-erp.md) · [Code & screens](showcase/local-accounting/COVERAGE.md) |
+| **School LMS** | Attendance, assignments, online exams, grading/correction workflows and school reporting with role-aware interfaces. | [Case study](projects/school-lms.md) · [Code & screens](showcase/lms-real/COVERAGE.md) |
+| **NewCRM** | Organization-scoped customer records, leads, opportunities, activities and sales dashboards with typed client workflows. | [Case study](projects/newcrm.md) · [Code & screens](showcase/newcrm-real/COVERAGE.md) |
+| **Kerman Cars** | Automotive marketplace with buyer discovery, vehicle forms, seller/dealer workspaces and moderation/management screens. | [Case study](projects/kerman-cars.md) · [Code & screens](showcase/kerman-cars/COVERAGE.md) |
+| **Cafe Accounting** | Menu, order entry, customer records and inventory screens, with reusable forms and exact inventory-unit conversions. | [Case study](projects/cafe-accounting.md) · [Code & screens](showcase/cafe-accounting/COVERAGE.md) |
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="showcase/lms-real/README.md"><img width="100%" src="assets/screenshots/lms-dashboard-desktop.png" alt="Actual LMS dashboard component rendered with synthetic school data" /></a>
-<b>School LMS</b> — real dashboard component, demonstration data.
+<a href="showcase/lms-real/GALLERY.md"><img width="100%" src="assets/screenshots/lms-real/home.jpg" alt="School LMS management dashboard using disposable demonstration records, with branding redacted" /></a>
+<b>School operations</b> — actual interface, demonstration data.
 </td>
 <td width="50%" valign="top">
-<a href="showcase/cafe-accounting/README.md"><img width="100%" src="assets/screenshots/cafe-inventory-desktop.png" alt="Cafe inventory interface with demonstration stock" /></a>
-<b>Cafe Accounting</b> — inventory interface, demonstration stock.
+<a href="showcase/newcrm-real/GALLERY.md"><img width="100%" src="assets/screenshots/newcrm-real/workspace.jpg" alt="NewCRM dashboard connected to an isolated demonstration database" /></a>
+<b>Sales workspace</b> — actual interface, demonstration data.
 </td>
 </tr>
 </table>
 
-[Browse every gallery and source index →](showcase/README.md)
+**Additional work:** [ContentFlow — frontend & workflow engineering](projects/contentflow.md) · [Laitco — website development & delivery](projects/laitco.md) · [Earlier CRM / sales-operations platform](projects/crm-lead-management.md).
 
-[**Explore 252 tab, page and workflow captures with direct code links →**](showcase/COVERAGE.md)
+## Engineering Examples
 
-## Public Code
+- **Financial consistency:** [document lifecycle](showcase/erp-accounting-real/snippets/document-lifecycle.md), [treasury reversal](showcase/erp-accounting-real/snippets/treasury-reversal.md) and [invariant-test excerpts](showcase/erp-accounting-real/snippets/financial-invariants-tests.md).
+- **Controlled updates:** [exam lifecycle and grading workflows](showcase/lms-real/README.md), with version-aware edits and explicit review/publication states.
+- **Localized precision:** [exact money and Persian-date parsing](showcase/newcrm-real/source/frontend/lib/sales-entry.ts), including a [reviewable boundary test](showcase/newcrm-real/source/frontend/tests/sales-entry.cjs).
 
-Production-derived, sanitized code samples from real private projects:
+[Browse all project code and interface galleries →](showcase/COVERAGE.md)
 
-| Project | What you can review |
-| --- | --- |
-| **ERP / Accounting** | document lifecycle, treasury reversal, financial invariants, React accounting form — [View code →](showcase/erp-accounting-real/README.md) |
-| **CRM / Sales Operations** | lead-to-project conversion, analytics, scalability, RBAC/audit — [View code →](showcase/crm-real/README.md) |
-| **School LMS** | exam lifecycle, grade correction, workflow invariants, safe data operations — [View code →](showcase/lms-real/README.md) |
+Public code selections omit sensitive implementation and configuration. Screenshots use demonstration data or explicitly identified API fixtures; they are not live customer records or measured business results. [Scope and verification](showcase/VERIFICATION.md).
 
----
+## Research & Prototypes
 
-## Featured Work
+- **[Automatic UI Evaluation](projects/automatic-ui-evaluation.md):** OCR and computer-vision research for extracting interface structure and evaluating measurable layout characteristics using Python, OpenCV and PaddleOCR.
+- **[Smart Home AI](projects/smart-home-ai.md):** an early-stage floor-plan review interface with human correction and preliminary-suggestion presentation. [Code and workflow gallery](showcase/smart-home-ai/COVERAGE.md).
+- Related case studies: [vision-assisted UV disinfection robot](projects/uv-disinfection-robot.md) · [disease prediction & chatbot](projects/disease-prediction-chatbot.md).
 
-<table>
-<tr>
-<td width="50%" align="center" valign="top">
-<a href="projects/school-lms.md"><img width="100%" src="assets/project-school-lms.svg" alt="School LMS project" /></a>
-<br/>
-<a href="projects/school-lms.md"><b>Case Study</b></a> · <a href="showcase/lms-real/README.md">Real Code</a>
-</td>
-<td width="50%" align="center" valign="top">
-<a href="projects/accounting-erp.md"><img width="100%" src="assets/project-accounting-erp.svg" alt="Accounting and ERP project" /></a>
-<br/>
-<a href="projects/accounting-erp.md"><b>Case Study</b></a> · <a href="showcase/erp-accounting-real/README.md">Real Code</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<a href="projects/crm-lead-management.md"><img width="100%" src="assets/project-crm.svg" alt="CRM and sales operations project" /></a>
-<br/>
-<a href="projects/crm-lead-management.md"><b>Case Study</b></a> · <a href="showcase/crm-real/README.md">Real Code</a>
-</td>
-<td width="50%" align="center" valign="top">
-<a href="projects/contentflow.md"><img width="100%" src="assets/project-contentflow.svg" alt="ContentFlow project" /></a>
-<br/>
-<a href="projects/contentflow.md"><b>Case Study</b></a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" valign="top">
-<a href="https://laitco.ir"><img width="100%" src="assets/project-laitco.svg" alt="Laitco company website" /></a>
-<br/>
-<a href="https://laitco.ir"><b>Live Website</b></a> · <a href="projects/laitco.md">Case Study</a>
-</td>
-<td width="50%" align="center" valign="top">
-<a href="projects/automatic-ui-evaluation.md"><img width="100%" src="assets/project-ui-evaluation.svg" alt="Automatic UI Evaluation research project" /></a>
-<br/>
-<a href="projects/automatic-ui-evaluation.md"><b>Research Case Study</b></a>
-</td>
-</tr>
-</table>
+## Education
 
----
+**B.Sc. in Computer Engineering** — Shahid Bahonar University of Kerman.
 
-## AI & Research
+## Opportunities & Links
 
-| Project | Focus |
-| --- | --- |
-| **Automatic UI Evaluation** | OCR + computer vision for automated interface analysis — [Research →](projects/automatic-ui-evaluation.md) |
-| **Autonomous UV Disinfection Robot** | YOLOv5 + Python for vision-assisted robotics — [Case Study →](projects/uv-disinfection-robot.md) |
-| **Disease Prediction & Chatbot** | applied machine learning and conversational interaction — [Case Study →](projects/disease-prediction-chatbot.md) |
+Open to **remote opportunities worldwide** in full-stack development, applied AI and related software engineering. My focus is custom business applications, rapid prototyping and iterative product development.
 
----
-
-## What I Build
-
-```text
-Business Systems   ERP · CRM · Accounting · LMS
-Web Products       React · Next.js · Django · REST APIs
-Data               PostgreSQL · Redis · Reporting · Dashboards
-Automation         Workflows · Notifications · Operational Logic
-AI / Vision        OCR · OpenCV · YOLO · UI Analysis
-Delivery           Docker · CI/CD · Production Deployment
-```
-
----
-
-## Engineering Focus
-
-<table>
-<tr>
-<td width="33%"><b>Architecture</b><br/>Modular, maintainable systems</td>
-<td width="33%"><b>Security</b><br/>Role-based access and safe workflows</td>
-<td width="33%"><b>Product UX</b><br/>Business-first, RTL-aware interfaces</td>
-</tr>
-<tr>
-<td><b>Data</b><br/>Relational modeling and reporting</td>
-<td><b>Quality</b><br/>Testing, validation and auditability</td>
-<td><b>Delivery</b><br/>Docker, CI/CD and production operations</td>
-</tr>
-</table>
-
----
-
-## Services
-
-Business systems · Full-stack web development · Persian RTL interfaces · Workflow automation · Operational reporting · Applied AI prototypes
-
-[View services and related project examples →](services.md)
-
----
-
-## Certificates & Professional Development
-
-[Certificate gallery →](certificates/README.md)
-
-Certificate images and verified details will be added when available.
-
----
-
-## GitHub
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=AmirrSarhadi&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmirrSarhadi&layout=compact&hide_border=true&theme=transparent" />
-
-</div>
-
----
-
-<div align="center">
-
-**Build useful software. Ship it. Improve it.**
-
-[GitHub](https://github.com/AmirrSarhadi) · [Laitco](https://laitco.ir) · [ERP Code](showcase/erp-accounting-real/README.md) · [CRM Code](showcase/crm-real/README.md) · [LMS Code](showcase/lms-real/README.md)
-
-</div>
+[Email](mailto:amirsarrhadii@gmail.com) · [GitHub profile](https://github.com/AmirrSarhadi) · [Resume PDF](resume/Amir-Sarhadi-Resume.pdf) · [Development services](services.md) · [Laitco project website](https://laitco.ir) · [Certificates](certificates/README.md)

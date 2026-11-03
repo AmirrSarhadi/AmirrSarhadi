@@ -9,7 +9,7 @@ This showcase is based on the actual project source. Customer identity, demo acc
 ## Verified stack
 
 ### Frontend
-- Next.js 16.3.6
+- Next.js 16.4.3
 - React 19
 - TypeScript 5.7
 - Playwright
@@ -18,7 +18,7 @@ This showcase is based on the actual project source. Customer identity, demo acc
 
 ### Backend
 - Django 5.2
-- Django REST Framework 3.16
+- Django REST Framework 3.18
 - PostgreSQL
 - Redis
 - Gunicorn

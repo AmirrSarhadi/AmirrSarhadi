@@ -24,7 +24,7 @@ These collections are for code review. They intentionally omit application confi
 
 ## What the screenshots demonstrate
 
-Screenshots show actual source interfaces, with individual captions identifying isolated component previews, synthetic API fixtures and existing repository captures. They do not represent live customer records or measured business results. The smart-home image shows the initial editor and does not claim a successful AI analysis.
+Screenshots show actual source interfaces, with individual captions identifying isolated component previews, synthetic API fixtures and existing repository captures. They do not represent live customer records or measured business results. The Smart Home AI gallery distinguishes the initial editor, a fictional plan-review workflow and an explicitly synthetic proposal response; it does not claim successful model inference.
 
 See [image provenance](../assets/screenshots/README.md) for the capture method and source of each image group. Rendering screenshots is not a substitute for application integration tests.
 
