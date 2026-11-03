@@ -1,0 +1,21 @@
+import type { Metadata,Viewport } from "next";
+import { connection } from "next/server";
+import {PersianValidation} from "@/components/persian-validation";
+import {OperationOverlay} from "@/components/operation-overlay";
+import {siteUrl,schoolName,schoolDescription as description,publicMetadata} from "@/lib/seo";
+import "@fontsource/vazirmatn/400.css";
+import "@fontsource/vazirmatn/500.css";
+import "@fontsource/vazirmatn/600.css";
+import "@fontsource/vazirmatn/700.css";
+import "@fontsource/vazirmatn/800.css";
+import "./globals.css";
+import "./file-controls.css";
+import "./pencil-loader.css";
+import "./data-exchange.css";
+import "./sms.css";
+import "./attendance-workflow.css";
+import "./student-file.css";
+import "./absence-review.css";
+export const metadata:Metadata={...publicMetadata("/",schoolName,description),metadataBase:new URL(siteUrl),title:{default:`مدرسه مدرسه نمونه کرمان | دبیرستان دخترانه مدرسه نمونه`,template:`%s | مدرسه مدرسه نمونه کرمان`},applicationName:schoolName,keywords:["مدرسه مدرسه نمونه","مدرسه مدرسه نمونه کرمان","مدرسه دخترانه مدرسه نمونه کرمان","دبیرستان دخترانه مدرسه نمونه کرمان"],authors:[{name:schoolName}],creator:schoolName,publisher:schoolName,verification:{google:process.env.GOOGLE_SITE_VERIFICATION||undefined},icons:{icon:"/logo.png",apple:"/logo.png"},robots:{index:true,follow:true,googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}}};
+export const viewport:Viewport={themeColor:"#29245f",colorScheme:"light"};
+export default async function Layout({children}:{children:React.ReactNode}){await connection();const structuredData={"@context":"https://schema.org","@type":"HighSchool","@id":siteUrl+"/#school",name:schoolName,alternateName:["مدرسه مدرسه نمونه","مدرسه مدرسه نمونه کرمان","دبیرستان دخترانه دوره دوم متوسطه نظری مدرسه نمونه"],url:siteUrl,logo:new URL("/logo.png",siteUrl).toString(),address:{"@type":"PostalAddress",addressLocality:"کرمان",addressRegion:"کرمان",addressCountry:"IR"},inLanguage:"fa-IR"};return <html lang="fa" dir="rtl" data-scroll-behavior="smooth"><body><PersianValidation/><OperationOverlay/><a className="skip-link" href="#main-content">پرش به محتوای اصلی</a>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData).replace(/</g,"\\u003c")}}/></body></html>}

@@ -2,55 +2,80 @@
   "origin": "AmirrSarhadi/kerman.cars",
   "source_commit": "94be0ec48e42a85680dc2b22270169e976642ac1",
   "kind": "selected complete source files for reading; incomplete application",
-  "modifications": "none; byte-for-byte copies",
+  "modifications": "Original files retained unless an entry explicitly records identity sanitization; hashes distinguish source and published content.",
   "files": [
     {
-      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminResourceForm.jsx",
-      "sha256": "a6dac670bea4899228bf6b659614baf7648bce3240203afda48203bf7de15d03"
+      "path": "backend/cars/models.py",
+      "sha256": "f2b3e942b1e4473893188abef589ed295b337bbe1a31581baa011e8d449fffe6",
+      "source_sha256": "f2b3e942b1e4473893188abef589ed295b337bbe1a31581baa011e8d449fffe6"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/components/admin/ListingReviewHistory.jsx",
-      "sha256": "93da7441b80bf986dbc215f38a98cee17e1a86d133a96a07b8274d91b4d5ccef"
+      "path": "backend/cars/serializers.py",
+      "sha256": "448fbb1f21b7836fff14704597ed39d6daa2539c93e56adf1a30f2abcb002f2f",
+      "source_sha256": "448fbb1f21b7836fff14704597ed39d6daa2539c93e56adf1a30f2abcb002f2f"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminTable.jsx",
-      "sha256": "1631190f9cf9dfa66bd8f1aed152da33519e9c7e3ccd3d05b27404c8b5457dde"
+      "path": "backend/cars/urls.py",
+      "source_sha256": "25160b4d2792106cbb8f51834a8123655802ec5b32e53470ffc11ddb0bb1c120",
+      "sha256": "25160b4d2792106cbb8f51834a8123655802ec5b32e53470ffc11ddb0bb1c120"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminListShell.jsx",
-      "sha256": "10f93f267508f4da27443fa26f9e0b2cceaaad40cab7b5fcc9821bc6aea298eb"
+      "path": "backend/cars/views.py",
+      "source_sha256": "542ef5cfefee0fbb534602980db2483d57617450f1e0cc81bbb15f01783f232b",
+      "sha256": "542ef5cfefee0fbb534602980db2483d57617450f1e0cc81bbb15f01783f232b"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminActionDialog.jsx",
-      "sha256": "d8f87b8b5c77154405cb2d3fcb3bd61dfb11406e8f7f15c92b8e098c9bc9bdda"
+      "path": "backend/dealers/models.py",
+      "sha256": "563734a765db00f804e87c9317abe597df00e1e0e103902f690aac738910f404",
+      "source_sha256": "563734a765db00f804e87c9317abe597df00e1e0e103902f690aac738910f404"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/features/listings/listingForm.js",
-      "sha256": "9d20ebb738d4e12123c8fb7ee325c4239ff52d94ff7fa1abc0d36a6969d03ee9"
+      "path": "backend/dealers/serializers.py",
+      "sha256": "0c58dd9cbdd12f99e60e8da07a98cf73319a7e057e71e7af67c825da77de127c",
+      "source_sha256": "0c58dd9cbdd12f99e60e8da07a98cf73319a7e057e71e7af67c825da77de127c"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/services/comparisonData.js",
-      "sha256": "8cf1bf0d63ff901e72e63fe39b113caf1447e1cd55e198ee640d328a81b02185"
+      "path": "backend/engagement/models.py",
+      "sha256": "c36cc16b61011f21c1880f0d77d0ccfbfd55d1c327ac3eddffc13ef554aba0af",
+      "source_sha256": "c36cc16b61011f21c1880f0d77d0ccfbfd55d1c327ac3eddffc13ef554aba0af"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/services/listingData.js",
-      "sha256": "11bc0156b2974cce70d30169cfb745744c50a5239b73af11eca4600e8a07c4fb"
+      "path": "backend/engagement/serializers.py",
+      "sha256": "e62534f81451bbc483b146f42eafb6e90fe40779e0c5e37cf6c0cabb6fe5af4b",
+      "source_sha256": "e62534f81451bbc483b146f42eafb6e90fe40779e0c5e37cf6c0cabb6fe5af4b"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/services/savedSearchData.js",
-      "sha256": "29cf84196c88f2452c5a266c0027339fe6c0487002d2b195437bad9a44360028"
+      "path": "backend/homepage/models.py",
+      "sha256": "bf93846b934598a05cb7bf1466345779081645998764d7313d9ba8486ffbc588",
+      "source_sha256": "bf93846b934598a05cb7bf1466345779081645998764d7313d9ba8486ffbc588"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/services/dealerData.js",
-      "sha256": "0526e1d2072d9b922c11b18f11ba3a5a417442f836dec1df392411fa5563ca89"
+      "path": "backend/homepage/serializers.py",
+      "sha256": "95662788124944a3cab93a8b415e3731d2760b1172c1a219e662761307fb7934",
+      "source_sha256": "95662788124944a3cab93a8b415e3731d2760b1172c1a219e662761307fb7934"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/services/activityData.js",
-      "sha256": "dd952b54eb528863d1b720f607425d38980ad1954d3a5ab7346636d45e587a0b"
+      "path": "backend/homepage/urls.py",
+      "source_sha256": "ed6b92f58840a70d2d08f3279c4c8c429144121f348d6dde545e7027e8bbeede",
+      "sha256": "ed6b92f58840a70d2d08f3279c4c8c429144121f348d6dde545e7027e8bbeede"
     },
     {
-      "path": "frontend/kerman-cars-frontend/src/services/adminLabels.js",
-      "sha256": "f4d516f466d604e3f883ee41b29d325174dde44fdb228948b8106c0f3fbb6435"
+      "path": "backend/homepage/views.py",
+      "source_sha256": "aa297f912e1b539d1c1b6f3bb6388b695f8bed81c6b8ebd84ee3ce80a76dba5f",
+      "sha256": "aa297f912e1b539d1c1b6f3bb6388b695f8bed81c6b8ebd84ee3ce80a76dba5f"
+    },
+    {
+      "path": "backend/kermancars/pagination.py",
+      "sha256": "2f9b70763cf6b917d6d845bd8416136081a9d758656dcb3243cf867a59f9f615",
+      "source_sha256": "2f9b70763cf6b917d6d845bd8416136081a9d758656dcb3243cf867a59f9f615"
+    },
+    {
+      "path": "backend/listings/filter_queryset.py",
+      "sha256": "1c294e3a404b43595350c2057faaee9404a2574aba3f35e49fba021d55754392"
+    },
+    {
+      "path": "backend/listings/filters.py",
+      "sha256": "429d38ea181aafb54fa50e27832537a1bf1d66d063a9a459c4685f57e9625245"
     },
     {
       "path": "backend/listings/models.py",
@@ -61,16 +86,942 @@
       "sha256": "dff0c7a8a1fff6f37cd2aabbd7115520ed3fc40e95b56d6854863b0970f9e827"
     },
     {
-      "path": "backend/listings/filters.py",
-      "sha256": "429d38ea181aafb54fa50e27832537a1bf1d66d063a9a459c4685f57e9625245"
-    },
-    {
-      "path": "backend/listings/filter_queryset.py",
-      "sha256": "1c294e3a404b43595350c2057faaee9404a2574aba3f35e49fba021d55754392"
-    },
-    {
       "path": "backend/listings/validators.py",
       "sha256": "4c567f58b0cad9238c3828c42a878567538e3c1622b176ea475fe1642f880bbd"
+    },
+    {
+      "path": "backend/locations/models.py",
+      "sha256": "9b6eb8401f3532266320bce1de1964424e38dce36ba361959f1d84e16e42eddb",
+      "source_sha256": "9b6eb8401f3532266320bce1de1964424e38dce36ba361959f1d84e16e42eddb"
+    },
+    {
+      "path": "backend/locations/serializers.py",
+      "sha256": "35580ebbe60eed5f03794fbd1a034d31a1c2e1824fcea3ccb932d9a0691be895",
+      "source_sha256": "35580ebbe60eed5f03794fbd1a034d31a1c2e1824fcea3ccb932d9a0691be895"
+    },
+    {
+      "path": "backend/locations/urls.py",
+      "source_sha256": "752b2b272baa405e96c27969e13fd6f4c0a37485793a84a962ec2841125fd254",
+      "sha256": "752b2b272baa405e96c27969e13fd6f4c0a37485793a84a962ec2841125fd254"
+    },
+    {
+      "path": "backend/locations/views.py",
+      "source_sha256": "7d62c547fb4fbf1cac88a76e28594abd6b2729f5beb236f2b01e2cc5b330ef4f",
+      "sha256": "7d62c547fb4fbf1cac88a76e28594abd6b2729f5beb236f2b01e2cc5b330ef4f"
+    },
+    {
+      "path": "backend/management_api/models.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "backend/management_api/serializers.py",
+      "sha256": "d9a426fb17029394318fdbfc0c7e6ff92b1e1e224e1ce553e087108eb9c43e1a",
+      "source_sha256": "d9a426fb17029394318fdbfc0c7e6ff92b1e1e224e1ce553e087108eb9c43e1a"
+    },
+    {
+      "path": "backend/moderation/models.py",
+      "sha256": "c1bad2ac55c0bda65b4b269a23c44865b01da0e088b55f7859daf58244071e62",
+      "source_sha256": "c1bad2ac55c0bda65b4b269a23c44865b01da0e088b55f7859daf58244071e62"
+    },
+    {
+      "path": "backend/moderation/serializers.py",
+      "sha256": "a2e2aad5d6af96ab069fa5caf19d8570ed9502e5af8cc91f13a911dfbacc9cde",
+      "source_sha256": "a2e2aad5d6af96ab069fa5caf19d8570ed9502e5af8cc91f13a911dfbacc9cde"
+    },
+    {
+      "path": "backend/notifications/models.py",
+      "sha256": "16d62cd3c393d6cf6a4d06f112419bfa7c63a1912bb95de4428fee6868a2c219",
+      "source_sha256": "16d62cd3c393d6cf6a4d06f112419bfa7c63a1912bb95de4428fee6868a2c219"
+    },
+    {
+      "path": "backend/notifications/serializers.py",
+      "sha256": "e5de41e67ed47bef541ea7cfda80a2fb5ddcd49304c483915972a133f3c3d4b9",
+      "source_sha256": "e5de41e67ed47bef541ea7cfda80a2fb5ddcd49304c483915972a133f3c3d4b9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/App.css",
+      "sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+      "source_sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/App.jsx",
+      "sha256": "29ff0944a5650e46a19809b451d6fe0d7a3bdbe7f8d6c0a86edf16350a121009",
+      "source_sha256": "29ff0944a5650e46a19809b451d6fe0d7a3bdbe7f8d6c0a86edf16350a121009"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/_mixins.scss",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/_reset.scss",
+      "sha256": "b1052b8cd8fc69a037c9f295aeb90df5b60242f16ac61b6c6ae37c4a2ef2714b",
+      "source_sha256": "b1052b8cd8fc69a037c9f295aeb90df5b60242f16ac61b6c6ae37c4a2ef2714b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/_utilities.scss",
+      "sha256": "13599abee4d3b2f057052d0aa17b19cb87c104716bd3d0f21e57f035fc3f0f11",
+      "source_sha256": "13599abee4d3b2f057052d0aa17b19cb87c104716bd3d0f21e57f035fc3f0f11"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/_variables.scss",
+      "sha256": "64848048416e0117343d9d8db4fd000187f4d834f7380ae8dc67a5507b8aed60",
+      "source_sha256": "64848048416e0117343d9d8db4fd000187f4d834f7380ae8dc67a5507b8aed60"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/_workspace.scss",
+      "sha256": "00199161605f0e4ba9e3feae0612d2bf46e8eb7e4c2fdbf01e508d8a69d046d4",
+      "source_sha256": "00199161605f0e4ba9e3feae0612d2bf46e8eb7e4c2fdbf01e508d8a69d046d4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/bootstrap-custom.scss",
+      "sha256": "ef2d6fb0f2124f64e58bad7ca02721c80c190546c6705e56650075c40c25b459",
+      "source_sha256": "ef2d6fb0f2124f64e58bad7ca02721c80c190546c6705e56650075c40c25b459"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/assets/styles/main.scss",
+      "sha256": "a050fcd24acc8d9ce0b26fbdcbc3a819d8eb4ed0f2f74788445b10ef64309199",
+      "source_sha256": "a050fcd24acc8d9ce0b26fbdcbc3a819d8eb4ed0f2f74788445b10ef64309199"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/activity/NotificationLink.jsx",
+      "sha256": "53ab0389891b5e9c6bf073787f2fbdb28093039323dd56ac038ce3c87ed2cae7",
+      "source_sha256": "53ab0389891b5e9c6bf073787f2fbdb28093039323dd56ac038ce3c87ed2cae7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/activity/NotificationLink.scss",
+      "sha256": "833627952aa13509b1ab1556575e7e5b77cec9210a9d8761dfd718dee8d1a762",
+      "source_sha256": "833627952aa13509b1ab1556575e7e5b77cec9210a9d8761dfd718dee8d1a762"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminActionDialog.jsx",
+      "sha256": "d8f87b8b5c77154405cb2d3fcb3bd61dfb11406e8f7f15c92b8e098c9bc9bdda"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminListShell.jsx",
+      "sha256": "10f93f267508f4da27443fa26f9e0b2cceaaad40cab7b5fcc9821bc6aea298eb"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminResourceForm.jsx",
+      "sha256": "a6dac670bea4899228bf6b659614baf7648bce3240203afda48203bf7de15d03"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/admin/AdminTable.jsx",
+      "sha256": "1631190f9cf9dfa66bd8f1aed152da33519e9c7e3ccd3d05b27404c8b5457dde"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/admin/ListingReviewHistory.jsx",
+      "sha256": "93da7441b80bf986dbc215f38a98cee17e1a86d133a96a07b8274d91b4d5ccef"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/comparison/Comparison.scss",
+      "sha256": "d527deb5c27a444ac965fbd59def847e473fc0db6b9390739ad7d9a7cbaaacb2",
+      "source_sha256": "d527deb5c27a444ac965fbd59def847e473fc0db6b9390739ad7d9a7cbaaacb2"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/comparison/ComparisonButton.jsx",
+      "sha256": "580f217677d4da1ae8967c3f146b76ad559d408ca0e3eb2e6fc8dc8f621ea14b",
+      "source_sha256": "580f217677d4da1ae8967c3f146b76ad559d408ca0e3eb2e6fc8dc8f621ea14b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/comparison/ComparisonTray.jsx",
+      "sha256": "c4dfde0fa4bab7c9373e23e892ebd6e9bf29ea7427712fc3faaede2ab9e28e47",
+      "source_sha256": "c4dfde0fa4bab7c9373e23e892ebd6e9bf29ea7427712fc3faaede2ab9e28e47"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/dealer/DealerMetrics.jsx",
+      "sha256": "6254493afc0e2b80bd3a885d647e51b4e59f1ca908af14e15f2a8f4870ce810a",
+      "source_sha256": "6254493afc0e2b80bd3a885d647e51b4e59f1ca908af14e15f2a8f4870ce810a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/dealer/DealerProfileForm.jsx",
+      "sha256": "4fb726c284f63a35a5ec7f9a7a0cd53c98399f0617a96094e6cf940306380ab3",
+      "source_sha256": "4fb726c284f63a35a5ec7f9a7a0cd53c98399f0617a96094e6cf940306380ab3"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/dealer/DealerProfileForm.scss",
+      "sha256": "6973afa8c5208b1836e1d298076e3e6a666d62293792e0db059b09cc47f20174",
+      "source_sha256": "6973afa8c5208b1836e1d298076e3e6a666d62293792e0db059b09cc47f20174"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/forms/CitySelect.jsx",
+      "sha256": "ec9dde80f3f5961ee6195118834e298116dd14b3ff70f4338db7b8bbb46c99e2",
+      "source_sha256": "ec9dde80f3f5961ee6195118834e298116dd14b3ff70f4338db7b8bbb46c99e2"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/home/ArticleCard.jsx",
+      "sha256": "649df96eb69cda2edb42dd611321ac776482f56ea95bfd46ff608d369a689dd6",
+      "source_sha256": "649df96eb69cda2edb42dd611321ac776482f56ea95bfd46ff608d369a689dd6"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/home/HomeBrandStory.jsx",
+      "sha256": "4468fd60768ea6738737b1482ac1bbf1251d4f356429d2ca4ce5c10fee3369fb",
+      "source_sha256": "4468fd60768ea6738737b1482ac1bbf1251d4f356429d2ca4ce5c10fee3369fb"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/home/HomeEditorial.scss",
+      "sha256": "7f72374bed7e18614744dd2cc2bae91c9d48285123e40c41865fdf9aa1bfe64a",
+      "source_sha256": "7f72374bed7e18614744dd2cc2bae91c9d48285123e40c41865fdf9aa1bfe64a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/home/HomeFAQ.jsx",
+      "sha256": "b1a5c4000232725bb250c75dacc08125353ac22c982e5167bac73a0d7b17ecd5",
+      "source_sha256": "b1a5c4000232725bb250c75dacc08125353ac22c982e5167bac73a0d7b17ecd5"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/home/HomeJournal.jsx",
+      "sha256": "004c5e0a5dbfcfda0e809e16108b53b1158a9ac52fd36466f22b69a2bc434503",
+      "source_sha256": "004c5e0a5dbfcfda0e809e16108b53b1158a9ac52fd36466f22b69a2bc434503"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/layout/MobileBottomNav.jsx",
+      "sha256": "23a809024bb5bcd7a78be272b0585f1101d8f285812ad6a634ceef4addf5a9c2",
+      "source_sha256": "23a809024bb5bcd7a78be272b0585f1101d8f285812ad6a634ceef4addf5a9c2"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/layout/MobileBottomNav.scss",
+      "sha256": "665d7813114aa031df2c69e5b32550c4a4c013024c7444db03e4c1481d747c8e",
+      "source_sha256": "665d7813114aa031df2c69e5b32550c4a4c013024c7444db03e4c1481d747c8e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/layout/PublicFooter.jsx",
+      "sha256": "8528e6193863c3df6e00d3fdd95c1c1f91406a26be40e1b9d81d774852a511fa",
+      "source_sha256": "8528e6193863c3df6e00d3fdd95c1c1f91406a26be40e1b9d81d774852a511fa"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/layout/PublicFooter.scss",
+      "sha256": "2f22653e20fca34c3b13bf232f6fd256699d4c4fc587bcb89ecd51456c597cba",
+      "source_sha256": "2f22653e20fca34c3b13bf232f6fd256699d4c4fc587bcb89ecd51456c597cba"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/layout/PublicHeader.jsx",
+      "sha256": "a960a80e4bdfcc9103ded924afb25bdd5bdd1e21d343ea84f950511ea7d8855b",
+      "source_sha256": "a960a80e4bdfcc9103ded924afb25bdd5bdd1e21d343ea84f950511ea7d8855b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/layout/PublicHeader.scss",
+      "sha256": "8ffa0d94f11d8c5403ae5a43b7d1632132073e77b2e696fd42c542d0c2888ce2",
+      "source_sha256": "8ffa0d94f11d8c5403ae5a43b7d1632132073e77b2e696fd42c542d0c2888ce2"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/BrandPicker.jsx",
+      "sha256": "550c3d49e0da9c5f873a16957441c49fd9c96d8c7389cc53fa9e82b42cbaf2b6",
+      "source_sha256": "550c3d49e0da9c5f873a16957441c49fd9c96d8c7389cc53fa9e82b42cbaf2b6"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/BrandPicker.scss",
+      "sha256": "f0debd4a783ac2dfea63d2c154ab5ce0f18328462b1e9e8d90026aeb1b9c93ed",
+      "source_sha256": "f0debd4a783ac2dfea63d2c154ab5ce0f18328462b1e9e8d90026aeb1b9c93ed"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/ListingCard.jsx",
+      "sha256": "c41d5e8af520c7954dd16a43b7f6b25e8afb86915187f3be2a81ffcc8c3839da",
+      "source_sha256": "c41d5e8af520c7954dd16a43b7f6b25e8afb86915187f3be2a81ffcc8c3839da"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/ListingCard.scss",
+      "sha256": "3e3a70178108e26d6afa56392117dad36c18b450b087934869f5a65a23e0ca32",
+      "source_sha256": "3e3a70178108e26d6afa56392117dad36c18b450b087934869f5a65a23e0ca32"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/ListingFilters.jsx",
+      "sha256": "a66b724e8617a49d218c10f43f9c07f4a778ccd90b94b877b8f4f72c79578e07",
+      "source_sha256": "a66b724e8617a49d218c10f43f9c07f4a778ccd90b94b877b8f4f72c79578e07"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/ListingFilters.scss",
+      "sha256": "a3a8cba764024087a47535e4222105c50ce4f046fe42137576acce17953633e0",
+      "source_sha256": "a3a8cba764024087a47535e4222105c50ce4f046fe42137576acce17953633e0"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/listing/ReportListing.jsx",
+      "sha256": "eac0bb45f430c6f589ffadf1cabd9840365253e44027254e045d21d3aaa38642",
+      "source_sha256": "eac0bb45f430c6f589ffadf1cabd9840365253e44027254e045d21d3aaa38642"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/public/ContactDetails.jsx",
+      "sha256": "d9c0f6ef5e878613af3ae8d914195373e827943c365eb9cd9bfb51e58cb53ca3",
+      "source_sha256": "d9c0f6ef5e878613af3ae8d914195373e827943c365eb9cd9bfb51e58cb53ca3"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/routing/PageBoundary.jsx",
+      "sha256": "e8aeba034ea6514e12fc0185703f7e70dff7fb3352e37d8d28a298e279b9ff90",
+      "source_sha256": "e8aeba034ea6514e12fc0185703f7e70dff7fb3352e37d8d28a298e279b9ff90"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/shared/ConfirmDialog.jsx",
+      "sha256": "d3342000ea20c182e43dd02b2d938f34e06e066a113ce49e50a533177a42e027",
+      "source_sha256": "d3342000ea20c182e43dd02b2d938f34e06e066a113ce49e50a533177a42e027"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/shared/Pagination.jsx",
+      "sha256": "2075ef9c9f9ddc55912fba6026713adc4cc6582af6c80465b751375444bd2d0c",
+      "source_sha256": "2075ef9c9f9ddc55912fba6026713adc4cc6582af6c80465b751375444bd2d0c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/shared/QueryStatus.jsx",
+      "sha256": "9268ab6555be5d55ce28ffa611b56e81059018948f2313c07663e7366eb47391",
+      "source_sha256": "9268ab6555be5d55ce28ffa611b56e81059018948f2313c07663e7366eb47391"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/shared/QueryStatus.scss",
+      "sha256": "79f18b13189184c07e50901b62dfdb9e8fb0e2e490f69b7ac8d9a2757f6813a7",
+      "source_sha256": "79f18b13189184c07e50901b62dfdb9e8fb0e2e490f69b7ac8d9a2757f6813a7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/theme/ThemeToggle.jsx",
+      "sha256": "9826cbf49f7b77b55f01130ea700417f309d42c3518e6661b01ad84b83f5fec0",
+      "source_sha256": "9826cbf49f7b77b55f01130ea700417f309d42c3518e6661b01ad84b83f5fec0"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/theme/ThemeToggle.scss",
+      "sha256": "7e3bc420a3df241cf6b8cfcea00f820eca19346fd45750c7cbb813f3c2c40b2a",
+      "source_sha256": "7e3bc420a3df241cf6b8cfcea00f820eca19346fd45750c7cbb813f3c2c40b2a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/workspace/ActionQueue.jsx",
+      "sha256": "32e58fcbf261148e398471ae052a319fa59a8b3a29bb647bce943992907d53bd",
+      "source_sha256": "32e58fcbf261148e398471ae052a319fa59a8b3a29bb647bce943992907d53bd"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/workspace/ActionQueue.scss",
+      "sha256": "19753b3a045f23307924a01f6a0c03dac4c6dfb0a847571871e4e248caea80ab",
+      "source_sha256": "19753b3a045f23307924a01f6a0c03dac4c6dfb0a847571871e4e248caea80ab"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/components/workspace/OwnerActionQueue.jsx",
+      "sha256": "8e90ecc68210148868af16ec23f1ce300c531304f0cbe5db4f0d65eba027a0b4",
+      "source_sha256": "8e90ecc68210148868af16ec23f1ce300c531304f0cbe5db4f0d65eba027a0b4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/features/dealers/dealerSchema.js",
+      "sha256": "532bfe1d22473bead6f49dcf4c6b38d7b8dfbb6e9073781e08ac5584818e325b",
+      "source_sha256": "532bfe1d22473bead6f49dcf4c6b38d7b8dfbb6e9073781e08ac5584818e325b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/features/listings/listingForm.js",
+      "sha256": "9d20ebb738d4e12123c8fb7ee325c4239ff52d94ff7fa1abc0d36a6969d03ee9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useAdminList.js",
+      "sha256": "0fd376c103e31417e730461d5c7dd84d2db9f20911cd72bc03e8fc80fd2d4bc9",
+      "source_sha256": "0fd376c103e31417e730461d5c7dd84d2db9f20911cd72bc03e8fc80fd2d4bc9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useCatalog.js",
+      "sha256": "defaf18a2ef2b44c2b2ec29921c9e93b0971ac3ff8a67440715fba111b92fca7",
+      "source_sha256": "defaf18a2ef2b44c2b2ec29921c9e93b0971ac3ff8a67440715fba111b92fca7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useFavorite.js",
+      "sha256": "ed9130ae96306d2a111c9d9f37a91ae9856812e637b64e89fff16d19941d633d",
+      "source_sha256": "ed9130ae96306d2a111c9d9f37a91ae9856812e637b64e89fff16d19941d633d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useHomepage.js",
+      "sha256": "91e5bed62c74e203aa0c164a64778eed76a026ad90af8ef70a0bbb483e71be3d",
+      "source_sha256": "91e5bed62c74e203aa0c164a64778eed76a026ad90af8ef70a0bbb483e71be3d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useOwnerDealer.js",
+      "sha256": "ec283a1d5a314c61258f0721759e596f728f8a82b6262132ecb95a673fc8826d",
+      "source_sha256": "ec283a1d5a314c61258f0721759e596f728f8a82b6262132ecb95a673fc8826d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/usePageMetadata.js",
+      "sha256": "ebd80869ae5eb19c5fa976b386b9d94e0d935528b02b2f48ca21122a7d365dca",
+      "source_sha256": "ebd80869ae5eb19c5fa976b386b9d94e0d935528b02b2f48ca21122a7d365dca"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useUnreadNotifications.js",
+      "sha256": "7fd26d50c5936cab92bc8cd5a3fb522f937079637940422efec685ff58fec994",
+      "source_sha256": "7fd26d50c5936cab92bc8cd5a3fb522f937079637940422efec685ff58fec994"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useUnsavedGuard.js",
+      "sha256": "abb3f234463ea44c1fd4dcaeac972a26666bdc4b27ab2903475d41c6b8cc30dc",
+      "source_sha256": "abb3f234463ea44c1fd4dcaeac972a26666bdc4b27ab2903475d41c6b8cc30dc"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/hooks/useWorkspaceDrawer.js",
+      "sha256": "362d2b40268d3fff4db7d3ad2f30cba972d430a62b532967a90f403606d21953",
+      "source_sha256": "362d2b40268d3fff4db7d3ad2f30cba972d430a62b532967a90f403606d21953"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/index.css",
+      "sha256": "fda85fffe7f006d822fb9ab4e774b9e2b8fadffa73a3806b038dc0b8456cbbeb",
+      "source_sha256": "fda85fffe7f006d822fb9ab4e774b9e2b8fadffa73a3806b038dc0b8456cbbeb"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/AdminLayout.jsx",
+      "sha256": "4b9ef501b5a93adcea8f077100b1693f639614d07055ca76ca587fdc6c7bdbb4",
+      "source_sha256": "4b9ef501b5a93adcea8f077100b1693f639614d07055ca76ca587fdc6c7bdbb4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/AdminLayout.scss",
+      "sha256": "834da25abebf9414743c2bfd281b69605f6b953bc6ba2a936e13ba5679376a6d",
+      "source_sha256": "834da25abebf9414743c2bfd281b69605f6b953bc6ba2a936e13ba5679376a6d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/AuthLayout.jsx",
+      "sha256": "c48a255b88e336936f46ed4751e02f4c8ef311b5dd72d4c8f3d6ef01dd2ede2c",
+      "source_sha256": "c48a255b88e336936f46ed4751e02f4c8ef311b5dd72d4c8f3d6ef01dd2ede2c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/AuthLayout.scss",
+      "sha256": "8796da5098cb46dfc22020ef94bcfa4626ae476240336471a1911a2b31f72a13",
+      "source_sha256": "8796da5098cb46dfc22020ef94bcfa4626ae476240336471a1911a2b31f72a13"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/DashboardLayout.jsx",
+      "sha256": "804a55d29aad026d867c2fc155282322861f5646284866c58ab9d20b349e721b",
+      "source_sha256": "804a55d29aad026d867c2fc155282322861f5646284866c58ab9d20b349e721b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/DashboardLayout.scss",
+      "sha256": "834da25abebf9414743c2bfd281b69605f6b953bc6ba2a936e13ba5679376a6d",
+      "source_sha256": "834da25abebf9414743c2bfd281b69605f6b953bc6ba2a936e13ba5679376a6d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/DealerLayout.jsx",
+      "sha256": "67e56c5d4ec14d7c26192ed37dd3d9e4ed6a017ff1f8de1d053c00618086661f",
+      "source_sha256": "67e56c5d4ec14d7c26192ed37dd3d9e4ed6a017ff1f8de1d053c00618086661f"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/DealerLayout.scss",
+      "sha256": "834da25abebf9414743c2bfd281b69605f6b953bc6ba2a936e13ba5679376a6d",
+      "source_sha256": "834da25abebf9414743c2bfd281b69605f6b953bc6ba2a936e13ba5679376a6d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/layouts/PublicLayout.jsx",
+      "sha256": "80fdc25b61a6681d6616a36e009b4df25f4c06cf1ca9035a4b98c62c87a0f825",
+      "source_sha256": "80fdc25b61a6681d6616a36e009b4df25f4c06cf1ca9035a4b98c62c87a0f825"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/main.jsx",
+      "sha256": "a24171dca6a33f6272ed831007fe55d21e66e8af8d5518f3dcb26e6de112c5c0",
+      "source_sha256": "a24171dca6a33f6272ed831007fe55d21e66e8af8d5518f3dcb26e6de112c5c0"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminDashboardPage.jsx",
+      "sha256": "a49dcb80f2d1575f4ee3b65125f6c40a9d0d3deb9079e2f958f9d181e4b58329",
+      "source_sha256": "a49dcb80f2d1575f4ee3b65125f6c40a9d0d3deb9079e2f958f9d181e4b58329"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminDashboardPage.scss",
+      "sha256": "4997009fc5e530b34a509266d2988b389bd0a5c048cc9f83f67bf2ddf9ce43f4",
+      "source_sha256": "4997009fc5e530b34a509266d2988b389bd0a5c048cc9f83f67bf2ddf9ce43f4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminDealersPage.jsx",
+      "sha256": "4ea10843d732d474598516a048aaca5f33ff0291b57559deb79068e851cfc796",
+      "source_sha256": "4ea10843d732d474598516a048aaca5f33ff0291b57559deb79068e851cfc796"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminDealersPage.scss",
+      "sha256": "71767d1dd3acdfdd1fe1c93cdf4266b5441df7c0b8678b19c08c8117ab46e8ce",
+      "source_sha256": "71767d1dd3acdfdd1fe1c93cdf4266b5441df7c0b8678b19c08c8117ab46e8ce"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminListingsPage.jsx",
+      "sha256": "904d36d6c7aa7290e6223a4875c72eeceeb3650681c8f14e1cdf3a3434b78171",
+      "source_sha256": "904d36d6c7aa7290e6223a4875c72eeceeb3650681c8f14e1cdf3a3434b78171"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminListingsPage.scss",
+      "sha256": "b47b536da0aa5271fb696c2bd08de176cc9235c651bf762b3d74b8f909253012",
+      "source_sha256": "b47b536da0aa5271fb696c2bd08de176cc9235c651bf762b3d74b8f909253012"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminPanel.scss",
+      "sha256": "e4a0b8ba27d9fe690ceb2872c095bf9437e335deb2ed93d308fb82b4751a44c5",
+      "source_sha256": "e4a0b8ba27d9fe690ceb2872c095bf9437e335deb2ed93d308fb82b4751a44c5"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminPlansPage.jsx",
+      "sha256": "cbf9cd073f70f59f8c22c3af35f5c47d960201e1fdb480957520bc03ff4dd650",
+      "source_sha256": "cbf9cd073f70f59f8c22c3af35f5c47d960201e1fdb480957520bc03ff4dd650"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminPlansPage.scss",
+      "sha256": "483848f3ed538788a508c1287832e55ee00e603ad0427528ef359942d4f3e52e",
+      "source_sha256": "483848f3ed538788a508c1287832e55ee00e603ad0427528ef359942d4f3e52e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminRecordPages.jsx",
+      "sha256": "c88d916a0c825201d8e5670b0588a06b88ac5fb35d400fcd3d584f047c9090e1",
+      "source_sha256": "c88d916a0c825201d8e5670b0588a06b88ac5fb35d400fcd3d584f047c9090e1"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+      "sha256": "42a337bbf98cf333d5d6570393c16d1073fa6f8cb7e4134fab426b49c6e53421",
+      "source_sha256": "42a337bbf98cf333d5d6570393c16d1073fa6f8cb7e4134fab426b49c6e53421"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminSettingsPage.jsx",
+      "sha256": "0e62efa52e5e5c4be30042648543e60e2705f3ce45780a6523689e175c31e2fe",
+      "source_sha256": "0e62efa52e5e5c4be30042648543e60e2705f3ce45780a6523689e175c31e2fe"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminSettingsPage.scss",
+      "sha256": "6b06217df73d014d23444f9ce9e69c608cb2adf489761bc6c0e1f41b523b10b6",
+      "source_sha256": "6b06217df73d014d23444f9ce9e69c608cb2adf489761bc6c0e1f41b523b10b6"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminUsersPage.jsx",
+      "sha256": "4d315130d27ba7c8f1618f7f77c42894f12e708d32ec95370132505170b91565",
+      "source_sha256": "4d315130d27ba7c8f1618f7f77c42894f12e708d32ec95370132505170b91565"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/admin/AdminUsersPage.scss",
+      "sha256": "e74a374d6b3ab8f0545c53df7c36b09731344a937d83464964c0baae1124dd95",
+      "source_sha256": "e74a374d6b3ab8f0545c53df7c36b09731344a937d83464964c0baae1124dd95"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/auth/AuthPages.scss",
+      "source_sha256": "da5844e611b4ef64aaf7f5cc6cc5b82eaf21865e5dbec5a53d8077d3d755dd4a",
+      "sha256": "da5844e611b4ef64aaf7f5cc6cc5b82eaf21865e5dbec5a53d8077d3d755dd4a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/auth/CompleteProfilePage.jsx",
+      "source_sha256": "08d61ea8e5c351766b88a399dd84cb47e44abeac7149ab876e52fae57195cfe7",
+      "sha256": "08d61ea8e5c351766b88a399dd84cb47e44abeac7149ab876e52fae57195cfe7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/auth/LoginPage.jsx",
+      "source_sha256": "c17a07a5bb0493394c96853bf00d96a356f977876bdb862686ac23c87bac6dfe",
+      "sha256": "e7b71193c746d55035ed1690e2a708d13c8b271b9a557346c7096b64f450dff8",
+      "sanitization": [
+        "literal phone placeholder replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/auth/VerifyOtpPage.jsx",
+      "source_sha256": "c7150f855862cbaf9d3ee6a46fde6b6ea59b705d6c108ccc172d962dda82bbd7",
+      "sha256": "c7150f855862cbaf9d3ee6a46fde6b6ea59b705d6c108ccc172d962dda82bbd7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/AccountActivity.scss",
+      "sha256": "219954407148c104d58096db33ca54bcd4cf0804884a05048f79c27194015d6c",
+      "source_sha256": "219954407148c104d58096db33ca54bcd4cf0804884a05048f79c27194015d6c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/DashboardHomePage.jsx",
+      "sha256": "29802f9dd31834a918d0e410c687867513fe9061b7595ef45d8f56f71b119828",
+      "source_sha256": "29802f9dd31834a918d0e410c687867513fe9061b7595ef45d8f56f71b119828"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/DashboardHomePage.scss",
+      "sha256": "75c851d9db2bb086049fc1aa6dbf55578b778d65b73c7af3968fc6b6d0b5eebb",
+      "source_sha256": "75c851d9db2bb086049fc1aa6dbf55578b778d65b73c7af3968fc6b6d0b5eebb"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/FavoritesPage.jsx",
+      "sha256": "0095efe7b9e3f507ad22d44090bd0ef339ad0ba119827b1d33329bf7471210b4",
+      "source_sha256": "0095efe7b9e3f507ad22d44090bd0ef339ad0ba119827b1d33329bf7471210b4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/FavoritesPage.scss",
+      "sha256": "f2ab74acb46609f20e7ef3de854b62b182b7b071d601a3f2b547c78db789fbc9",
+      "source_sha256": "f2ab74acb46609f20e7ef3de854b62b182b7b071d601a3f2b547c78db789fbc9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/MyListingsPage.jsx",
+      "sha256": "9a0bb39b9846604d5df552095e4708fbe7e4a592fb3a528f2f1a7ef577776d8c",
+      "source_sha256": "9a0bb39b9846604d5df552095e4708fbe7e4a592fb3a528f2f1a7ef577776d8c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/MyListingsPage.scss",
+      "sha256": "14a8b581a41f019d6d40b76d12888d9fdef9029168e5543fce51020af542805e",
+      "source_sha256": "14a8b581a41f019d6d40b76d12888d9fdef9029168e5543fce51020af542805e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/MyReportsPage.jsx",
+      "sha256": "8338c9c2a37ec5f169a3d0a519e8891b1791b81b9284372dc34407f31645c9b7",
+      "source_sha256": "8338c9c2a37ec5f169a3d0a519e8891b1791b81b9284372dc34407f31645c9b7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/NotificationsPage.jsx",
+      "sha256": "17cee8500c4f91165eb6da0b41c81f32f4dfec74a84028bb997151eb54731e47",
+      "source_sha256": "17cee8500c4f91165eb6da0b41c81f32f4dfec74a84028bb997151eb54731e47"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/ProfilePage.jsx",
+      "source_sha256": "92cdc85d0f85cf6843f81aa8fbe760a65bd8023d2880f07fda53f0a20a7bb200",
+      "sha256": "45494146e348262c258e2027d2ec04cc7db5f307ddc91061c68b6f33ffeeea86",
+      "sanitization": [
+        "literal phone placeholder replaced with neutral contact label"
+      ]
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/ProfilePage.scss",
+      "sha256": "63325c1f5a94100263bba5c5f15a1eec9f3af7845ecd231f10034f6495d712ae",
+      "source_sha256": "63325c1f5a94100263bba5c5f15a1eec9f3af7845ecd231f10034f6495d712ae"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/SavedSearchesPage.jsx",
+      "sha256": "2d354513797f912b5e93d6d55b1652973400ad91ca2c0c1a62b5908284f26fba",
+      "source_sha256": "2d354513797f912b5e93d6d55b1652973400ad91ca2c0c1a62b5908284f26fba"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/SessionsPage.jsx",
+      "sha256": "772d95d500a8b584ab70b4292473739ed666b859711b9ebb8426bbea40341d0a",
+      "source_sha256": "772d95d500a8b584ab70b4292473739ed666b859711b9ebb8426bbea40341d0a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dashboard/ViewHistoryPage.jsx",
+      "sha256": "5de8566b866836ce26849c01c8b2a7e0f3d3d88aea22a982fd41707030fb24e9",
+      "source_sha256": "5de8566b866836ce26849c01c8b2a7e0f3d3d88aea22a982fd41707030fb24e9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerAnalyticsPage.jsx",
+      "sha256": "0adbeb7a3fd95c57898df2a6a23900c3337c35060eb09f0bedcd291a6369548e",
+      "source_sha256": "0adbeb7a3fd95c57898df2a6a23900c3337c35060eb09f0bedcd291a6369548e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerAnalyticsPage.scss",
+      "sha256": "ef3203f456214bce60f7bebb461b9d64fef3e2474960b68b88a42e1ea27e06d0",
+      "source_sha256": "ef3203f456214bce60f7bebb461b9d64fef3e2474960b68b88a42e1ea27e06d0"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerCheckoutPage.jsx",
+      "sha256": "bf0c3e173ed1eb0c9b9e67b52fd8f5fdb840b28e174069c3b7aa39b692e45fff",
+      "source_sha256": "bf0c3e173ed1eb0c9b9e67b52fd8f5fdb840b28e174069c3b7aa39b692e45fff"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerCheckoutPage.scss",
+      "sha256": "530aee2ee685f15056f408dd54765669df163489b656fc11f466814c39f6696d",
+      "source_sha256": "530aee2ee685f15056f408dd54765669df163489b656fc11f466814c39f6696d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerDashboardPage.jsx",
+      "sha256": "74da781bc7be3c4bfc52de822306cae6912b2fb3c4213c4bdc705e1a8a730097",
+      "source_sha256": "74da781bc7be3c4bfc52de822306cae6912b2fb3c4213c4bdc705e1a8a730097"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerDashboardPage.scss",
+      "sha256": "edaf6a16bcfb3b96350f891d2172b20c62ae1168bfbf463314ba7b59676f3d78",
+      "source_sha256": "edaf6a16bcfb3b96350f891d2172b20c62ae1168bfbf463314ba7b59676f3d78"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerListingsPage.jsx",
+      "sha256": "bbbd63fe2d41620ef3dbac3d7a30ce166912fb13769a86dc9925a0cc03c7f9cd",
+      "source_sha256": "bbbd63fe2d41620ef3dbac3d7a30ce166912fb13769a86dc9925a0cc03c7f9cd"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerListingsPage.scss",
+      "sha256": "dc72667e6807591722a446ff24ecd64ec3ab90f29f6bc1e6be7a695dcf49ab4a",
+      "source_sha256": "dc72667e6807591722a446ff24ecd64ec3ab90f29f6bc1e6be7a695dcf49ab4a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerPlansPage.jsx",
+      "sha256": "eb9cfbc118ad2eb0a930470274906dfd155c7f29ef2b87b21b2b26d313258d8d",
+      "source_sha256": "eb9cfbc118ad2eb0a930470274906dfd155c7f29ef2b87b21b2b26d313258d8d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerPlansPage.scss",
+      "sha256": "cf847fc560bc452030bc1c4d9c87a67a08cb026d8da71d408af8b998bb6fd521",
+      "source_sha256": "cf847fc560bc452030bc1c4d9c87a67a08cb026d8da71d408af8b998bb6fd521"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerProfilePage.jsx",
+      "sha256": "1878a5bb07a3e59d8f3eb26137abec29ff8ed2cd93b51719fbfe204e9a622563",
+      "source_sha256": "1878a5bb07a3e59d8f3eb26137abec29ff8ed2cd93b51719fbfe204e9a622563"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerProfilePage.scss",
+      "sha256": "e1d6b33e3d58e0976f8bf25515e750f369fadbe860b954da3e8f6af9d87ceb74",
+      "source_sha256": "e1d6b33e3d58e0976f8bf25515e750f369fadbe860b954da3e8f6af9d87ceb74"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerRegistrationPage.jsx",
+      "sha256": "2428d76587be9735c6522254e18cbff8c45fe5e0151e05d508ef86b78ac3308a",
+      "source_sha256": "2428d76587be9735c6522254e18cbff8c45fe5e0151e05d508ef86b78ac3308a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerRegistrationPage.scss",
+      "sha256": "a7c052b6e9a26ee8751c9a60027b2af6cd663659860e0bd8d736f46c1f82d132",
+      "source_sha256": "a7c052b6e9a26ee8751c9a60027b2af6cd663659860e0bd8d736f46c1f82d132"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerStatusPage.jsx",
+      "sha256": "70f0c8f46de48fd3ce59034d7bfbb9ca0fcf97efdb3c9f06e3a68445c536b805",
+      "source_sha256": "70f0c8f46de48fd3ce59034d7bfbb9ca0fcf97efdb3c9f06e3a68445c536b805"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerStatusPage.scss",
+      "sha256": "d873122474c54ad2b441bba8ec207aaf7fd0f2b84011bc97baec3c9a4d5f9327",
+      "source_sha256": "d873122474c54ad2b441bba8ec207aaf7fd0f2b84011bc97baec3c9a4d5f9327"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerSubscriptionPage.jsx",
+      "sha256": "a6bf53b1452f8783dd41c3298d416788b5a30cbc180221d130a521ac1b7859d7",
+      "source_sha256": "a6bf53b1452f8783dd41c3298d416788b5a30cbc180221d130a521ac1b7859d7"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/dealer/DealerSubscriptionPage.scss",
+      "sha256": "92e9e5d8ada8770aec4837f2216b43092f4796bd352cd306267e4b7c8ef25aa3",
+      "source_sha256": "92e9e5d8ada8770aec4837f2216b43092f4796bd352cd306267e4b7c8ef25aa3"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/errors/NotFoundPage.jsx",
+      "sha256": "498cfa6d4e7f4a6b14afdc0688bafc937bc2aa97fd2a59136b555614aba9ad55",
+      "source_sha256": "498cfa6d4e7f4a6b14afdc0688bafc937bc2aa97fd2a59136b555614aba9ad55"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/listing/CreateListingPage.jsx",
+      "sha256": "d15d297398980e85deb7eb13852fafe7c6725898c68912e2386a8474caeca7b4",
+      "source_sha256": "d15d297398980e85deb7eb13852fafe7c6725898c68912e2386a8474caeca7b4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/listing/CreateListingPage.scss",
+      "sha256": "3be90affde05f70e3fc68855681cc3d81fe75da5797fb5d213cc7654002b96ea",
+      "source_sha256": "3be90affde05f70e3fc68855681cc3d81fe75da5797fb5d213cc7654002b96ea"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/ComparisonPage.jsx",
+      "sha256": "1aa4ad6ddfb6ca2de7f00f2a7b5d2f6684118b2a09a80bf758a0ec222923da95",
+      "source_sha256": "1aa4ad6ddfb6ca2de7f00f2a7b5d2f6684118b2a09a80bf758a0ec222923da95"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/DealerPublicPage.jsx",
+      "sha256": "d4c14d6b4e39e6867db006e0f88330ad5dd2ffccb77720c6d2b4020b28f13a24",
+      "source_sha256": "d4c14d6b4e39e6867db006e0f88330ad5dd2ffccb77720c6d2b4020b28f13a24"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/DealerPublicPage.scss",
+      "sha256": "409e66a6129876bcf9ca3d3ab10a62f696744710dd1a86459d36e370ad6f5c2e",
+      "source_sha256": "409e66a6129876bcf9ca3d3ab10a62f696744710dd1a86459d36e370ad6f5c2e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/DealersPage.jsx",
+      "sha256": "a247a328829288ef69568ff59a00466a77fdd5863bdec7db58e57d3d03eb2f98",
+      "source_sha256": "a247a328829288ef69568ff59a00466a77fdd5863bdec7db58e57d3d03eb2f98"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/DealersPage.scss",
+      "sha256": "dfcbab116b03fda9a37427a4cbb5b8541ca906f189b0aeba39123f23b3dc04a9",
+      "source_sha256": "dfcbab116b03fda9a37427a4cbb5b8541ca906f189b0aeba39123f23b3dc04a9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/HomePage.jsx",
+      "sha256": "4368970ccf95d4c6a6e0ec9053921c398bbb8ad817c92a5af842241e7fa7d9d2",
+      "source_sha256": "4368970ccf95d4c6a6e0ec9053921c398bbb8ad817c92a5af842241e7fa7d9d2"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/HomePage.scss",
+      "sha256": "a187629a3509591e84b7037ba59688a84b84f3908dd089c03ba787ea3b9407c4",
+      "source_sha256": "a187629a3509591e84b7037ba59688a84b84f3908dd089c03ba787ea3b9407c4"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/ListingDetailsPage.jsx",
+      "sha256": "9fb045b91223e137b5a3e5c76904f7578962e76e901e7cc185acf5dd517f8c4f",
+      "source_sha256": "9fb045b91223e137b5a3e5c76904f7578962e76e901e7cc185acf5dd517f8c4f"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/ListingDetailsPage.scss",
+      "sha256": "8526719ec99d2823b8872340a6ea6f246598d8b6b9e75fde3b075b1a2e85c25d",
+      "source_sha256": "8526719ec99d2823b8872340a6ea6f246598d8b6b9e75fde3b075b1a2e85c25d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/ListingsPage.jsx",
+      "sha256": "8202cac57cc5758bcffc51950057ba0cb10a8bb64b0cda890a4003f57c23882c",
+      "source_sha256": "8202cac57cc5758bcffc51950057ba0cb10a8bb64b0cda890a4003f57c23882c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/ListingsPage.scss",
+      "sha256": "eb8ae002768988650c3484528d13f3950945d34c1b62454da360cdf42854f52f",
+      "source_sha256": "eb8ae002768988650c3484528d13f3950945d34c1b62454da360cdf42854f52f"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/MagazinePage.jsx",
+      "sha256": "d36c049e870ee72b124a4ef53340b30346ae99446ca0e73c4202b1def09b982e",
+      "source_sha256": "d36c049e870ee72b124a4ef53340b30346ae99446ca0e73c4202b1def09b982e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/PublicInfoPage.jsx",
+      "sha256": "f3b8b0dd287ac1e34093d89df1155dda31e67d247ce113f18574fe6c457a6e82",
+      "source_sha256": "f3b8b0dd287ac1e34093d89df1155dda31e67d247ce113f18574fe6c457a6e82"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/pages/public/PublicInfoPage.scss",
+      "sha256": "d0d75002e55d30c2e4cb41a6c78bdb00823c234b0a3e87122f1497b27a96cfa3",
+      "source_sha256": "d0d75002e55d30c2e4cb41a6c78bdb00823c234b0a3e87122f1497b27a96cfa3"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/AdminRoute.jsx",
+      "sha256": "0e593b824d618b9ac7239de56adc61c0eac8370d657de4791fb61618a5a212a6",
+      "source_sha256": "0e593b824d618b9ac7239de56adc61c0eac8370d657de4791fb61618a5a212a6"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/AppRouter.jsx",
+      "sha256": "1d5408dc44fd00a619c8a7fff2ca20ef60db2b28fc22584668dcf90abcf42989",
+      "source_sha256": "1d5408dc44fd00a619c8a7fff2ca20ef60db2b28fc22584668dcf90abcf42989"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/DealerRoute.jsx",
+      "sha256": "efbdc99525f735c7487b4a68504704eb0c2018e7668c616fec1edc77f171eb22",
+      "source_sha256": "efbdc99525f735c7487b4a68504704eb0c2018e7668c616fec1edc77f171eb22"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/GuestRoute.jsx",
+      "sha256": "fd9481ce4ff2068e5becea13426d3425b7e522d94012d67348c7e74df258d8e9",
+      "source_sha256": "fd9481ce4ff2068e5becea13426d3425b7e522d94012d67348c7e74df258d8e9"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/ProfileCompletionRoute.jsx",
+      "sha256": "0de3249ab11314852f6dc65a7b41f19daad966aff25b6d004599bd445c29da00",
+      "source_sha256": "0de3249ab11314852f6dc65a7b41f19daad966aff25b6d004599bd445c29da00"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/ProtectedRoute.jsx",
+      "sha256": "c281a588ea3bad7b5683f0ee84c97933dcbb59f0480dabd4ff9f28c70ba4ec94",
+      "source_sha256": "c281a588ea3bad7b5683f0ee84c97933dcbb59f0480dabd4ff9f28c70ba4ec94"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/router/RoleRoute.jsx",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/activityData.js",
+      "sha256": "dd952b54eb528863d1b720f607425d38980ad1954d3a5ab7346636d45e587a0b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/activityService.js",
+      "sha256": "ac7755758aabacc0b11326a38550728cc4da885ac04e7f3b98caf91e37900135",
+      "source_sha256": "ac7755758aabacc0b11326a38550728cc4da885ac04e7f3b98caf91e37900135"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/adminLabels.js",
+      "sha256": "f4d516f466d604e3f883ee41b29d325174dde44fdb228948b8106c0f3fbb6435"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/adminRecords.js",
+      "sha256": "e15d7c8543b0687e738fe319a27424d47ace7c6392c09cabe66faa592ebb8dc1",
+      "source_sha256": "e15d7c8543b0687e738fe319a27424d47ace7c6392c09cabe66faa592ebb8dc1"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/adminResources.js",
+      "sha256": "5a33a6c3de2a524ab7b805c9ad675bf85f7c1547fa07b658fff618333ad6aa72",
+      "source_sha256": "5a33a6c3de2a524ab7b805c9ad675bf85f7c1547fa07b658fff618333ad6aa72"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/adminService.js",
+      "sha256": "54859f52dd1e3b3f980187eb67e8cd4fd2e2751239b6fe89e8c8fba92c474679",
+      "source_sha256": "54859f52dd1e3b3f980187eb67e8cd4fd2e2751239b6fe89e8c8fba92c474679"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/apiClient.js",
+      "sha256": "e83cb9006640260ab047903fabc07b82bee2579c210a7a3e2750f543f5f93061",
+      "source_sha256": "e83cb9006640260ab047903fabc07b82bee2579c210a7a3e2750f543f5f93061"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/catalogService.js",
+      "sha256": "2048f992f0a14235600079fac6d60de698ef9b3ba7a87eb89f0ded5f8491180a",
+      "source_sha256": "2048f992f0a14235600079fac6d60de698ef9b3ba7a87eb89f0ded5f8491180a"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/comparisonData.js",
+      "sha256": "8cf1bf0d63ff901e72e63fe39b113caf1447e1cd55e198ee640d328a81b02185"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/dealerData.js",
+      "sha256": "0526e1d2072d9b922c11b18f11ba3a5a417442f836dec1df392411fa5563ca89"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/dealerOwnerService.js",
+      "sha256": "b61b3d42de496439c4eb44f84e91023d0588db7f05202562effcca386b777629",
+      "source_sha256": "b61b3d42de496439c4eb44f84e91023d0588db7f05202562effcca386b777629"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/dealerProfileData.js",
+      "sha256": "4aa0b04a4a4c64fe2bf6be8d7f4ec7f2851f3ca41ef439fecf0cfff262ccb5e2",
+      "source_sha256": "4aa0b04a4a4c64fe2bf6be8d7f4ec7f2851f3ca41ef439fecf0cfff262ccb5e2"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/dealerService.js",
+      "sha256": "8e4127ec0701a000551e711e0eeb1ee15e513fbfe486022efd59e569a0cfeab6",
+      "source_sha256": "8e4127ec0701a000551e711e0eeb1ee15e513fbfe486022efd59e569a0cfeab6"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/engagementService.js",
+      "sha256": "487693a719aaaf7eb82efc4e3bf791e9f447828c37d831f39b40754a713ec56c",
+      "source_sha256": "487693a719aaaf7eb82efc4e3bf791e9f447828c37d831f39b40754a713ec56c"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/httpClient.js",
+      "sha256": "4a9d025a1d4935db2420b358029ae5715af5e836bab38db2665d61cd4f366d6e",
+      "source_sha256": "4a9d025a1d4935db2420b358029ae5715af5e836bab38db2665d61cd4f366d6e"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/listingData.js",
+      "sha256": "11bc0156b2974cce70d30169cfb745744c50a5239b73af11eca4600e8a07c4fb"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/listingService.js",
+      "sha256": "0e5dfc90c5f779fd0931dab02968f7d3c7b883849b228cde918bcb2e8ec63873",
+      "source_sha256": "0e5dfc90c5f779fd0931dab02968f7d3c7b883849b228cde918bcb2e8ec63873"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/magazineService.js",
+      "sha256": "e2f49321535b581f6cb0942a702aaa9805d0c9099748c28b8f5abcc2eda5e26d",
+      "source_sha256": "e2f49321535b581f6cb0942a702aaa9805d0c9099748c28b8f5abcc2eda5e26d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/queryClient.js",
+      "sha256": "bdff5f48dd1db98419cfd45fc39368a0814d4db59c00b96c1ef24403c4e9af2b",
+      "source_sha256": "bdff5f48dd1db98419cfd45fc39368a0814d4db59c00b96c1ef24403c4e9af2b"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/savedSearchData.js",
+      "sha256": "29cf84196c88f2452c5a266c0027339fe6c0487002d2b195437bad9a44360028"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/services/siteInfoData.js",
+      "sha256": "2bfbe88391a04b03b97db6f8a67cc84f3c9095fe82cb7421eaf8ddc52202113d",
+      "source_sha256": "2bfbe88391a04b03b97db6f8a67cc84f3c9095fe82cb7421eaf8ddc52202113d"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/store/comparisonStore.js",
+      "sha256": "91e4cc65ee1791b1b6c45516e09975eaee6a660b90b590aa47e5819a47db7497",
+      "source_sha256": "91e4cc65ee1791b1b6c45516e09975eaee6a660b90b590aa47e5819a47db7497"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/store/themeStore.js",
+      "sha256": "118739a9dfa4d9fc469e701c8d6735fe9282fc05d1d58aa983b365fb690bbda1",
+      "source_sha256": "118739a9dfa4d9fc469e701c8d6735fe9282fc05d1d58aa983b365fb690bbda1"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/store/uiStore.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/utils/constants.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/utils/formatters.js",
+      "sha256": "2b7a8cb6eae654e09a27e6d63c32961fa2ac706cf077aab5cb7d09fcae94d060",
+      "source_sha256": "2b7a8cb6eae654e09a27e6d63c32961fa2ac706cf077aab5cb7d09fcae94d060"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/utils/helpers.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/utils/storage.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/kerman-cars-frontend/src/utils/validators.js",
+      "sha256": "7569ea2d6ff85d5178a36b1b981494cb23957e5f1fa870f220943136c1ee5f76",
+      "source_sha256": "7569ea2d6ff85d5178a36b1b981494cb23957e5f1fa870f220943136c1ee5f76"
     }
   ]
 }

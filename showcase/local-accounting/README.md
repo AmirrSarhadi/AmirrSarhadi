@@ -1,5 +1,7 @@
 # Local Accounting — ERP Workspace
 
+**[Browse every captured tab and its code](COVERAGE.md) · [Full screenshot gallery](GALLERY.md) · [All 243 source files](SOURCE_INDEX.md)**
+
 A business accounting and inventory workspace covering catalog management, warehouse operations, financial reporting, treasury, sales and purchases. This public selection concentrates on presentation and operational forms; ledger posting and financial invariants remain outside the expanded source release.
 
 **Stack:** React 19 · Vite 7 · Django backend · Chart.js · Persian calendar tooling
@@ -8,7 +10,7 @@ A business accounting and inventory workspace covering catalog management, wareh
 
 ## Expanded source
 
-This collection contains **56 complete source files**, copied without code changes. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
+This collection contains **243 complete source files**. Files retain their original paths; any neutral school-identity or contact-placeholder substitutions are recorded in the manifest. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
 
 - Dashboard chart composition and reporting UI.
 - Inventory receipts, warehouse stock and stock-taking screens.
@@ -40,6 +42,6 @@ This public selection excludes credentials, environment/deployment configuration
 
 ## Verification scope
 
-Copied-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
+Published-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
 
 The source application entry point currently fails with `Cannot access lazy before initialization`. Captures therefore render the existing dashboard component separately; the entry-point issue is not repaired or hidden by this source selection. See also the earlier [ERP domain excerpts](../erp-accounting-real/README.md).

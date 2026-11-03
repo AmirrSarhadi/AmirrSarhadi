@@ -1,0 +1,95 @@
+.favorites-page {
+    &__heading {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 25px;
+
+        >div>span {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--kc-primary);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            color: var(--kc-text);
+            font-size: clamp(23px, 3vw, 31px);
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+    }
+
+    &__clear {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 9px;
+        color: var(--kc-danger);
+        background: transparent;
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    &__empty {
+        display: flex;
+        min-height: 390px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        text-align: center;
+        background: var(--kc-card-bg);
+        border: 1px solid var(--kc-border);
+        border-radius: var(--kc-radius-md);
+
+        >span {
+            display: grid;
+            width: 74px;
+            height: 74px;
+            place-items: center;
+            margin-bottom: 17px;
+            color: var(--kc-primary);
+            background: var(--kc-accent-soft);
+            border-radius: var(--kc-radius-lg);
+        }
+
+        h2 {
+            margin-bottom: 7px;
+            color: var(--kc-text);
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        p {
+            max-width: 430px;
+            margin-bottom: 18px;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+            line-height: 1.9;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .favorites-page {
+        &__heading {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+}

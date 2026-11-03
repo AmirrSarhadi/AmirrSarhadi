@@ -1,0 +1,355 @@
+.container {
+    padding: 24px;
+    margin: 0;
+    background: var(--surface);
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    border: 1px solid var(--border-soft);
+    direction: rtl;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.header h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.header p {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.headerActions {
+    display: flex;
+    gap: 10px;
+}
+
+.refreshBtn,
+.printBtn {
+    min-width: 130px;
+    height: 44px;
+    border: none;
+    padding: 0 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.2s ease;
+    font-family: inherit;
+}
+
+.refreshBtn {
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: white;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.24);
+}
+
+.printBtn {
+    background: var(--surface-muted);
+    color: var(--text);
+}
+
+.refreshBtn:hover,
+.printBtn:hover {
+    transform: translateY(-1px);
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.toolbar select {
+    min-width: 190px;
+    height: 44px;
+    border: 1px solid var(--border);
+    background: var(--surface-subtle);
+    border-radius: 14px;
+    outline: none;
+    color: var(--text);
+    padding: 0 12px;
+    font-family: inherit;
+    font-weight: 800;
+}
+
+.periodBadge {
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.reportTitle {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.reportTitle h4 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.reportTitle p {
+    margin: 8px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.summaryCard {
+    border: 1px solid var(--border-soft);
+    border-radius: 20px;
+    padding: 18px;
+    background: var(--surface-subtle);
+}
+
+.summaryCard span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.summaryCard strong {
+    color: var(--text-strong);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.profitCard {
+    background: linear-gradient(135deg, var(--success-soft), var(--surface));
+}
+
+.lossCard {
+    background: linear-gradient(135deg, var(--danger-soft), var(--surface));
+}
+
+.incomeText {
+    color: #15803d !important;
+    font-weight: 900;
+}
+
+.expenseText {
+    color: var(--danger) !important;
+    font-weight: 900;
+}
+
+.tablesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.reportBox {
+    border: 1px solid var(--border-soft);
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--surface);
+}
+
+.boxHeader {
+    min-height: 60px;
+    padding: 14px 16px;
+    background: var(--surface-subtle);
+    border-bottom: 1px solid var(--border-soft);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.boxHeader h4 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.boxHeader strong {
+    color: var(--text-strong);
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    padding: 13px 10px;
+    text-align: center;
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 900;
+    border-bottom: 1px solid var(--border-soft);
+    white-space: nowrap;
+}
+
+.table td {
+    padding: 13px 10px;
+    text-align: center;
+    color: var(--text);
+    font-size: 14px;
+    border-bottom: 1px solid var(--surface-muted);
+    white-space: nowrap;
+}
+
+.nameCell {
+    color: var(--text-strong) !important;
+    font-weight: 900;
+    text-align: right !important;
+}
+
+.table tfoot td {
+    background: var(--surface-subtle);
+    color: var(--text-strong);
+    font-weight: 900;
+}
+
+.emptyState {
+    padding: 34px 16px !important;
+    color: var(--text-muted);
+    font-weight: 900;
+}
+
+.finalResult {
+    margin-top: 18px;
+    min-height: 70px;
+    border-radius: 22px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.finalResult span {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.finalResult strong {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.finalProfit {
+    background: var(--success-soft);
+    color: #15803d;
+}
+
+.finalLoss {
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+.skeletonWrapper {
+    border: 1px solid var(--border-soft);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.skeletonRow {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 14px;
+    padding: 16px;
+    border-bottom: 1px solid var(--surface-muted);
+}
+
+.skeletonRow span {
+    height: 18px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--surface-muted), var(--border), var(--surface-muted));
+    background-size: 200% 100%;
+    animation: skeleton 1.2s infinite;
+}
+
+@keyframes skeleton {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden !important;
+    }
+
+    .printArea,
+    .printArea * {
+        visibility: visible !important;
+    }
+
+    .printArea {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .tablesGrid,
+    .summaryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .header,
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .headerActions {
+        width: 100%;
+    }
+
+    .refreshBtn,
+    .printBtn,
+    .toolbar select {
+        width: 100%;
+    }
+}

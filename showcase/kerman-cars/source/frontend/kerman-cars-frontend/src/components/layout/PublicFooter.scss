@@ -1,0 +1,11 @@
+.public-footer {
+    padding-block: 36px; border-top: 1px solid var(--kc-border); background: var(--kc-card-bg);
+    &__top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+    &__brand { display: inline-flex; align-items: center; gap: 12px; img { width: 44px; height: 44px; object-fit: cover; border-radius: var(--kc-radius-sm); } div { display: flex; flex-direction: column; } strong { color: var(--kc-text); font-family: var(--kc-font-display); font-size: 15px; } span { color: var(--kc-text-soft); font-size: 12px; } }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--kc-text-soft); font-size: 13px; }
+    a:hover { color: var(--kc-primary); }
+    a:focus-visible { outline: 2px solid var(--kc-primary); outline-offset: 3px; }
+    .site-info-contacts { font-size: 13px; margin-bottom: 0; border-top: 1px solid var(--kc-border); padding-top: 24px; dt { font-size: 12px; color: var(--kc-text-soft); font-weight: 500; } dd { color: var(--kc-text); } }
+}
+@media (max-width: 767.98px) { .public-footer { padding-block: 28px calc(var(--kc-mobile-navigation-height) + 32px); nav { gap: 4px 20px; } &__top { gap: 16px; } } }

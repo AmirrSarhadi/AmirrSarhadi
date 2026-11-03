@@ -1,0 +1,70 @@
+.admin-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3,
+            minmax(0, 1fr));
+    gap: 14px;
+}
+
+.admin-plan-card {
+    padding: 21px;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+
+    >span {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        margin-bottom: 14px;
+        color: var(--kc-primary);
+        background: var(--kc-accent-soft);
+        border-radius: var(--kc-radius-sm);
+    }
+
+    h2 {
+        margin-bottom: 5px;
+        color: var(--kc-text);
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    >strong {
+        display: block;
+        color: var(--kc-primary);
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    >small {
+        color: var(--kc-text-soft);
+        font-size: 12px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 17px;
+        padding-top: 15px;
+        border-top: 1px solid var(--kc-border);
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+
+            svg {
+                color: var(--kc-success);
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .admin-plans-grid {
+        grid-template-columns: 1fr;
+    }
+}

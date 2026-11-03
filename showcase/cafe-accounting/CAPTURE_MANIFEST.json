@@ -1,0 +1,239 @@
+{
+  "project": "Cafe Accounting",
+  "scope": "Actual source interfaces with disposable demo data or explicitly labelled API fixtures; desktop captures; selected mobile examples remain in the overview.",
+  "views": [
+    {
+      "id": "menu",
+      "label": "مدیریت منو",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/MenuItemEditor.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/menu.jpg",
+      "sha256": "22f3411c806333805237d569f5841226f42a60e501a135cbf0b9ee5a2ba0ce20"
+    },
+    {
+      "id": "order-entry",
+      "label": "ثبت سفارش",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/OrderEntry.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/order-entry.jpg",
+      "sha256": "236cdb281b192daf03654a8f320ce411af4032723cf76b6c4e658eb45236d00c"
+    },
+    {
+      "id": "open-orders",
+      "label": "سفارش‌های باز",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/OpenOrders.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/open-orders.jpg",
+      "sha256": "e4e62c3399bd27070470be04839c668f60c0dd32a76fdd65694cfab38143bedd"
+    },
+    {
+      "id": "receipts",
+      "label": "آرشیو صورتحساب‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/ReceiptArchive.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/receipts.jpg",
+      "sha256": "3e9f8c7c77ac80eb86a77e769ba82f0fb30d57d39eb4fac583bb161a57df9ccb"
+    },
+    {
+      "id": "customers",
+      "label": "مشتری‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/CustomerDirectory.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/customers.jpg",
+      "sha256": "2011c7b24827bb23cd953719ddb0b0236ea07a1b2db7a64696dc5a85792f7b4b"
+    },
+    {
+      "id": "tables",
+      "label": "مدیریت میزها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/TableManagement.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/tables.jpg",
+      "sha256": "aa806b17092d60d9ff5d627383df9ed776ae0a1d9e77209b3cb9b49c40fc0244"
+    },
+    {
+      "id": "cash-shifts",
+      "label": "شیفت صندوق",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/CashShiftManager.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/cash-shifts.jpg",
+      "sha256": "63bf9639a3156b12b3fff748c938e335cd4cb2887a60551bf5eb18525e5ec574"
+    },
+    {
+      "id": "expenses",
+      "label": "هزینه‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/ExpenseManager.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/expenses.jpg",
+      "sha256": "0cfa0862b5d5c1c4c5a657f7185f8a69594474d1924f58b3d285fe961e699129"
+    },
+    {
+      "id": "daily-report",
+      "label": "گزارش روزانه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/DailySalesReport.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/daily-report.jpg",
+      "sha256": "1b5c127e7606f13460fceb05d544d60fa57b330e124b80668e1087d1bf197d6f"
+    },
+    {
+      "id": "range-report",
+      "label": "گزارش بازه‌ای",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/SalesRangeReport.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/range-report.jpg",
+      "sha256": "f369937484236716f7e350b815c010a766090af8e050c9d0ad39b00c76d1c7ae"
+    },
+    {
+      "id": "inventory",
+      "label": "انبار و بهای تمام‌شده",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/inventory/InventoryWorkspace.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/inventory.jpg",
+      "sha256": "f641e6e34c5f346f2a85bf1c191b687ba4cb8137399630787eb2a8d724116a08"
+    },
+    {
+      "id": "inventory-stock",
+      "label": "موجودی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/inventory/StockPanel.tsx",
+        "frontend/src/inventory/InventoryWorkspace.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/inventory-stock.jpg",
+      "sha256": "87f0818aa32b77de71a2354d6613f24b2468ffa57fdadc5df1684173c8edaac5"
+    },
+    {
+      "id": "inventory-ingredients",
+      "label": "مواد اولیه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/inventory/IngredientsPanel.tsx",
+        "frontend/src/inventory/InventoryWorkspace.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/inventory-ingredients.jpg",
+      "sha256": "f4219452af830e091a50f377311269b576a1716495d07257df51a4fe295c3d61"
+    },
+    {
+      "id": "inventory-movements",
+      "label": "تاریخچه انبار",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/inventory/MovementsPanel.tsx",
+        "frontend/src/inventory/InventoryWorkspace.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/inventory-movements.jpg",
+      "sha256": "86d13c34655c152f369cdd878f39186731e7b255173d072846ace07c8c1d1481"
+    },
+    {
+      "id": "inventory-recipes",
+      "label": "دستور تهیه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/inventory/RecipesPanel.tsx",
+        "frontend/src/inventory/InventoryWorkspace.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/inventory-recipes.jpg",
+      "sha256": "960daaf31d0450fabfae2b51108b43ac015bed38fe5f875660a583d35f22555c"
+    },
+    {
+      "id": "inventory-cost-report",
+      "label": "بهای تمام‌شده",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/inventory/CostReportPanel.tsx",
+        "frontend/src/inventory/InventoryWorkspace.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/inventory-cost-report.jpg",
+      "sha256": "cf404954438258bc0e57b804d402743a0ca4f90dcc490b4d4bd8da1e85e02f1f"
+    },
+    {
+      "id": "settings",
+      "label": "تنظیمات",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/Settings.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/settings.jpg",
+      "sha256": "c638a686501b2911fd4bb98034f8eb430e19eca45135583a46d98c322e75839c"
+    },
+    {
+      "id": "help",
+      "label": "راهنما",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/src/app/HelpGuide.tsx",
+        "frontend/src/app/App.tsx"
+      ],
+      "method": "actual frontend with isolated synthetic API fixtures",
+      "image": "../../assets/screenshots/cafe-accounting/help.jpg",
+      "sha256": "5a0a35e33eb57e75f2763eb56b883fd73bb135ef339ab9cae2f6759a87c39450"
+    }
+  ]
+}

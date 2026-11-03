@@ -1,0 +1,35 @@
+.timetable-grid-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:14px;align-items:end;margin-block:16px}
+.timetable-grid-filters>label{min-width:0;width:100%;margin:0}
+.timetable-grid-filters select{width:100%;min-width:0}
+.timetable-grid-actions,.timetable-editor-actions{display:flex;gap:10px;flex-wrap:wrap}
+.timetable-editor-actions{margin-bottom:18px}
+.timetable-grid-scroll{width:100%;max-width:1040px;overflow:auto;border:1px solid var(--line);border-radius:8px;background:white;margin:0 auto;box-shadow:0 3px 14px #29245f06}
+.timetable-grid{width:100%;min-width:620px;border-collapse:separate;border-spacing:0;table-layout:fixed}
+.timetable-grid caption{padding:16px 18px;text-align:right;font-size:13px;color:var(--ink)}
+.timetable-grid caption strong{font-size:14px}
+.timetable-grid caption span{float:left;color:var(--muted);font-size:11px;font-weight:400}
+.timetable-grid th,.timetable-grid td{padding:10px;border-bottom:1px solid var(--line);border-inline-end:1px solid #efedf4;vertical-align:middle;text-align:center;overflow-wrap:anywhere}
+.timetable-grid thead th{background:#29245f;color:white;font-size:12px;font-weight:500;height:42px;padding-block:10px}
+.timetable-grid th:first-child{width:100px}
+.timetable-grid tbody th{background:#f4f3f9;color:var(--ink);font-size:12px;font-weight:600}
+.timetable-grid tbody td{height:54px}
+.timetable-grid tbody tr:nth-child(even) td{background:#fafafd}
+.timetable-grid tbody tr:hover td{background:#f1f7f5}
+.timetable-grid tbody tr:last-child>*{border-bottom:0}
+.timetable-grid tr>*:last-child{border-inline-end:0}
+.timetable-grid small{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.timetable-grid-lesson{display:grid;gap:3px;font-size:12px;align-content:center}
+.timetable-grid-lesson small{margin:0}
+.timetable-grid-lesson .badge{width:max-content;max-width:100%;margin-inline:auto;font-size:9px;padding:2px 6px}
+.timetable-grid-lesson.canceled{color:#a53e35}
+.timetable-grid-empty{color:#b6b4c4;font-size:14px}
+.timetable-grid .is-today>th{background:#e5f2eb;color:#26785f;box-shadow:inset -3px 0 #26785f}
+.panel-form-dialog:has(.timetable-editor){width:min(1040px,calc(100vw - 32px))}
+.timetable-grid-entry{min-width:760px}
+.timetable-grid-entry td{padding:7px}
+.timetable-grid-entry select{width:100%;min-width:0;font-size:11px;padding:9px 6px;min-height:38px;border-radius:6px}
+.timetable-editor{min-width:0}
+.timetable-editor-actions .button{min-height:44px;white-space:nowrap}
+.timetable-editor-actions .button svg{flex-shrink:0}
+.timetable-grid-scroll:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media(max-width:640px){.timetable-grid-filters{grid-template-columns:minmax(0,1fr)}.timetable-grid-actions{width:100%}.timetable-grid th,.timetable-grid td{padding:8px}.timetable-grid th:first-child{width:86px}.panel-form-dialog:has(.timetable-editor){padding:16px}.timetable-editor-actions>.button{flex:1;font-size:12px;padding:10px;gap:6px}.timetable-grid caption span{float:none;display:block;margin-top:5px}}

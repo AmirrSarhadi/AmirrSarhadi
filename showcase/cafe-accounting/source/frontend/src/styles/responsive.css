@@ -1,0 +1,63 @@
+/* Shared narrow-screen containment. Tables keep their own horizontal scrollers. */
+[data-section-content]{max-width:1280px;margin-inline:auto;min-width:0}
+.dashboard-grid>*,.report-dashboard,.report-grid>*,.receipt-table-panel,
+.expense-dashboard,.expense-grid,.expense-list,.expense-filter,
+.customer-directory,.customer-directory__grid,.customer-profile,
+.cash-shift-dashboard,.shift-layout>*,.shift-history,.history-filter,
+.inventory-split>*,.menu-item,.menu-item>div{min-width:0}
+.menu-item h3,.category-list li>span,.customer-profile h4,.customer-profile p,
+.order-catalog strong,.cart-lines strong,.order-items span,.order-item__summary span,
+.order-detail-heading span,.registered-customer strong{min-width:0;overflow-wrap:anywhere}
+.customer-profile input,.customer-profile textarea,.history-filter input{min-width:0;max-width:100%}
+.app-modal__header h2,.app-modal__body,.app-modal fieldset,.app-modal label,
+.app-modal .order-item__summary,.app-modal .order-detail{min-width:0;overflow-wrap:anywhere}
+.app-modal .modal-footer{flex-wrap:wrap}
+@media(max-width:900px){
+ .expense-grid,.shift-layout{grid-template-columns:minmax(0,1fr)}
+ .report-dashboard .receipt-table-panel{min-width:0}
+}
+@media(max-width:800px){
+ .expense-filter{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .expense-filter>div,.expense-filter>.button{grid-column:1/-1}
+ .expense-filter label,.expense-filter input{min-width:0;width:100%}
+ .expense-header{flex-direction:column;align-items:stretch}
+ .customer-directory__grid{grid-template-columns:minmax(0,1fr)}
+ .report-dashboard .kpi-card{min-width:0}
+ .report-dashboard .kpi-card strong{overflow-wrap:anywhere}
+}
+@media(max-width:600px){
+ .app-modal .modal-footer>.button{flex:1 1 auto}
+ .app-modal .button,.table-row-actions .button,.card-actions .button,.table-card .button,
+ .app-nav--mobile .app-nav__link{min-height:44px;min-width:44px}
+ .customer-profile__actions .button{min-height:44px}
+ .range-report-filters{grid-template-columns:minmax(0,1fr)}
+ .range-report-filters input,.range-report-filters label{min-width:0;width:100%}
+ .history-filter{grid-template-columns:minmax(0,1fr)}
+ .history-filter>div{grid-column:auto}
+ .history-filter label,.history-filter input{min-width:0;width:100%}
+ .customer-profile--editing{grid-template-columns:minmax(0,1fr)}
+ .customer-profile__notes,.customer-profile__actions{grid-column:auto}
+ .order-item__summary,.order-detail-lines>li,.addition-review .order-items>li{flex-wrap:wrap}
+ .order-detail .order-card__total{flex-wrap:wrap}
+ .app-modal .cart-lines li{flex-wrap:wrap}
+ .app-modal .cart-lines li>div:first-child{flex-basis:100%}
+ .ui-pagination{flex-wrap:wrap;gap:12px}
+}
+
+.app-modal__close{flex:0 0 44px}
+.expense-table td:nth-child(3){max-width:28rem;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:800px){
+ .expense-table{display:block;white-space:normal;margin:0}
+ .expense-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+ .expense-table tbody{display:grid;gap:16px}
+ .expense-table tr{display:grid;padding:8px 0}
+ .expense-table tr+tr{border-top:1px solid var(--border)}
+ .expense-table td{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;min-width:0;white-space:normal;overflow-wrap:anywhere}
+ .expense-table td::before{content:attr(data-label);flex:0 0 auto;color:var(--muted);font-size:.75rem}
+ .expense-table td:last-child{align-items:center;border:0}
+}
+@media(max-width:1023px){
+ .category-manager .button,.order-quantity button,.order-categories>button{min-width:44px;min-height:44px}
+ .order-categories>button{flex-basis:44px}
+ .dashboard-shell input:not([type=checkbox]):not([type=radio]),.dashboard-shell select,.dashboard-shell textarea,.auth-card input{font-size:1rem}
+}

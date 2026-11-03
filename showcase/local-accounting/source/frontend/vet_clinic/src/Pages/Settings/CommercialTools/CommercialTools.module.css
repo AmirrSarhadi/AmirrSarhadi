@@ -1,0 +1,9 @@
+.page { display:flex; flex-direction:column; gap:20px; padding:24px; min-width:0; }
+.form { display:flex; flex-wrap:wrap; align-items:end; gap:16px; }
+.form label { display:flex; flex-direction:column; gap:8px; flex:1 1 220px; }
+.form input,.form select { min-height:44px; max-width:100%; border:1px solid #b8c4cf; border-radius:8px; padding:8px; font:inherit; background:#fff; color:#172b3a; }
+.form input:focus-visible,.form select:focus-visible { outline:3px solid #497ab2; outline-offset:2px; }
+.error { color:#9b2525; white-space:pre-wrap; overflow-wrap:anywhere; }
+.list { list-style:none; padding:0; }
+.list li { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; padding-block:12px; border-bottom:1px solid #dce3e9; }
+@media(max-width:600px) { .form input,.form select { font-size:16px; } .form label { flex-basis:100%; } }

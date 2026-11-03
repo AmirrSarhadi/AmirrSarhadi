@@ -1,0 +1,428 @@
+.container {
+    padding: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    direction: rtl;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.header h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 21px;
+    font-weight: 950;
+}
+
+.header p {
+    margin: 7px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.header button {
+    min-width: 110px;
+    height: 42px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: var(--surface);
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.22);
+    transition: 0.2s ease;
+}
+
+.header button:hover {
+    transform: translateY(-1px);
+}
+
+.header button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.summaryCard {
+    min-height: 92px;
+    border-radius: 18px;
+    padding: 14px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface-subtle);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summaryCard span {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.summaryCard strong {
+    color: var(--text-strong);
+    font-size: 24px;
+    font-weight: 950;
+}
+
+.blue {
+    background: var(--primary-soft);
+    border-color: #dbeafe;
+}
+
+.red {
+    background: var(--danger-soft);
+    border-color: var(--danger-soft);
+}
+
+.yellow {
+    background: #fffbeb;
+    border-color: var(--warning-soft);
+}
+
+.gray {
+    background: var(--surface-subtle);
+    border-color: var(--border);
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding: 14px;
+    background: var(--surface-subtle);
+    border: 1px solid var(--border-soft);
+    border-radius: 18px;
+}
+
+.filterField {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.filterField label {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.filterField input,
+.filterField select {
+    width: 100%;
+    height: 42px;
+    border-radius: 13px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    padding: 0 12px;
+    outline: none;
+    color: var(--text);
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.filterField input:focus,
+.filterField select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.resetBtn {
+    align-self: end;
+    height: 42px;
+    border: none;
+    border-radius: 13px;
+    background: var(--surface-muted);
+    color: var(--text);
+    padding: 0 14px;
+    cursor: pointer;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.resetBtn:hover {
+    background: var(--border);
+}
+
+.errorBox,
+.loadingBox,
+.emptyBox {
+    padding: 24px 16px;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface);
+    color: var(--text-muted);
+    text-align: center;
+    font-weight: 800;
+}
+
+.errorBox {
+    background: var(--danger-soft);
+    border-color: var(--danger-soft);
+    color: var(--danger);
+    margin-bottom: 16px;
+}
+
+.emptyBox strong {
+    display: block;
+    color: var(--text-strong);
+    margin-bottom: 7px;
+}
+
+.emptyBox p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.auditList {
+    display: grid;
+    gap: 14px;
+}
+
+.auditCard {
+    border: 1px solid var(--border-soft);
+    border-radius: 22px;
+    padding: 18px;
+    background: var(--surface);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.auditCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-soft);
+    margin-bottom: 14px;
+}
+
+.auditCardHeader h4 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 18px;
+    font-weight: 950;
+}
+
+.auditCardHeader p {
+    margin: 7px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.issueCounter {
+    min-width: 70px;
+    height: 34px;
+    border-radius: 999px;
+    background: var(--danger-soft);
+    color: var(--danger);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 950;
+    font-size: 13px;
+}
+
+.metaGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.metaGrid div {
+    padding: 12px;
+    border-radius: 16px;
+    background: var(--surface-subtle);
+    border: 1px solid var(--border-soft);
+}
+
+.metaGrid span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.metaGrid strong {
+    color: var(--text-strong);
+    font-size: 13px;
+}
+
+.documentsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.docCard {
+    padding: 14px;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface-subtle);
+}
+
+.docCard span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.docCard strong {
+    display: block;
+    color: var(--text-strong);
+    font-size: 14px;
+    font-weight: 950;
+    margin-bottom: 7px;
+}
+
+.docCard p {
+    margin: 0 0 7px;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.docCard small {
+    display: block;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.docCard button {
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 12px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.okDoc {
+    background: #ecfdf5;
+    border-color: var(--success-soft);
+}
+
+.okDoc small {
+    color: #15803d;
+}
+
+.badDoc {
+    background: var(--danger-soft);
+    border-color: var(--danger-soft);
+}
+
+.badDoc small {
+    color: var(--danger);
+}
+
+.missingDoc {
+    background: var(--surface-subtle);
+    border-color: var(--border);
+}
+
+.missingDoc strong {
+    color: var(--text-soft);
+}
+
+.issuesBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.issueBadge {
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.issueBadge.error {
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+.issueBadge.warning {
+    background: var(--warning-soft);
+    color: #b45309;
+}
+
+.okBox {
+    padding: 12px;
+    border-radius: 16px;
+    background: #ecfdf5;
+    color: #15803d;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .summaryGrid,
+    .metaGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .documentsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .resetBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 18px;
+    }
+
+    .header,
+    .auditCardHeader {
+        flex-direction: column;
+    }
+
+    .header button {
+        width: 100%;
+    }
+
+    .summaryGrid,
+    .metaGrid,
+    .filters {
+        grid-template-columns: 1fr;
+    }
+}.container{background:transparent!important;padding:0!important}.header,.filters,.tableCard,.summaryCard{border-color:#e7edf5!important;border-radius:20px!important;box-shadow:0 6px 22px rgba(15,23,42,.045)!important}.filters{background:#fff!important}.tableWrapper{border-radius:15px!important;overflow:auto!important}.amount{font-variant-numeric:tabular-nums;font-weight:950!important}

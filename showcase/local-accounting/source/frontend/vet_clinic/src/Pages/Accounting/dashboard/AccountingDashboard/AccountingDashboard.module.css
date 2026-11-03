@@ -1,0 +1,326 @@
+.container {
+    padding: 24px;
+    direction: rtl;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.topbar h2 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.topbar p {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.topbarActions {
+    display: flex;
+    gap: 10px;
+}
+
+.topbarActions select {
+    min-width: 220px;
+    height: 46px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: white;
+    padding: 0 14px;
+    font-family: inherit;
+    font-weight: 800;
+}
+
+.refreshBtn {
+    min-width: 130px;
+    height: 46px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: white;
+    font-family: inherit;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.activePeriod {
+    min-height: 56px;
+    border-radius: 18px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    margin-bottom: 20px;
+}
+
+.activePeriod span {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.activePeriod strong {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.statsGrid,
+.financeGrid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.statsGrid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.financeGrid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.statCard,
+.financeCard {
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.statCard span,
+.financeCard span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.statCard strong,
+.financeCard strong {
+    color: var(--text-strong);
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.greenText {
+    color: #15803d !important;
+}
+
+.redText {
+    color: var(--danger) !important;
+}
+
+.blueText {
+    color: var(--primary) !important;
+}
+
+.orangeText {
+    color: #c2410c !important;
+}
+
+.profitCard {
+    background: linear-gradient(135deg, var(--success-soft), var(--surface));
+}
+
+.lossCard {
+    background: linear-gradient(135deg, var(--danger-soft), var(--surface));
+}
+
+.balanceStatus {
+    min-height: 110px;
+    border-radius: 24px;
+    padding: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.balanceSuccess {
+    background: var(--success-soft);
+    color: #15803d;
+}
+
+.balanceDanger {
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+.balanceStatus span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.balanceStatus strong {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.balanceNumbers {
+    display: flex;
+    gap: 28px;
+}
+
+.balanceNumbers small {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.balanceNumbers b {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.tableSection {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid var(--border-soft);
+    overflow: hidden;
+}
+
+.sectionHeader {
+    min-height: 68px;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--border-soft);
+    display: flex;
+    align-items: center;
+}
+
+.sectionHeader h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    padding: 15px 12px;
+    text-align: center;
+    background: var(--surface-subtle);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 900;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.table td {
+    padding: 15px 12px;
+    text-align: center;
+    color: var(--text);
+    font-size: 14px;
+    border-bottom: 1px solid var(--surface-muted);
+}
+
+.table tbody tr:hover {
+    background: var(--surface-subtle);
+}
+
+.descriptionCell {
+    text-align: right !important;
+}
+
+.statusBadge,
+.balanceBadge,
+.typeBadge {
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.statusApproved {
+    background: var(--success-soft);
+    color: #15803d;
+}
+
+.statusDraft {
+    background: var(--warning-soft);
+    color: #b45309;
+}
+
+.balanceOk {
+    background: var(--success-soft);
+    color: #15803d;
+}
+
+.balanceError {
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+.typeBadge {
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+.emptyState {
+    padding: 40px !important;
+    color: var(--text-muted);
+    font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+
+    .statsGrid,
+    .financeGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .statsGrid,
+    .financeGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar,
+    .topbarActions,
+    .balanceStatus {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topbarActions select,
+    .refreshBtn {
+        width: 100%;
+    }
+
+    .balanceNumbers {
+        flex-direction: column;
+        gap: 12px;
+    }
+}.container{padding:0!important;background:transparent!important}.activePeriod{border:1px solid #e7edf5!important;border-radius:14px!important;background:#fff!important;box-shadow:0 4px 14px rgba(15,23,42,.035)!important}.financeGrid{gap:13px!important}.financeCard{border:1px solid #e7edf5!important;border-radius:18px!important;box-shadow:0 5px 18px rgba(15,23,42,.045)!important}.balanceStatus{border-radius:18px!important;border-width:1px!important}.tableSection{border:1px solid #e7edf5!important;border-radius:22px!important;box-shadow:0 7px 24px rgba(15,23,42,.05)!important}.tableWrapper{border-radius:15px!important;overflow:auto!important}

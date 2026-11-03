@@ -1,0 +1,11 @@
+.teaching-allocation{min-width:0}
+.teaching-allocation>.section-title{margin-block:22px 18px}
+.teaching-allocation-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.allocation-field{min-width:0;border:1px solid var(--line);border-radius:8px;padding:18px;background:#fff}
+.allocation-field-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:6px;background:#eeedf7;color:var(--ink);margin-bottom:16px}
+.allocation-field:nth-child(2) .allocation-field-icon{background:#edf5f1;color:#26785f}
+.allocation-field:nth-child(3) .allocation-field-icon{background:#f8f0e6;color:#8b6231}
+.teaching-allocation-selected{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.teaching-allocation-selected>span{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:12px;background:#f6f5fa}
+.teaching-allocation-action{display:flex;justify-content:flex-end;border-top:1px solid var(--line);margin-top:20px;padding-top:18px}
+@media(max-width:900px){.teaching-allocation-fields{grid-template-columns:minmax(0,1fr)}}

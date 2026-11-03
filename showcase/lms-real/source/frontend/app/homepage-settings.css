@@ -1,0 +1,9 @@
+.homepage-settings fieldset {border:0;padding:0;margin:0;min-width:0;display:grid;gap:14px}
+.homepage-settings legend {font-size:17px;font-weight:700;margin-block:24px 12px;float:inline-start;width:100%}
+.homepage-settings h3 {font-size:17px;margin-top:20px}
+.homepage-settings-row {display:grid;grid-template-columns:minmax(120px,2fr) minmax(90px,1fr) minmax(70px,1fr) 40px;align-items:end;gap:12px}
+.homepage-settings-row .icon-button {height:44px;width:40px}
+.homepage-settings textarea {resize:none;min-height:90px}
+.homepage-save {border-top:1px solid var(--line);padding-top:18px;margin-top:12px}
+@media(max-width:600px){.homepage-settings-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 40px}.homepage-settings-row>label:first-child{grid-column:1/-1}.homepage-settings .section-title{flex-wrap:wrap}.homepage-settings h2{font-size:21px}}
+.managed-public-item.managed-staff-name {grid-template-columns:minmax(0,1fr)}

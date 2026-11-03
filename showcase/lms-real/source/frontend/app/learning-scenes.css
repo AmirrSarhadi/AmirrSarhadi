@@ -1,0 +1,30 @@
+.learning-trail {position:relative;width:175px;height:100px;pointer-events:none}
+.flight-trace {position:absolute;inset:0;width:175px;height:100px;fill:none;stroke:#749cc2;stroke-width:1.2;stroke-dasharray:3 5}
+.flight-plane {position:absolute;top:0;left:0;color:#d94f42;offset-path:path("M 18 74 C 34 98 77 75 91 51 S 135 19 156 18");offset-anchor:50% 50%;offset-rotate:auto 45deg;animation:learning-flight 6s linear infinite;will-change:offset-distance}
+.flight-spark {position:absolute;left:35px;top:10px;color:#c99a34;animation:flight-spark 6s ease-in-out infinite}
+.flight-direction {position:absolute;right:0;top:5px;color:#315dba}
+.learning-trail:not(.is-loop-visible) * {animation-play-state:paused}
+.discovery-desk {position:relative;width:320px;max-width:100%;aspect-ratio:1;pointer-events:none}
+.discovery-paper {position:absolute;inset:24px 30px 35px 20px;background:#fff;border:1px solid #dce4e8;border-radius:4px;box-shadow:9px 10px 0 #edf2fa;transform:rotate(-7deg);overflow:hidden}
+.specimen-label {position:absolute;top:16px;right:17px;color:#7a8a94;font-size:11px}
+.specimen-grid {position:absolute;left:23px;right:23px;top:57px;height:120px;display:grid;place-items:center;background-image:linear-gradient(#315dba0b 1px,transparent 1px),linear-gradient(90deg,#315dba0b 1px,transparent 1px);background-size:20px 20px;border:1px solid #e3eaf3}
+.specimen-grid>svg {color:#3f8973;transform:rotate(18deg)}
+.specimen-grid>i {position:absolute;width:7px;height:7px;border:1px solid #d7a743;top:26px;left:30px;transform:rotate(45deg)}
+.specimen-grid>i:last-child {top:auto;left:auto;bottom:20px;right:30px;border-color:#d94f42}
+.specimen-notes {position:absolute;bottom:20px;right:22px;width:66%;display:grid;gap:7px}
+.specimen-notes i {height:2px;background:#c9d8e9;transform-origin:right;animation:specimen-write 5s ease-in-out infinite}
+.specimen-notes i:nth-child(2) {width:80%;animation-delay:.2s}.specimen-notes i:nth-child(3) {width:56%;animation-delay:.4s}
+.discovery-lens {position:absolute;width:82px;height:82px;border:6px solid #315dba;border-radius:50%;top:95px;left:70px;background:#d6e9ff33;box-shadow:inset 0 0 0 2px #fff8;animation:specimen-scan 7s ease-in-out infinite}
+.discovery-lens::after {content:"";position:absolute;bottom:-50px;right:-22px;width:13px;height:64px;border-radius:5px;background:#d94f42;transform:rotate(-38deg);transform-origin:top}
+.discovery-lens>span {position:absolute;top:12px;left:13px;width:18px;height:12px;border-top:2px solid #fff;border-left:2px solid #fff;border-radius:13px 0 0}
+.discovery-pencil {position:absolute;right:8px;top:42px;height:195px;width:12px;background:#edc260;border-inline:3px solid #dba544;transform:rotate(18deg);border-radius:4px 4px 0 0}
+.discovery-pencil::before {content:"";position:absolute;top:-14px;left:-3px;width:12px;height:18px;background:#e59085;border-radius:5px 5px 0 0;border-bottom:4px solid #d7dfe6}
+.discovery-pencil i {position:absolute;bottom:-18px;left:-3px;border-inline:6px solid transparent;border-top:18px solid #d6b38c}
+.desk-tape {position:absolute;top:14px;left:97px;width:84px;height:26px;background:#f1d68499;transform:rotate(-15deg)}
+.discovery-desk:not(.is-loop-visible) * {animation-play-state:paused}
+@keyframes learning-flight {0%{offset-distance:0%;opacity:1}95%{opacity:1}100%{offset-distance:100%;opacity:0}}
+@keyframes flight-spark {0%,60%,100%{opacity:.25;transform:rotate(0deg)}30%{opacity:1;transform:rotate(15deg)}}
+@keyframes specimen-scan {0%,100%{transform:translate(0,0)}35%{transform:translate(70px,-12px)}65%{transform:translate(35px,48px)}}
+@keyframes specimen-write {0%,15%{transform:scaleX(.2)}65%,100%{transform:scaleX(1)}}
+@media(max-width:760px){.discovery-desk{width:285px}.discovery-paper{inset:20px 25px 30px 18px}.discovery-lens{left:45px;top:80px;width:75px;height:75px}.learning-trail{width:175px;height:100px;transform:scale(.7);transform-origin:bottom right}}
+@media(prefers-reduced-motion:reduce){.flight-plane{offset-distance:55%;opacity:1}.learning-trail *,.discovery-desk *{animation:none!important}}

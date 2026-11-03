@@ -1,0 +1,4 @@
+.access-options{border:1px solid var(--line);border-radius:8px;max-height:390px;overflow:auto;padding:0 12px 6px;min-width:0;margin-block:16px}
+.panel-form-dialog .access-options label{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:12px;padding:12px 4px;margin:0;border-bottom:1px solid var(--line);line-height:1.9;cursor:pointer}
+.access-options label:last-child{border:0}
+.access-options input{width:18px;height:18px;flex-shrink:0;margin:0}

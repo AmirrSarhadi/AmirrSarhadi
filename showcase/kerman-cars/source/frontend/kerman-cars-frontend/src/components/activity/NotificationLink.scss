@@ -1,0 +1,23 @@
+.notification-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-width: 44px;
+    min-height: 44px;
+    color: var(--kc-primary);
+    border-radius: var(--kc-radius-sm);
+    &__count {
+        font-size: 0.75rem;
+        min-width: 1.2em;
+        text-align: center;
+    }
+    &:hover {
+        background: var(--kc-silver-100);
+        color: var(--kc-primary-dark);
+    }
+    &:focus-visible {
+        outline: 2px solid var(--kc-primary);
+        outline-offset: 2px;
+    }
+}

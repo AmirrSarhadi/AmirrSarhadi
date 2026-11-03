@@ -1,0 +1,284 @@
+.container {
+    direction: rtl;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.pageHeader h2 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.pageHeader p {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.backBtn {
+    height: 42px;
+    border: none;
+    border-radius: 13px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.formCard {
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 26px;
+}
+
+.stepIndicator {
+    min-height: 76px;
+    border: 1px solid var(--border);
+    background: var(--surface-subtle);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    cursor: pointer;
+    text-align: right;
+    transition: 0.2s ease;
+}
+
+.stepIndicator strong {
+    display: block;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.stepIndicator small {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.stepNumber {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    background: var(--border);
+    color: var(--text-muted);
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+
+.stepIndicator.active {
+    border-color: var(--primary);
+    background: var(--primary-soft);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.1);
+}
+
+.stepIndicator.active .stepNumber {
+    background: var(--primary);
+    color: var(--surface);
+}
+
+.stepIndicator.done {
+    border-color: #bbf7d0;
+    background: #f0fdf4;
+}
+
+.stepIndicator.done .stepNumber {
+    background: var(--success);
+    color: var(--surface);
+}
+
+.formStep {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fullWidth {
+    grid-column: span 2;
+}
+
+.field label {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.field input,
+.field select,
+.field textarea,
+.dateInput {
+    width: 100%;
+    height: 46px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface-subtle);
+    padding: 0 13px;
+    outline: none;
+    color: var(--text);
+    transition: 0.2s ease;
+}
+
+.field textarea {
+    min-height: 110px;
+    padding-top: 12px;
+    resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus,
+.dateInput:focus {
+    border-color: var(--primary);
+    background: var(--surface);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.switchRow {
+    min-height: 46px;
+    border: 1px solid var(--border);
+    background: var(--surface-subtle);
+    border-radius: 14px;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.switchRow input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+}
+
+.navButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-soft);
+}
+
+.prevBtn,
+.nextBtn,
+.submitBtn {
+    height: 44px;
+    border: none;
+    border-radius: 14px;
+    padding: 0 18px;
+    cursor: pointer;
+    font-weight: 900;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s ease;
+}
+
+.prevBtn {
+    background: var(--surface-muted);
+    color: var(--text);
+}
+
+.prevBtn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.nextBtn {
+    background: var(--primary);
+    color: var(--surface);
+    margin-right: auto;
+}
+
+.submitBtn {
+    background: var(--success);
+    color: var(--surface);
+    margin-right: auto;
+}
+
+.nextBtn:hover,
+.submitBtn:hover,
+.prevBtn:not(:disabled):hover {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+
+    .steps,
+    .formStep {
+        grid-template-columns: 1fr;
+    }
+
+    .fullWidth {
+        grid-column: span 1;
+    }
+
+    .pageHeader {
+        flex-direction: column;
+    }
+
+    .backBtn {
+        width: 100%;
+    }
+}
+
+button:disabled,
+a[aria-disabled="true"] {
+    opacity: 0.55;
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+    pointer-events: auto;
+}
+
+a[aria-disabled="true"] {
+    filter: grayscale(0.2);
+}
+
+/* Phase 10: denser, clearer financial form experience */
+.container { display: grid; gap: 18px; }
+.formCard { position: relative; overflow: hidden; }
+.formCard::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), #6366f1, #0ea5e9);
+}
+.steps { position: sticky; top: 78px; z-index: 6; background: color-mix(in srgb, var(--surface) 94%, transparent); backdrop-filter: blur(10px); padding-block: 4px 10px; }
+.field label::after { content: ""; }
+.navButtons { position: sticky; bottom: 0; z-index: 7; margin-inline: -24px; margin-bottom: -24px; padding: 16px 24px; background: color-mix(in srgb, var(--surface) 96%, transparent); backdrop-filter: blur(12px); box-shadow: 0 -12px 28px rgba(15,23,42,.05); }
+@media (max-width: 900px) {
+  .steps { position: static; }
+  .navButtons { margin-inline: -16px; margin-bottom: -16px; padding-inline: 16px; }
+}

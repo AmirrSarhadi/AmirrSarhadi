@@ -2,8 +2,481 @@
   "origin": "AmirrSarhadi/lms",
   "source_commit": "4b21423b42a35c1da47166c1977027685acc595e",
   "kind": "selected complete source files for reading; incomplete application",
-  "modifications": "none; byte-for-byte copies",
+  "modifications": "Original files retained unless an entry explicitly records identity sanitization; hashes distinguish source and published content.",
   "files": [
+    {
+      "path": "backend/school/health.py",
+      "source_sha256": "6eaa163e0a2692533c7cfa98c7c4fd1edfe06a2852fdd73f82c6945339de6a9e",
+      "sha256": "6eaa163e0a2692533c7cfa98c7c4fd1edfe06a2852fdd73f82c6945339de6a9e"
+    },
+    {
+      "path": "backend/school/pagination.py",
+      "sha256": "a3017f464a97e7d26dd33f1e5df1bc4d8728c1009a4d83732de90cb608709c7f",
+      "source_sha256": "a3017f464a97e7d26dd33f1e5df1bc4d8728c1009a4d83732de90cb608709c7f"
+    },
+    {
+      "path": "frontend/app/about/layout.tsx",
+      "sha256": "4cae9a908f1aa1d5d3d43dc00a3684a4cfa4fea934d6d2c32c2d1e8fd3e4532b",
+      "source_sha256": "5d788ee9279e13acb8f0634e95dfd629ed226ac7dcf6567add75aa11a786881d",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/about/page.tsx",
+      "sha256": "50afea846e15329ac3d8e599da8adba2e0ee1089a72c879e2724a3b613ed77b5",
+      "source_sha256": "50afea846e15329ac3d8e599da8adba2e0ee1089a72c879e2724a3b613ed77b5"
+    },
+    {
+      "path": "frontend/app/absence-review.css",
+      "sha256": "ef5a09c0c5b3ef5123688723922b79c57025477c34681826e50a57ae648abe8c",
+      "source_sha256": "ef5a09c0c5b3ef5123688723922b79c57025477c34681826e50a57ae648abe8c"
+    },
+    {
+      "path": "frontend/app/admissions/layout.tsx",
+      "sha256": "f1f09f7ef28e9480c3bfc891c6563e9f94835915db2429bcbc8694dd0c1b5520",
+      "source_sha256": "d85a203bc41bde96739fe53c163163daa52d7bdd37588c8ef161e024e186c785",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/admissions/page.tsx",
+      "sha256": "c29a2ec8065978b43ad11a07fbd48f25bf4b63eec46b63fadbbae4348ffa6981",
+      "source_sha256": "6dbfffa5dc0a8f4f0d795b3554da06f6bf62ee49989b54a44d29090f589a0eb7",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/attendance-report.css",
+      "sha256": "42317bc57b6bf66ca4b4b94702fe466dc2a3b27db2d306576778152fe556fccb",
+      "source_sha256": "42317bc57b6bf66ca4b4b94702fe466dc2a3b27db2d306576778152fe556fccb"
+    },
+    {
+      "path": "frontend/app/attendance-workflow.css",
+      "sha256": "a0338a171ca931a0e20d94dca5e1423fff5c967cf66cad000f0d6590e3391c45",
+      "source_sha256": "a0338a171ca931a0e20d94dca5e1423fff5c967cf66cad000f0d6590e3391c45"
+    },
+    {
+      "path": "frontend/app/bank-navigation.css",
+      "sha256": "bb0de53cd14e9f7a697cdac769217a3806371a6c710b301e78595d1d7695485c",
+      "source_sha256": "bb0de53cd14e9f7a697cdac769217a3806371a6c710b301e78595d1d7695485c"
+    },
+    {
+      "path": "frontend/app/bulk-selection.css",
+      "sha256": "0f82e0dd49879f8870b1a51b220697e134da157e5b01995978210c03f28e2346",
+      "source_sha256": "0f82e0dd49879f8870b1a51b220697e134da157e5b01995978210c03f28e2346"
+    },
+    {
+      "path": "frontend/app/contact/layout.tsx",
+      "sha256": "5b7afe56202254ba7532ba808eae26f45d2021a29f9f1ffe51cff95a3af3189c",
+      "source_sha256": "457f37184f75dabe00a46a95f1b7932cd1b928f310d41b209be280197ef748be",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/contact/page.tsx",
+      "sha256": "19b4d52de4562bcda6ecd1dee7acd82668e59ca07d95fc9e100b6a6c41b4c2ae",
+      "source_sha256": "19b4d52de4562bcda6ecd1dee7acd82668e59ca07d95fc9e100b6a6c41b4c2ae"
+    },
+    {
+      "path": "frontend/app/data-exchange.css",
+      "sha256": "588bb01478db6d8b15cce6df6b8164eb88964ec79c3b566dcdcf398e826b24c0",
+      "source_sha256": "588bb01478db6d8b15cce6df6b8164eb88964ec79c3b566dcdcf398e826b24c0"
+    },
+    {
+      "path": "frontend/app/facilities/layout.tsx",
+      "sha256": "9035a877c31d6b48e778941aa558dd9a51683afaded3ef3b1848a2b1961f1f0a",
+      "source_sha256": "aaaf25ce179b6cd416bfa94b3b1835e5424e1db7ebb7ce1e63462b5a41401761",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/facilities/page.tsx",
+      "sha256": "f201d89e3fbc308cc5b3c520a76977d40087fe19c7e7f55b6b6ec6d3452804f5",
+      "source_sha256": "f201d89e3fbc308cc5b3c520a76977d40087fe19c7e7f55b6b6ec6d3452804f5"
+    },
+    {
+      "path": "frontend/app/faq/layout.tsx",
+      "sha256": "0c937e1b81c8b2c45af8f68d4c173012bf443d29a5ea4b824cf37836430b0d86",
+      "source_sha256": "bbb56388ebe939352b0f26606220c744bc311a52b1d761947799ff264c130d17",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/faq/page.tsx",
+      "sha256": "c52182d888e240ddccb383c68f3348afe5de8af55a1947ad06f257b00b761c31",
+      "source_sha256": "c52182d888e240ddccb383c68f3348afe5de8af55a1947ad06f257b00b761c31"
+    },
+    {
+      "path": "frontend/app/field-errors.css",
+      "sha256": "afdf789fefea523e780d692b70a23f5115e41845f55964568cc4f8f2b94a2478",
+      "source_sha256": "afdf789fefea523e780d692b70a23f5115e41845f55964568cc4f8f2b94a2478"
+    },
+    {
+      "path": "frontend/app/file-controls.css",
+      "sha256": "d89ff8ad59fd00c2cc637ddfd6cd30ae3ab2a718b59de5aa84214d806bea90e4",
+      "source_sha256": "d89ff8ad59fd00c2cc637ddfd6cd30ae3ab2a718b59de5aa84214d806bea90e4"
+    },
+    {
+      "path": "frontend/app/gallery-albums.css",
+      "sha256": "f863e78c20d3268ee7bdbad86c258f998671ac87002359683f11489791ecec3d",
+      "source_sha256": "f863e78c20d3268ee7bdbad86c258f998671ac87002359683f11489791ecec3d"
+    },
+    {
+      "path": "frontend/app/gallery/layout.tsx",
+      "sha256": "613d19e479b5034ff9a35d739b4811d6148de6ffcd234df8eb8c20525b894405",
+      "source_sha256": "d64e638b45bc1a4fa86a740e5523b20a811ba46a8539fb1ec0015f29246dd90a",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/gallery/page.tsx",
+      "sha256": "2a04640519180e51cee5729b1577f312c695ac951f4c61b5b471255a005b9aef",
+      "source_sha256": "2a04640519180e51cee5729b1577f312c695ac951f4c61b5b471255a005b9aef"
+    },
+    {
+      "path": "frontend/app/globals.css",
+      "sha256": "927bc5b16751f70eeff7d1f224af3b1e552dbbedb386ccade960941f079a7a45",
+      "source_sha256": "927bc5b16751f70eeff7d1f224af3b1e552dbbedb386ccade960941f079a7a45"
+    },
+    {
+      "path": "frontend/app/homepage-experience.css",
+      "sha256": "2a72b36d0f2b77677ff2fb42ad730d3141c1babb5e22a89b060ab316ae8dd1b2",
+      "source_sha256": "2a72b36d0f2b77677ff2fb42ad730d3141c1babb5e22a89b060ab316ae8dd1b2"
+    },
+    {
+      "path": "frontend/app/homepage-motion.css",
+      "sha256": "2d8e869571d4b8b5c372e9d077b59075d883cb6714115af03dbdb51965b3b453",
+      "source_sha256": "2d8e869571d4b8b5c372e9d077b59075d883cb6714115af03dbdb51965b3b453"
+    },
+    {
+      "path": "frontend/app/homepage-settings.css",
+      "sha256": "57408f8a15c449bee90755ce6962837d29e2132214fe01871283657204f4d3c3",
+      "source_sha256": "57408f8a15c449bee90755ce6962837d29e2132214fe01871283657204f4d3c3"
+    },
+    {
+      "path": "frontend/app/honors/layout.tsx",
+      "sha256": "49ce6ad371a429b49814bcc83d0a4d6ebff1d4a34def6d169095058349c05316",
+      "source_sha256": "266f9ce177619e3dae2860cacea87e24396c61bf32371e63d2417a2681e0f850",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/honors/page.tsx",
+      "sha256": "fededbaee923123752b609de7434b0df62712b13ed6763fdab85b3c0c9338c1d",
+      "source_sha256": "fededbaee923123752b609de7434b0df62712b13ed6763fdab85b3c0c9338c1d"
+    },
+    {
+      "path": "frontend/app/import-preview.css",
+      "sha256": "10046952bf112d9598f161ad401d6433ed065a39cf8db7c15bf8dcfc901d806f",
+      "source_sha256": "10046952bf112d9598f161ad401d6433ed065a39cf8db7c15bf8dcfc901d806f"
+    },
+    {
+      "path": "frontend/app/layout.tsx",
+      "sha256": "02e3c65e9a66d20892f7d6d8b0b609abb167c47d75b19262b7782fcae51bd5ac",
+      "source_sha256": "99382820f3f4c8e0f5588d1e02f007c5d6f5e11c67eae8aaac9dccdc30972459",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/learning-scenes.css",
+      "sha256": "449315c9b6992b5856457abd82111851a81948316f41b07e1c293667cb6233cb",
+      "source_sha256": "449315c9b6992b5856457abd82111851a81948316f41b07e1c293667cb6233cb"
+    },
+    {
+      "path": "frontend/app/loading.tsx",
+      "sha256": "ce50cb132657de9107c5cf98b03e4d6f254cb82730ecf693ad85a2de5857315b",
+      "source_sha256": "ce50cb132657de9107c5cf98b03e4d6f254cb82730ecf693ad85a2de5857315b"
+    },
+    {
+      "path": "frontend/app/login-experience.css",
+      "sha256": "67b0e47bab7f1df91c826a5a93a281d83bd6cc3be2c81bffd2fb609475398759",
+      "source_sha256": "67b0e47bab7f1df91c826a5a93a281d83bd6cc3be2c81bffd2fb609475398759"
+    },
+    {
+      "path": "frontend/app/login/page.tsx",
+      "sha256": "6dfc69fe90a70162aef817f6c9f4c5f8c12f65d9892efbcbeb3d878eec77b7af",
+      "source_sha256": "4467ab4465bd342c79ce1856e28f61c72aaf7a4f16126161f5140c64f0fd78a1",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/manifest.ts",
+      "sha256": "313fcf1efe04a9b5a78d5cc4c461b7602f5d9bd26eb3a6339be24c568410ef5b",
+      "source_sha256": "1259c9a31375a1b124f694fb17449614f48736dbccfc88959c921c357f77ab32",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/monthly-report-controls.css",
+      "sha256": "f3786735f1a9c515512ef441c01b999295d6350be432e876a2fad61260c1e9b4",
+      "source_sha256": "f3786735f1a9c515512ef441c01b999295d6350be432e876a2fad61260c1e9b4"
+    },
+    {
+      "path": "frontend/app/monthly-report-layout.css",
+      "sha256": "fc5f99ee3ec368904665857ed20bec8c96f81d44013a6d3f870c56cae5363a01",
+      "source_sha256": "fc5f99ee3ec368904665857ed20bec8c96f81d44013a6d3f870c56cae5363a01"
+    },
+    {
+      "path": "frontend/app/my-classes.css",
+      "sha256": "9ba610e4ac62c42204557f59ccb1abe8c08cbf745df2521b5844a8b5634c7dfd",
+      "source_sha256": "9ba610e4ac62c42204557f59ccb1abe8c08cbf745df2521b5844a8b5634c7dfd"
+    },
+    {
+      "path": "frontend/app/news/[id]/page.tsx",
+      "sha256": "f189148ec768e5055813bc066d7f21d5c47285e8078846b204d13867c8a3fda3",
+      "source_sha256": "59cd290fe5da83787023be89d9ba53eb4dcb44026497e28d3360ebb86f90afd3",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/news/layout.tsx",
+      "sha256": "6affc4201b5a3c18e71804a2a4a806d1ac7ae0c1529eb9939ce1fb6311749eae",
+      "source_sha256": "3bd8ef38e1a33a87bdbbce8924035616b2080835cad41a1e540c22a7d4ad2429",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/news/page.tsx",
+      "sha256": "bd7abb59c595892f2d248fbfff411b7d4ef3ca3b48f9f4a70f4c7c3800c7054d",
+      "source_sha256": "bd7abb59c595892f2d248fbfff411b7d4ef3ca3b48f9f4a70f4c7c3800c7054d"
+    },
+    {
+      "path": "frontend/app/not-found.tsx",
+      "sha256": "3d9fd2294c5f12b8836fa691a8e95f59c165a2dcfc46316ac9b16ac7731f63fd",
+      "source_sha256": "3d9fd2294c5f12b8836fa691a8e95f59c165a2dcfc46316ac9b16ac7731f63fd"
+    },
+    {
+      "path": "frontend/app/notification-center.css",
+      "sha256": "ba2af1b8856ea0e918f93156d1c0a1123f1bd9559c5cd7e9539b5f4ddb82a31a",
+      "source_sha256": "ba2af1b8856ea0e918f93156d1c0a1123f1bd9559c5cd7e9539b5f4ddb82a31a"
+    },
+    {
+      "path": "frontend/app/one-time-code.css",
+      "sha256": "2ff87a85f6774273f76ae86456d969bddd5a93cb091ad4e469a2ab59fc5cadfe",
+      "source_sha256": "2ff87a85f6774273f76ae86456d969bddd5a93cb091ad4e469a2ab59fc5cadfe"
+    },
+    {
+      "path": "frontend/app/page.tsx",
+      "sha256": "143d566aa6f6c089be5b207bfb9be491c09821f8fed49ecd184b360f9cab9589",
+      "source_sha256": "062ed944a953a171d46c32c635d0d70f211c94cded76a6662833730606f71a16",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/panel-feedback.css",
+      "sha256": "7ec938c908cb33d68f52a534b011101cf8c6b9c40027241473a381f78576a97c",
+      "source_sha256": "7ec938c908cb33d68f52a534b011101cf8c6b9c40027241473a381f78576a97c"
+    },
+    {
+      "path": "frontend/app/panel-help.css",
+      "sha256": "ac2815dc8a85f0c1eb583a4cbd9c9302e35690f4abaf9dcb186b58a8a211904f",
+      "source_sha256": "ac2815dc8a85f0c1eb583a4cbd9c9302e35690f4abaf9dcb186b58a8a211904f"
+    },
+    {
+      "path": "frontend/app/panel-polish.css",
+      "sha256": "970cd6df93350b702de02ed55eee6be8eb54cf9c4e9b73febbe1b36785355d35",
+      "source_sha256": "970cd6df93350b702de02ed55eee6be8eb54cf9c4e9b73febbe1b36785355d35"
+    },
+    {
+      "path": "frontend/app/panel-workflows.css",
+      "sha256": "d64acf9694a29148d10f83943b25e3ae3afa07bbf832bd9079a067f80c00fd21",
+      "source_sha256": "d64acf9694a29148d10f83943b25e3ae3afa07bbf832bd9079a067f80c00fd21"
+    },
+    {
+      "path": "frontend/app/panel/page.tsx",
+      "sha256": "17e59ef80ba89d10e13e83d5c0ce43e99d7811a5177493456548f01e6e429b97",
+      "source_sha256": "fe3882c6aa8c3b0a422ca373da27f3b49f0cebac2151e7b329f7ce047e5d5f02",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/pencil-loader.css",
+      "sha256": "4fcb01a2e84d1f2dc11da2af4821767a07d3d357964f9a313a479558cd5d81f1",
+      "source_sha256": "4fcb01a2e84d1f2dc11da2af4821767a07d3d357964f9a313a479558cd5d81f1"
+    },
+    {
+      "path": "frontend/app/portal/layout.tsx",
+      "sha256": "b5edf319ae878c5fc1c8b594f62d1989b129036fc465b290c20de5ae10ab5da0",
+      "source_sha256": "b64eff2099d6199e9673ed0368ab0db6de6aebd20f529e85b57b7bee73dd0b83",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/portal/login/page.tsx",
+      "sha256": "ebc303f581a3ba7fface871aa5db2acf1abef01de70a72353a39f116c6a2bd2e",
+      "source_sha256": "ebc303f581a3ba7fface871aa5db2acf1abef01de70a72353a39f116c6a2bd2e"
+    },
+    {
+      "path": "frontend/app/portal/page.tsx",
+      "sha256": "37f0d1c174f415f4fd79da5997dfce00919d052daac9687c11c7ac3d5f827722",
+      "source_sha256": "37f0d1c174f415f4fd79da5997dfce00919d052daac9687c11c7ac3d5f827722"
+    },
+    {
+      "path": "frontend/app/portal/panel/page.tsx",
+      "sha256": "5c7b0abd0abbd2300f62fd43badfed518b2509711f7c3250404453ae6c555a85",
+      "source_sha256": "5c7b0abd0abbd2300f62fd43badfed518b2509711f7c3250404453ae6c555a85"
+    },
+    {
+      "path": "frontend/app/privacy/layout.tsx",
+      "sha256": "ff1c6e7b89a9dc8fae04f5e5703ee98d68e74216267dc471262a8ab0fbf124ea",
+      "source_sha256": "bb169996306d7f0e08549ea9844f78f2938dcb0c3b31cc88a6137be3652a5e85",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/privacy/page.tsx",
+      "sha256": "3f8962b275ad0adcfcc182a972343c0f99e94353d679266982c2f0fd9982d3b8",
+      "source_sha256": "3f8962b275ad0adcfcc182a972343c0f99e94353d679266982c2f0fd9982d3b8"
+    },
+    {
+      "path": "frontend/app/public-editorial.css",
+      "sha256": "87fd6ffcce7cb4bc9c6a0a73fe3efff5806938161dfed43e5324d2790df1f4d2",
+      "source_sha256": "87fd6ffcce7cb4bc9c6a0a73fe3efff5806938161dfed43e5324d2790df1f4d2"
+    },
+    {
+      "path": "frontend/app/public-experience.css",
+      "sha256": "b4cfcc33a3a6aa73ea4c239d649e94e64529a1153990f691d2e675555492d8fe",
+      "source_sha256": "b4cfcc33a3a6aa73ea4c239d649e94e64529a1153990f691d2e675555492d8fe"
+    },
+    {
+      "path": "frontend/app/public-management.css",
+      "sha256": "12dc4a5ffb94ca896e698b10cfcfdd221ae9c7afabcd52a5d8a21fada92359dd",
+      "source_sha256": "12dc4a5ffb94ca896e698b10cfcfdd221ae9c7afabcd52a5d8a21fada92359dd"
+    },
+    {
+      "path": "frontend/app/public-photo-slider.css",
+      "sha256": "902102949c0411f6e9f1668aa4c46b6f46f81c77639eef814c80770bc70cd7c7",
+      "source_sha256": "902102949c0411f6e9f1668aa4c46b6f46f81c77639eef814c80770bc70cd7c7"
+    },
+    {
+      "path": "frontend/app/radial-social-menu.css",
+      "sha256": "49a29703627974791222b0adfae92f5241b4604671621312edf557f09738f508",
+      "source_sha256": "49a29703627974791222b0adfae92f5241b4604671621312edf557f09738f508"
+    },
+    {
+      "path": "frontend/app/robots.ts",
+      "sha256": "45e73ee53678502ebaae7353b4a46693a809fd0c3d26ef7b46e1d2ee2bc305a9",
+      "source_sha256": "45e73ee53678502ebaae7353b4a46693a809fd0c3d26ef7b46e1d2ee2bc305a9"
+    },
+    {
+      "path": "frontend/app/school-structure.css",
+      "sha256": "c2190a01d9b938730d07b352129f4fcec4ebabe340b2badcf0fb7bc3b4e626d5",
+      "source_sha256": "c2190a01d9b938730d07b352129f4fcec4ebabe340b2badcf0fb7bc3b4e626d5"
+    },
+    {
+      "path": "frontend/app/searchable-dropdown.css",
+      "sha256": "bd76449faf6a0e9e74714069aca4c315802a72fe8550ce6f2f0832bd81fc15c8",
+      "source_sha256": "bd76449faf6a0e9e74714069aca4c315802a72fe8550ce6f2f0832bd81fc15c8"
+    },
+    {
+      "path": "frontend/app/searchable-person-select.css",
+      "sha256": "2b46d167256f6bcfcf65aaafb40a6d93662b1e3b9a6a87537a789fdf810f61a5",
+      "source_sha256": "2b46d167256f6bcfcf65aaafb40a6d93662b1e3b9a6a87537a789fdf810f61a5"
+    },
+    {
+      "path": "frontend/app/sitemap.ts",
+      "sha256": "64d87615f6c302ee67b1fbbdfe520bc3995067ae101cf0236d9469a51f0b1218",
+      "source_sha256": "64d87615f6c302ee67b1fbbdfe520bc3995067ae101cf0236d9469a51f0b1218"
+    },
+    {
+      "path": "frontend/app/sms.css",
+      "sha256": "0d7f542ba832d0cd0c8667ed6f479dfd89be50d53e5633db1b2a9b0fedb2f444",
+      "source_sha256": "0d7f542ba832d0cd0c8667ed6f479dfd89be50d53e5633db1b2a9b0fedb2f444"
+    },
+    {
+      "path": "frontend/app/staff/layout.tsx",
+      "sha256": "e0efa768453a9946c840034d674f2af8522585fc1384c551813b1254ca0a3f23",
+      "source_sha256": "78715a1ceaa049f673282aa2d8560aed010637d2038a4c8dd3ff31e7ddcf5547",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/app/staff/page.tsx",
+      "sha256": "e23e4ed4e9dd15419f4fc682ba0a363923d7d3a2ad46c924eb0e2f55f8b8ca4e",
+      "source_sha256": "e23e4ed4e9dd15419f4fc682ba0a363923d7d3a2ad46c924eb0e2f55f8b8ca4e"
+    },
+    {
+      "path": "frontend/app/structure-archive.css",
+      "sha256": "c550b97aef9e56082bbc22f6215828667796971a99c750af55acf7ae18025051",
+      "source_sha256": "c550b97aef9e56082bbc22f6215828667796971a99c750af55acf7ae18025051"
+    },
+    {
+      "path": "frontend/app/student-file.css",
+      "sha256": "71dda1c7cedcba5c5d34d5afabad7351d268b7e669c065ec5392805fece25d03",
+      "source_sha256": "71dda1c7cedcba5c5d34d5afabad7351d268b7e669c065ec5392805fece25d03"
+    },
+    {
+      "path": "frontend/app/student-roster.css",
+      "sha256": "9ce6547688d8b21aab20e883cb36ecc71dc51dbbba36577e2d20c2d16c1368e7",
+      "source_sha256": "9ce6547688d8b21aab20e883cb36ecc71dc51dbbba36577e2d20c2d16c1368e7"
+    },
+    {
+      "path": "frontend/app/teacher-file.css",
+      "sha256": "f2155d223c42f493ab71b4c99a16d943f26b37479ff62c86270b2af186463ef4",
+      "source_sha256": "f2155d223c42f493ab71b4c99a16d943f26b37479ff62c86270b2af186463ef4"
+    },
+    {
+      "path": "frontend/app/teaching-allocation.css",
+      "sha256": "3a990ab7ec2060de756ec427ad67c1282e96e660e4b93121649072332725929e",
+      "source_sha256": "3a990ab7ec2060de756ec427ad67c1282e96e660e4b93121649072332725929e"
+    },
+    {
+      "path": "frontend/app/timetable-grid.css",
+      "sha256": "4db57ebe45b5425421474b376a1de4f41b7e2ba3cf2ce34a01a203534724ce2e",
+      "source_sha256": "4db57ebe45b5425421474b376a1de4f41b7e2ba3cf2ce34a01a203534724ce2e"
+    },
+    {
+      "path": "frontend/app/user-access.css",
+      "sha256": "42d88be3978c937ec2b27f178f9a61a2119453cee295ccb9a4167eb87da71f01",
+      "source_sha256": "42d88be3978c937ec2b27f178f9a61a2119453cee295ccb9a4167eb87da71f01"
+    },
+    {
+      "path": "frontend/app/user-management.css",
+      "sha256": "ebe37b7f3575e1912e3770bc2ac2a8be10d4d6b213779dd1792063ac94161621",
+      "source_sha256": "ebe37b7f3575e1912e3770bc2ac2a8be10d4d6b213779dd1792063ac94161621"
+    },
+    {
+      "path": "frontend/components/academic-reports.tsx",
+      "sha256": "3bbbfc9943462f3b652cd7ab239052ef2f1adb8a2ee16153a70f984b33a091bc"
+    },
+    {
+      "path": "frontend/components/admissions-inbox.tsx",
+      "sha256": "8647e2f526a03b6d5da8b5403c8d78a8de636fb93dc6a8791f6f7d13edb8ac02",
+      "source_sha256": "8647e2f526a03b6d5da8b5403c8d78a8de636fb93dc6a8791f6f7d13edb8ac02"
+    },
+    {
+      "path": "frontend/components/announcements.tsx",
+      "sha256": "0362755917eb29c0026103750a787750e2441684751feceb10998aca0400b13c",
+      "source_sha256": "0362755917eb29c0026103750a787750e2441684751feceb10998aca0400b13c"
+    },
+    {
+      "path": "frontend/components/archive-student-dialog.tsx",
+      "sha256": "60cc4576454049a897f4e7aacec15df41cc861d6a5c056f246a282aa718f4413",
+      "source_sha256": "60cc4576454049a897f4e7aacec15df41cc861d6a5c056f246a282aa718f4413"
+    },
+    {
+      "path": "frontend/components/archived-students.tsx",
+      "sha256": "c4133dab5c0cc932dedab6f364819a8c7572decd424ead86c1a80356ba0acb28",
+      "source_sha256": "c4133dab5c0cc932dedab6f364819a8c7572decd424ead86c1a80356ba0acb28"
+    },
     {
       "path": "frontend/components/assignment-progress.tsx",
       "sha256": "223df7b43bcaf4c24fd1c93f0acbb1ea42a5842f007962f7e6f07c9fedb1c4f9"
@@ -13,116 +486,474 @@
       "sha256": "81dd46346ebaa007f490516938bce8ab6ee0ca29a6be492c989f02cb283f97ad"
     },
     {
-      "path": "frontend/components/attendance-report.tsx",
-      "sha256": "c71c45ce6eb04f901917554210443ae75c1b8263e79d6d117c58ca38eab57ccd"
+      "path": "frontend/components/assignments.tsx",
+      "sha256": "73d3c2942c65472f3cb2bd8893286f55ed9b1b6bcf9f820f93f85532eaa2a3ea",
+      "source_sha256": "73d3c2942c65472f3cb2bd8893286f55ed9b1b6bcf9f820f93f85532eaa2a3ea"
     },
     {
       "path": "frontend/components/attendance-class-report.tsx",
       "sha256": "7664c73c1bb872ae276fc9fe27aee1eaffbec695791f3c73d33153f92ff0e5d5"
     },
     {
+      "path": "frontend/components/attendance-report.tsx",
+      "sha256": "c71c45ce6eb04f901917554210443ae75c1b8263e79d6d117c58ca38eab57ccd"
+    },
+    {
       "path": "frontend/components/attendance-today-summary.tsx",
       "sha256": "2b2e7af10289892dac61bce44fa47a7093f82b934a8e4156f0562256f4ca7500"
     },
     {
-      "path": "frontend/components/grade-list.tsx",
-      "sha256": "e0e7241304f0a256125efdcfe5202d1d8ce29516c58dbc73e68a455285b03efa"
+      "path": "frontend/components/attendance-workflow.tsx",
+      "sha256": "2fb1eea2f0f6c88053d41b335baceabea3aee53ad8acd2831b915d2d72e38882",
+      "source_sha256": "2fb1eea2f0f6c88053d41b335baceabea3aee53ad8acd2831b915d2d72e38882"
+    },
+    {
+      "path": "frontend/components/brand.tsx",
+      "sha256": "65de94623d7f95371b52015d19874fd273c8bd31d8742808ca80d26a4e3b8644",
+      "source_sha256": "cd409370defd6e1ead779ca6b7fa7fe4fbaf59d6489fa7b5875a2a59278bb97b",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/bulk-archive.tsx",
+      "sha256": "42edd8507b8693bd0939a08b81f80a5394976dbdb0a3418c159708a75efb7eba",
+      "source_sha256": "42edd8507b8693bd0939a08b81f80a5394976dbdb0a3418c159708a75efb7eba"
+    },
+    {
+      "path": "frontend/components/communications.tsx",
+      "sha256": "6af98ff986c9eef88ad768a7209bf63a471d4dbab5a5641cafdc7c4621759971",
+      "source_sha256": "6af98ff986c9eef88ad768a7209bf63a471d4dbab5a5641cafdc7c4621759971"
+    },
+    {
+      "path": "frontend/components/content-editor.tsx",
+      "sha256": "51fa835de00ffa0dc0941cff45c4fc9146f3d289338dbf8e9f41baf628903692",
+      "source_sha256": "51fa835de00ffa0dc0941cff45c4fc9146f3d289338dbf8e9f41baf628903692"
+    },
+    {
+      "path": "frontend/components/course-correction-request.tsx",
+      "sha256": "0f49b9849ab5a014ed8362fb02382e2d2fd137347654ba70fc9b1b5931e400aa",
+      "source_sha256": "0f49b9849ab5a014ed8362fb02382e2d2fd137347654ba70fc9b1b5931e400aa"
+    },
+    {
+      "path": "frontend/components/daily-absence-review.tsx",
+      "sha256": "da17b63bb0de9341f325d3812b24f4679ec37e21fd9a500a3b8d73cec8768d8a",
+      "source_sha256": "da17b63bb0de9341f325d3812b24f4679ec37e21fd9a500a3b8d73cec8768d8a"
+    },
+    {
+      "path": "frontend/components/dashboard-home.tsx",
+      "sha256": "1055c46e09f804b3f0d2a6fe8a464dd60f230edc85b7f17ef0802a22761bdcd6"
+    },
+    {
+      "path": "frontend/components/data-exchange.tsx",
+      "sha256": "a2cf1e5317f80757da6a138234b566e8a5b746c708727eab6dafbc742b4d0120",
+      "source_sha256": "a2cf1e5317f80757da6a138234b566e8a5b746c708727eab6dafbc742b4d0120"
+    },
+    {
+      "path": "frontend/components/evaluations.tsx",
+      "sha256": "ff09d91ed5b93f21d62740187962a6498480eeab8fa39e25623cd02f996f9687",
+      "source_sha256": "ff09d91ed5b93f21d62740187962a6498480eeab8fa39e25623cd02f996f9687"
+    },
+    {
+      "path": "frontend/components/exams.tsx",
+      "sha256": "e44d4e24ff4e7e45ab91180499cdf03e66ef39a87fbaac49b5490f519b451751",
+      "source_sha256": "e44d4e24ff4e7e45ab91180499cdf03e66ef39a87fbaac49b5490f519b451751"
+    },
+    {
+      "path": "frontend/components/footer-study.tsx",
+      "sha256": "32daafb86f26055432ed39a204ded97e990f36bbd480028bc2ce842d1125436c",
+      "source_sha256": "32daafb86f26055432ed39a204ded97e990f36bbd480028bc2ce842d1125436c"
+    },
+    {
+      "path": "frontend/components/grade-corrections.tsx",
+      "sha256": "8b911265be7ff10bd81259ac7081c9f5273da0c75e56af612f299997dc7983fa",
+      "source_sha256": "8b911265be7ff10bd81259ac7081c9f5273da0c75e56af612f299997dc7983fa"
     },
     {
       "path": "frontend/components/grade-entry.tsx",
       "sha256": "534d513c6fc42539a2f754e86a852dff7b95bb0be302e8dda0d5c9ab882e66c9"
     },
     {
-      "path": "frontend/components/academic-reports.tsx",
-      "sha256": "3bbbfc9943462f3b652cd7ab239052ef2f1adb8a2ee16153a70f984b33a091bc"
+      "path": "frontend/components/grade-list.tsx",
+      "sha256": "e0e7241304f0a256125efdcfe5202d1d8ce29516c58dbc73e68a455285b03efa"
+    },
+    {
+      "path": "frontend/components/homepage-experience.tsx",
+      "sha256": "f3c8283bf71eb173a5d4417ec6b34b35435fa16ae86417d2d9300a72df5edc09",
+      "source_sha256": "c5746475ac87e77013505b0730ad87a0511e6ca9c0171a9b8f0009ab3afd40a1",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/homepage-settings.tsx",
+      "sha256": "de24fed7c599f249385f96f5671ff1e139f112f6137073a6ebb50774243129e8",
+      "source_sha256": "de24fed7c599f249385f96f5671ff1e139f112f6137073a6ebb50774243129e8"
+    },
+    {
+      "path": "frontend/components/import-preview.tsx",
+      "sha256": "f7f64a135c145286433e91e82c2ad48b69f0e084a4098c96f3a0a6b9677e1da9",
+      "source_sha256": "f7f64a135c145286433e91e82c2ad48b69f0e084a4098c96f3a0a6b9677e1da9"
+    },
+    {
+      "path": "frontend/components/learning-scenes.tsx",
+      "sha256": "a1a8d07f390ee817b164caf8f5bc7b08a9b26852d1f92c8657e5f5c3a6ffe8c4",
+      "source_sha256": "a1a8d07f390ee817b164caf8f5bc7b08a9b26852d1f92c8657e5f5c3a6ffe8c4"
+    },
+    {
+      "path": "frontend/components/login-illustration.tsx",
+      "sha256": "03a7f876c6f0a6b4aa597f26eb1f1b1f1367f9c0c4f09b8f04092dc83ee7e906",
+      "source_sha256": "03a7f876c6f0a6b4aa597f26eb1f1b1f1367f9c0c4f09b8f04092dc83ee7e906"
+    },
+    {
+      "path": "frontend/components/manual-data-entry.tsx",
+      "sha256": "bc46791dd3d62f175c88e30aa862f685de7cdfc2b3b5043e6bfc45e562f59f8a",
+      "source_sha256": "bc46791dd3d62f175c88e30aa862f685de7cdfc2b3b5043e6bfc45e562f59f8a"
     },
     {
       "path": "frontend/components/monthly-report-cards.tsx",
       "sha256": "ada380b47dc388121c5dc24e6d49e7fd257e357f9e01e1196154a123b00149b3"
     },
     {
-      "path": "frontend/components/persian-date-picker.tsx",
-      "sha256": "0fd257d051ff4ee0e2d1c95aed97228b30acba6045f82a1bc35d36620f4582c2"
+      "path": "frontend/components/my-classes.tsx",
+      "sha256": "2d4aeaee7e182b97dc42da641daed044376964d673e90e42351252ba05bf68be",
+      "source_sha256": "2d4aeaee7e182b97dc42da641daed044376964d673e90e42351252ba05bf68be"
     },
     {
-      "path": "frontend/components/timetable.tsx",
-      "sha256": "eb40b80d2e24306198674409e3c28f3f0974c859c81c2375500a024b19e65304"
+      "path": "frontend/components/news-editor.tsx",
+      "sha256": "53d77629666ee8a2664c94ca1f06aa64e217ec1481d461f73e51bf94184e4fef",
+      "source_sha256": "53d77629666ee8a2664c94ca1f06aa64e217ec1481d461f73e51bf94184e4fef"
     },
     {
       "path": "frontend/components/notification-center.tsx",
       "sha256": "aa9b7846838e051c4a87ab4ce9cd6029e65ee1d1b074b1b462c89f37cfdbef2c"
     },
     {
-      "path": "frontend/components/panel-navigation-drawer.tsx",
-      "sha256": "9b3e07ca99f4e7956d494303cf52f9195d9e08025a507f83e4475734145e9f54"
+      "path": "frontend/components/operation-overlay.tsx",
+      "sha256": "658227280b6198a9cc7a1dbfd565c10dd56f360e7de92b6082fe2cfa219e4b6e"
     },
     {
       "path": "frontend/components/panel-feedback.tsx",
       "sha256": "b615e80f74413fd036bc34e8b93aa452974d90d166f72f122cd814b271cf61c5"
     },
     {
-      "path": "frontend/components/operation-overlay.tsx",
-      "sha256": "658227280b6198a9cc7a1dbfd565c10dd56f360e7de92b6082fe2cfa219e4b6e"
+      "path": "frontend/components/panel-help.tsx",
+      "sha256": "a7ab5e0a9a2e7165da094ec181d471c6ed6cf3d89240d215bf864465f0949459",
+      "source_sha256": "a7ab5e0a9a2e7165da094ec181d471c6ed6cf3d89240d215bf864465f0949459"
+    },
+    {
+      "path": "frontend/components/panel-navigation-drawer.tsx",
+      "sha256": "9b3e07ca99f4e7956d494303cf52f9195d9e08025a507f83e4475734145e9f54"
+    },
+    {
+      "path": "frontend/components/password-recovery.tsx",
+      "sha256": "26e8a441ed3bd8254282c955db0e62afa6a09fbb038243bbd27b0943e2f46596",
+      "source_sha256": "26e8a441ed3bd8254282c955db0e62afa6a09fbb038243bbd27b0943e2f46596"
+    },
+    {
+      "path": "frontend/components/password-settings.tsx",
+      "sha256": "6469c1d7070c75a1c7dc5fa3f3b8baf782c3fcd375c33be3db9d0c166ab79a36",
+      "source_sha256": "6469c1d7070c75a1c7dc5fa3f3b8baf782c3fcd375c33be3db9d0c166ab79a36"
+    },
+    {
+      "path": "frontend/components/persian-date-picker.tsx",
+      "sha256": "0fd257d051ff4ee0e2d1c95aed97228b30acba6045f82a1bc35d36620f4582c2"
+    },
+    {
+      "path": "frontend/components/persian-validation.tsx",
+      "sha256": "12c129d21cbf575fd200a95693d657dcfd69a96608eb517a2eca2af185d56329",
+      "source_sha256": "12c129d21cbf575fd200a95693d657dcfd69a96608eb517a2eca2af185d56329"
+    },
+    {
+      "path": "frontend/components/public-about.tsx",
+      "sha256": "6a07700e67fb1a7d46fde60a1a945cdefa00613bfd5c59eeab3a5df1ebda38f0",
+      "source_sha256": "bd0acced7c79df1b1d3f29e51c5ace695e060075f9a18fb912722d2372e10f68",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-contact.tsx",
+      "sha256": "8a0f49c20504fce4c9a2a1c32728089d291c21bbf62b5f1b89472661b6bfdfac",
+      "source_sha256": "c61d078801747e5af02360af329976403be58c23edd3f942aca9c870c8519748",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-directory.tsx",
+      "sha256": "c5ee1b414615a8be72604b70db4e0e09b02cbf05040ef883e7e007d481c277b0",
+      "source_sha256": "d95828b1cedb4eec5cf2f0037079be3584499fc51aa5b13af008c55ed5678fcd",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-experience.tsx",
+      "sha256": "30363161a6856d750455c2ff463d2cc171a79c4200e3606d64d239f97f69cbec",
+      "source_sha256": "30363161a6856d750455c2ff463d2cc171a79c4200e3606d64d239f97f69cbec"
+    },
+    {
+      "path": "frontend/components/public-faq.tsx",
+      "sha256": "cd1ce18b06b4c5ece3d4b1a2a590522fd3f2bfd075915818f5dba789094b92eb",
+      "source_sha256": "9341d575e2fe94496e89f93adbec5626444f334a275142175ebddf0b08c14805",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-gallery.tsx",
+      "sha256": "0da90bb6d9a7e7ee348b02cdcf89b4fecf72d7647fe47b992284c99e25400e38",
+      "source_sha256": "e945fa40f3de4878f1afe1c633a5c413f62a5904783c08304621696cc093c4a8",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-intro-film.tsx",
+      "sha256": "96fbce12507655c2237c7207a958dbf35ffc9f03faa56e46f9bb8c71ba9076b7",
+      "source_sha256": "79314a32faf100e1c268a9f57292e715770dce115537f3a7cd9a6c2d5e02d497",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-news-article.tsx",
+      "sha256": "05b0aafaa53819beb39fb579da9fb5ac08ec1d244a79997606c3098f5bd32460",
+      "source_sha256": "05b0aafaa53819beb39fb579da9fb5ac08ec1d244a79997606c3098f5bd32460"
+    },
+    {
+      "path": "frontend/components/public-news-page.tsx",
+      "sha256": "455e9e28b8acfdd5845fbe281e1403c500906a9a263d5c2222548ea7914b3eed",
+      "source_sha256": "3ccec037aa570a279573fc4730d057713dff88284d974a5084213072ef475869",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-news.tsx",
+      "sha256": "ad95df95b551757623a346d36a7d48ad07d6017bc67352abac7ed7eb9fd8bec2",
+      "source_sha256": "ad95df95b551757623a346d36a7d48ad07d6017bc67352abac7ed7eb9fd8bec2"
+    },
+    {
+      "path": "frontend/components/public-page-intro.tsx",
+      "sha256": "abda9222fd7789798f21a6eb4cb28a7d3dd3b9821ea8cb35e437ed92f157b71a",
+      "source_sha256": "abda9222fd7789798f21a6eb4cb28a7d3dd3b9821ea8cb35e437ed92f157b71a"
+    },
+    {
+      "path": "frontend/components/public-photo-slider.tsx",
+      "sha256": "c074004e4b544a228fe8520d90cb6884cbf6c63f3821d33d0ffe5e67391f3619",
+      "source_sha256": "23124c7422b91850a82074673d6bdd455b993ac15b8564bf27cacb4fc9e197a3",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/public-shell.tsx",
+      "sha256": "e188c1094f033b0c078254cd1e6b5724cfa63b71a3dfae2c939f5759ca6057f6",
+      "source_sha256": "55543e594f8eca7e5a36fd33bb7dc6c8e48c2fb09f28d7f787ff58c7e8f7513b",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/school-map.tsx",
+      "sha256": "c1f3b48c885c7e207f1d7516d4a4cb08f777fb2f6cabdbd5c1ab6915dc771506",
+      "source_sha256": "7005e7bb4ca60d4e5098b147a36e2810f58cc803f74803ace9a4e9482184e892",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
+      "path": "frontend/components/school-orbit.tsx",
+      "sha256": "46228e12996799967c97c39655fcf21295d6792e151f0e4db209b992332d5186",
+      "source_sha256": "46228e12996799967c97c39655fcf21295d6792e151f0e4db209b992332d5186"
+    },
+    {
+      "path": "frontend/components/school-structure.tsx",
+      "sha256": "256ae7f0aea1474bdfcc20b7daf64f69ea692a50177f5498ee86e1d10d945c75",
+      "source_sha256": "256ae7f0aea1474bdfcc20b7daf64f69ea692a50177f5498ee86e1d10d945c75"
+    },
+    {
+      "path": "frontend/components/session-idle.tsx",
+      "sha256": "374f9e5bbf525b2608865481b791feefe2912f44080f679c23e00e778de64c08",
+      "source_sha256": "374f9e5bbf525b2608865481b791feefe2912f44080f679c23e00e778de64c08"
+    },
+    {
+      "path": "frontend/components/sms-management.tsx",
+      "sha256": "ff37790ea41da461b43f446bcc73e8239ec10c1668dd0561bb74b21a8ad93357",
+      "source_sha256": "ff37790ea41da461b43f446bcc73e8239ec10c1668dd0561bb74b21a8ad93357"
+    },
+    {
+      "path": "frontend/components/staff-attendance.tsx",
+      "sha256": "4398ffa67dba681487f4e7a10d37d108a7b5c1decacc52b23820fdccc3e4b983",
+      "source_sha256": "4398ffa67dba681487f4e7a10d37d108a7b5c1decacc52b23820fdccc3e4b983"
+    },
+    {
+      "path": "frontend/components/structure-archive.tsx",
+      "sha256": "2465a502106d0edc9a6e2a282ac8db1d4baf07cf2a3543a3e8130c8aa7546432",
+      "source_sha256": "2465a502106d0edc9a6e2a282ac8db1d4baf07cf2a3543a3e8130c8aa7546432"
+    },
+    {
+      "path": "frontend/components/student-case-file.tsx",
+      "sha256": "3c0c89526ac3abfe5334bb5e17dc47e4e72af79427f19c19a7bc018df4800ff2",
+      "source_sha256": "3c0c89526ac3abfe5334bb5e17dc47e4e72af79427f19c19a7bc018df4800ff2"
+    },
+    {
+      "path": "frontend/components/student-class-field.tsx",
+      "sha256": "8f6e2725e3937705ae35d24b64774bea341d3bcc4c4b4e7bc362b5a47e38a0e5",
+      "source_sha256": "8f6e2725e3937705ae35d24b64774bea341d3bcc4c4b4e7bc362b5a47e38a0e5"
+    },
+    {
+      "path": "frontend/components/teacher-case-file.tsx",
+      "sha256": "ccb8f92dd18aea3249db99b7d0c94920fe8286bb984f1dc673e15c96528aaf40",
+      "source_sha256": "ccb8f92dd18aea3249db99b7d0c94920fe8286bb984f1dc673e15c96528aaf40"
+    },
+    {
+      "path": "frontend/components/teaching-allocation.tsx",
+      "sha256": "1b87a5cbe5c3155297bb3fa6b21000ed1cc9e701410309a8186b7d1f5fe9bfe7",
+      "source_sha256": "1b87a5cbe5c3155297bb3fa6b21000ed1cc9e701410309a8186b7d1f5fe9bfe7"
+    },
+    {
+      "path": "frontend/components/timetable.tsx",
+      "sha256": "eb40b80d2e24306198674409e3c28f3f0974c859c81c2375500a024b19e65304"
+    },
+    {
+      "path": "frontend/components/ui/coverflow-carousel.tsx",
+      "sha256": "c083d32b9bdfc8c4826734a45f780431b8d824292b1dcad33d3a5d02274f9b35",
+      "source_sha256": "c083d32b9bdfc8c4826734a45f780431b8d824292b1dcad33d3a5d02274f9b35"
+    },
+    {
+      "path": "frontend/components/ui/file-upload-04.tsx",
+      "sha256": "43c5db7c65c1a619e467c6ab90028fbbc08b8d4b53e039b847fa3e945fbc2a4e",
+      "source_sha256": "43c5db7c65c1a619e467c6ab90028fbbc08b8d4b53e039b847fa3e945fbc2a4e"
     },
     {
       "path": "frontend/components/ui/form-dialog.tsx",
       "sha256": "118f20c0b674c804b5874eef1559e0bc1ea1a8cd11643d492dea121d814158ed"
     },
     {
-      "path": "frontend/components/ui/searchable-person-select.tsx",
-      "sha256": "9cc523bef948d8cdd32bb2e8f8d3e1f744c2950601219828b476f934eca41809"
+      "path": "frontend/components/ui/loader-1.tsx",
+      "sha256": "b6746169c4d80471973b3d6b929681068c02b3c3a20bf06730ac7ed7be8d86da"
     },
     {
-      "path": "frontend/components/ui/searchable-dropdown.tsx",
-      "sha256": "465bf27ae769e9ce14d38faf466535de0997fcdd4750f1df929887500fd47aea"
+      "path": "frontend/components/ui/one-time-code.tsx",
+      "sha256": "c300319e7d6d982d48fd05f250a8a920d586ea6e0c4afbe30e1660f9b9546283",
+      "source_sha256": "c300319e7d6d982d48fd05f250a8a920d586ea6e0c4afbe30e1660f9b9546283"
     },
     {
       "path": "frontend/components/ui/pagination.tsx",
       "sha256": "9d7de78c60319325fbafe80122d49062dd29c9aca0635b867f6bf7489a844252"
     },
     {
-      "path": "frontend/components/ui/loader-1.tsx",
-      "sha256": "b6746169c4d80471973b3d6b929681068c02b3c3a20bf06730ac7ed7be8d86da"
+      "path": "frontend/components/ui/radial-social-menu.tsx",
+      "sha256": "3e5bb054794bc7968b8dd7d15a40b881a4ecf6986cb9dbb703e7c17e3c98a664",
+      "source_sha256": "3e5bb054794bc7968b8dd7d15a40b881a4ecf6986cb9dbb703e7c17e3c98a664"
+    },
+    {
+      "path": "frontend/components/ui/searchable-dropdown.tsx",
+      "sha256": "465bf27ae769e9ce14d38faf466535de0997fcdd4750f1df929887500fd47aea"
+    },
+    {
+      "path": "frontend/components/ui/searchable-person-select.tsx",
+      "sha256": "9cc523bef948d8cdd32bb2e8f8d3e1f744c2950601219828b476f934eca41809"
     },
     {
       "path": "frontend/components/ui/thumbnail-carousel.tsx",
       "sha256": "b871bc81e7d1aab4bd91ec0565d99d24bb39c0023f1fb2532e46113de16fdc33"
     },
     {
-      "path": "frontend/lib/pagination.ts",
-      "sha256": "1bcec25ae5bb718b18f938e633201278ebcaa17cc7753ec462622d587c9aa8a2"
+      "path": "frontend/components/user-access-editor.tsx",
+      "sha256": "97d8992687fbd74d7359494cf7ed87a27c9100b64610e87452bf0adfa5288930",
+      "source_sha256": "97d8992687fbd74d7359494cf7ed87a27c9100b64610e87452bf0adfa5288930"
     },
     {
-      "path": "frontend/lib/operation-progress.ts",
-      "sha256": "9636a4afa628aeb3ab14d5ca34b3d919b08184b38f66bbd9bbc66efe71839bca"
+      "path": "frontend/components/user-management.tsx",
+      "sha256": "963155fd93d0c375ccd1825d1ecea479cf65406ac938c080dc6b23da26feafae",
+      "source_sha256": "963155fd93d0c375ccd1825d1ecea479cf65406ac938c080dc6b23da26feafae"
     },
     {
-      "path": "frontend/lib/dialog-behavior.ts",
-      "sha256": "9625f0a70658a6ce789ed6f117dc9bcf77a8b6d3dc3c7d85cb5708ceefcf1911"
-    },
-    {
-      "path": "frontend/lib/panel-feedback.ts",
-      "sha256": "17c4002b0da66e1a2d35eb284cbe34be5ab691988765d5e162de5e071e6e0f1f"
-    },
-    {
-      "path": "frontend/lib/form-errors.ts",
-      "sha256": "ac84d3d69a51a1fa8016aa37f2efabe51ed604ec3b4befc204c9882411037086"
+      "path": "frontend/lib/api.ts",
+      "sha256": "3a21fa0737397cde8b3bf02ed54e77239e3af1a35d9320e7c3e1f216e526f68d",
+      "source_sha256": "3a21fa0737397cde8b3bf02ed54e77239e3af1a35d9320e7c3e1f216e526f68d"
     },
     {
       "path": "frontend/lib/class-context.ts",
       "sha256": "bf3032b07c45930167580efa01a7a78a089e95cd0653dd0b3d99bf27aa5d072b"
     },
     {
+      "path": "frontend/lib/dialog-behavior.ts",
+      "sha256": "9625f0a70658a6ce789ed6f117dc9bcf77a8b6d3dc3c7d85cb5708ceefcf1911"
+    },
+    {
+      "path": "frontend/lib/features.ts",
+      "sha256": "728a9e0e06b76621864524c97e9482328db7c42af19de9f03721dbeeef7ba7df",
+      "source_sha256": "728a9e0e06b76621864524c97e9482328db7c42af19de9f03721dbeeef7ba7df"
+    },
+    {
+      "path": "frontend/lib/form-errors.ts",
+      "sha256": "ac84d3d69a51a1fa8016aa37f2efabe51ed604ec3b4befc204c9882411037086"
+    },
+    {
+      "path": "frontend/lib/homepage.ts",
+      "sha256": "4552887acc1159942aaa658c4e0f7a512933c9d656897945c1820c14608e605e",
+      "source_sha256": "aef8e205706a79a41f6f3da687b5d007ec5eb49cc59ad174a4db52a26bc3f672",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
+    },
+    {
       "path": "frontend/lib/notifications.ts",
       "sha256": "8d14d951c2b14f8e4cb1fa23c402412fc2049af0406e29b477d421c42e49446e"
+    },
+    {
+      "path": "frontend/lib/operation-progress.ts",
+      "sha256": "9636a4afa628aeb3ab14d5ca34b3d919b08184b38f66bbd9bbc66efe71839bca"
+    },
+    {
+      "path": "frontend/lib/pagination.ts",
+      "sha256": "1bcec25ae5bb718b18f938e633201278ebcaa17cc7753ec462622d587c9aa8a2"
+    },
+    {
+      "path": "frontend/lib/panel-feedback.ts",
+      "sha256": "17c4002b0da66e1a2d35eb284cbe34be5ab691988765d5e162de5e071e6e0f1f"
+    },
+    {
+      "path": "frontend/lib/panel-help-details.ts",
+      "sha256": "3282946294ac4c261426064eb8f4d13c85448d0f8ccb06b7e688a17ed7f5b6c3",
+      "source_sha256": "3282946294ac4c261426064eb8f4d13c85448d0f8ccb06b7e688a17ed7f5b6c3"
+    },
+    {
+      "path": "frontend/lib/panel-help.ts",
+      "sha256": "94d74620b7fe396d09d9edf872366e2fb54bd23760832c46552f63e5d3cab2f2",
+      "source_sha256": "94d74620b7fe396d09d9edf872366e2fb54bd23760832c46552f63e5d3cab2f2"
     },
     {
       "path": "frontend/lib/panel-navigation.ts",
       "sha256": "361c8d4a92d6fd59ff9a8aa435f93edec2731ab6f9c9b152ae5f97a285066661"
     },
     {
-      "path": "frontend/components/dashboard-home.tsx",
-      "sha256": "1055c46e09f804b3f0d2a6fe8a464dd60f230edc85b7f17ef0802a22761bdcd6"
+      "path": "frontend/lib/public-contact.ts",
+      "sha256": "dfbdbf3bab12a1cecbb4fcf9a301bf9620a0a920fb67acd370fc48a079d229aa",
+      "source_sha256": "dfbdbf3bab12a1cecbb4fcf9a301bf9620a0a920fb67acd370fc48a079d229aa"
+    },
+    {
+      "path": "frontend/lib/public-links.ts",
+      "sha256": "b428a02f3e9445e27f8c37d9a976531e46a31d57daf3f47ed95fa98774ebb6da",
+      "source_sha256": "b428a02f3e9445e27f8c37d9a976531e46a31d57daf3f47ed95fa98774ebb6da"
+    },
+    {
+      "path": "frontend/lib/registration-options.ts",
+      "sha256": "2ea546840aad7bca58a6c5a21f525725632bf4e4ad5e03e02575dde0777111cf",
+      "source_sha256": "2ea546840aad7bca58a6c5a21f525725632bf4e4ad5e03e02575dde0777111cf"
+    },
+    {
+      "path": "frontend/lib/seo.ts",
+      "sha256": "f07e68d2c2bd5433ac137f298fa600777fdbe91d44cb90e08dd6196359fb471e",
+      "source_sha256": "c3fb6327be659b7079fa91d4152bd7cc3c53ea813ed4e93b68d7b66cbe751724",
+      "sanitization": [
+        "school identity replaced with neutral label"
+      ]
     }
   ]
 }

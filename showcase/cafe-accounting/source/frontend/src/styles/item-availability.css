@@ -1,0 +1,23 @@
+.item-availability { display: inline-flex; align-items: center; white-space: nowrap; font-size: .8125rem; font-weight: 600; line-height: 1.7; }
+.item-availability--available { color: var(--success); }
+.item-availability--unavailable { color: var(--danger); }
+.order-catalog li { display: grid; grid-template-columns: minmax(0,1fr) auto auto; gap: 12px; }
+.order-catalog li > .item-availability { justify-self: center; }
+.menu-item.menu-item--managed { display: grid; grid-template-columns: minmax(0,1fr); align-content: start; justify-content: normal; gap: 14px; min-height: 0; padding: 16px; }
+.menu-item.menu-item--managed > .menu-item__heading { display: grid; grid-template-columns: minmax(0,1fr) auto auto; grid-column: 1/-1; grid-row: auto; align-items: center; gap: 10px; min-width: 0; }
+.menu-item__identity { min-width: 0; overflow-wrap: anywhere; }
+.menu-item__identity h3 { margin: 4px 0 0; }
+.menu-item--managed .menu-item__heading > .card-actions { position: static; display: flex; gap: 0; align-items: center; }
+.menu-item.menu-item--managed > .menu-item__footer { display: flex; grid-column: 1/-1; grid-row: auto; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 0; padding-top: 12px; border-top: 1px solid var(--border); }
+.menu-item--managed .menu-item__footer > .availability-toggle { margin: 0; min-height: 44px; padding: 8px 10px; font-size: .75rem; }
+.menu-item.menu-item--managed > .menu-item-photo { grid-column: 1/-1; grid-row: auto; margin: 0; }
+@media (max-width: 480px) {
+  .menu-item.menu-item--managed { padding: 12px; }
+  .menu-item.menu-item--managed > .menu-item__heading { gap: 6px; }
+  .menu-item--managed .menu-item__category { font-size: .6875rem; }
+  .menu-item--managed .item-availability { font-size: .75rem; }
+  .order-catalog li:has(> .order-quantity) { grid-template-columns: minmax(0,1fr) auto; }
+  .order-catalog li > .order-quantity { grid-column: 1/-1; justify-self: end; }
+}
+.menu-item.menu-item--readonly > .menu-item__heading { grid-template-columns: minmax(0,1fr) auto; }
+.menu-item--managed .menu-item__footer strong { min-width: 0; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }

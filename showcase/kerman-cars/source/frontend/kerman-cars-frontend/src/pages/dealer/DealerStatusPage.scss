@@ -1,0 +1,129 @@
+.dealer-status-page {
+    display: grid;
+    min-height: calc(100vh - var(--kc-header-height));
+    place-items: center;
+    padding: 35px 16px 110px;
+}
+
+.dealer-status-card {
+    width: min(100%, 620px);
+    padding: 40px;
+    text-align: center;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-xl);
+    box-shadow: var(--kc-shadow-md);
+
+    &__icon {
+        display: grid;
+        width: 84px;
+        height: 84px;
+        place-items: center;
+        margin: 0 auto 18px;
+        color: var(--kc-warning);
+        background: rgba(240, 161, 38, 0.11);
+        border-radius: var(--kc-radius-xl);
+
+        &--rejected {
+            color: var(--kc-danger);
+            background: rgba(219, 59, 75, 0.09);
+        }
+    }
+
+    &__eyebrow {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--kc-primary);
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    h1 {
+        margin-bottom: 9px;
+        color: var(--kc-text);
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    >p {
+        max-width: 480px;
+        margin: 0 auto 26px;
+        color: var(--kc-text-soft);
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    &__steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 26px;
+        border: 1px solid var(--kc-border);
+        border-radius: var(--kc-radius-md);
+
+        >div {
+            display: flex;
+            min-height: 85px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px;
+            color: var(--kc-text-soft);
+            border-left: 1px solid var(--kc-border);
+            font-size: 12px;
+            font-weight: 700;
+
+            &:last-child {
+                border-left: 0;
+            }
+
+            &.completed {
+                color: var(--kc-success);
+            }
+
+            &.active {
+                color: var(--kc-warning);
+                background: rgba(240, 161, 38, 0.05);
+            }
+
+            &.rejected {
+                color: var(--kc-danger);
+            }
+        }
+    }
+
+    >.btn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 9px;
+    }
+
+    >small {
+        display: block;
+        margin-top: 15px;
+        color: var(--kc-text-soft);
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .dealer-status-card {
+        padding: 28px 16px;
+
+        &__steps {
+            grid-template-columns: 1fr;
+
+            >div {
+                min-height: 60px;
+                flex-direction: row;
+                border-bottom: 1px solid var(--kc-border);
+                border-left: 0;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}

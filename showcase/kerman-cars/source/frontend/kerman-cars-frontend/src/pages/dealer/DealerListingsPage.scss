@@ -1,0 +1,266 @@
+.dealer-listings-page {
+    &__heading {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 22px;
+
+        >div>span {
+            display: block;
+            color: var(--kc-primary);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        h1 {
+            margin: 4px 0;
+            color: var(--kc-text);
+            font-size: 29px;
+            font-weight: 800;
+        }
+
+        p {
+            margin: 0;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+}
+
+.dealer-listings-quotas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+    margin-bottom: 19px;
+
+    >div {
+        display: flex;
+        min-height: 70px;
+        align-items: center;
+        gap: 9px;
+        padding: 13px;
+        background: var(--kc-card-bg);
+        border: 1px solid var(--kc-border);
+        border-radius: var(--kc-radius-sm);
+
+        svg {
+            color: var(--kc-primary);
+        }
+
+        span {
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+
+        strong {
+            margin-right: auto;
+            color: var(--kc-text);
+            font-size: 17px;
+            font-weight: 800;
+        }
+    }
+}
+
+.dealer-listings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dealer-managed-listing {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 220px minmax(0, 1fr);
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+    box-shadow: var(--kc-shadow-xs);
+
+    &__image {
+        position: relative;
+        min-height: 180px;
+        background: var(--kc-navy-900);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        span {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 9px;
+            color: var(--kc-white);
+            background: var(--kc-action-bg);
+            border-radius: var(--kc-radius-pill);
+            font-size: 12px;
+            font-weight: 800;
+        }
+    }
+
+    &__body {
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        padding: 17px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        small {
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+
+        h2 {
+            overflow: hidden;
+            margin: 3px 0 0;
+            color: var(--kc-text);
+            font-size: 15px;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        >strong {
+            flex: 0 0 auto;
+            color: var(--kc-text);
+            font-size: 12px;
+            font-weight: 800;
+        }
+    }
+
+    &__specs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-top: 15px;
+        color: var(--kc-text-soft);
+        font-size: 12px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: auto;
+        padding-top: 14px;
+        border-top: 1px solid var(--kc-border);
+
+        >span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+
+        >div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+
+            button {
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                padding: 7px 9px;
+                color: var(--kc-primary);
+                background: var(--kc-accent-soft);
+                border-radius: var(--kc-radius-sm);
+                font-size: 12px;
+                font-weight: 800;
+
+                &:disabled {
+                    opacity: 0.45;
+                }
+
+                &.danger {
+                    color: var(--kc-danger);
+                    background: rgba(219, 59, 75, 0.06);
+                }
+            }
+        }
+    }
+}
+
+.dealer-listings-empty {
+    display: flex;
+    min-height: 360px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    color: var(--kc-text-soft);
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+
+    h2 {
+        margin: 8px 0 0;
+        color: var(--kc-text);
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    p,
+    span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .dealer-listings-page {
+        &__heading {
+            align-items: stretch;
+            flex-direction: column;
+
+            .btn {
+                justify-content: center;
+            }
+        }
+    }
+
+    .dealer-listings-quotas {
+        grid-template-columns: 1fr;
+    }
+
+    .dealer-managed-listing {
+        grid-template-columns: 115px minmax(0, 1fr);
+
+        &__body {
+            padding: 11px;
+        }
+
+        &__top {
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 12px;
+            }
+        }
+
+        &__footer {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+}

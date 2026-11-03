@@ -1,5 +1,7 @@
 # LMS — Real-World Code Showcase
 
+**[Browse every captured tab and its code](COVERAGE.md) · [Full screenshot gallery](GALLERY.md) · [All 177 source files](SOURCE_INDEX.md)**
+
 > Sanitized, source-verified engineering excerpts from a private customer LMS.
 
 This showcase is based on the actual project source. Customer identity, demo accounts, internal configuration, environment values, private content, and organization-specific details are intentionally excluded.
@@ -95,7 +97,7 @@ The uploaded customer project contains organization names, local demo credential
 
 ## Expanded source and interface gallery
 
-The expanded collection adds **30 complete frontend files**: assignment progress, attendance reports, grade-entry presentation, timetable and academic-report components, Persian date inputs, reusable controls, navigation and form-error handling. Exam scoring, access policies, customer-specific content and authentication internals are not part of this expansion.
+The expanded collection now includes **177 complete source files**, primarily frontend pages and components plus selected general backend helpers: assignment progress, attendance reports, grade-entry presentation, timetable and academic-report components, Persian date inputs, reusable controls, navigation and form-error handling. Exam scoring, access policies, customer-specific content and authentication internals are not part of this expansion.
 
 [Browse all files](SOURCE_INDEX.md) · [Exact revision and file hashes](SOURCE_MANIFEST.json)
 

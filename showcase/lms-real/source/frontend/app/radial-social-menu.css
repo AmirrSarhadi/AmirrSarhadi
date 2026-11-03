@@ -1,0 +1,23 @@
+.radial-social-menu {position:relative;width:240px;max-width:100%;aspect-ratio:1;isolation:isolate}
+.radial-guide,.radial-ring {position:absolute;inset:16%;border-radius:50%}
+.radial-guide {border:1px dashed #9cb2c9}
+.radial-center {position:absolute;inset:35%;display:grid;place-items:center;border:1px solid #cedbea;border-radius:50%;background:#fff;box-shadow:0 5px 18px #315dba14}
+.radial-center img {width:42%;height:62%;object-fit:contain}
+.radial-ring {animation:social-turn 48s linear infinite;will-change:transform}
+.radial-guide,.radial-center,.radial-ring,.radial-spoke,.radial-counter {pointer-events:none}
+.radial-spoke {position:absolute;inset:0;transform:rotate(var(--social-angle))}
+.radial-counter {position:absolute;left:50%;top:0;width:44px;height:44px;animation:social-counter 48s linear infinite;transform:translate(-50%,-50%) rotate(calc(-1*var(--social-angle)));will-change:transform}
+.radial-social-menu .radial-link {position:relative;display:grid;place-items:center;align-content:center;justify-content:center;width:100%;height:100%;padding:0;margin:0;gap:0;line-height:1;border:1px solid #d7e1ec;border-radius:50%;background:#fff;color:#315dba;box-shadow:0 3px 9px #29363d0c;cursor:pointer;pointer-events:auto;transition:box-shadow 180ms,background 180ms}
+.radial-link>svg {display:block;align-self:center;justify-self:center;margin:0;pointer-events:none}
+.radial-link:hover,.radial-link:focus-visible {background:#edf3ff;box-shadow:0 4px 16px #315dba29}
+.radial-link:active {background:#dae6fb}
+.radial-link.social-eitaa {color:#c46a18}.radial-link.social-rubika {color:#a84781}.radial-link.social-phone {color:#2b786c}.radial-link.social-mail {color:#bd5749}.radial-link.social-map {color:#8d772e}
+.radial-link.is-unavailable {border-style:dashed;background:#f9fafb;color:#85909c;cursor:default}
+.radial-tooltip {position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);width:max-content;max-width:180px;padding:4px 7px;background:#29363d;color:#fff;font-size:10px;border-radius:4px;visibility:hidden;opacity:0;pointer-events:none;line-height:1.7;text-align:center}
+.radial-link:hover .radial-tooltip,.radial-link:focus-visible .radial-tooltip {visibility:visible;opacity:1}
+.radial-social-menu[data-playing="false"] *,.radial-social-menu:hover *,.radial-social-menu:focus-within * {animation-play-state:paused!important}
+@keyframes social-turn {to{transform:rotate(360deg)}}
+@keyframes social-counter {to{transform:translate(-50%,-50%) rotate(calc(-1*var(--social-angle) - 360deg))}}
+@media(max-width:760px){.radial-counter{width:32px;height:32px}.radial-link>svg{width:18px;height:18px}.radial-tooltip{max-width:110px;white-space:normal;font-size:9px}}
+@media(prefers-reduced-motion:reduce){.radial-social-menu *{animation:none!important;transition:none!important}}
+@media(forced-colors:active){.radial-link,.radial-center{background:Canvas;color:ButtonText;border-color:ButtonText}.radial-guide{border-color:CanvasText}.radial-tooltip{color:Canvas;background:CanvasText}}

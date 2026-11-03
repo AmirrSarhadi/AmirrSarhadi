@@ -1,0 +1,201 @@
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  position: fixed;
+  inset: 0 0 0 auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px 14px;
+  direction: rtl;
+  color: #d9e2f0;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(80, 111, 224, .24), transparent 20rem),
+    linear-gradient(180deg, #0b1323 0%, #0d1729 58%, #0a1220 100%);
+  border-left: 1px solid rgba(255,255,255,.055);
+  box-shadow: -18px 0 55px rgba(15, 23, 42, .08);
+  transition: width .28s cubic-bezier(.2,.8,.2,1);
+}
+
+.hamburgerBtn {
+  position: absolute;
+  top: 24px;
+  left: 14px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 12px;
+  background: rgba(255,255,255,.055);
+  color: #dbe5f4;
+  cursor: pointer;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  transition: .18s ease;
+}
+.hamburgerBtn:hover { background: rgba(255,255,255,.11); border-color: rgba(255,255,255,.14); }
+
+.logo {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 4px 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.logoMark {
+  width: 39px;
+  min-width: 39px;
+  height: 39px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #5576eb, #3157d5);
+  color: white;
+  font-size: 19px;
+  font-weight: 950;
+  box-shadow: 0 10px 25px rgba(49,87,213,.28), inset 0 1px 0 rgba(255,255,255,.25);
+}
+.logoText { min-width: 0; }
+.logoText h2 { margin: 0; font-size: 16px; line-height: 1.35; font-weight: 900; color: #fff; white-space: nowrap; }
+.logoText span { display: block; margin-top: 3px; color: #8291a8; font-size: 10.5px; font-weight: 600; white-space: nowrap; }
+
+.nav {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 3px 0 16px;
+  scrollbar-width: none;
+}
+.nav::-webkit-scrollbar { display: none; }
+.menuItemContainer { margin-bottom: 4px; }
+
+.menuItem,
+.dropdownToggle {
+  width: 100%;
+  min-height: 45px;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  background: transparent;
+  color: #9dacbf;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 12px;
+  cursor: pointer;
+  text-align: right;
+  transition: background .17s ease, color .17s ease, border-color .17s ease, transform .17s ease;
+}
+.menuItem:hover,
+.dropdownToggle:hover { background: rgba(255,255,255,.055); color: #eef4ff; }
+.icon {
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 14px;
+  color: #8fa2bd;
+  transition: .17s ease;
+}
+.menuItem:hover .icon, .activeParent .icon, .active .icon { color: #fff; }
+.label { flex: 1; font-size: 12.8px; font-weight: 700; }
+.arrow { font-size: 10px; color: #718199; display: flex; }
+
+.active {
+  background: linear-gradient(135deg, rgba(76,107,219,.98), rgba(49,87,213,.98));
+  color: #fff;
+  border-color: rgba(255,255,255,.08);
+  box-shadow: 0 9px 22px rgba(34, 63, 157, .25);
+}
+.activeParent,
+.open { background: rgba(73, 101, 194, .12); color: #f4f7ff; border-color: rgba(113,139,224,.08); }
+
+.dropdownMenu {
+  margin: 6px 17px 7px 0;
+  padding: 3px 10px 3px 0;
+  border-right: 1px solid rgba(132, 151, 181, .18);
+}
+.dropdownItem {
+  min-height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  margin-bottom: 2px;
+  color: #8495ac;
+  font-size: 11.8px;
+  font-weight: 600;
+  transition: .16s ease;
+}
+.dropdownItem:hover { background: rgba(255,255,255,.05); color: #eef4ff; padding-right: 14px; }
+.dropdownItem.active { color: #fff; padding-right: 12px; }
+.subLabel { flex: 1; }
+
+.collapsed { width: var(--sidebar-collapsed); padding-inline: 14px; }
+.sidebar.collapsed .logo { justify-content: center; padding-left: 0; padding-right: 0; }
+.sidebar.collapsed .hamburgerBtn { position: static; margin: 2px auto 10px; order: -1; }
+.sidebar.collapsed .menuItem,
+.sidebar.collapsed .dropdownToggle { justify-content: center; padding: 0; }
+.sidebar.collapsed .icon { width: 34px; height: 34px; font-size: 15px; }
+
+.disabledItem { opacity: .35; cursor: not-allowed; filter: grayscale(1); pointer-events: auto; }
+.disabledItem:hover { background: transparent !important; color: #8495ac !important; box-shadow: none !important; padding-right: 11px; }
+
+@media (max-width: 900px) {
+  .sidebar { width: var(--sidebar-collapsed); padding-inline: 14px; }
+  .logo { justify-content: center; padding-inline: 0; }
+  .logoText, .label, .arrow, .dropdownMenu { display: none !important; }
+  .hamburgerBtn { display: none; }
+  .menuItem, .dropdownToggle { justify-content: center; padding: 0; }
+  .icon { width: 34px; height: 34px; font-size: 15px; }
+}
+
+/* Phase 12: real mobile navigation drawer */
+.mobileBackdrop {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: min(86vw, 310px);
+    padding: 18px 14px 14px;
+    transform: translateX(105%);
+    visibility: hidden;
+    box-shadow: -28px 0 70px rgba(2, 6, 23, .26);
+    transition: transform .24s cubic-bezier(.2,.8,.2,1), visibility .24s ease;
+  }
+  .sidebar.mobileOpen {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  .sidebar .logo { justify-content: flex-start; padding: 0 4px 15px; }
+  .sidebar .logoText, .sidebar .label, .sidebar .arrow { display: block !important; }
+  .sidebar .arrow { display: flex !important; }
+  .sidebar .dropdownMenu { display: block !important; }
+  .sidebar .hamburgerBtn { display: none; }
+  .sidebar .menuItem, .sidebar .dropdownToggle { justify-content: flex-start; padding: 0 12px; }
+  .sidebar .icon { width: 28px; height: 28px; font-size: 14px; }
+
+  .mobileBackdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 990;
+    border: 0;
+    padding: 0;
+    background: rgba(2, 6, 23, .46);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .2s ease, visibility .2s ease;
+  }
+  .mobileBackdropVisible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}

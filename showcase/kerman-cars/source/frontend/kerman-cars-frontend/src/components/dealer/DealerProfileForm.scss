@@ -1,0 +1,17 @@
+.dealer-owner-form {
+    width: min(100%, 960px);
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-lg);
+    &__preview {
+        display: block;
+        max-width: 100%;
+        max-height: 160px;
+        object-fit: contain;
+    }
+    fieldset:disabled {
+        opacity: 0.75;
+    }
+}

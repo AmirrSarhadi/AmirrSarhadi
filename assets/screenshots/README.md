@@ -16,3 +16,7 @@ The source revisions are recorded in each project's `SOURCE_MANIFEST.json`. Exis
 Do not add customer records, contact details, private identifiers, QR codes, access tokens or confidential floor plans to this gallery. Future screenshots should use demonstration data and include an accurate caption.
 
 [Browse the galleries](../../showcase/README.md)
+
+## Expanded per-tab galleries
+
+The six project subdirectories contain the new tab/page/workflow captures. Every published image is indexed with its route/state, method, source links and SHA-256 in the corresponding project `CAPTURE_MANIFEST.json`. See [the coverage index](../../showcase/COVERAGE.md) and [capture methods](../../showcase/SOURCE_SCOPE.md). New views use demonstration data, may show intentional empty states, and do not certify backend behavior.

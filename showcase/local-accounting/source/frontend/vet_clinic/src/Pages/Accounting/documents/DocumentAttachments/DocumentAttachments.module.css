@@ -1,0 +1,153 @@
+.container {
+    margin-top: 22px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 22px;
+    direction: rtl;
+}
+
+.header {
+    margin-bottom: 16px;
+}
+
+.header h4 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.header p {
+    margin: 6px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.uploadBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 140px;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.uploadBox input {
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0 12px;
+    font-family: inherit;
+    font-weight: 800;
+    outline: none;
+}
+
+.uploadBox button {
+    height: 44px;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary);
+    color: white;
+    font-family: inherit;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.uploadBox button:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+}
+
+.selectedFile,
+.loadingBox,
+.emptyState {
+    padding: 14px;
+    border-radius: 16px;
+    background: var(--surface-subtle);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.selectedFile strong {
+    color: var(--text-strong);
+}
+
+.list {
+    display: grid;
+    gap: 10px;
+}
+
+.attachmentCard {
+    min-height: 62px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    background: var(--surface-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.attachmentCard strong {
+    display: block;
+    color: var(--text-strong);
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.attachmentCard span {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.actions a,
+.actions button {
+    min-width: 72px;
+    height: 34px;
+    border: none;
+    border-radius: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actions a {
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+.actions button {
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+@media (max-width: 900px) {
+    .uploadBox {
+        grid-template-columns: 1fr;
+    }
+
+    .attachmentCard {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .actions {
+        justify-content: flex-start;
+    }
+}

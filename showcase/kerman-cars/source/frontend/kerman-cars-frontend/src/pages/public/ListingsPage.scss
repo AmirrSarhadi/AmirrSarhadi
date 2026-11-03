@@ -1,0 +1,270 @@
+.listings-page {
+    padding-block: 38px 70px;
+
+    &__heading {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 30px;
+
+        h1 {
+            margin-bottom: 7px;
+            color: var(--kc-text);
+            font-size: clamp(24px, 3vw, 34px);
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: var(--kc-text-soft);
+        }
+    }
+
+    &__eyebrow {
+        display: block;
+        margin-bottom: 5px;
+        color: var(--kc-primary);
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    &__toolbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__mobile-filter {
+        display: none;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--kc-text-soft);
+        font-size: 12px;
+
+        >div {
+            position: relative;
+            min-width: 145px;
+        }
+
+        select {
+            width: 100%;
+            min-height: 44px;
+            appearance: none;
+            padding: 8px 14px 8px 38px;
+            color: var(--kc-text);
+            background: var(--kc-card-bg);
+            border: 1px solid var(--kc-border);
+            border-radius: var(--kc-radius-sm);
+            outline: none;
+            font-weight: 700;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 13px;
+            color: var(--kc-text-soft);
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+    }
+
+    &__layout {
+        display: grid;
+        grid-template-columns: 270px minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    &__sidebar {
+        align-self: start;
+        position: sticky;
+        top: calc(var(--kc-header-height) + 20px);
+    }
+
+    &__empty {
+        display: flex;
+        min-height: 430px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 35px;
+        text-align: center;
+        background: var(--kc-card-bg);
+        border: 1px solid var(--kc-border);
+        border-radius: var(--kc-radius-lg);
+
+        h2 {
+            margin-bottom: 8px;
+            color: var(--kc-text);
+            font-size: 21px;
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: var(--kc-text-soft);
+        }
+    }
+
+    &__empty-icon {
+        display: grid;
+        width: 70px;
+        height: 70px;
+        place-items: center;
+        margin-bottom: 18px;
+        color: var(--kc-primary);
+        background: var(--kc-accent-soft);
+        border-radius: var(--kc-radius-lg);
+    }
+}
+
+.mobile-filter-drawer {
+    visibility: hidden;
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    opacity: 0;
+    transition:
+        opacity var(--kc-transition),
+        visibility var(--kc-transition);
+
+    &--open {
+        visibility: visible;
+        opacity: 1;
+
+        .mobile-filter-drawer__panel {
+            transform: translateY(0);
+        }
+    }
+
+    &__backdrop {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        background: rgba(2, 11, 24, 0.62);
+        backdrop-filter: blur(3px);
+    }
+
+    &__panel {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        max-height: 90vh;
+        flex-direction: column;
+        background: var(--kc-body-bg);
+        border-radius: 25px 25px 0 0;
+        transform: translateY(100%);
+        transition: transform 260ms ease;
+    }
+
+    &__header {
+        display: flex;
+        min-height: 62px;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 18px;
+        background: var(--kc-card-bg);
+        border-bottom: 1px solid var(--kc-border);
+        border-radius: 25px 25px 0 0;
+
+        strong {
+            color: var(--kc-text);
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        button {
+            display: grid;
+            width: 38px;
+            height: 38px;
+            place-items: center;
+            color: var(--kc-text-soft);
+            background: var(--kc-silver-100);
+            border-radius: var(--kc-radius-sm);
+        }
+    }
+
+    &__content {
+        overflow-y: auto;
+        flex: 1;
+        padding: 12px;
+
+        .listing-filters {
+            box-shadow: none;
+        }
+
+        .listing-filters__header {
+            display: none;
+        }
+    }
+
+    &__footer {
+        padding: 12px;
+        background: var(--kc-card-bg);
+        border-top: 1px solid var(--kc-border);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .listings-page {
+        &__layout {
+            grid-template-columns: 1fr;
+        }
+
+        &__sidebar {
+            display: none;
+        }
+
+        &__mobile-filter {
+            display: inline-flex;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .listings-page {
+        padding-block: 24px 35px;
+
+        &__heading {
+            align-items: stretch;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        &__toolbar {
+            justify-content: space-between;
+        }
+
+        &__mobile-filter {
+            flex: 1;
+            justify-content: center;
+        }
+
+        &__sort {
+            >span {
+                display: none;
+            }
+
+            >div {
+                min-width: 135px;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .listing-filter-controls { display: none; }
+    .listing-filter-controls--open { display: block; padding-top: 16px; }
+}
+
+.listings-page__heading { padding-bottom: 24px; border-bottom: 1px solid var(--kc-border); h1 { font-size: clamp(24px, 2.5vw, 34px); } }
+.listing-filters { align-self: start; position: sticky; top: calc(var(--kc-header-height) + 20px); background: var(--kc-card-bg); border: 1px solid var(--kc-border); border-radius: var(--kc-radius-md); .form-label { margin-top: 14px; } .form-select, .form-control { background-color: var(--kc-card-bg); } }
+@media (max-width: 991.98px) { .listing-filters { position: static; } }

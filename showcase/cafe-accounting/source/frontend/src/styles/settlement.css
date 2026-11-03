@@ -1,0 +1,41 @@
+.settlement-form .button,
+.settlement-form__error,
+.split-payment {
+  grid-column: 1 / -1;
+}
+
+.split-payment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+}
+
+.split-payment__summary {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.settlement-form__error {
+  margin: 0;
+  padding: 8px 10px;
+  color: #991b1b;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: .8125rem;
+}
+
+@media (max-width: 480px) {
+  .split-payment { grid-template-columns: 1fr; }
+  .settlement-form .button,
+  .settlement-form__error,
+  .split-payment { grid-column: auto; }
+}

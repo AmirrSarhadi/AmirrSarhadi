@@ -1,5 +1,7 @@
 # Smart Home AI — Floor-Plan Review Interface
 
+**[Browse every captured tab and its code](COVERAGE.md) · [Full screenshot gallery](GALLERY.md) · [All 5 source files](SOURCE_INDEX.md)**
+
 An early-stage local application for reviewing architectural floor plans and preparing preliminary smart-home suggestions. The real interface supports plan upload, manual geometry edits, review confirmation and building requirements. Model extraction and suggestions require a separately configured provider; CRM/catalog integration and execution design are not implemented.
 
 **Stack:** Python · Pydantic · Pillow · PyMuPDF · JavaScript
@@ -8,7 +10,7 @@ An early-stage local application for reviewing architectural floor plans and pre
 
 ## Expanded source
 
-This collection contains **4 complete source files**, copied without code changes. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
+This collection contains **5 complete source files**. Files retain their original paths; any neutral school-identity or contact-placeholder substitutions are recorded in the manifest. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
 
 - Complete browser-side plan editor with selection, drawing and geometry edits.
 - UI orchestration for upload, review, project import/export and undo/redo flows.
@@ -36,4 +38,6 @@ This public selection excludes credentials, environment/deployment configuration
 
 ## Verification scope
 
-Copied-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
+Published-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
+
+The full gallery additionally demonstrates the proposal presentation using a clearly labelled synthetic API response. It is not model inference or an execution design.

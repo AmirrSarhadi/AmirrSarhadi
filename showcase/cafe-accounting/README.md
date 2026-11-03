@@ -1,5 +1,7 @@
 # Cafe Accounting — Orders, Inventory & Operations
 
+**[Browse every captured tab and its code](COVERAGE.md) · [Full screenshot gallery](GALLERY.md) · [All 90 source files](SOURCE_INDEX.md)**
+
 A Persian cafe operations application spanning menu/catalog workflows, order entry, open orders, settlement, cash shifts, customer records, inventory and reporting. The expanded selection focuses on shared UI and inventory screens while keeping settlement, costing internals and tenancy enforcement private.
 
 **Stack:** React 19 · TypeScript · Vite 7 · Django backend
@@ -8,7 +10,7 @@ A Persian cafe operations application spanning menu/catalog workflows, order ent
 
 ## Expanded source
 
-This collection contains **30 complete source files**, copied without code changes. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
+This collection contains **90 complete source files**. Files retain their original paths; any neutral school-identity or contact-placeholder substitutions are recorded in the manifest. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
 
 - Inventory, ingredient catalog, movement forms, recipes and cost-report presentation.
 - Shared modal, form, navigation and resource-loading components.
@@ -44,4 +46,4 @@ This public selection excludes credentials, environment/deployment configuration
 
 ## Verification scope
 
-Copied-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
+Published-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.

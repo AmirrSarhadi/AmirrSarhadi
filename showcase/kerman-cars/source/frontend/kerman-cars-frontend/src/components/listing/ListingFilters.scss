@@ -1,0 +1,96 @@
+.listing-filters {
+    padding: 22px;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+    box-shadow: var(--kc-shadow-xs);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--kc-border);
+
+        >div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--kc-text);
+        }
+
+        strong {
+            font-size: 15px;
+            font-weight: 800;
+        }
+    }
+
+    &__reset {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 6px;
+        color: var(--kc-danger);
+        background: transparent;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    &__section {
+        padding-block: 17px;
+        border-bottom: 1px solid var(--kc-border);
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+
+        small {
+            display: block;
+            margin-top: 7px;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+    }
+
+    &__search {
+        position: relative;
+
+        >svg {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            right: 14px;
+            color: var(--kc-text-soft);
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .form-control {
+            padding-right: 42px;
+        }
+    }
+
+    &__price {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-top: 15px;
+        color: var(--kc-text);
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 700;
+
+        input {
+            width: 17px;
+            height: 17px;
+            accent-color: var(--kc-primary);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+:root {
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #27364a;
+  background: #f4f7fb;
+  font-synthesis: none;
+}
+
+* { padding: 0; margin: 0; box-sizing: border-box; }
+html, body, #root { min-height: 100%; }
+html { direction: rtl; }
+body { margin: 0; direction: rtl; min-width: 320px; }
+a, a:visited, a:hover, a:active { text-decoration: none !important; color: inherit; }
+button, input, select, textarea { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+img { max-width: 100%; }
+
+/* ===== Phase 11: print/export UX ===== */
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body { background: #fff !important; color: #111827 !important; font-size: 10pt; }
+  aside, nav, header[class*="navbar"], [class*="Sidebar"], [class*="TopNavbar"], [class*="heroActions"], button, .no-print { display: none !important; }
+  main, [class*="content"], [class*="page"] { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; background: #fff !important; box-shadow: none !important; }
+  table { width: 100% !important; border-collapse: collapse !important; font-size: 9pt !important; }
+  thead { display: table-header-group; }
+  tr { break-inside: avoid; }
+  th, td { border: 1px solid #d1d5db !important; padding: 5px 7px !important; color: #111827 !important; background: #fff !important; }
+  a { color: inherit !important; text-decoration: none !important; }
+  [class*="panel"], [class*="card"], [class*="tableWrapper"] { box-shadow: none !important; border-color: #d1d5db !important; break-inside: avoid; }
+}
+
+/* consistent export / print action affordance */
+button[title*="چاپ"], button[title*="Excel"], button[title*="اکسل"], button[title*="خروجی"] {
+  min-height: 38px;
+  border-radius: 10px;
+}

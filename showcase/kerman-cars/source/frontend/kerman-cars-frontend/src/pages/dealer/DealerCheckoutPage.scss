@@ -1,0 +1,153 @@
+.dealer-checkout-page {
+  display: grid;
+  min-height: calc(
+    100vh - var(--kc-header-height)
+  );
+  place-items: center;
+  padding: 40px 16px;
+}
+
+.dealer-checkout-card {
+  width: min(100%, 650px);
+  padding: 32px;
+  background: var(--kc-card-bg);
+  border: 1px solid var(--kc-border);
+  border-radius: var(--kc-radius-xl);
+  box-shadow: var(--kc-shadow-md);
+
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 25px;
+    color: var(--kc-text-soft);
+    font-size: 12px;
+    font-weight: 700;
+
+    &:hover {
+      color: var(--kc-primary);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 25px;
+
+    > span {
+      display: grid;
+      width: 55px;
+      height: 55px;
+      place-items: center;
+      color: var(--kc-primary);
+      background: var(--kc-accent-soft);
+      border-radius: var(--kc-radius-md);
+    }
+
+    h1 {
+      margin-bottom: 4px;
+      color: var(--kc-text);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+  }
+
+  &__pay {
+    display: flex;
+    width: 100%;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 22px;
+  }
+}
+
+.dealer-checkout-summary {
+  overflow: hidden;
+  border: 1px solid var(--kc-border);
+  border-radius: var(--kc-radius-sm);
+
+  > div {
+    display: flex;
+    min-height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-inline: 15px;
+    border-bottom: 1px solid var(--kc-border);
+
+    &:last-child {
+      border-bottom: 0;
+      background: var(--kc-silver-100);
+    }
+
+    span {
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+
+    strong {
+      color: var(--kc-text);
+      font-size: 12px;
+      font-weight: 800;
+    }
+  }
+}
+
+.dealer-checkout-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 16px;
+  margin-block: 22px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--kc-text-soft);
+    font-size: 12px;
+  }
+
+  svg {
+    color: var(--kc-success);
+  }
+}
+
+.dealer-checkout-security {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 13px;
+  color: var(--kc-text-soft);
+  background: rgba(32, 164, 100, 0.07);
+  border-radius: var(--kc-radius-sm);
+
+  svg {
+    flex: 0 0 auto;
+    color: var(--kc-success);
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.9;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .dealer-checkout-card {
+    padding: 24px 15px;
+  }
+
+  .dealer-checkout-features {
+    grid-template-columns: 1fr;
+  }
+}

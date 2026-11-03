@@ -1,0 +1,721 @@
+{
+  "project": "Kerman Cars",
+  "scope": "Actual source interfaces with disposable demo data or explicitly labelled API fixtures; desktop captures; selected mobile examples remain in the overview.",
+  "views": [
+    {
+      "id": "public-home",
+      "label": "خرید و فروش خودرو، همین‌جا در کرمان",
+      "route": "/",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/HomePage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-home.jpg",
+      "sha256": "84a280474c76b9be4fb8846899430f680b316d09b96efbda5c3d7c72f7a885f3"
+    },
+    {
+      "id": "public-cars",
+      "label": "آگهی‌های خرید و فروش خودرو",
+      "route": "/cars",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/ListingsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-cars.jpg",
+      "sha256": "ca54b72200211182853e4fe3760f00afaf23f6ab5fc1d26368956a8c42fe7338"
+    },
+    {
+      "id": "public-dealers",
+      "label": "نمایشگاه‌های خودرو در کرمان",
+      "route": "/dealers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/DealersPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-dealers.jpg",
+      "sha256": "5f0874c00dc32b7751aa81671a2531304bcc95f5f56a3858330ade0a8bd656c6"
+    },
+    {
+      "id": "public-compare",
+      "label": "مقایسه خودروها",
+      "route": "/compare",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/ComparisonPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-compare.jpg",
+      "sha256": "73b5bd6c7372b6fd08bba2b72be03f538695b215d293345886f2b475872360dd"
+    },
+    {
+      "id": "public-magazine",
+      "label": "مجلهٔ کرمان کارز",
+      "route": "/magazine",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/MagazinePage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-magazine.jpg",
+      "sha256": "acd7ffd6556542703e286df1e83df9ea007be0858988c56f4074d1aca63d87a7"
+    },
+    {
+      "id": "public-about",
+      "label": "درباره ما",
+      "route": "/about",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/PublicInfoPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-about.jpg",
+      "sha256": "f84c6bddbc8c754b9e0999be686dfbe9b4b779f8db46c32843ddbeb88f566c7e"
+    },
+    {
+      "id": "public-contact",
+      "label": "تماس با ما",
+      "route": "/contact",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/PublicInfoPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-contact.jpg",
+      "sha256": "edcde77afbc818d0578dcb4c245d056d09392fb8933c87a617eeba0c3df610ae"
+    },
+    {
+      "id": "public-terms",
+      "label": "قوانین استفاده",
+      "route": "/terms",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/PublicInfoPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-terms.jpg",
+      "sha256": "7e07e071d490031c88527b3cebd63936d91823a8d82f603f6014e24384d0c4ee"
+    },
+    {
+      "id": "public-privacy",
+      "label": "حریم خصوصی",
+      "route": "/privacy",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/public/PublicInfoPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-privacy.jpg",
+      "sha256": "02e04f1751b715813836b95d306b98c18f62231d528421cefae7739dd79eafa9"
+    },
+    {
+      "id": "public-auth-login",
+      "label": "ورود یا ثبت‌نام",
+      "route": "/auth/login",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/auth/LoginPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/public-auth-login.jpg",
+      "sha256": "acab14f63f5eb4f1a5df09c23f63f001a750139bc20f9aedf3009b81207396b3"
+    },
+    {
+      "id": "personal-dashboard",
+      "label": "سلام کاربر",
+      "route": "/dashboard",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/DashboardHomePage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard.jpg",
+      "sha256": "c8de8fb8760cb5705ef1d5304385013da2f66776a2734d67535048cae402dfc4"
+    },
+    {
+      "id": "personal-dashboard-listings",
+      "label": "آگهی‌های من",
+      "route": "/dashboard/listings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/MyListingsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-listings.jpg",
+      "sha256": "fc878126b7f7013c1559456c128066519f9c3fa6f870afa1c79005048e50ff9b"
+    },
+    {
+      "id": "personal-listing-create",
+      "label": "ثبت آگهی خودرو",
+      "route": "/listing/create",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/listing/CreateListingPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-listing-create.jpg",
+      "sha256": "5f6b6171b59cad17ddf8ca862193cd67d4d182e5be26c496e55c763c04bc4ff2"
+    },
+    {
+      "id": "personal-dashboard-favorites",
+      "label": "علاقه‌مندی‌های من",
+      "route": "/dashboard/favorites",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/FavoritesPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-favorites.jpg",
+      "sha256": "130cc0419b996ed1a430d47dea19c993dc85abbd930e5b016395b04608820e0b"
+    },
+    {
+      "id": "personal-dashboard-saved-searches",
+      "label": "جست‌وجوهای ذخیره‌شده",
+      "route": "/dashboard/saved-searches",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/SavedSearchesPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-saved-searches.jpg",
+      "sha256": "55e055b8242e4ccf776674133174b7bc33a160236a7d6c62408d53418a8406d7"
+    },
+    {
+      "id": "personal-dashboard-reports",
+      "label": "گزارش‌های من",
+      "route": "/dashboard/reports",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/MyReportsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-reports.jpg",
+      "sha256": "b2d13d4fd1f2261b4fcac7f2e8a36ce5630409e2f6929257d92c03517903d40d"
+    },
+    {
+      "id": "personal-dashboard-notifications",
+      "label": "اعلان‌های من",
+      "route": "/dashboard/notifications",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/NotificationsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-notifications.jpg",
+      "sha256": "ec1d441768ce39b6935d92d3add3b1ffd56562bc62531ea0615011ce3b954b48"
+    },
+    {
+      "id": "personal-dashboard-history",
+      "label": "تاریخچه بازدید من",
+      "route": "/dashboard/history",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/ViewHistoryPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-history.jpg",
+      "sha256": "e3143587572efd412c0a2719d8ffe53cf5b241d3076453940812e81ce616ce20"
+    },
+    {
+      "id": "personal-dashboard-profile",
+      "label": "اطلاعات حساب",
+      "route": "/dashboard/profile",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/ProfilePage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-profile.jpg",
+      "sha256": "fd1a172d33ab3fbde3fa9c94c76da2033c30100beea5ea610d4dac2ac1560c54"
+    },
+    {
+      "id": "personal-dashboard-sessions",
+      "label": "دستگاه‌های فعال",
+      "route": "/dashboard/sessions",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dashboard/SessionsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dashboard-sessions.jpg",
+      "sha256": "0cb73d56ed1854a1d85bb2d23098bf829ac37a8da6c2feb7b4a4a78e8269430f"
+    },
+    {
+      "id": "personal-dealer-register",
+      "label": "ثبت درخواست نمایشگاه",
+      "route": "/dealer/register",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerRegistrationPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/personal-dealer-register.jpg",
+      "sha256": "1b46e7d2efe910727c0305b777a5d79f1220aa247756a7ca16f52c8bb0aae9b3"
+    },
+    {
+      "id": "dealer-dealer-dashboard",
+      "label": "نمایشگاه نمونه رزومه",
+      "route": "/dealer-dashboard",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerDashboardPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/dealer-dealer-dashboard.jpg",
+      "sha256": "fa3a3824257e88bb5c298479288107fc03c5dd3aa3c34672643596c82477701a"
+    },
+    {
+      "id": "dealer-dealer-dashboard-listings",
+      "label": "آگهی‌های من",
+      "route": "/dealer-dashboard/listings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerListingsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/dealer-dealer-dashboard-listings.jpg",
+      "sha256": "c086287182ce5375667fcd897d06f6c4899110152f0c7080dccb9fa4171c93bf"
+    },
+    {
+      "id": "dealer-dealer-dashboard-analytics",
+      "label": "آمار و گزارش‌های نمایشگاه",
+      "route": "/dealer-dashboard/analytics",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerAnalyticsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/dealer-dealer-dashboard-analytics.jpg",
+      "sha256": "39b48bd2528fd647bd49628d7fbc9c3de16407ec3059cf60db0d399ed396f234"
+    },
+    {
+      "id": "dealer-dealer-dashboard-plans",
+      "label": "پلن‌های نمایشگاه",
+      "route": "/dealer-dashboard/plans",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerPlansPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/dealer-dealer-dashboard-plans.jpg",
+      "sha256": "6ae85e9d6dc2f1a766df13e84d2a541f2e7dbe9a0c54d84de6918f1d82ec9b44"
+    },
+    {
+      "id": "dealer-dealer-dashboard-subscription",
+      "label": "اشتراک من",
+      "route": "/dealer-dashboard/subscription",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerSubscriptionPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/dealer-dealer-dashboard-subscription.jpg",
+      "sha256": "dafe304323adfd1980b616a111406448c0512a5689d8dce92dbc228a67098591"
+    },
+    {
+      "id": "dealer-dealer-dashboard-profile",
+      "label": "ویرایش اطلاعات نمایشگاه",
+      "route": "/dealer-dashboard/profile",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/dealer/DealerProfilePage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/dealer-dealer-dashboard-profile.jpg",
+      "sha256": "b834284a810b54f088c4af25da3eb6428ded71a06d107364e98a1cb4f01ed4a1"
+    },
+    {
+      "id": "admin-admin",
+      "label": "داشبورد مدیریت",
+      "route": "/admin",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminDashboardPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin.jpg",
+      "sha256": "98051e4ffcc02c051666b9865370ecec3adf4d96ef6cd97f5904fddea855b90e"
+    },
+    {
+      "id": "admin-admin-listings",
+      "label": "مدیریت آگهی‌ها",
+      "route": "/admin/listings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminListingsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-listings.jpg",
+      "sha256": "470f22acdf05dcc1dfe98363974ef95d5b7d8db25e44f4fd84f51f568bcafb27"
+    },
+    {
+      "id": "admin-admin-dealers",
+      "label": "درخواست‌ها و نمایشگاه‌ها",
+      "route": "/admin/dealers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminDealersPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-dealers.jpg",
+      "sha256": "72b00076e004c972d803611ea0755ff944b00b380288c388600c23eca31bf8e1"
+    },
+    {
+      "id": "admin-admin-users",
+      "label": "مدیریت کاربران",
+      "route": "/admin/users",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminUsersPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-users.jpg",
+      "sha256": "7ec59ffc59a481af12a8ac3f3afd8ec7861047835e4841beba87144807b2ebe0"
+    },
+    {
+      "id": "admin-admin-reports",
+      "label": "گزارش‌های تخلف",
+      "route": "/admin/reports",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminRecordPages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-reports.jpg",
+      "sha256": "706f097b7cf1b52fca15638bbd8df722dc2a7300edb9377027247ff7b6e15089"
+    },
+    {
+      "id": "admin-admin-subscriptions",
+      "label": "اشتراک کاربران",
+      "route": "/admin/subscriptions",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminRecordPages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-subscriptions.jpg",
+      "sha256": "0285c0cabbb5185acaa238f695918622a346f46c6e5b5419eefffc356753a7d1"
+    },
+    {
+      "id": "admin-admin-payments",
+      "label": "پرداخت‌ها",
+      "route": "/admin/payments",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminRecordPages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-payments.jpg",
+      "sha256": "be75c98f75148beff25791efc620b546e22c959ae4e0cd18a4f379b9cfd09cc5"
+    },
+    {
+      "id": "admin-admin-plans",
+      "label": "پلن‌های نمایشگاهی",
+      "route": "/admin/plans",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminPlansPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-plans.jpg",
+      "sha256": "6601e5ff32401723c1b0dc8b2b4d367c269c8ef2d3557d22726442fef33b238c"
+    },
+    {
+      "id": "admin-admin-plans-new",
+      "label": "افزودن پلن",
+      "route": "/admin/plans/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-plans-new.jpg",
+      "sha256": "9a56c106555d1839291d0fef21c644a6e165444ef70ccb7e7582f6a03cd36865"
+    },
+    {
+      "id": "admin-admin-banners",
+      "label": "بنرهای صفحه اصلی",
+      "route": "/admin/banners",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-banners.jpg",
+      "sha256": "f0ece032b8ba87ed54e0e12f9e091eddc59319a98a20c064f682486950c6812a"
+    },
+    {
+      "id": "admin-admin-banners-new",
+      "label": "افزودن بنر",
+      "route": "/admin/banners/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-banners-new.jpg",
+      "sha256": "cf07fb10e57ffb337f16b3fa0dc5fcd0d271b67216c34b32b0ef2c69f2eece04"
+    },
+    {
+      "id": "admin-admin-catalog-brands",
+      "label": "برندهای خودرو",
+      "route": "/admin/catalog/brands",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-brands.jpg",
+      "sha256": "8a5a726a1062474bdb16e8f6c576754b4eb59c259cbcef4ee2c8541dd0e4a010"
+    },
+    {
+      "id": "admin-admin-catalog-car-models",
+      "label": "مدل‌های خودرو",
+      "route": "/admin/catalog/car-models",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-car-models.jpg",
+      "sha256": "863259d6491247f78277d71aab8fcacbc2d8f89bfa71abf9ae6117af3c0696e1"
+    },
+    {
+      "id": "admin-admin-catalog-car-trims",
+      "label": "تیپ‌های خودرو",
+      "route": "/admin/catalog/car-trims",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-car-trims.jpg",
+      "sha256": "0832524afc0e416f20e676fdb1d70ee763958555c12560d0a0ba4403be0b50f9"
+    },
+    {
+      "id": "admin-admin-settings",
+      "label": "تنظیمات صفحه اصلی",
+      "route": "/admin/settings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminSettingsPage.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-settings.jpg",
+      "sha256": "228549f45d3eaeb8d8fa2bbbf82f15c854598eb2b82d660101d32a012322ebea"
+    },
+    {
+      "id": "admin-admin-catalog-provinces",
+      "label": "استان‌ها",
+      "route": "/admin/catalog/provinces",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-provinces.jpg",
+      "sha256": "3c0062659928708185ab86988e2e52d8e0d0fde5a5f8b09fcf4233d5cfd643c6"
+    },
+    {
+      "id": "admin-admin-catalog-cities",
+      "label": "شهرها",
+      "route": "/admin/catalog/cities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-cities.jpg",
+      "sha256": "7fafe6814449778d9037dc0dea439d2b1bbc433b1a7d52d364d47dc970331135"
+    },
+    {
+      "id": "admin-admin-catalog-neighborhoods",
+      "label": "محله‌ها",
+      "route": "/admin/catalog/neighborhoods",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-neighborhoods.jpg",
+      "sha256": "ddbdc0f797d10c15157fdf8f6aec1f97dfa4ca9642e12ae8fa910a1853552648"
+    },
+    {
+      "id": "admin-admin-articles",
+      "label": "مجله کرمان کارز",
+      "route": "/admin/articles",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-articles.jpg",
+      "sha256": "58ffb01dbeb8d9619cda74030b103ac27bab3473fb3208b2684ab87d5ae58e98"
+    },
+    {
+      "id": "admin-admin-articles-new",
+      "label": "افزودن مطلب",
+      "route": "/admin/articles/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-articles-new.jpg",
+      "sha256": "695ded07ee797ade6440819719da661dd2f438f56a45d0df74629b15b267cd75"
+    },
+    {
+      "id": "admin-admin-faqs",
+      "label": "سؤال‌های متداول",
+      "route": "/admin/faqs",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-faqs.jpg",
+      "sha256": "9fbcf36f1eca3210212274f71982e37ea18ef404b2f63a79ca0d10627e224310"
+    },
+    {
+      "id": "admin-admin-faqs-new",
+      "label": "افزودن پرسش",
+      "route": "/admin/faqs/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-faqs-new.jpg",
+      "sha256": "3d6960da81e94a5653f8e8064f4091c15338545440dad0d12d415ef739ca3b97"
+    },
+    {
+      "id": "admin-admin-catalog-brands-new",
+      "label": "افزودن برند خودرو",
+      "route": "/admin/catalog/brands/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-brands-new.jpg",
+      "sha256": "bacdd7f6a69bc9ba198e18459efd4d729d0a4c1c92c2828429c440411874b4a5"
+    },
+    {
+      "id": "admin-admin-catalog-car-models-new",
+      "label": "افزودن مدل خودرو",
+      "route": "/admin/catalog/car-models/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-car-models-new.jpg",
+      "sha256": "5ae4b4a657c4a3811b5716a3ff90d71ef5607eac05fab11cc3ef19a48aaae716"
+    },
+    {
+      "id": "admin-admin-catalog-car-trims-new",
+      "label": "افزودن تیپ خودرو",
+      "route": "/admin/catalog/car-trims/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-car-trims-new.jpg",
+      "sha256": "72533ce74305f17b9095db881558eb9728d19305441007f79ce4c39c24a0d4a3"
+    },
+    {
+      "id": "admin-admin-catalog-provinces-new",
+      "label": "افزودن استان",
+      "route": "/admin/catalog/provinces/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-provinces-new.jpg",
+      "sha256": "78f81c2dd9b6e4a4147410a2cf1bc2ac027512779d0d42855d56f7c65adbe785"
+    },
+    {
+      "id": "admin-admin-catalog-cities-new",
+      "label": "افزودن شهر",
+      "route": "/admin/catalog/cities/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-cities-new.jpg",
+      "sha256": "98dca31a88d681e8f8aceb4a0a23b0bad930267c307b6932a8fb9818af0511f2"
+    },
+    {
+      "id": "admin-admin-catalog-neighborhoods-new",
+      "label": "افزودن محله",
+      "route": "/admin/catalog/neighborhoods/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/kerman-cars-frontend/src/pages/admin/AdminResourcePages.jsx",
+        "frontend/kerman-cars-frontend/src/router/AppRouter.jsx"
+      ],
+      "method": "actual interface with isolated Django demo records; no real SMS or payment requests",
+      "image": "../../assets/screenshots/kerman-cars/admin-admin-catalog-neighborhoods-new.jpg",
+      "sha256": "968a65f231fbf3e1369b9f0eddf842b0b23de1197cf8a05fc4321b900045e5a6"
+    }
+  ]
+}

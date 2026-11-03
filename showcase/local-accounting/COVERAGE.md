@@ -1,0 +1,112 @@
+# Local Accounting — Tabs, Pages & Workflow Coverage
+
+[← Project](README.md) · [Full image gallery](GALLERY.md) · [All published code](SOURCE_INDEX.md) · [Source scope](../SOURCE_SCOPE.md)
+
+**243 source files · 99 captured views.** The rows below cover implemented navigation pages and selected forms/subtabs, not every possible record or dialog state. Desktop captures use demonstration records or explicit API fixtures; empty states are included where no demo record is selected. Authentication/payment/provider internals remain outside the public source release.
+
+The temporary rendering harness moves the existing React import before lazy component declarations to work around the entry-point initialization issue. API responses are synthetic; these captures do not validate accounting calculations or real data writes.
+
+| Page / state | Route or navigation key | Published code | Screenshot / status |
+| --- | --- | --- | --- |
+| حسابداری آرن | `/` | [Code 1](source/frontend/vet_clinic/src/Pages/Dashboard/Dashboard.jsx) | [View image](../../assets/screenshots/local-accounting/dashboard.jpg) |
+| حسابداری آرن | `/dashboard` | [Code 1](source/frontend/vet_clinic/src/Pages/Dashboard/Dashboard.jsx) | [View image](../../assets/screenshots/local-accounting/dashboard.jpg) |
+| نمایش این بخش با مشکل روبه‌رو شد | `/settings/commercial-tools` | [Code 1](source/frontend/vet_clinic/src/Pages/Settings/CommercialTools/CommercialTools.jsx) | [View image](../../assets/screenshots/local-accounting/settings-commercial-tools.jpg) |
+| حسابداری آرن | `/banking/opening-balances` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/OpeningBalance/TreasuryOpening.jsx) | [View image](../../assets/screenshots/local-accounting/banking-opening-balances.jpg) |
+| حسابداری آرن | `/persons/customers` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/CustomerList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-customers.jpg) |
+| حسابداری آرن | `/persons/customers/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/CustomerForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-customers-add.jpg) |
+| حسابداری آرن | `/persons/vendors` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/VendorList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-vendors.jpg) |
+| حسابداری آرن | `/persons/vendors/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/VendorForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-vendors-add.jpg) |
+| حسابداری آرن | `/persons/sellers` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/SellerList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-sellers.jpg) |
+| حسابداری آرن | `/persons/sellers/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/SellerForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-sellers-add.jpg) |
+| حسابداری آرن | `/persons/staff` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/StaffList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-staff.jpg) |
+| حسابداری آرن | `/persons/staff/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/StaffForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-staff-add.jpg) |
+| حسابداری آرن | `/persons/drivers` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/DriverList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-drivers.jpg) |
+| حسابداری آرن | `/persons/drivers/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/DriverForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-drivers-add.jpg) |
+| حسابداری آرن | `/persons/shareholders` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/ShareHolderList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-shareholders.jpg) |
+| حسابداری آرن | `/persons/shareholders/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/ShareHolderForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-shareholders-add.jpg) |
+| حسابداری آرن | `/persons/payment` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/Payment/PersonPaymentList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-payment.jpg) |
+| حسابداری آرن | `/persons/payment/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/Payment/PersonPaymentForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-payment-add.jpg) |
+| حسابداری آرن | `/persons/receive` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/Receive/PersonReceiveList.jsx) | [View image](../../assets/screenshots/local-accounting/persons-receive.jpg) |
+| حسابداری آرن | `/persons/receive/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/Receive/PersonReceiveForm.jsx) | [View image](../../assets/screenshots/local-accounting/persons-receive-add.jpg) |
+| حسابداری آرن | `/persons/balances-report` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/Reports/PersonBalancesReport.jsx) | [View image](../../assets/screenshots/local-accounting/persons-balances-report.jpg) |
+| حسابداری آرن | `/persons/detail-audit` | [Code 1](source/frontend/vet_clinic/src/Pages/Persons/Reports/PersonDetailAudit.jsx) | [View image](../../assets/screenshots/local-accounting/persons-detail-audit.jpg) |
+| حسابداری آرن | `/banking/banks` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/BankTable.jsx) | [View image](../../assets/screenshots/local-accounting/banking-banks.jpg) |
+| حسابداری آرن | `/banking/cashboxes` | [Code 1](source/frontend/vet_clinic/src/Pages/Cashboxes/CashboxTable.jsx) | [View image](../../assets/screenshots/local-accounting/banking-cashboxes.jpg) |
+| حسابداری آرن | `/banking/imprest` | [Code 1](source/frontend/vet_clinic/src/Pages/Imprests/ImprestTable.jsx) | [View image](../../assets/screenshots/local-accounting/banking-imprest.jpg) |
+| حسابداری آرن | `/banking/transfers` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/Transfer/BankTransferList.jsx) | [View image](../../assets/screenshots/local-accounting/banking-transfers.jpg) |
+| حسابداری آرن | `/banking/transfers/new` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/Transfer/NewTransfer.jsx) | [View image](../../assets/screenshots/local-accounting/banking-transfers-new.jpg) |
+| حسابداری آرن | `/banking/received-checks` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/ReceivedChecks/ReceivedChecksTable.jsx) | [View image](../../assets/screenshots/local-accounting/banking-received-checks.jpg) |
+| حسابداری آرن | `/banking/paid-checks` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/PaidChecks/PaidChecksTable.jsx) | [View image](../../assets/screenshots/local-accounting/banking-paid-checks.jpg) |
+| نمایش این بخش با مشکل روبه‌رو شد | `/treasury/dashboard` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/Treasury/Dashboard/TreasuryDashboard.jsx) | [View image](../../assets/screenshots/local-accounting/treasury-dashboard.jpg) |
+| حسابداری آرن | `/treasury/vouchers` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/Treasury/Vouchers/TreasuryVoucherList.jsx) | [View image](../../assets/screenshots/local-accounting/treasury-vouchers.jpg) |
+| حسابداری آرن | `/treasury/vouchers/new` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/Treasury/Vouchers/TreasuryVoucherForm.jsx) | [View image](../../assets/screenshots/local-accounting/treasury-vouchers-new.jpg) |
+| حسابداری آرن | `/banking/cheque-dashboard` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/ChequeDashboard/ChequeDashboard.jsx) | [View image](../../assets/screenshots/local-accounting/banking-cheque-dashboard.jpg) |
+| حسابداری آرن | `/banking/cheque-accounting-audit` | [Code 1](source/frontend/vet_clinic/src/Pages/BankTable/ChequeAccountingAudit/ChequeAccountingAudit.jsx) | [View image](../../assets/screenshots/local-accounting/banking-cheque-accounting-audit.jpg) |
+| حسابداری آرن | `/products/items` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/ProductItemsTable.jsx) | [View image](../../assets/screenshots/local-accounting/products-items.jpg) |
+| حسابداری آرن | `/products/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/AddProduct/AddProductForm.jsx) | [View image](../../assets/screenshots/local-accounting/products-add.jpg) |
+| حسابداری آرن | `/services/items` | [Code 1](source/frontend/vet_clinic/src/Pages/Services/ServiceItemsTable.jsx) | [View image](../../assets/screenshots/local-accounting/services-items.jpg) |
+| حسابداری آرن | `/services/add` | [Code 1](source/frontend/vet_clinic/src/Pages/Services/AddServices/AddProductForm.jsx) | [View image](../../assets/screenshots/local-accounting/services-add.jpg) |
+| حسابداری آرن | `/products/price-list` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/PriceList/PriceList.jsx) | [View image](../../assets/screenshots/local-accounting/products-price-list.jpg) |
+| حسابداری آرن | `/products/materialPrices` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/PriceList/PriceList.jsx) | [View image](../../assets/screenshots/local-accounting/products-materialPrices.jpg) |
+| حسابداری آرن | `/product/barcode-generator` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/BarcodeGenerator/BarcodeGenerator.jsx) | [View image](../../assets/screenshots/local-accounting/product-barcode-generator.jpg) |
+| حسابداری آرن | `/product/barcode-print` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/BarcodePrint/BarcodePrint.jsx) | [View image](../../assets/screenshots/local-accounting/product-barcode-print.jpg) |
+| حسابداری آرن | `/product/barcode-bulk-print` | [Code 1](source/frontend/vet_clinic/src/Pages/Products/Items/BarcodeBulkPrint/BarcodeBulkPrint.jsx) | [View image](../../assets/screenshots/local-accounting/product-barcode-bulk-print.jpg) |
+| حسابداری آرن | `/inventory/warehouses` | [Code 1](source/frontend/vet_clinic/src/Pages/Inventory/InventoryTable.jsx) | [View image](../../assets/screenshots/local-accounting/inventory-warehouses.jpg) |
+| حسابداری آرن | `/inventory/transfers` | [Code 1](source/frontend/vet_clinic/src/Pages/Inventory/ReceiptsTable.jsx) | [View image](../../assets/screenshots/local-accounting/inventory-transfers.jpg) |
+| AddReceiptStep2 | `/inventory/transfers/new/details` | [Code 1](source/frontend/vet_clinic/src/Pages/Inventory/AddReceiptStep2.jsx) | Internal warehouse wizard requires an existing in-memory draft; direct navigation redirects to the supported starting screen. Its source is included. |
+| حسابداری آرن | `/inventory/stock/items` | [Code 1](source/frontend/vet_clinic/src/Pages/Inventory/StockItems.jsx) | [View image](../../assets/screenshots/local-accounting/inventory-stock-items.jpg) |
+| حسابداری آرن | `/inventory/stock/all` | [Code 1](source/frontend/vet_clinic/src/Pages/Inventory/AllWarehousesInventory.jsx) | [View image](../../assets/screenshots/local-accounting/inventory-stock-all.jpg) |
+| حسابداری آرن | `/inventory/stocktaking` | [Code 1](source/frontend/vet_clinic/src/Pages/Inventory/StockTakingList.jsx) | [View image](../../assets/screenshots/local-accounting/inventory-stocktaking.jpg) |
+| حسابداری آرن | `/sales/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Invoices/SalesCreate.jsx) | [View image](../../assets/screenshots/local-accounting/sales-new.jpg) |
+| حسابداری آرن | `/sales/list` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Invoices/SalesList.jsx) | [View image](../../assets/screenshots/local-accounting/sales-list.jpg) |
+| حسابداری آرن | `/sales/returns/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Invoices/ReturnedSalesInvoiceCreate.jsx) | [View image](../../assets/screenshots/local-accounting/sales-returns-new.jpg) |
+| حسابداری آرن | `/sales/returns` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Invoices/ReturnedSalesInvoiceList.jsx) | [View image](../../assets/screenshots/local-accounting/sales-returns.jpg) |
+| حسابداری آرن | `/sales/discounts/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/DiscountsCreate.jsx) | [View image](../../assets/screenshots/local-accounting/sales-discounts-new.jpg) |
+| حسابداری آرن | `/sales/discounts` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/DiscountsList.jsx) | [View image](../../assets/screenshots/local-accounting/sales-discounts.jpg) |
+| حسابداری آرن | `/sales/quick-invoice` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Invoices/QuickSalesInvoice.jsx) | [View image](../../assets/screenshots/local-accounting/sales-quick-invoice.jpg) |
+| حسابداری آرن | `/sales/income/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Income/IncomeCreate.jsx) | [View image](../../assets/screenshots/local-accounting/sales-income-new.jpg) |
+| حسابداری آرن | `/sales/income` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Income/IncomeList.jsx) | [View image](../../assets/screenshots/local-accounting/sales-income.jpg) |
+| حسابداری آرن | `/sales/installment/contracts/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Installments/ContractCreate.jsx) | [View image](../../assets/screenshots/local-accounting/sales-installment-contracts-new.jpg) |
+| حسابداری آرن | `/sales/installment/contracts` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Installments/ContractList.jsx) | [View image](../../assets/screenshots/local-accounting/sales-installment-contracts.jpg) |
+| حسابداری آرن | `/purchases/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Invoices/PurchaseCreate.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-new.jpg) |
+| حسابداری آرن | `/purchases/returns/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Invoices/ReturnedPurchaseCreate.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-returns-new.jpg) |
+| حسابداری آرن | `/purchases/invoices` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Invoices/PurchaseList.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-invoices.jpg) |
+| حسابداری آرن | `/purchases/returns` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Invoices/ReturnedPurchaseList.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-returns.jpg) |
+| حسابداری آرن | `/purchases/expense/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Expense/ExpenseCreate.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-expense-new.jpg) |
+| حسابداری آرن | `/purchases/expense` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Expense/ExpenseList.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-expense.jpg) |
+| حسابداری آرن | `/purchases/waste/new` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Waste/WasteCreate.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-waste-new.jpg) |
+| حسابداری آرن | `/purchases/waste` | [Code 1](source/frontend/vet_clinic/src/Pages/Purchases/Waste/WasteList.jsx) | [View image](../../assets/screenshots/local-accounting/purchases-waste.jpg) |
+| حسابداری آرن | `/accounting/documents/create` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/documents/CreateDocument/CreateDocument.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-documents-create.jpg) |
+| حسابداری آرن | `/accounting/documents` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/documents/DocumentList/DocumentList.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-documents.jpg) |
+| حسابداری آرن | `/accounting/accounts` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/accounts/AccountList/AccountList.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-accounts.jpg) |
+| حسابداری آرن | `/accounting/journal` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/journal/JournalList/JournalList.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-journal.jpg) |
+| حسابداری آرن | `/accounting/ledger` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/ledger/LedgerList/LedgerList.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-ledger.jpg) |
+| حسابداری آرن | `/accounting/trial-balance` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/reports/TrialBalance/TrialBalance.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-trial-balance.jpg) |
+| حسابداری آرن | `/accounting/opening-balance` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/openingBalance/OpeningBalance/OpeningBalance.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-opening-balance.jpg) |
+| حسابداری آرن | `/accounting/fiscal-years` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/fiscalYears/FiscalYearList/FiscalYearList.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-fiscal-years.jpg) |
+| حسابداری آرن | `/accounting/profit-loss` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/reports/ProfitLoss/ProfitLoss.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-profit-loss.jpg) |
+| حسابداری آرن | `/accounting/balance-sheet` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/reports/BalanceSheet/BalanceSheet.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-balance-sheet.jpg) |
+| حسابداری آرن | `/accounting/document-summary` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/reports/DocumentSummary/DocumentSummary.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-document-summary.jpg) |
+| حسابداری آرن | `/accounting/dashboard` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/dashboard/AccountingDashboard/AccountingDashboard.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-dashboard.jpg) |
+| حسابداری آرن | `/accounting/year-end` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/yearEnd/YearEndOperations/YearEndOperations.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-year-end.jpg) |
+| حسابداری آرن | `/accounting/details` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/details/DetailAccountList/DetailList.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-details.jpg) |
+| حسابداری آرن | `/accounting/period-locks` | [Code 1](source/frontend/vet_clinic/src/Pages/Accounting/PeriodLocks/PeriodLocks.jsx) | [View image](../../assets/screenshots/local-accounting/accounting-period-locks.jpg) |
+| حسابداری آرن | `/reports` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/ReportsHub/ReportsHub.jsx) | [View image](../../assets/screenshots/local-accounting/reports.jpg) |
+| حسابداری آرن | `/reports/installments` | [Code 1](source/frontend/vet_clinic/src/Pages/Sales/Installments/InstallmentReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-installments.jpg) |
+| حسابداری آرن | `/reports/sales-by-invoice` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-sales-by-invoice.jpg) |
+| حسابداری آرن | `/reports/sales-by-item` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-sales-by-item.jpg) |
+| حسابداری آرن | `/reports/purchases-by-invoice` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-purchases-by-invoice.jpg) |
+| حسابداری آرن | `/reports/purchases-by-item` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-purchases-by-item.jpg) |
+| حسابداری آرن | `/reports/tax` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-tax.jpg) |
+| حسابداری آرن | `/reports/invoice-profit` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-invoice-profit.jpg) |
+| حسابداری آرن | `/reports/sales-by-seller` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-sales-by-seller.jpg) |
+| حسابداری آرن | `/reports/invoice-summary-by-person` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-invoice-summary-by-person.jpg) |
+| حسابداری آرن | `/reports/bank-ledger` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/BankingReports/TreasuryLedgerReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-bank-ledger.jpg) |
+| حسابداری آرن | `/reports/cashbox-ledger` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/BankingReports/TreasuryLedgerReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-cashbox-ledger.jpg) |
+| حسابداری آرن | `/reports/imprest-ledger` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/BankingReports/TreasuryLedgerReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-imprest-ledger.jpg) |
+| حسابداری آرن | `/reports/material-ledger` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/InventoryReports/MaterialLedgerReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-material-ledger.jpg) |
+| حسابداری آرن | `/reports/serial-numbers` | [Code 1](source/frontend/vet_clinic/src/Pages/Reports/InventoryReports/SerialNumberReport.jsx) | [View image](../../assets/screenshots/local-accounting/reports-serial-numbers.jpg) |
+| حسابداری آرن | `/settings` | [Code 1](source/frontend/vet_clinic/src/Pages/Settings/UserManagement/UserManagement.jsx) | [View image](../../assets/screenshots/local-accounting/settings.jpg) |
+| حسابداری آرن | `/settings/audit-logs` | [Code 1](source/frontend/vet_clinic/src/Pages/Settings/AuditLogs/AuditLogs.jsx) | [View image](../../assets/screenshots/local-accounting/settings-audit-logs.jpg) |
+
+[Capture manifest and image hashes](CAPTURE_MANIFEST.json)

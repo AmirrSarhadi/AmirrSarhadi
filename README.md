@@ -43,7 +43,7 @@ I enjoy turning complex requirements into practical products with clean architec
 
 ## Project Code & Screenshots
 
-Explore complete selected source files, implementation details and actual interface captures. The expanded collections contain **181 files across six projects**, with customer data and private operational implementation areas excluded.
+Explore complete selected source files, implementation details and actual interface captures. The expanded collections contain **818 files across six projects**, with customer data and private operational implementation areas excluded.
 
 | Project | Focus | Explore |
 | --- | --- | --- |
@@ -68,6 +68,8 @@ Explore complete selected source files, implementation details and actual interf
 </table>
 
 [Browse every gallery and source index →](showcase/README.md)
+
+[**Explore 252 tab, page and workflow captures with direct code links →**](showcase/COVERAGE.md)
 
 ## Public Code
 

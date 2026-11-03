@@ -1,0 +1,568 @@
+.container {
+    padding: 24px;
+    margin: 0;
+    background: var(--surface);
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    border: 1px solid var(--border-soft);
+    direction: rtl;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.topBar h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.topBar p {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.topActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.topActions select {
+    width: 160px;
+    height: 44px;
+    border: 1px solid var(--border);
+    background: var(--surface-subtle);
+    border-radius: 14px;
+    outline: none;
+    color: var(--text);
+    padding: 0 12px;
+    font-family: inherit;
+    font-weight: 800;
+}
+
+.saveBtn,
+.finalizeBtn,
+.cancelBtn,
+.closeBtn,
+.deleteBtn {
+    height: 42px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: inherit;
+    transition: 0.2s ease;
+}
+
+.saveBtn {
+    min-width: 110px;
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+.saveBtn:hover {
+    background: #dbeafe;
+}
+
+.finalizeBtn {
+    min-width: 130px;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    color: white;
+    box-shadow: 0 12px 24px rgba(22, 163, 74, 0.22);
+}
+
+.finalizeBtn:hover {
+    transform: translateY(-1px);
+}
+
+.saveBtn:disabled,
+.finalizeBtn:disabled,
+.deleteBtn:disabled {
+    background: #cbd5e1;
+    color: var(--text-muted);
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.statusRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 14px;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    background: var(--surface-subtle);
+    margin-bottom: 18px;
+}
+
+.statusRow span {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.statusRow strong {
+    margin-right: 7px;
+    font-weight: 900;
+}
+
+.draftText {
+    color: #b45309;
+}
+
+.postedText {
+    color: #15803d;
+}
+
+.documentLink {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.documentLink:hover {
+    text-decoration: underline;
+}
+
+.formulaRow {
+    display: grid;
+    grid-template-columns: 1fr 44px 1fr 44px 1fr;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.formulaCard {
+    min-height: 105px;
+    border-radius: 22px;
+    padding: 18px;
+    border: 1px solid var(--border-soft);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulaCard span {
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.formulaCard strong {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--text-strong);
+}
+
+.assetCard {
+    background: linear-gradient(135deg, #ecfdf5, var(--surface));
+}
+
+.assetCard span {
+    color: #15803d;
+}
+
+.liabilityCard {
+    background: linear-gradient(135deg, #fff7ed, var(--surface));
+}
+
+.liabilityCard span {
+    color: #c2410c;
+}
+
+.equityCard {
+    background: linear-gradient(135deg, var(--primary-soft), var(--surface));
+}
+
+.equityCard span {
+    color: var(--primary);
+}
+
+.operator {
+    width: 44px;
+    height: 44px;
+    border-radius: 15px;
+    background: var(--surface-muted);
+    color: var(--text-strong);
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.balanceStatus {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 14px;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    margin-bottom: 18px;
+}
+
+.balanceStatus span {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.balanceStatus strong,
+.balancedLabel,
+.notBalancedLabel {
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+}
+
+.balanced {
+    background: var(--success-soft);
+    color: #15803d !important;
+}
+
+.notBalanced {
+    background: var(--danger-soft);
+    color: var(--danger) !important;
+}
+
+.balancedLabel {
+    background: var(--success-soft);
+    color: #15803d !important;
+}
+
+.notBalancedLabel {
+    background: var(--danger-soft);
+    color: var(--danger) !important;
+}
+
+.groupGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.groupBox {
+    min-height: 430px;
+    border-radius: 24px;
+    padding: 18px;
+    border: 1px solid var(--border-soft);
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.groupBox:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.groupAsset {
+    background: linear-gradient(180deg, #ecfdf5, var(--surface));
+}
+
+.groupLiability {
+    background: linear-gradient(180deg, #fff7ed, var(--surface));
+}
+
+.groupEquity {
+    background: linear-gradient(180deg, var(--primary-soft), var(--surface));
+}
+
+.groupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+}
+
+.groupHeader h4 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.groupHeader strong {
+    color: var(--text-strong);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.groupList {
+    flex: 1;
+}
+
+.groupItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    min-height: 42px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--border-soft);
+    padding: 0 12px;
+    margin-bottom: 9px;
+}
+
+.groupItem span {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.groupItem strong {
+    color: var(--text-strong);
+    font-size: 12px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.groupEmpty {
+    height: 120px;
+    display: grid;
+    place-items: center;
+    color: var(--text-soft);
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.groupFooter {
+    min-height: 46px;
+    border-radius: 16px;
+    background: var(--text-strong);
+    color: white;
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.groupFooter span,
+.groupFooter strong {
+    color: white;
+    font-weight: 900;
+}
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    display: grid;
+    place-items: center;
+    z-index: 3000;
+    padding: 20px;
+}
+
+.modal {
+    width: min(820px, 100%);
+    max-height: 90vh;
+    overflow: hidden;
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 22px;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.modalHeader h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.modalHeader p {
+    margin: 6px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.closeBtn {
+    width: 40px;
+    min-width: 40px;
+    background: var(--surface-muted);
+    color: var(--text);
+    font-size: 22px;
+}
+
+.modalTableWrapper {
+    width: 100%;
+    overflow: auto;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    max-height: 55vh;
+}
+
+.modalTable {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.modalTable th {
+    padding: 14px 12px;
+    text-align: center;
+    background: var(--surface-subtle);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 900;
+    border-bottom: 1px solid var(--border-soft);
+    white-space: nowrap;
+}
+
+.modalTable td {
+    padding: 12px 10px;
+    text-align: center;
+    color: var(--text);
+    font-size: 14px;
+    border-bottom: 1px solid var(--surface-muted);
+    white-space: nowrap;
+}
+
+.modalTable tbody tr:hover {
+    background: var(--surface-subtle);
+}
+
+.modalTable input {
+    width: 150px;
+    height: 38px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 11px;
+    outline: none;
+    text-align: center;
+    color: var(--text-strong);
+    font-weight: 800;
+    font-family: inherit;
+}
+
+.modalTable input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.modalTable input:disabled {
+    background: var(--surface-muted);
+    color: var(--text-soft);
+    cursor: not-allowed;
+}
+
+.accountName {
+    color: var(--text-strong) !important;
+    font-weight: 900;
+    text-align: right !important;
+}
+
+.deleteBtn {
+    min-width: 70px;
+    background: var(--danger-soft);
+    color: var(--danger);
+    padding: 0 10px;
+}
+
+.deleteBtn:hover {
+    background: #fecaca;
+}
+
+.modalActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.cancelBtn {
+    flex: 1;
+    background: var(--surface-muted);
+    color: var(--text);
+}
+
+.modalActions .saveBtn {
+    flex: 1;
+}
+
+.emptyState {
+    padding: 34px 16px !important;
+    text-align: center;
+    color: var(--text-muted);
+    font-weight: 900;
+}
+
+.loadingBox {
+    padding: 34px 16px;
+    text-align: center;
+    color: var(--text-muted);
+    font-weight: 900;
+}
+
+@media (max-width: 1100px) {
+    .formulaRow {
+        grid-template-columns: 1fr;
+    }
+
+    .operator {
+        width: 100%;
+    }
+
+    .groupGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .topBar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topActions {
+        width: 100%;
+    }
+
+    .topActions select,
+    .saveBtn,
+    .finalizeBtn {
+        width: 100%;
+    }
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    box-shadow: none;
+}

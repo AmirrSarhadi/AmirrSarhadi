@@ -1,0 +1,384 @@
+.container {
+    padding: 24px;
+    direction: rtl;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.header h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.header p {
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.printBtn,
+.refreshBtn {
+    min-width: 120px;
+    height: 46px;
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.printBtn {
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+.refreshBtn {
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: white;
+}
+
+.printBtn:hover,
+.refreshBtn:hover {
+    transform: translateY(-1px);
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.summaryCard {
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: 24px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summaryCard span {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.summaryCard strong {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.greenText {
+    color: #15803d;
+}
+
+.redText {
+    color: var(--danger);
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    min-width: 220px;
+    height: 48px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: white;
+    padding: 0 14px;
+    color: var(--text-strong);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    outline: none;
+}
+
+.clearBtn {
+    height: 48px;
+    padding: 0 18px;
+    border: none;
+    border-radius: 16px;
+    background: var(--surface-muted);
+    color: var(--text-muted);
+    font-family: inherit;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 26px;
+    border: 1px solid var(--border-soft);
+}
+
+.table {
+    width: 100%;
+    min-width: 1850px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    background: var(--surface-subtle);
+    padding: 16px 12px;
+    border-bottom: 1px solid var(--border-soft);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid var(--surface-muted);
+    color: var(--text);
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: var(--surface-subtle);
+}
+
+.nameCell {
+    text-align: right !important;
+    font-weight: 800;
+}
+
+.descriptionCell {
+    text-align: right !important;
+    max-width: 320px;
+    line-height: 1.9;
+}
+
+.linkCell button {
+    border: none;
+    background: transparent;
+    color: var(--primary);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.emptyState {
+    padding: 60px 20px !important;
+    color: var(--text-soft) !important;
+    font-weight: 900;
+}
+
+.excelBtn {
+    background: #ecfdf5;
+    color: #15803d;
+}
+
+.searchInput {
+    min-width: 280px;
+    height: 48px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: white;
+    padding: 0 14px;
+    color: var(--text-strong);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    outline: none;
+}
+
+.filters input {
+    min-width: 170px;
+    height: 48px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: white;
+    padding: 0 14px;
+    color: var(--text-strong);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    outline: none;
+}
+
+.balanceBadge {
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.debitBadge {
+    background: var(--success-soft);
+    color: #15803d;
+}
+
+.creditBadge {
+    background: var(--danger-soft);
+    color: var(--danger);
+}
+
+.printHeader {
+    display: none;
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.table tfoot td {
+    background: var(--surface-subtle);
+    font-weight: 900;
+}
+
+.loadingBox {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 24px;
+    border: 1px solid var(--border-soft);
+    color: var(--text-muted);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.printArea {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .summaryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .headerActions {
+        width: 100%;
+    }
+
+    .printBtn,
+    .refreshBtn {
+        flex: 1;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filters select,
+    .clearBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .summaryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .summaryCard strong {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+}
+
+@media print {
+    .printHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 16px;
+        color: var(--text-strong);
+    }
+
+    .printHeader strong {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .printHeader span,
+    .printHeader small {
+        font-size: 12px;
+        color: var(--text);
+    }
+
+    .summaryGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+
+    .summaryCard {
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .summaryCard strong {
+        font-size: 14px;
+    }
+
+    .table {
+        min-width: 100%;
+    }
+
+    .headerActions,
+    .filters {
+        display: none !important;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .tableWrapper {
+        border: none;
+    }
+
+    .table th,
+    .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

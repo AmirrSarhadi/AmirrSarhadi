@@ -1,0 +1,101 @@
+/* Public homepage: a learning scene, ruled numbers, and an RTL school-year timeline. */
+.homepage {--home-mint:#eaf5f0;--home-teal:#236b60;--home-coral:#d83b34;--home-white:#fff;background:#fff;letter-spacing:0}
+.homepage .eyebrow {letter-spacing:0}
+.homepage .button {border-radius:8px}
+.homepage .top-strip {background:var(--home-teal)}
+.homepage .learning-hero {position:relative;isolation:isolate;overflow:hidden;background:#eef5f1}
+.learning-backdrop {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 63%;z-index:-2}
+.learning-hero::after {content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,#f5faf7f5 0%,#f5faf7e8 38%,#f5faf700 76%)}
+.hero-content {position:relative;min-height:560px;padding-block:64px 72px;display:flex;align-items:center}
+.homepage .hero-copy {width:62%;position:relative;z-index:2}
+.homepage .hero-copy>* {opacity:1;animation:none;transform:none}
+.homepage .school-identity {color:var(--home-teal);font-size:16px;font-weight:700;margin-bottom:20px;flex-wrap:wrap}
+.homepage .learning-headline {font-size:56px;line-height:1.65;font-weight:900;max-width:650px;letter-spacing:0;text-wrap:balance;min-height:185px}
+.typed-word {display:inline-block;margin-inline-end:.2em;clip-path:inset(0);animation:word-write var(--word-duration) steps(var(--word-steps),end) var(--word-delay) both;animation-play-state:paused}
+.homepage .is-ready .typed-word {animation-play-state:running}
+.headline-accent {color:var(--ink)}
+.homepage .hero-copy p {font-size:15px;max-width:470px;line-height:2.2;margin-top:15px;color:#52596a}
+.homepage .hero-actions {margin-top:28px;gap:24px;flex-wrap:wrap}
+.homepage .hero-note {margin-top:26px;color:#58665e}
+.motion-toggle {position:absolute;bottom:16px;inset-inline-end:36px;display:inline-flex;align-items:center;gap:7px;background:#ffffffda;color:var(--home-teal);border:1px solid #c3d8cd;padding:7px 10px;font-size:11px;border-radius:6px;min-height:34px;z-index:3}
+.motion-toggle:hover {background:white}.motion-toggle:active {transform:translateY(1px)}
+.learning-characters {position:absolute;inset-inline-end:4%;bottom:36px;width:320px;height:280px;pointer-events:none;z-index:1;transform-origin:bottom center}
+.chalkboard {position:absolute;inset-inline-start:35px;top:10px;width:240px;height:150px;background:#22584b;border:8px solid #e0c9a4;border-radius:8px;box-shadow:0 10px 25px #163d3626;transform:rotate(-7deg)}
+.chalk-equation {display:block;padding:20px;color:#e2f3e8;text-align:center;font-size:30px;font-weight:600;direction:rtl;opacity:.9}
+.chalk-stroke {display:block;width:120px;border-bottom:2px solid #d7edda;margin:auto;transform:scaleX(0);transform-origin:right;animation:chalk-write 4s 1s ease-in-out infinite}
+.chalk-tray {position:absolute;bottom:-13px;left:-10px;right:-10px;height:8px;background:#bea47f;border-radius:3px}
+.book-character {position:absolute;bottom:25px;left:15px;width:170px;height:115px;transform:rotate(-9deg);animation:book-hop 5s ease-in-out infinite}
+.book-page {position:absolute;top:0;width:50%;height:100%;border-bottom:7px solid var(--home-coral);background:repeating-linear-gradient(#fff 0 21px,#dde8e2 22px,#fff 23px);box-shadow:0 8px 20px #173c2c1f}
+.page-left {left:0;border-radius:9px 2px 2px 6px;transform:skewY(8deg)}
+.page-right {right:0;border-radius:2px 9px 6px 2px;transform:skewY(-8deg);border-inline-start:2px solid #dce5df}
+.character-eyes {position:absolute;top:42px;left:52px;display:flex;gap:32px}
+.character-eyes i,.pencil-eyes i {width:6px;height:9px;border-radius:50%;background:#243f36;animation:character-blink 6s infinite}
+.character-smile {position:absolute;top:60px;left:74px;width:22px;height:13px;border-bottom:3px solid #b33f3a;border-radius:50%}
+.book-arm {position:absolute;top:42px;right:-23px;width:28px;height:28px;border-top:4px solid #be4c42;border-right:4px solid #be4c42;border-radius:0 22px 0 0;transform-origin:left;animation:book-wave 3s ease-in-out infinite}
+.book-foot {position:absolute;bottom:-13px;height:13px;width:28px;background:#be4c42;border-radius:0 0 7px 7px}.foot-one{left:26px}.foot-two{right:26px}
+.pencil-character {position:absolute;bottom:43px;right:28px;width:30px;height:138px;background:#efc76a;border-inline:7px solid #dfac42;transform:rotate(25deg);border-radius:5px 5px 0 0;animation:pencil-write 4s ease-in-out infinite;transform-origin:bottom}
+.pencil-eraser {position:absolute;top:-25px;left:-7px;width:30px;height:28px;background:#e47e7b;border-radius:8px 8px 0 0;border-bottom:9px solid #d9e1de}
+.pencil-eyes {position:absolute;top:30px;left:-3px;display:flex;gap:5px}.pencil-eyes i{width:4px;height:6px}
+.pencil-smile {position:absolute;top:45px;left:3px;border-bottom:2px solid #874327;border-radius:50%;height:5px;width:9px}
+.pencil-tip {position:absolute;bottom:-24px;left:-7px;border-inline:15px solid transparent;border-top:24px solid #d4aa7c}.pencil-tip::after{content:"";position:absolute;top:-7px;left:-4px;border-inline:4px solid transparent;border-top:7px solid #344b44}
+.school-numbers {background:var(--home-white);border-bottom:1px solid var(--line);border-top:1px solid var(--line)}
+.numbers-inner {display:flex;align-items:center;gap:42px;padding-block:35px}
+.numbers-heading {flex:0 0 210px}.numbers-heading .eyebrow{margin-bottom:6px;color:var(--home-teal)}.numbers-heading h2{font-size:23px;line-height:1.7}
+.numbers-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));width:100%;margin:0;gap:8px}
+.school-stat {display:flex;align-items:center;flex-direction:column;border-inline-start:1px solid var(--line);padding:8px;min-width:0}
+.school-stat>svg {color:var(--home-teal);margin-bottom:10px}
+.school-stat dt {order:2;color:#626975;font-size:12px;text-align:center;line-height:1.7;min-height:22px}
+.school-stat dd {margin:0;line-height:1.4;min-height:53px;display:flex;align-items:center;direction:ltr}
+.stat-number {font-size:39px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink);display:inline-block;min-width:3ch;text-align:center}
+.stat-suffix {font-size:22px;color:var(--home-teal)}
+.homepage .majors {padding-block:65px}
+.homepage .about {padding-block:25px 65px}
+.homepage .learning-vignette {background:#fff4df;border-radius:8px;min-height:350px;align-items:flex-start}
+.homepage .learning-vignette h2 {font-size:28px}
+.learning-vignette .learning-characters {left:16px;right:auto;bottom:8px;transform:scale(.72);transform-origin:bottom left}
+.vignette-copy {position:relative;z-index:2;max-width:250px}
+.homepage .public-directory-links {margin-bottom:65px}
+.virtual-tour {position:relative;isolation:isolate;min-height:355px;display:flex;align-items:center;overflow:hidden;background:#22584b}
+.tour-backdrop {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 58%;z-index:-3}
+.tour-shade {position:absolute;inset:0;z-index:-2;background:linear-gradient(270deg,#143c32f5 0%,#143c32dd 36%,#143c3255 75%)}
+.tour-content {width:100%;padding-block:55px;color:white}
+.tour-content .eyebrow {color:#d1e6da}.tour-content h2{font-size:35px;max-width:700px}.tour-content p{color:#d5e6dd;max-width:500px;margin-top:12px;font-size:14px}
+.tour-content .button {margin-top:25px;min-width:160px}.tour-content .button:hover{background:#e2f0e8}
+.tour-pending {display:flex;align-items:center;gap:18px;flex-wrap:wrap}.tour-pending>span:last-child{font-size:12px;margin-top:25px;color:#d5e6dd}.tour-pending .button{opacity:.7;cursor:default}
+.school-calendar {padding-block:70px}
+.school-calendar .section-heading {align-items:center;margin-bottom:18px}
+.school-calendar h2 {font-size:28px}.school-calendar .eyebrow{color:var(--home-teal)}
+.academic-year {color:var(--home-teal);font-size:17px;font-weight:700;white-space:nowrap;min-width:125px}
+.calendar-toolbar {display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:32px}.calendar-toolbar p{font-size:13px}.calendar-toolbar>div{display:flex;align-items:center;gap:8px}
+.calendar-month {display:flex;align-items:center;gap:8px;font-size:12px;white-space:nowrap}.calendar-month select{width:145px;min-height:40px;border:1px solid var(--line);border-radius:6px;padding:7px;background:#fff;color:var(--ink);cursor:pointer}
+.calendar-arrow {display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:6px;color:var(--ink);background:#fff;flex-shrink:0}
+.calendar-arrow:hover:not(:disabled){background:var(--home-mint);border-color:#b9d2c5}.calendar-arrow:active:not(:disabled){transform:translateY(1px)}.calendar-arrow:disabled{opacity:.35;cursor:default}
+.event-timeline {list-style:none;padding:0 0 18px;margin:0;display:flex;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:#9bb7a8 #eef5f1;min-height:260px}
+.school-event {flex:0 0 25%;min-width:245px;position:relative;scroll-snap-align:start;padding:0 10px 4px}
+.school-event::before {content:"";position:absolute;top:101px;left:0;right:0;height:2px;background:#d6e2dc}
+.event-date {height:82px;display:flex;align-items:center;gap:10px;padding-inline:12px}.event-date strong{font-size:36px;color:var(--home-teal);font-weight:800}.event-date span{display:grid;line-height:1.7;font-size:14px}.event-date small{font-size:11px;color:var(--muted)}
+.timeline-node {position:relative;display:grid;place-items:center;width:40px;height:40px;margin-inline-start:22px;background:#f4f8f5;border:5px solid white;outline:1px solid #cee0d4;border-radius:50%;color:var(--home-teal)}
+.school-event article {position:relative;margin-top:22px;padding:16px 18px;background:#f5f8f6;border:1px solid #e1e9e4;border-radius:6px;min-height:105px}
+.school-event article::before{content:"";position:absolute;top:-6px;inset-inline-start:37px;width:10px;height:10px;background:inherit;border-top:1px solid #e1e9e4;border-left:1px solid #e1e9e4;transform:rotate(45deg)}
+.school-event h3{font-size:15px;line-height:1.9;overflow-wrap:anywhere}.event-category{font-size:10px;color:#5b6e63}
+.school-event.is-next .timeline-node{background:var(--home-coral);color:#fff;outline-color:#f1c4be}.school-event.is-next article{background:#fff5f2;border-color:#f0d6ce}.school-event.is-next article::before{border-color:#f0d6ce}.school-event.is-next .event-category{color:#b43a31}
+.calendar-empty {padding:25px;text-align:center;border-block:1px solid var(--line)}
+.homepage.motion-ready [data-reveal] {transform:translateY(24px)}
+.homepage.motion-ready [data-reveal].is-visible {transform:none}
+.homepage .entrance-stage p {font-size:26px;letter-spacing:0}.homepage .entrance-subtitle{letter-spacing:0}
+.homepage .site-entrance::before {background:none}.homepage .entrance-orbit{display:none}
+@keyframes word-write {from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0)}}
+@keyframes chalk-write {0%,15%{transform:scaleX(0)}60%,100%{transform:scaleX(1)}}
+@keyframes pencil-write {0%,100%{transform:rotate(25deg) translateY(0)}35%{transform:rotate(14deg) translateY(-8px)}65%{transform:rotate(28deg) translateY(-3px)}}
+@keyframes book-hop {0%,85%,100%{transform:rotate(-9deg) translateY(0)}90%{transform:rotate(-4deg) translateY(-10px)}95%{transform:rotate(-9deg) translateY(-3px)}}
+@keyframes book-wave {0%,100%{transform:rotate(0)}50%{transform:rotate(-25deg)}}
+@keyframes character-blink {0%,44%,48%,100%{transform:scaleY(1)}46%{transform:scaleY(.1)}}
+@media(min-width:1500px){.hero-content{min-height:600px}.learning-backdrop{object-position:center 57%}}
+@media(max-width:1000px){.homepage .learning-headline{font-size:46px;min-height:160px}.learning-characters{inset-inline-end:1%;transform:scale(.85)}.numbers-inner{gap:15px}.numbers-heading{flex-basis:170px}.numbers-heading h2{font-size:20px}.stat-number{font-size:32px}.school-event{flex-basis:33.333%}}
+@media(max-width:760px){.hero-content{min-height:700px;display:block;padding-block:35px 290px}.homepage .hero-copy{width:100%}.homepage .learning-headline{font-size:38px;max-width:480px;min-height:130px;line-height:1.65}.homepage .school-identity{font-size:14px}.homepage .hero-copy p{font-size:13px;max-width:440px;margin-top:8px}.homepage .hero-actions{gap:16px;margin-top:20px}.homepage .hero-actions .button{padding:11px 16px;font-size:12px}.homepage .hero-actions .text-link{font-size:12px}.homepage .hero-note{font-size:10px;margin-top:20px}.learning-hero::after{background:linear-gradient(180deg,#f3faf6fc 0%,#f3faf6e8 52%,#f3faf650 100%)}.learning-backdrop{object-position:20% bottom}.learning-characters{bottom:30px;left:50%;right:auto;transform:translateX(-50%) scale(.8)}.motion-toggle{inset-inline-end:18px;bottom:14px}.numbers-inner{display:block;padding-block:30px}.numbers-heading{text-align:center;margin-bottom:22px}.numbers-heading h2{font-size:21px}.numbers-heading h2 br{display:none}.numbers-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 0}.school-stat:nth-child(odd){border-inline-start:0}.stat-number{font-size:35px}.homepage .majors{padding-block:45px}.tour-content{padding-block:40px}.tour-content h2{font-size:27px}.tour-content p{font-size:13px}.virtual-tour{min-height:360px}.tour-shade{background:#123e32c9}.tour-pending{gap:10px}.tour-pending>span:last-child{margin-top:12px}.school-calendar{padding-block:45px}.school-calendar h2{font-size:23px}.school-calendar .section-heading{align-items:flex-start;flex-direction:column;gap:8px}.academic-year{font-size:14px}.calendar-toolbar{align-items:flex-start;flex-direction:column;gap:15px}.calendar-toolbar>div{width:100%}.calendar-month{margin-inline-end:auto}.school-event{flex-basis:80%;min-width:230px}.homepage .public-directory-links{margin-bottom:45px}}
+@media(max-width:360px){.homepage .learning-headline{font-size:33px}.hero-content{padding-inline:20px}.homepage .hero-actions{gap:12px}.homepage .school-identity{font-size:12px}}
+@media(max-width:380px){.homepage .public-header{gap:10px}.homepage .public-header-actions{display:none}.homepage .mobile-menu{margin-inline-start:auto}.homepage .brand strong{font-size:15px}}
+@media(max-width:760px){.homepage .learning-vignette{min-height:410px}.homepage .learning-vignette h2{font-size:26px}}
+@media(max-width:760px){.homepage .school-calendar{padding-block:30px}.homepage .school-calendar h2{font-size:20px;line-height:1.8}.homepage .school-calendar .eyebrow{font-size:10px}.homepage .school-calendar .section-heading{margin-bottom:12px}.homepage .academic-year{font-size:12px}.homepage .calendar-toolbar{gap:10px;margin-bottom:16px}.homepage .calendar-toolbar p{font-size:11px}.homepage .calendar-month select{width:118px;min-height:40px}.homepage .event-timeline{min-height:188px;padding-bottom:12px}.homepage .school-event{flex-basis:58%;min-width:174px;padding-inline:6px}.homepage .school-event::before{top:66px}.homepage .event-date{height:52px;gap:7px;padding-inline:7px}.homepage .event-date strong{font-size:27px}.homepage .event-date span{font-size:12px}.homepage .event-date small{font-size:10px}.homepage .timeline-node{width:30px;height:30px;border-width:3px;margin-inline-start:18px}.homepage .timeline-node svg{width:14px;height:14px}.homepage .school-event article{min-height:80px;padding:10px 12px;margin-top:15px}.homepage .school-event article::before{inset-inline-start:26px}.homepage .school-event h3{font-size:12px}.homepage .event-category{font-size:9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.homepage *, .homepage *::before,.homepage *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.homepage [data-reveal],.homepage .major-card,.homepage .typed-word{opacity:1!important;transform:none!important;clip-path:none!important}}
+@media(forced-colors:active){.timeline-node,.school-event article,.calendar-arrow{border:1px solid CanvasText}.event-timeline{scrollbar-color:auto}.learning-hero::after{background:Canvas}.stat-number,.tour-content{color:CanvasText}.tour-shade{background:Canvas}}

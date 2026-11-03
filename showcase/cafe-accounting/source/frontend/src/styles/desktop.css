@@ -1,0 +1,180 @@
+/* Desktop product polish. Existing tokens, controls and behavior remain canonical. */
+@media screen and (min-width: 1024px) {
+  :root {
+    --font-display: "Vazirmatn", Tahoma, "Segoe UI", sans-serif;
+    --font-body: "Vazirmatn", Tahoma, "Segoe UI", sans-serif;
+    --font-data: "Vazirmatn", Tahoma, "Segoe UI", sans-serif;
+    --radius-panel: 14px;
+  }
+  .dashboard-shell { padding: 24px; font-size: .9375rem; }
+  .dashboard-shell:has(> .app-nav--desktop) { column-gap: 24px; }
+  .dashboard-shell > .dashboard-header { min-height: 48px; margin-bottom: 20px; }
+  [data-section-content] > h1 { margin: 0 0 20px; font-size: 1.5rem; line-height: 1.6; font-weight: 750; }
+  .dashboard-shell h2, .dashboard-shell h3, .dashboard-shell h4 { line-height: 1.65; }
+  .dashboard-shell .panel { padding: 20px; border-radius: var(--radius-panel); }
+  .section-heading { min-height: 76px; gap: 12px 24px; }
+  .section-heading h2, .help-guide__header h1 { margin: 0; font-size: 1.25rem; font-weight: 750; }
+  .panel__heading { min-height: 44px; margin-bottom: 16px; align-items: center; }
+  .panel__heading > div { display: grid; gap: 4px; min-width: 0; }
+  .panel__heading :is(h2,h3), .inventory-panel-heading h3 { margin: 0; font-size: 1.0625rem; font-weight: 700; }
+  .panel__heading span { font-size: .8125rem; }
+  .dashboard-shell > .app-nav--desktop { padding: 12px; border-color: var(--border); box-shadow: none; }
+  .dashboard-shell > .app-nav--desktop .app-nav__group { padding: 12px 0; }
+  .dashboard-shell > .app-nav--desktop .app-nav__group-title { padding-inline: 12px; font-size: .75rem; margin-bottom: 8px; }
+  .dashboard-shell > .app-nav--desktop .app-nav__links { gap: 3px; }
+  .dashboard-shell > .app-nav--desktop .app-nav__link { font-size: .875rem; min-height: 42px; padding: 9px 12px; line-height: 1.7; }
+  .dashboard-shell > .app-nav--desktop .app-nav__link:focus-visible { outline-offset: 1px; }
+  .dashboard-shell .button { font-size: .875rem; line-height: 1.6; min-height: 44px; }
+  .dashboard-shell .button--secondary { border: 1px solid var(--control-border); background: var(--surface); color: var(--text); }
+  .dashboard-shell .button--secondary:hover:not(:disabled) { border-color: var(--primary); background: var(--surface-soft); }
+  .dashboard-shell button:disabled { cursor: not-allowed; }
+  .dashboard-shell :where(input,select,textarea):not([type=checkbox]):not([type=radio]) { font: inherit; min-height: 44px; min-width: 0; max-width: 100%; padding: 10px 12px; border: 1px solid var(--control-border); border-radius: var(--radius-control); background: var(--surface); color: var(--text); }
+  .dashboard-shell :where(input,select,textarea):disabled { background: var(--surface-soft); color: var(--muted); }
+  .dashboard-shell :where(input,select,textarea)[aria-invalid=true] { border-color: var(--danger); }
+  .dashboard-shell :where(input,select,textarea):focus-visible { border-color: var(--primary); outline: 2px solid var(--focus); outline-offset: 2px; }
+  .dashboard-shell input[type=date] { direction: ltr; text-align: start; font-variant-numeric: tabular-nums; }
+  .dashboard-shell :where(label) { font-size: .8125rem; }
+  .dashboard-shell .empty-state { width: 100%; margin: 0; padding: 36px 24px; }
+  .dashboard-shell .empty-state :is(h2,h3) { margin: 0 0 8px; font-size: 1.125rem; }
+  .dashboard-shell .empty-state p { margin: 0 0 16px; }
+  .dashboard-shell :is(.alert,.ui-notice) { font-size: .875rem; }
+
+  /* Catalog rows and cards keep controls beside the content they affect. */
+  .dashboard-grid { grid-template-columns: minmax(280px,320px) minmax(0,1fr); gap: 20px; }
+  .category-panel > .panel__heading { padding-left: 112px !important; }
+  .category-panel > .create-action, .menu-panel > .create-action { inset-block-start: 20px; inset-inline-end: 20px; }
+  .category-list { gap: 6px; margin: 16px 0 0; }
+  .category-list li.category-manager:not(.category-manager--row) { padding: 12px; }
+  .category-manager--row .category-select { display: grid; justify-content: start; gap: 2px; line-height: 1.7; }
+  .category-select { font-size: .875rem; }
+  .category-select small { font-weight: 400; }
+  .menu-panel .panel__heading { padding-left: 128px; }
+  .menu-panel__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .menu-panel__meta .role-badge { padding: 2px 8px; font-size: .6875rem; }
+  .item-grid { grid-template-columns: repeat(auto-fill,minmax(min(100%,220px),1fr)); gap: 16px; margin-top: 16px; align-items: stretch; }
+  .menu-item { display: grid; grid-template-columns: minmax(0,1fr) auto; align-content: start; gap: 12px; min-height: 0; padding: 16px; box-shadow: none; }
+  .menu-item > .card-actions { position: static; grid-column: 2; grid-row: 1; align-self: start; }
+  .menu-item > div:not(.card-actions):not(.menu-item__footer) { grid-column: 1; grid-row: 1; }
+  .menu-item h3 { margin: 4px 0 0; font-size: 1rem; font-weight: 700; }
+  .menu-item__category { font-size: .6875rem; font-weight: 500; }
+  .menu-item__footer { grid-column: 1/-1; grid-row: 2; margin: 0; min-height: 32px; flex-wrap: wrap; gap: 8px; }
+  .menu-item__footer strong { font-size: .9375rem; font-variant-numeric: tabular-nums; }
+  .menu-item > .availability-toggle { grid-column: 1/-1; grid-row: 3; justify-self: end; min-height: 36px; margin: 0; padding: 6px 10px; font-size: .75rem; }
+  .menu-item > .menu-item-photo { grid-column: 1/-1; grid-row: 1; margin: 0; aspect-ratio: 16/10; }
+  .menu-item:has(> .menu-item-photo) > .card-actions, .menu-item:has(> .menu-item-photo) > div:not(.card-actions):not(.menu-item__footer) { grid-row: 2; }
+  .menu-item:has(> .menu-item-photo) > .menu-item__footer { grid-row: 3; }
+  .menu-item:has(> .menu-item-photo) > .availability-toggle { grid-row: 4; }
+  .menu-item > p[role=alert] { grid-column: 1/-1; }
+
+  /* Table density and visual tracking are consistent across operational pages. */
+  .managed-tables, .receipt-table, .inventory-table, .history-table { font-size: .875rem; }
+  :is(.managed-tables,.receipt-table,.inventory-table,.history-table) :is(th,td) { padding: 12px 14px; line-height: 1.8; vertical-align: middle; }
+  :is(.managed-tables,.receipt-table,.inventory-table,.history-table) thead th { font-size: .8125rem; font-weight: 600; color: var(--muted); background: var(--surface-soft); }
+  :is(.managed-tables,.receipt-table,.inventory-table,.history-table) tbody tr:hover { background: var(--surface-soft); }
+  :is(.managed-tables,.receipt-table,.inventory-table,.history-table) tbody tr:focus-within { background: var(--surface-selected); }
+  .ui-table-scroll { min-height: 0; }
+  .ui-pagination { min-height: 60px; padding-top: 16px; }
+  .receipt-table { margin-top: 8px; }
+  .table-row-actions { justify-content: start; }
+  .receipt-archive__controls { grid-template-columns: minmax(0,1fr) minmax(160px,200px) auto auto; gap: 12px; }
+  .receipt-archive__controls :is(label,input) { min-width: 0; }
+  .receipt-summary { grid-template-columns: minmax(180px,1fr) minmax(140px,auto) minmax(100px,auto) auto; gap: 12px 20px; align-items: center; padding: 16px; background: var(--surface); }
+  .receipt-summary > div { min-width: 0; }
+  .receipt-summary .button { grid-column: auto; grid-row: auto; white-space: nowrap; }
+  .receipt-summary > span { font-size: .75rem; }
+
+  /* Customer cards become scan-friendly profiles without reserved icon gutters. */
+  .customer-directory__grid { grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap: 16px; }
+  .customer-profile:not(.customer-profile--editing) { display: grid; grid-template-columns: minmax(0,1fr) auto; align-content: start; padding: 16px; gap: 12px; box-shadow: none; }
+  .customer-profile:not(.customer-profile--editing) > div:first-child { grid-column: 1; grid-row: 1; }
+  .customer-profile:not(.customer-profile--editing) > .customer-profile__actions { position: static; grid-column: 2; grid-row: 1; align-self: start; gap: 0; margin: 0; padding: 0; border: 0; }
+  .customer-profile:not(.customer-profile--editing) > p { grid-column: 1/-1; min-height: 0; padding-top: 12px; border-top: 1px solid var(--border); font-size: .8125rem; }
+  .customer-profile h4 { font-size: 1rem; margin: 0 0 4px; }
+  .customer-profile a[href^="tel:"] { direction: ltr; unicode-bidi: isolate; display: inline-block; font-size: .875rem; text-decoration: none; }
+  .customer-profile a[href^="tel:"]:hover { text-decoration: underline; }
+  .customer-profile--editing { padding: 16px; }
+  .customer-profile--editing input, .customer-profile--editing textarea { width: 100%; }
+  .customer-profile__actions .button--danger { width: auto; }
+  .customer-directory__search > div { gap: 12px; }
+
+  /* Date filters size to content, not to the viewport outside the sidebar. */
+  .range-report-filters { display: grid; grid-template-columns: repeat(2,minmax(140px,220px)) max-content max-content; justify-content: start; gap: 12px; }
+  .range-report-filters :is(label,input) { min-width: 0; width: 100%; }
+  .expense-filter, .history-filter { grid-template-columns: minmax(180px,1fr) repeat(2,minmax(140px,190px)) auto; gap: 16px; }
+  .expense-filter :is(label,input), .history-filter :is(label,input), .inventory-report-filters :is(input,label) { min-width: 0; width: 100%; }
+  .history-filter > div { min-width: 0; }
+  .kpi-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+  .kpi-grid--range { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .kpi-card { padding: 20px; min-width: 0; gap: 12px; box-shadow: none; }
+  .kpi-card span { font-size: .8125rem; }
+  .kpi-card strong { font-size: clamp(1.125rem,1.5vw,1.5rem); font-weight: 750; line-height: 1.7; overflow-wrap: anywhere; }
+  .daily-report .report-grid { grid-template-columns: minmax(220px,260px) minmax(0,1fr); }
+  .payment-breakdown dl { gap: 8px; margin-top: 12px; }
+  .payment-breakdown dl div { background: var(--surface-soft); border-color: var(--border); }
+  .history-summary { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .history-summary dd { overflow-wrap: anywhere; font-size: 1.125rem; }
+  .shift-layout { grid-template-columns: minmax(260px,1fr) minmax(0,1.65fr); }
+  .active-shift { border: 1px solid var(--border); border-inline-start: 3px solid var(--success); }
+  .active-shift dl div, .reconciliation dl div { background: var(--surface-soft); }
+  .shift-form--close { align-content: start; }
+  .shift-form--close input { width: 100%; min-width: 0; }
+  .shift-form--close > .button { justify-self: start; }
+  .settings-page { max-width: 880px; }
+  .settings-fields { margin-top: 16px; }
+  .help-guide__filters { grid-template-columns: minmax(0,1.5fr) minmax(0,1fr) auto; }
+  .help-topic summary { padding: 18px 20px; }
+
+  /* Shared modal variants provide room for the work, with reachable action footers. */
+  .app-modal { width: min(720px,calc(100vw - 80px)); max-height: calc(100dvh - 64px); border-radius: 16px; }
+  .app-modal__header { padding: 16px 24px; z-index: 5; }
+  .app-modal__header h2 { font-size: 1.125rem; }
+  .app-modal__body { padding: 24px; }
+  .app-modal form { gap: 12px; }
+  .app-modal :is(.modal-footer,form > .ui-actions:last-child) { position: sticky; bottom: -24px; z-index: 2; margin: 4px 0 -12px; padding: 16px 0; background: var(--surface); border-top: 1px solid var(--border); flex-wrap: wrap; }
+  .app-modal .modal-footer .button { min-width: 100px; }
+  .app-modal .modal-footer .icon-action { min-width: 48px; }
+  .app-modal:has(.recipe-rows), .app-modal:has(.addition-review) { width: min(940px,calc(100vw - 80px)); }
+  .app-modal:has(.order-detail) { width: min(800px,calc(100vw - 80px)); }
+  .app-modal:has(.receipt-archive__detail) { width: min(680px,calc(100vw - 80px)); }
+  .app-modal .recipe-row { display: grid; grid-template-columns: minmax(220px,1.2fr) minmax(0,1fr); gap: 12px; }
+  .app-modal .recipe-row__heading { grid-column: 1/-1; margin: 0; }
+  .app-modal .recipe-row .inventory-two-fields { align-items: start; }
+  .app-modal .order-detail-lines > li { padding-block: 12px; }
+  .app-modal .order-detail .settlement-form { padding: 16px; border-color: var(--border); background: var(--surface-soft); }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .dashboard-grid { grid-template-columns: minmax(240px,280px) minmax(0,1fr); gap: 16px; }
+  .expense-filter, .history-filter, .inventory-report-filters { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .expense-filter > div, .history-filter > div, .inventory-report-filters > div:first-child { grid-column: 1/-1; }
+  .daily-report .report-grid { grid-template-columns: minmax(0,1fr); }
+  .payment-breakdown dl { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .kpi-grid, .history-summary { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .kpi-grid--range .kpi-card--primary { grid-column: 1/-1; }
+  .receipt-summary { grid-template-columns: minmax(0,1fr) auto; }
+  .receipt-summary > div { grid-column: 1; grid-row: 1/3; }
+  .receipt-summary .button { grid-column: 2; grid-row: 3; }
+  .receipt-summary > span { grid-column: 1; grid-row: 3; }
+  .shift-layout { grid-template-columns: minmax(0,1fr); }
+}
+@media screen and (min-width: 1024px) {
+  .dashboard-shell > .app-nav--desktop .app-nav__link { min-height: 44px; }
+  .customer-profile a[href^="tel:"] { max-width: 100%; overflow-wrap: anywhere; }
+  .customer-profile:not(.customer-profile--editing):has(.button--danger) > .customer-profile__actions { grid-column: 1/-1; grid-row: 3; gap: 8px; }
+}
+@media screen and (min-width: 1024px) {
+  .customer-directory .customer-profile:not(.customer-profile--editing) > .customer-profile__actions { position: static; display: flex; flex-wrap: nowrap; min-width: 88px; align-items: start; align-self: start; grid-column: 2; grid-row: 1; }
+  .customer-directory .customer-profile:not(.customer-profile--editing):has(.button--danger) > .customer-profile__actions { grid-column: 1/-1; grid-row: 3; flex-wrap: wrap; gap: 8px; }
+}
+@media screen and (min-width: 1024px) {
+  .dashboard-shell .app-modal :is(input,select,textarea)[aria-invalid=true] { border-color: var(--danger); }
+  .dashboard-shell .app-modal :is(input,select,textarea):disabled { background: var(--surface-soft); color: var(--muted); }
+  .app-modal .modal-footer .button { min-width: 120px; }
+  .app-modal .modal-footer .icon-action { min-width: 48px; }
+  .help-guide__filters > .button { margin-bottom: 29px; }
+}
+@media screen and (min-width: 1280px) {
+  .order-catalog ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; }
+  .order-catalog li { min-width: 0; padding: 16px 0; border-top: 0; border-bottom: 1px solid var(--border); }
+  .order-catalog li + li { border-top: 0; }
+  .order-catalog li > div:first-child { align-content: center; }
+}

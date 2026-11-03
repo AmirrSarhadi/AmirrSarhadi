@@ -1,0 +1,8 @@
+:root{--field-error:#b4233a}
+.field-error{display:block;flex-basis:100%;grid-column:1/-1;min-width:0;margin:6px 0 0;padding:0;color:var(--field-error);font-size:12px;font-weight:400;line-height:1.9;overflow-wrap:anywhere;text-align:start}
+:is(input,select,textarea,button)[aria-invalid="true"]{border-color:var(--field-error)!important;box-shadow:0 0 0 1px var(--field-error)!important}
+.file-upload:has([aria-invalid="true"]) .file-upload-drop,.persian-date:has([aria-invalid="true"]) .date-trigger{border-color:var(--field-error)!important}
+.one-time-code:has(input[aria-invalid="true"]) .otp-slot{border-color:var(--field-error)}
+[data-validation-group][aria-invalid="true"]{outline:1px solid var(--field-error);outline-offset:4px}
+:is(input,select,textarea,button)[aria-invalid="true"]:focus-visible{outline:2px solid var(--field-error);outline-offset:3px}
+@media(forced-colors:active){:is(input,select,textarea,button)[aria-invalid="true"]{outline:2px solid CanvasText}.field-error{color:CanvasText}}

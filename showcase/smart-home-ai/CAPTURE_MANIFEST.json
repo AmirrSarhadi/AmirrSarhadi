@@ -1,0 +1,84 @@
+{
+  "project": "Smart Home AI",
+  "scope": "Actual source interfaces with disposable demo data or explicitly labelled API fixtures; desktop captures; selected mobile examples remain in the overview.",
+  "views": [
+    {
+      "id": "start",
+      "label": "دریافت پلان و بازکردن پروژه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "smart-home-ai/web/app.js",
+        "smart-home-ai/web/index.html"
+      ],
+      "method": "actual UI with a newly drawn fictional plan; config/proposal API fixture explicitly marked as synthetic; no provider request",
+      "image": "../../assets/screenshots/smart-home-ai/start.jpg",
+      "sha256": "421c3764c0a89a406539541aad5aacf8183cea91bb67bef657d9e143bf9d038c"
+    },
+    {
+      "id": "plan-review",
+      "label": "بازبینی پلان و فضاهای نمایشی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "smart-home-ai/web/plan-editor.js",
+        "smart-home-ai/web/index.html"
+      ],
+      "method": "actual UI with a newly drawn fictional plan; config/proposal API fixture explicitly marked as synthetic; no provider request",
+      "image": "../../assets/screenshots/smart-home-ai/plan-review.jpg",
+      "sha256": "9e56154ecb7643083ad4f908d9c6b74cf385426157215106825d4584f9b4b3d8"
+    },
+    {
+      "id": "space-edit",
+      "label": "اصلاح نام و محدوده فضا",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "smart-home-ai/web/plan-editor.js",
+        "smart-home-ai/web/index.html"
+      ],
+      "method": "actual UI with a newly drawn fictional plan; config/proposal API fixture explicitly marked as synthetic; no provider request",
+      "image": "../../assets/screenshots/smart-home-ai/space-edit.jpg",
+      "sha256": "2578b27cdf30f68b70d6786c3ced1954f45454458d77be18c760be26faddc2f5"
+    },
+    {
+      "id": "review-confirmed",
+      "label": "تأیید بازبینی پلان",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "smart-home-ai/web/plan-editor.js",
+        "smart-home-ai/web/index.html"
+      ],
+      "method": "actual UI with a newly drawn fictional plan; config/proposal API fixture explicitly marked as synthetic; no provider request",
+      "image": "../../assets/screenshots/smart-home-ai/review-confirmed.jpg",
+      "sha256": "504eb03b1ac74e153faeedb06ceff39c2698b2d4c2055aaf99197e84cea5cb31"
+    },
+    {
+      "id": "requirements",
+      "label": "فرم نیازهای ساختمان",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "smart-home-ai/web/app.js",
+        "smart-home-ai/web/index.html"
+      ],
+      "method": "actual UI with a newly drawn fictional plan; config/proposal API fixture explicitly marked as synthetic; no provider request",
+      "image": "../../assets/screenshots/smart-home-ai/requirements.jpg",
+      "sha256": "f0d70f91152c5b84615f4e8c2fffcc505cb3dd7dbf27e65c89c244b0be6fe107"
+    },
+    {
+      "id": "proposal-demo",
+      "label": "نمایش پیشنهاد و سناریوها — پاسخ کاملاً ساختگی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "smart-home-ai/web/app.js",
+        "smart-home-ai/web/index.html"
+      ],
+      "method": "actual UI with a newly drawn fictional plan; config/proposal API fixture explicitly marked as synthetic; no provider request",
+      "image": "../../assets/screenshots/smart-home-ai/proposal-demo.jpg",
+      "sha256": "61b0a4ccf504620669560387c7647559f6efc5ab9b27cd2ddaafc977a9f3a06e"
+    }
+  ]
+}

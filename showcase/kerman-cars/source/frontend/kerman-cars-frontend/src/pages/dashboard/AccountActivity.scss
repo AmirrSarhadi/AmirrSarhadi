@@ -1,0 +1,65 @@
+.account-activity {
+    &__sessions:focus-visible {
+        outline: 2px solid var(--kc-primary);
+        outline-offset: 2px;
+    }
+    &__sessions-table {
+        min-width: 760px;
+        td:first-child {
+            min-width: 180px;
+            max-width: 240px;
+        }
+        button {
+            white-space: nowrap;
+        }
+    }
+    &__read-button {
+        display: inline-grid;
+        grid-template-areas: "label";
+        > span {
+            grid-area: label;
+        }
+    }
+    &__heading {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 16px;
+    }
+    &__notification,
+    &__empty {
+        background: var(--kc-card-bg);
+        border: 1px solid var(--kc-border);
+        border-radius: var(--kc-radius-md);
+        padding: 20px;
+        overflow-wrap: anywhere;
+    }
+    &__notification h2 {
+        font-size: 1.1rem;
+    }
+    &__notification time {
+        color: var(--kc-text-soft);
+        font-size: 0.875rem;
+    }
+    &__message {
+        white-space: pre-wrap;
+        margin-block: 12px 20px;
+    }
+    &__visit {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-size: 0.8rem;
+        color: var(--kc-text-soft);
+        margin-bottom: 8px;
+    }
+}

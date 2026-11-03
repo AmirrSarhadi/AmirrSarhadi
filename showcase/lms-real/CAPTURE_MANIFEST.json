@@ -1,0 +1,644 @@
+{
+  "project": "School LMS",
+  "scope": "Actual source interfaces with disposable demo data or explicitly labelled API fixtures; desktop captures; selected mobile examples remain in the overview.",
+  "views": [
+    {
+      "id": "home",
+      "label": "خانه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/dashboard-home.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/home.jpg",
+      "sha256": "ff3f2fc1a69ccea713e5a05bf18479c8f46972af1b6cdeaff62ee1d6a0ab3986"
+    },
+    {
+      "id": "attendance-report",
+      "label": "گزارش حضور",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/attendance-report.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/attendance-report.jpg",
+      "sha256": "474fa96879b685aedc1df7a0051363415a49a90f2dd363d1e4fda765204fe178"
+    },
+    {
+      "id": "structure",
+      "label": "ساختار مدرسه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/school-structure.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/structure.jpg",
+      "sha256": "914ddb1bfdb1d8b13ffdd994ca0316446ac1a65b06bba321b7a116c930fbb22f"
+    },
+    {
+      "id": "classes",
+      "label": "کلاس‌های من",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/my-classes.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/classes.jpg",
+      "sha256": "b1dd142a586a69fff14f4c1c07b772b1ecdaba32a3922d8a6af1b1050bca31b3"
+    },
+    {
+      "id": "student-files",
+      "label": "پرونده دانش‌آموزان",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/student-case-file.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/student-files.jpg",
+      "sha256": "51c11a59696562440f2960c3cc1858b6d4d50ee3f7b7769fcf68aaa82bc1f835"
+    },
+    {
+      "id": "attendance",
+      "label": "حضور و غیاب",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/attendance-workflow.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/attendance.jpg",
+      "sha256": "27524c2bd481c87e090b68dfb30cbd96f0c4b6e09641bcae0a98ab4de3a50a94"
+    },
+    {
+      "id": "staff-attendance",
+      "label": "حضور معلمان",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/staff-attendance.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/staff-attendance.jpg",
+      "sha256": "0c3a957202140f4fc69f46fba81181a32dbd38f1507bbd0b74d78a7c5bdd9bc5"
+    },
+    {
+      "id": "absences",
+      "label": "لیست غایبین",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/daily-absence-review.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/absences.jpg",
+      "sha256": "bb4195ccc3dc977e1aa33c75c0e4864c5ca9809758f380ffc2f3ecaa30f47867"
+    },
+    {
+      "id": "monthly-reports",
+      "label": "کارنامه ماهیانه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/monthly-report-cards.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/monthly-reports.jpg",
+      "sha256": "8c2fbbed3e880953476f835ca57c4986c30207463eca60046c9720d8aa1ab6d6"
+    },
+    {
+      "id": "grade-corrections",
+      "label": "لیست نمره",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/grade-corrections.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/grade-corrections.jpg",
+      "sha256": "9dee5ddf974067ce1902aa22d9272fd9140b8490515d1de2534a64158275b696"
+    },
+    {
+      "id": "timetable",
+      "label": "برنامه هفتگی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/timetable.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/timetable.jpg",
+      "sha256": "317bb11b7a203b67c338347dc66d810025f2f8ddf0f58d85099e47caab32388d"
+    },
+    {
+      "id": "archive",
+      "label": "بایگانی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/structure-archive.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/archive.jpg",
+      "sha256": "4477fd5bb1e2e5c292aba0d6e5cb82a83e770aaca416e88e01fd5383ebdf0c86"
+    },
+    {
+      "id": "data-exchange",
+      "label": "داده و گزارش‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/data-exchange.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/data-exchange.jpg",
+      "sha256": "209c2a28992a2632dfd03fa5c41b752d90ac44b712fe61cd4a955020b52def08"
+    },
+    {
+      "id": "academic-reports",
+      "label": "گزارش‌های آموزشی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/academic-reports.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/academic-reports.jpg",
+      "sha256": "dbf1bcc2f09af6365e0ce4e92eaad2f9ffc6b1a54a9116b528543d926257fc4f"
+    },
+    {
+      "id": "users",
+      "label": "کاربران و نقش‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/user-management.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/users.jpg",
+      "sha256": "6734befa21633a85732a66e2b33869216fbead81cc05d8232fd2865f0568575b"
+    },
+    {
+      "id": "teacher-files",
+      "label": "پرونده معلمان",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/teacher-case-file.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/teacher-files.jpg",
+      "sha256": "a85bb5d5e7c31d71d66e7e5ec34a7281a1b749da7419f94edb2883af043726c6"
+    },
+    {
+      "id": "discipline",
+      "label": "موارد انضباطی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/attendance-workflow.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/discipline.jpg",
+      "sha256": "c607b9a05a543fa971d0202722667e4f8a9418f230174b4f1e9e2ac2aed29fae"
+    },
+    {
+      "id": "notifications",
+      "label": "اعلان‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/attendance-workflow.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/notifications.jpg",
+      "sha256": "0690ddc2ce0ca782449926f422fff04ffaf0a5b2678fee6a33ba84e61c851c38"
+    },
+    {
+      "id": "assignments",
+      "label": "تکلیف‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/assignment-progress.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/assignments.jpg",
+      "sha256": "8a64a9d7a81668f0c848e5acbc0abd380f508d715b9c9f3b8d8721dbb3ee26a6"
+    },
+    {
+      "id": "exams",
+      "label": "آزمون آنلاین",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/exams.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/exams.jpg",
+      "sha256": "b5c82765d67b46e2860aa133684d5fddffec6092a27edd23b1d59c025a8a41fd"
+    },
+    {
+      "id": "communications",
+      "label": "پیام‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/communications.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/communications.jpg",
+      "sha256": "50d0789fefc2bc387ca6613035f7efbcb4ece90c6188fa776917b390c7317366"
+    },
+    {
+      "id": "sms",
+      "label": "پنل پیامکی",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/sms-management.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/sms.jpg",
+      "sha256": "309a0b47dd9211059d50438f9bbc4a0918d258e46955cd0d83e4a51a7e0018cc"
+    },
+    {
+      "id": "admissions",
+      "label": "درخواست‌های ثبت‌نام",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/admissions-inbox.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/admissions.jpg",
+      "sha256": "4217284ab095f0dd2398c2271e75a8d6fc95f6fcd0321d2a57f4d8db59a10a24"
+    },
+    {
+      "id": "news",
+      "label": "اخبار سایت",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/news-editor.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/news.jpg",
+      "sha256": "5e641a22ac6fc638c1ec186e12f889f3447c84db2511de7fcd5117547992b0dc"
+    },
+    {
+      "id": "content",
+      "label": "محتوای سایت",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/content-editor.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/content.jpg",
+      "sha256": "71a1da3c67b95151e730a2db2eaf146427b6d398dd7d717173812c7ebba7c795"
+    },
+    {
+      "id": "announcements",
+      "label": "اطلاعیه‌ها",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/announcements.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/announcements.jpg",
+      "sha256": "474d9eabfd4f0a24603fe31040841434ef42c6207912dbc209e2d27dd47821db"
+    },
+    {
+      "id": "help",
+      "label": "راهنمای سامانه",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/panel-help.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/help.jpg",
+      "sha256": "a9bcefa3d3ec34422410a65ad8c67c86c5dc26d28ee7ec00cfc4b5b654d622fd"
+    },
+    {
+      "id": "grade-entry",
+      "label": "ثبت نمره",
+      "route": null,
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/grade-entry.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual interface and disposable local Django fixture; school branding redacted",
+      "image": "../../assets/screenshots/lms-real/grade-entry.jpg",
+      "sha256": "26b97aa24cbdba4b735abbd9cd5942fc7c4f8974d8fd0055fa4cd7db90fd3188"
+    },
+    {
+      "id": "public-home",
+      "label": "یادگیری، آغازِ بی‌نهایت امکان",
+      "route": "/",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-home.jpg",
+      "sha256": "5b0f57ef8657db05d28671b03230a86788b2777ce4f59fe214cd32e3f7864844"
+    },
+    {
+      "id": "public-about",
+      "label": "آشنایی با دبیرستان فاطمیه",
+      "route": "/about",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/about/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-about.jpg",
+      "sha256": "05dce57ec5e00340e8dbe06582af31e453699d56d4572eebdd71f63dc99cdafe"
+    },
+    {
+      "id": "public-staff",
+      "label": "کادر مدرسه",
+      "route": "/staff",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/staff/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-staff.jpg",
+      "sha256": "ca9a001635b75f75d25c3671a75fd367fad02cbc0a7a97ec544851c43391d42f"
+    },
+    {
+      "id": "public-facilities",
+      "label": "This site can’t be reached",
+      "route": "/facilities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/facilities/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-facilities.jpg",
+      "sha256": "763e4797f525dea138beb75bfbc3ab7d54f0b661b8d445c54d84d13537b08fa3"
+    },
+    {
+      "id": "public-honors",
+      "label": "افتخارات مدرسه",
+      "route": "/honors",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/honors/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-honors.jpg",
+      "sha256": "8a6900e063eb9f6b5bd5178f42bcef0fbb72a232b7489bdbf08280a824e4ad0b"
+    },
+    {
+      "id": "public-gallery",
+      "label": "گالری فاطمیه",
+      "route": "/gallery",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/gallery/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-gallery.jpg",
+      "sha256": "29911b9cfd4c1959966264d2b59d0e2e9b3f43e67c66d5d58a7a95d3d19beb1a"
+    },
+    {
+      "id": "public-news",
+      "label": "خبرهای فاطمیه",
+      "route": "/news",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/news/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-news.jpg",
+      "sha256": "60e75bbcecaa00ea7d871c226521818da5d0876c172107fa5516afe87d6db17a"
+    },
+    {
+      "id": "public-faq",
+      "label": "پرسش‌های متداول",
+      "route": "/faq",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/faq/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-faq.jpg",
+      "sha256": "0646179768702fe508de7f51fabd43902b1f73b4a99e999d0c4e251228267280"
+    },
+    {
+      "id": "public-contact",
+      "label": "تماس با دبیرستان فاطمیه",
+      "route": "/contact",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/contact/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-contact.jpg",
+      "sha256": "4e7e216de95b0f6f959d4fedd7dbbf3c341a38ece51f264d23cea676357a6460"
+    },
+    {
+      "id": "public-admissions",
+      "label": "یک قدم به فاطمیه نزدیک‌تر.",
+      "route": "/admissions",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/admissions/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-admissions.jpg",
+      "sha256": "02681a3a1d2c195a1b6258e0b7b300c0290212275220c714e2b5f3febd7de587"
+    },
+    {
+      "id": "public-privacy",
+      "label": "حریم خصوصی",
+      "route": "/privacy",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/privacy/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-privacy.jpg",
+      "sha256": "f32ca68c9a957da05b8a52674d2d48f50997f799b9d7788a7bc34e9746620c5f"
+    },
+    {
+      "id": "public-portal-login",
+      "label": "یک مدرسه،هزار فرصتبرای رشد.",
+      "route": "/portal/login",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/portal/login/page.tsx"
+      ],
+      "method": "actual public interface backed by isolated demo database; branding/contact links redacted",
+      "image": "../../assets/screenshots/lms-real/public-portal-login.jpg",
+      "sha256": "d62aecc51238e5930a2ebec6580b3da87e9c16bb440f8b1417f7a4f802a256c7"
+    },
+    {
+      "id": "structure-tab-1",
+      "label": "ساختار مدرسه — سال و کلاس",
+      "route": "/portal/panel?section=structure",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/school-structure.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/structure-tab-1.jpg",
+      "sha256": "300d3f04752b751d0d453a3abf7bbd60f6b07c5bc4877d2c0f8a53846aa63488"
+    },
+    {
+      "id": "structure-tab-2",
+      "label": "ساختار مدرسه — درس و معلم",
+      "route": "/portal/panel?section=structure",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/school-structure.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/structure-tab-2.jpg",
+      "sha256": "41dd750ee9c2e5de751df340a44c7c8de1e3d50c2a0d8c53a9323925767fdfa7"
+    },
+    {
+      "id": "structure-tab-3",
+      "label": "ساختار مدرسه — ثبت‌نام کلاس",
+      "route": "/portal/panel?section=structure",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/school-structure.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/structure-tab-3.jpg",
+      "sha256": "8bb13e9055ad92356cd77d4b39e200131a0f6c9ac485e29d8c9aeae0451c1fa6"
+    },
+    {
+      "id": "structure-tab-4",
+      "label": "ساختار مدرسه — ارتباط خانواده",
+      "route": "/portal/panel?section=structure",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/school-structure.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/structure-tab-4.jpg",
+      "sha256": "22ff5d8690e86addb5eabff28949f62ab12fe4bc48a7edfdaa5cd11c6d4a2333"
+    },
+    {
+      "id": "staff-attendance-tab-1",
+      "label": "حضور معلمان — حضور و بررسی",
+      "route": "/portal/panel?section=staff-attendance",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/staff-attendance.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/staff-attendance-tab-1.jpg",
+      "sha256": "6e88a5fc17a289cee9b990cb7649e593bd93114c1a5f7ef58c3f46f1507f33da"
+    },
+    {
+      "id": "staff-attendance-tab-2",
+      "label": "حضور معلمان — برنامه جلسات",
+      "route": "/portal/panel?section=staff-attendance",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/staff-attendance.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/staff-attendance-tab-2.jpg",
+      "sha256": "9b232629ed6dfcd32ca777bc92765b739247b0b4afdc5972d3d515ca53e519f8"
+    },
+    {
+      "id": "data-exchange-tab-1",
+      "label": "داده و گزارش‌ها — ورود دستی",
+      "route": "/portal/panel?section=data-exchange",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/data-exchange.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/data-exchange-tab-1.jpg",
+      "sha256": "dddfd9b5ae13f414409a697402073e36816a8f82e4c77f5897a6930f33760ea0"
+    },
+    {
+      "id": "data-exchange-tab-2",
+      "label": "داده و گزارش‌ها — ورود با Excel",
+      "route": "/portal/panel?section=data-exchange",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/data-exchange.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/data-exchange-tab-2.jpg",
+      "sha256": "277497f236e4d9a60130c82def0d8ac75c48eeeb13b631fb912a844204bced53"
+    },
+    {
+      "id": "academic-reports-tab-1",
+      "label": "گزارش‌های آموزشی — نمودارها و رتبه‌بندی",
+      "route": "/portal/panel?section=academic-reports",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/academic-reports.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/academic-reports-tab-1.jpg",
+      "sha256": "687bc96c0c893e462b806d477bebf5828fd20d306c6e2e1f70df7b9d33c3213a"
+    },
+    {
+      "id": "academic-reports-tab-2",
+      "label": "گزارش‌های آموزشی — سیر تغییرات",
+      "route": "/portal/panel?section=academic-reports",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/academic-reports.tsx",
+        "frontend/app/panel/page.tsx"
+      ],
+      "method": "actual subtab with isolated local demo records; branding redacted",
+      "image": "../../assets/screenshots/lms-real/academic-reports-tab-2.jpg",
+      "sha256": "cb06e807b79529f4ee59ab4b33aaf410a02178ffc681fd58d318508e5a5636c0"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.button--secondary { color: var(--primary); background: #fef3c7; border: 1px solid #d6b77f; }
+.button--secondary:hover { background: #fde68a; }
+.range-report-toolbar { align-items: start; flex-direction: column; }
+.range-report-filters { display: grid; width: 100%; grid-template-columns: repeat(3, minmax(150px, 1fr)) auto auto; align-items: end; }
+.range-report-filters .button { white-space: nowrap; }
+.kpi-grid--range { grid-template-columns: repeat(3, 1fr); }
+.range-items-table td:nth-child(1), .range-items-table td:nth-child(3), .range-items-table td:nth-child(4) { font-variant-numeric: tabular-nums; }
+.range-items-table td:nth-child(2) { font-weight: 700; }
+@media (max-width: 900px) { .range-report-filters { grid-template-columns: repeat(3, 1fr); } .range-report-filters .button { width: 100%; } }
+@media (max-width: 480px) { .range-report-filters, .kpi-grid--range { grid-template-columns: 1fr; } }

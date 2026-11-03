@@ -1,5 +1,7 @@
 # Kerman Cars — Automotive Marketplace
 
+**[Browse every captured tab and its code](COVERAGE.md) · [Full screenshot gallery](GALLERY.md) · [All 206 source files](SOURCE_INDEX.md)**
+
 An automotive advertising marketplace with buyer discovery, vehicle listings, seller/dealer workflows, moderation and management screens. The repository explicitly separates advertising from vehicle transactions; real payment-provider integration is not claimed.
 
 **Stack:** React · Vite · Django REST API
@@ -8,7 +10,7 @@ An automotive advertising marketplace with buyer discovery, vehicle listings, se
 
 ## Expanded source
 
-This collection contains **17 complete source files**, copied without code changes. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
+This collection contains **206 complete source files**. Files retain their original paths; any neutral school-identity or contact-placeholder substitutions are recorded in the manifest. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
 
 - Listing models, API serialization, validation and query filters.
 - Vehicle-form helpers and reusable management-table/dialog components.
@@ -40,4 +42,4 @@ This public selection excludes credentials, environment/deployment configuration
 
 ## Verification scope
 
-Copied-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
+Published-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.

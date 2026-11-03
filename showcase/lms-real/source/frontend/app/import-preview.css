@@ -1,0 +1,10 @@
+.exchange-preview{min-width:0}
+.exchange-module>.card,.teaching-registration{min-width:0}
+.exchange-preview .table-wrap{max-width:100%;overflow:auto;overscroll-behavior-inline:contain}
+.exchange-preview table{min-width:640px}
+.exchange-preview th:first-child{width:56px}
+.exchange-preview td:nth-child(2){min-width:200px}
+.exchange-preview td:last-child{min-width:230px;white-space:normal}
+.exchange-preview :is(.exchange-error,.exchange-warning,.exchange-ok) svg{flex-shrink:0;margin-top:3px}
+.exchange-preview .exchange-summary span{border-radius:8px}
+@media(max-width:520px){.exchange-preview .exchange-summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}}

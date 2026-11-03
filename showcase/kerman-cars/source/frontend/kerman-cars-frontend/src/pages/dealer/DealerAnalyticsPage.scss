@@ -1,0 +1,217 @@
+.dealer-analytics-page {
+  &__heading {
+    margin-bottom: 22px;
+
+    > span {
+      display: block;
+      color: var(--kc-primary);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 4px 0;
+      color: var(--kc-text);
+      font-size: 29px;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0;
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+  }
+}
+
+.dealer-analytics-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 18px;
+  background: var(--kc-card-bg);
+  border: 1px solid var(--kc-border);
+  border-radius: var(--kc-radius-md);
+
+  > span {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    color: var(--kc-primary);
+    background: var(--kc-accent-soft);
+    border-radius: var(--kc-radius-md);
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    small {
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+
+    strong {
+      color: var(--kc-text);
+      font-size: 20px;
+      font-weight: 800;
+    }
+  }
+}
+
+.dealer-analytics-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.8fr);
+  gap: 17px;
+  margin-top: 18px;
+}
+
+.dealer-analytics-chart,
+.dealer-top-listings {
+  padding: 21px;
+  background: var(--kc-card-bg);
+  border: 1px solid var(--kc-border);
+  border-radius: var(--kc-radius-md);
+}
+
+.dealer-analytics-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+
+  h2 {
+    margin: 0;
+    color: var(--kc-text);
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  p {
+    margin: 3px 0 0;
+    color: var(--kc-text-soft);
+    font-size: 12px;
+  }
+
+  > svg {
+    color: var(--kc-primary);
+  }
+}
+
+.dealer-bar-chart {
+  display: flex;
+  height: 250px;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    > span {
+      min-height: 17px;
+      color: var(--kc-text-soft);
+      font-size: 7px;
+    }
+
+    > div {
+      display: flex;
+      width: min(100%, 34px);
+      height: 185px;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--kc-silver-100);
+      border-radius: 9px 9px 4px 4px;
+
+      i {
+        display: block;
+        width: 100%;
+        min-height: 2px;
+        background: linear-gradient(
+          180deg,
+          var(--kc-primary-light),
+          var(--kc-primary-dark)
+        );
+        border-radius: inherit;
+      }
+    }
+
+    small {
+      margin-top: 8px;
+      color: var(--kc-text-soft);
+      font-size: 7px;
+    }
+  }
+}
+
+.dealer-top-listings {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    article {
+      display: grid;
+      grid-template-columns: 23px 55px minmax(0, 1fr);
+      align-items: center;
+      gap: 9px;
+      padding: 8px;
+      background: var(--kc-silver-100);
+      border-radius: var(--kc-radius-sm);
+
+      > span {
+        color: var(--kc-primary);
+        font-size: 12px;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      img {
+        width: 55px;
+        height: 43px;
+        object-fit: cover;
+        border-radius: var(--kc-radius-xs);
+      }
+
+      > div {
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+
+        strong {
+          overflow: hidden;
+          color: var(--kc-text);
+          font-size: 12px;
+          font-weight: 800;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        small {
+          color: var(--kc-text-soft);
+          font-size: 7px;
+        }
+      }
+    }
+  }
+
+  &__empty {
+    display: grid;
+    min-height: 230px;
+    place-items: center;
+    color: var(--kc-text-soft);
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dealer-analytics-layout {
+    grid-template-columns: 1fr;
+  }
+}

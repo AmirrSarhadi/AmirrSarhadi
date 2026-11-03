@@ -1,0 +1,315 @@
+{
+  "project": "NewCRM",
+  "scope": "Actual source interfaces with disposable demo data or explicitly labelled API fixtures; desktop captures; selected mobile examples remain in the overview.",
+  "views": [
+    {
+      "id": "workspace",
+      "label": "داشبورد",
+      "route": "/workspace",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/reference-dashboard.tsx",
+        "frontend/app/workspace/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/workspace.jpg",
+      "sha256": "15d6ae61abc463eaac8a9c5f474e6af4dc80a3030ade23c52b408fc38ad31f69"
+    },
+    {
+      "id": "customers",
+      "label": "مشتریان",
+      "route": "/customers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/customer-workspace.tsx",
+        "frontend/app/customers/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/customers.jpg",
+      "sha256": "777a877309b94ce7e2f9f2539e5b74d1054834e98d401a7eb97379c9a5a54e01"
+    },
+    {
+      "id": "companies",
+      "label": "شرکت‌ها",
+      "route": "/companies",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/customer-workspace.tsx",
+        "frontend/app/companies/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/companies.jpg",
+      "sha256": "ec27115f491b34d2bc09786d8ee8a96160c472d4ad74162cbebc5df8e325d82a"
+    },
+    {
+      "id": "leads",
+      "label": "لیدها",
+      "route": "/leads",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/lead-workspace.tsx",
+        "frontend/app/leads/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/leads.jpg",
+      "sha256": "3329cdc0c5a16c7e18573de3102d2f6aa5b2fe60cfc95de1196b853ad4866ada"
+    },
+    {
+      "id": "activities",
+      "label": "وظایف",
+      "route": "/activities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/activity-workspace.tsx",
+        "frontend/app/activities/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/activities.jpg",
+      "sha256": "4904247eecd0a5f9d6f08c9e4b990675f0d866c29bca1e5f0528bdcfec000852"
+    },
+    {
+      "id": "sales",
+      "label": "فروش",
+      "route": "/sales",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/order-workspace.tsx",
+        "frontend/app/sales/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/sales.jpg",
+      "sha256": "ab2529d8296f3523c01a5acc04a8733e6dd634f3301b04827c10d50e7282c92b"
+    },
+    {
+      "id": "sales-create",
+      "label": "فروش — فرم ایجاد",
+      "route": "/sales",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/order-workspace.tsx",
+        "frontend/app/sales/page.tsx"
+      ],
+      "method": "actual create form; no submission",
+      "image": "../../assets/screenshots/newcrm-real/sales-create.jpg",
+      "sha256": "868fa0c12947cde7a5c0667529c577c80a4b390f5add1846c936200ada9a3c31"
+    },
+    {
+      "id": "opportunities",
+      "label": "فرصت‌ها و قیف فروش",
+      "route": "/opportunities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/sales-workspace.tsx",
+        "frontend/app/opportunities/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/opportunities.jpg",
+      "sha256": "874d60dfd42d3a9d781e24761e421683bdeedcd4e53a5080d8ca178ad722a745"
+    },
+    {
+      "id": "products",
+      "label": "محصولات",
+      "route": "/products",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/product-workspace.tsx",
+        "frontend/app/products/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/products.jpg",
+      "sha256": "14f4ee3844e7d5a702260ea49b66f171a28d61c164b16af93e3ec49b7bc803c7"
+    },
+    {
+      "id": "reports",
+      "label": "گزارش‌ها",
+      "route": "/reports",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/reports-workspace.tsx",
+        "frontend/app/reports/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/reports.jpg",
+      "sha256": "b084080f0c8c780f5f9b96f3caf3ebcd39c55ec11b2ed4e91dc869ab65b05637"
+    },
+    {
+      "id": "settings",
+      "label": "تنظیمات",
+      "route": "/settings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/settings-workspace.tsx",
+        "frontend/app/settings/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/settings.jpg",
+      "sha256": "0f60c74daccbc2be13f2e890af11b6a68ed0d264a2c0596b11680c44113e2d3e"
+    },
+    {
+      "id": "organizations",
+      "label": "انتخاب سازمان",
+      "route": "/organizations",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/organization-picker.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/organizations.jpg",
+      "sha256": "bb30ed19fbe9357bbcc6804fa2775aac0d10e16b56e4eb0bd22f4af915757481"
+    },
+    {
+      "id": "account-sessions",
+      "label": "نشست‌های حساب",
+      "route": "/account/sessions",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/session-manager.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/account-sessions.jpg",
+      "sha256": "69d444e1609caf3a8d63ece187ab7a5399692fbdc088307d63f63ce13245edcf"
+    },
+    {
+      "id": "account-password",
+      "label": "تغییر رمز",
+      "route": "/account/password",
+      "status": "captured",
+      "source_paths": [
+        "frontend/app/account/password/page.tsx"
+      ],
+      "method": "actual interface with isolated local Django demo records",
+      "image": "../../assets/screenshots/newcrm-real/account-password.jpg",
+      "sha256": "2100e117e100dde51203b3444b724c17aa1f9e4dd13cfbe1c5b15df148fc552a"
+    },
+    {
+      "id": "customers-form",
+      "label": "افزودن مشتری جدید",
+      "route": "/customers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/customer-workspace.tsx",
+        "frontend/app/customers/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/customers-form.jpg",
+      "sha256": "869b0b53bf1c8daa258f2e1ae5f74a8da15a97fb7168045d88ac0e6bc82c98e2"
+    },
+    {
+      "id": "companies-form",
+      "label": "افزودن سریع شرکت",
+      "route": "/companies",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/customer-workspace.tsx",
+        "frontend/app/companies/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/companies-form.jpg",
+      "sha256": "2e760d635d41592eb4107a7d4714671d57d4235f577f49139a0cb36f4fe46839"
+    },
+    {
+      "id": "leads-form",
+      "label": "ثبت سرنخ",
+      "route": "/leads",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/lead-workspace.tsx",
+        "frontend/app/leads/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/leads-form.jpg",
+      "sha256": "3f28fe5ec32c69b0b6943471e5e326a6fc615ab173d6519d875a478190e27a65"
+    },
+    {
+      "id": "activities-form",
+      "label": "ثبت فعالیت",
+      "route": "/activities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/activity-workspace.tsx",
+        "frontend/app/activities/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/activities-form.jpg",
+      "sha256": "ec08cc52cf129ec81d69006de7a78d5bcad8943442b361f7fd0f7d96ad7ff5c4"
+    },
+    {
+      "id": "opportunities-form",
+      "label": "ثبت فرصت",
+      "route": "/opportunities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/sales-workspace.tsx",
+        "frontend/app/opportunities/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/opportunities-form.jpg",
+      "sha256": "ee9118dbe0f2109f2a9ffa0b60dc502263150b9d1a6bff77967272a155673d6a"
+    },
+    {
+      "id": "products-form",
+      "label": "افزودن محصول جدید",
+      "route": "/products",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/product-workspace.tsx",
+        "frontend/app/products/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/products-form.jpg",
+      "sha256": "abeab81a1c14b74dadc85a481e4595dcf5b6d3ac0bee6bea2e2871f0cee23d44"
+    },
+    {
+      "id": "activities-notifications",
+      "label": "اعلان‌های من",
+      "route": "/activities",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/activity-workspace.tsx",
+        "frontend/app/activities/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/activities-notifications.jpg",
+      "sha256": "0a2e51dc99c16f71ea074697df8e83294277ed5adf2fb070cf6282c5dc199e86"
+    },
+    {
+      "id": "settings-section-1",
+      "label": "لوگو و آیکون مرورگر",
+      "route": "/settings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/settings-workspace.tsx",
+        "frontend/app/settings/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/settings-section-1.jpg",
+      "sha256": "32722b1984eaa48c2e90f3a54cf79e054f697f88e5a41fb218a9ea8f1814c1c9"
+    },
+    {
+      "id": "settings-section-2",
+      "label": "آمار سازمان",
+      "route": "/settings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/settings-workspace.tsx",
+        "frontend/app/settings/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/settings-section-2.jpg",
+      "sha256": "4f254959a43ea490c667f7bd20d253a5786bf06863943dd0bbf575581c41ac25"
+    },
+    {
+      "id": "settings-section-3",
+      "label": "ابزارهای سیستم",
+      "route": "/settings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/components/settings-workspace.tsx",
+        "frontend/app/settings/page.tsx"
+      ],
+      "method": "actual UI with isolated Django demo data; forms not submitted",
+      "image": "../../assets/screenshots/newcrm-real/settings-section-3.jpg",
+      "sha256": "162b53e7e4030a1ee3525154bf15aec5098b85ccd2d1aacf31fd2ab6f9c9ddfa"
+    }
+  ]
+}

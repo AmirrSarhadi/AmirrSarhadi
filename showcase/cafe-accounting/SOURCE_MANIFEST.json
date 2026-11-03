@@ -2,127 +2,430 @@
   "origin": "AmirrSarhadi/Cafe-Accounting",
   "source_commit": "2c328602d84a402c310e0485c062ac6389fdc362",
   "kind": "selected complete source files for reading; incomplete application",
-  "modifications": "none; byte-for-byte copies",
+  "modifications": "Original files retained unless an entry explicitly records identity sanitization; hashes distinguish source and published content.",
   "files": [
     {
-      "path": "frontend/src/shared/ui/ActionIcon.tsx",
-      "sha256": "3984021fbc9ee19f0b051ccf90d3d2beb39de8864e798f5e22ae826535bff55a"
+      "path": "backend/apps/cash_register/models.py",
+      "sha256": "3f4411959032faac97e565d2087b68967850d4ff001e9d08cae896d3373098af",
+      "source_sha256": "3f4411959032faac97e565d2087b68967850d4ff001e9d08cae896d3373098af"
     },
     {
-      "path": "frontend/src/shared/ui/MenuPhotoField.tsx",
-      "sha256": "ff919e41cec64a9f5f3ca03a78eb7e5552aa032411656d177a18d4df7e7de06f"
+      "path": "backend/apps/cash_register/serializers.py",
+      "sha256": "4c140105a5d6ac84d7263ea4bfcd6e3922e8ef4e4a373d0bdd9e27fda98c126c",
+      "source_sha256": "4c140105a5d6ac84d7263ea4bfcd6e3922e8ef4e4a373d0bdd9e27fda98c126c"
     },
     {
-      "path": "frontend/src/shared/ui/controls.tsx",
-      "sha256": "198682189b69c65bf7eaa7d1f61996a5502972c38c36ef4bf80fdc5a552bb2ba"
+      "path": "backend/apps/expenses/models.py",
+      "sha256": "a8688ce37c937cacb6a9c34fa3dc1cb3b1d851340b09e2c903c078060cf0c100",
+      "source_sha256": "a8688ce37c937cacb6a9c34fa3dc1cb3b1d851340b09e2c903c078060cf0c100"
     },
     {
-      "path": "frontend/src/shared/ui/CreateDialog.tsx",
-      "sha256": "838cd87bc20cd0a9e01b3dabe3cd854b71f2b34167e81e442dfed5aaf9208a07"
+      "path": "backend/apps/expenses/serializers.py",
+      "sha256": "044e906153bd2df1e4988e595c03a5b7cc580630fe06c43e49b36a31ed1eb212",
+      "source_sha256": "044e906153bd2df1e4988e595c03a5b7cc580630fe06c43e49b36a31ed1eb212"
     },
     {
-      "path": "frontend/src/shared/ui/NavigationGuard.tsx",
-      "sha256": "aba6c511f56ef632f25fb30592efdfad8de2fed48ba502d5241d0b11a0051b86"
+      "path": "backend/apps/floor/models.py",
+      "sha256": "79e5c9672393ce265b70de158b243267cf35143d85fbb332a4ea4e12c8f8d880",
+      "source_sha256": "79e5c9672393ce265b70de158b243267cf35143d85fbb332a4ea4e12c8f8d880"
     },
     {
-      "path": "frontend/src/shared/ui/AvailabilityLabel.tsx",
-      "sha256": "89397fa14523377ff24112163234e19b5383f5d34719a34dac3d3a23d9de1ae1"
+      "path": "backend/apps/floor/serializers.py",
+      "sha256": "b96cc456ea83be7d132a41c16b51e6046e4f9338b253b26b0a3fdcc992602e10",
+      "source_sha256": "b96cc456ea83be7d132a41c16b51e6046e4f9338b253b26b0a3fdcc992602e10"
     },
     {
-      "path": "frontend/src/shared/ui/format.ts",
-      "sha256": "e2b8486a5c50f0ef10a7352da040787801526f7353a35a9968e4ab31ab5a9ae8"
+      "path": "backend/apps/floor/urls.py",
+      "source_sha256": "08326dcbd0a758a30a426df58d71dfc1c966d102011016f66bf7430aabc6d4cf",
+      "sha256": "08326dcbd0a758a30a426df58d71dfc1c966d102011016f66bf7430aabc6d4cf"
     },
     {
-      "path": "frontend/src/shared/ui/Modal.tsx",
-      "sha256": "01feffa40287f7912191b707bdd0a2beefd42e1cc13312ae0ad05750248aefde"
+      "path": "backend/apps/floor/views.py",
+      "source_sha256": "11c0fa6f2e6b67381d4c890f8377d3e504bae1c0cbf8a79da162689e85ac1c98",
+      "sha256": "11c0fa6f2e6b67381d4c890f8377d3e504bae1c0cbf8a79da162689e85ac1c98"
     },
     {
-      "path": "frontend/src/shared/ui/useResource.ts",
-      "sha256": "706b84daa04dbc1405fe50a46bcd058bfb31cb0089365744d4928e771a4b7e41"
+      "path": "backend/apps/inventory/models.py",
+      "sha256": "8ae663f855d954a8113df20a471ce6bca04f60c7577d48a7e89fa401e866e096",
+      "source_sha256": "8ae663f855d954a8113df20a471ce6bca04f60c7577d48a7e89fa401e866e096"
     },
     {
-      "path": "frontend/src/shared/ui/ui.css",
-      "sha256": "abe84d634833cdf30f97fade08d2e2813d5e9e1f60f10b668c141b2103e6a993"
+      "path": "backend/apps/inventory/serializers.py",
+      "sha256": "ae418bd721002a777ef331cba4009af565d84bfef9c2097b542880bbb3328ef8",
+      "source_sha256": "ae418bd721002a777ef331cba4009af565d84bfef9c2097b542880bbb3328ef8"
     },
     {
-      "path": "frontend/src/shared/ui/navigation.ts",
-      "sha256": "ac0a7a412be332b07f9d195d5119c203096a6e160ccda959948f0f2fa21adea8"
+      "path": "backend/apps/menu/models.py",
+      "sha256": "4b46df89038ea0ce69e5889633e8802916aa4f8541d48630862a8cf060074d56",
+      "source_sha256": "4b46df89038ea0ce69e5889633e8802916aa4f8541d48630862a8cf060074d56"
     },
     {
-      "path": "frontend/src/shared/ui/forms.ts",
-      "sha256": "f492f0bf52ea60125a0f58f38547d20b7d89e57b840e5e7fd3c99637922ddd9d"
+      "path": "backend/apps/menu/serializers.py",
+      "sha256": "82543ab60cffb15943e2e2dadaf772b7fb5b68bf40c1452c3b6fd4cba5ea1be0",
+      "source_sha256": "82543ab60cffb15943e2e2dadaf772b7fb5b68bf40c1452c3b6fd4cba5ea1be0"
     },
     {
-      "path": "frontend/src/inventory/CostReportPanel.tsx",
-      "sha256": "bcc19d733f5bdd6ecb5e832dc04616427502a8ec5d48b6e32eab08c080948e10"
+      "path": "backend/apps/menu/urls.py",
+      "source_sha256": "fd3bda24dab4e9f31debf3f5a26541287d1a26d1717fc1e53db49dc7fec4c3e0",
+      "sha256": "fd3bda24dab4e9f31debf3f5a26541287d1a26d1717fc1e53db49dc7fec4c3e0"
     },
     {
-      "path": "frontend/src/inventory/InventoryWorkspace.tsx",
-      "sha256": "8d4c4cfda40ed5980102bce08a9b4bb20db4a9f3d31a22c33e3665002b98bd69"
+      "path": "backend/apps/menu/views.py",
+      "source_sha256": "e35bb9528f4d945d1c6fe742072687e2336a105f2b72c517977e42e92dfcb624",
+      "sha256": "e35bb9528f4d945d1c6fe742072687e2336a105f2b72c517977e42e92dfcb624"
     },
     {
-      "path": "frontend/src/inventory/useIngredientCatalog.ts",
-      "sha256": "bd0fa44a9562445d7bf44d40542f1fc81e9f29bd178079b956cbc4ac9613fc81"
+      "path": "backend/apps/orders/models.py",
+      "sha256": "1f574e51ab5874308923061365d4714770ed9528f43bc41d3d0da7499488285b",
+      "source_sha256": "1f574e51ab5874308923061365d4714770ed9528f43bc41d3d0da7499488285b"
     },
     {
-      "path": "frontend/src/inventory/inventory.css",
-      "sha256": "87d1efca1fb10b9f76b037d4982f022b6062bf248d38c0dc058128775d445dd8"
+      "path": "backend/apps/orders/serializers.py",
+      "sha256": "ba74a506475c66e861846ea833386def31b2e61448d7856fc23c1c79d0ab3163",
+      "source_sha256": "ba74a506475c66e861846ea833386def31b2e61448d7856fc23c1c79d0ab3163"
     },
     {
-      "path": "frontend/src/inventory/StockPanel.tsx",
-      "sha256": "907520c1efda6d28cd68f9bb502a10593ab31dcec9db6a2ac388578530f3eefa"
+      "path": "frontend/src/app/App.tsx",
+      "sha256": "de11bf2c54a8a6d474efcfea51c83ce5c7c58660fec06dcf2a1ca3293a9de0e4",
+      "source_sha256": "de11bf2c54a8a6d474efcfea51c83ce5c7c58660fec06dcf2a1ca3293a9de0e4"
     },
     {
-      "path": "frontend/src/inventory/MovementsPanel.tsx",
-      "sha256": "1496b20e245aa6bf860fcaa233c925fa8bc43b8b0b2f3dd15b2a14ec37cfdc90"
+      "path": "frontend/src/app/AppNavigation.tsx",
+      "sha256": "c1f76fcfe8e990cdc8d0abaabf7801763a9cbb6078383a2b698b2d2fb1f9134e",
+      "source_sha256": "c1f76fcfe8e990cdc8d0abaabf7801763a9cbb6078383a2b698b2d2fb1f9134e"
     },
     {
-      "path": "frontend/src/inventory/MovementForm.tsx",
-      "sha256": "ad1a9fb87acfdb899bc4807aa0a758c0e588232fa2e1fe426f5857baf208d069"
+      "path": "frontend/src/app/CashShiftHistory.tsx",
+      "sha256": "e8f7a8a0aa05746ab8bc190812948b16608bae1b67f0dd73a09d0b230c2a1824",
+      "source_sha256": "e8f7a8a0aa05746ab8bc190812948b16608bae1b67f0dd73a09d0b230c2a1824"
     },
     {
-      "path": "frontend/src/inventory/pendingMovement.ts",
-      "sha256": "5f2807ac076c7930e98c31ef555eb6297c9fb9d34a4d51cad187b224dfe47c81"
+      "path": "frontend/src/app/CashShiftManager.tsx",
+      "sha256": "c00fc367fcbf6db54a478d100c11f2011e2c7b20bf94132957bc18bfa246f3b5",
+      "source_sha256": "c00fc367fcbf6db54a478d100c11f2011e2c7b20bf94132957bc18bfa246f3b5"
     },
     {
-      "path": "frontend/src/inventory/movementConfig.ts",
-      "sha256": "484510eca27b2b54039c1d9a27dbcc247467d604825cf9108201df35f73d5d65"
-    },
-    {
-      "path": "frontend/src/inventory/catalog.tsx",
-      "sha256": "70484253b66645b5e46ef10642b8a3d0c0178a4cb5174d0ff1a0e61380ec9a6b"
-    },
-    {
-      "path": "frontend/src/inventory/IngredientsPanel.tsx",
-      "sha256": "acdc9443c658949fb6bc9a2032bc153b486e9b9324f57b080a1df52fe7710957"
-    },
-    {
-      "path": "frontend/src/inventory/RecipesPanel.tsx",
-      "sha256": "15fda0dfd85306b842ce01c6172414660f7dfc086a91dce280ac3c8af2d11bcc"
+      "path": "frontend/src/app/CustomerDirectory.tsx",
+      "sha256": "1bd55f5e7503925ccb0dca38f979763c87394926d8883c391e41c6ae3ab85d3f",
+      "source_sha256": "1bd55f5e7503925ccb0dca38f979763c87394926d8883c391e41c6ae3ab85d3f"
     },
     {
       "path": "frontend/src/app/CustomerPicker.tsx",
       "sha256": "970f045e828046a6e32f4c02307180ab27b0f349fe434130abadefa1ee588cce"
     },
     {
-      "path": "frontend/src/app/TableStatusGrid.tsx",
-      "sha256": "efdc45d52fb0e61a312566090af2c25d5f4b23f3d20b0059a2d08f0f8e822bd7"
+      "path": "frontend/src/app/DailySalesReport.tsx",
+      "sha256": "731159f159ddb44f111131f0332ab75c770cb0b010110f1eb1b5b06192d55465",
+      "source_sha256": "731159f159ddb44f111131f0332ab75c770cb0b010110f1eb1b5b06192d55465"
     },
     {
-      "path": "frontend/src/app/TableEditor.tsx",
-      "sha256": "feab9bb820565bb18b3b0d1c02697c234d6b357e71b7039c5276a8e9fc3de2b0"
+      "path": "frontend/src/app/ExpenseManager.tsx",
+      "sha256": "e8317dcde014d8ff96a1da7793a390bc0e0b01770acc386ca32c9fb2e5b3d4f3",
+      "source_sha256": "e8317dcde014d8ff96a1da7793a390bc0e0b01770acc386ca32c9fb2e5b3d4f3"
+    },
+    {
+      "path": "frontend/src/app/HelpGuide.tsx",
+      "sha256": "93886cd33d1456b2ab0b8c69c97c5fc607deba1962fe0b72e339ea6cc5d11ff3",
+      "source_sha256": "93886cd33d1456b2ab0b8c69c97c5fc607deba1962fe0b72e339ea6cc5d11ff3"
+    },
+    {
+      "path": "frontend/src/app/MenuCategoryManager.tsx",
+      "sha256": "b2075bd790babb849504634fc1b2ced5839d8f03b762cfeb46021b921e334d83",
+      "source_sha256": "b2075bd790babb849504634fc1b2ced5839d8f03b762cfeb46021b921e334d83"
+    },
+    {
+      "path": "frontend/src/app/MenuItemEditor.tsx",
+      "sha256": "f28af8f62239d5b7c5cb9b578753417500d0f2ec4ae5cc67a207a45cb358c6ae",
+      "source_sha256": "f28af8f62239d5b7c5cb9b578753417500d0f2ec4ae5cc67a207a45cb358c6ae"
+    },
+    {
+      "path": "frontend/src/app/OpenOrders.tsx",
+      "sha256": "babe710adcee16bc65fd8cea0f17ac6f88933b29cb6857bebf27636851ae5a79",
+      "source_sha256": "babe710adcee16bc65fd8cea0f17ac6f88933b29cb6857bebf27636851ae5a79"
+    },
+    {
+      "path": "frontend/src/app/OrderAdditions.tsx",
+      "sha256": "592b00a42bc825d45fc044b01d43a61410faa9dfe2a5a2bb9cc2161e76d1b2e0",
+      "source_sha256": "592b00a42bc825d45fc044b01d43a61410faa9dfe2a5a2bb9cc2161e76d1b2e0"
     },
     {
       "path": "frontend/src/app/OrderEntry.tsx",
       "sha256": "f0b4f4e2c1c9cf5a764dcba52d7b2d26e121bcaefd7da4eb07e781d163708bed"
     },
     {
-      "path": "frontend/src/shared/inventoryUnits.ts",
-      "sha256": "4d31ceb5e5932be5b508c4bc37ca630ef3c5004d9a38b19afe63131602fbc8fe"
+      "path": "frontend/src/app/OrderMenu.tsx",
+      "sha256": "5279eb1d29d1f969d7bec69adbda61c09fe3b09c9d7f093a208f0c6464e931b1",
+      "source_sha256": "5279eb1d29d1f969d7bec69adbda61c09fe3b09c9d7f093a208f0c6464e931b1"
+    },
+    {
+      "path": "frontend/src/app/OrderingCustomerFields.tsx",
+      "source_sha256": "d26cb94a8730d22954da75c6eb9c7d09591d90226d2e905979efc17689d4c265",
+      "sha256": "a2a60af963e239ca4bec8b5b35a2815c87a170c9843298cb59a88704718913d4",
+      "sanitization": [
+        "literal phone placeholder replaced with neutral contact label"
+      ]
+    },
+    {
+      "path": "frontend/src/app/ReceiptArchive.tsx",
+      "sha256": "98a641927db86aafc41f64d2316d3f73e5f043108255aaaaaf10ae58dc946c13",
+      "source_sha256": "98a641927db86aafc41f64d2316d3f73e5f043108255aaaaaf10ae58dc946c13"
+    },
+    {
+      "path": "frontend/src/app/SalesRangeReport.tsx",
+      "sha256": "91e47f2bd318267ed29a50730ba97a7a1989d18f7f5686c472882aaf27f03515",
+      "source_sha256": "91e47f2bd318267ed29a50730ba97a7a1989d18f7f5686c472882aaf27f03515"
+    },
+    {
+      "path": "frontend/src/app/Settings.tsx",
+      "sha256": "76465760d882b3f1aca2edc5aab597560273af354c3479b21425ef2b8c03aec6",
+      "source_sha256": "76465760d882b3f1aca2edc5aab597560273af354c3479b21425ef2b8c03aec6"
+    },
+    {
+      "path": "frontend/src/app/SettlementForm.tsx",
+      "sha256": "1b1125bf084a0d44f34fa3e0aa3c5ed0d2658d6f1d2816cead4323970d08503d",
+      "source_sha256": "1b1125bf084a0d44f34fa3e0aa3c5ed0d2658d6f1d2816cead4323970d08503d"
+    },
+    {
+      "path": "frontend/src/app/TableEditor.tsx",
+      "sha256": "feab9bb820565bb18b3b0d1c02697c234d6b357e71b7039c5276a8e9fc3de2b0"
+    },
+    {
+      "path": "frontend/src/app/TableManagement.tsx",
+      "sha256": "a0aeab7121a5c9cd1d7cf75ed07ef678d6b0574d5b59c1df4e55ae3f2297a5c4",
+      "source_sha256": "a0aeab7121a5c9cd1d7cf75ed07ef678d6b0574d5b59c1df4e55ae3f2297a5c4"
+    },
+    {
+      "path": "frontend/src/app/TableStatusGrid.tsx",
+      "sha256": "efdc45d52fb0e61a312566090af2c25d5f4b23f3d20b0059a2d08f0f8e822bd7"
+    },
+    {
+      "path": "frontend/src/app/helpContent.ts",
+      "sha256": "b3ec00bacaf1c6ff5de2b608af6b4456b06afce2bb651892a36e8148d0032d65",
+      "source_sha256": "b3ec00bacaf1c6ff5de2b608af6b4456b06afce2bb651892a36e8148d0032d65"
+    },
+    {
+      "path": "frontend/src/app/orderAdditionRecovery.ts",
+      "sha256": "7aead47119b720c39da828cb7bf52fa1d339340f3b528bb925c967a348074d33",
+      "source_sha256": "7aead47119b720c39da828cb7bf52fa1d339340f3b528bb925c967a348074d33"
+    },
+    {
+      "path": "frontend/src/inventory/CostReportPanel.tsx",
+      "sha256": "bcc19d733f5bdd6ecb5e832dc04616427502a8ec5d48b6e32eab08c080948e10"
+    },
+    {
+      "path": "frontend/src/inventory/IngredientsPanel.tsx",
+      "sha256": "acdc9443c658949fb6bc9a2032bc153b486e9b9324f57b080a1df52fe7710957"
+    },
+    {
+      "path": "frontend/src/inventory/InventoryWorkspace.tsx",
+      "sha256": "8d4c4cfda40ed5980102bce08a9b4bb20db4a9f3d31a22c33e3665002b98bd69"
+    },
+    {
+      "path": "frontend/src/inventory/MovementForm.tsx",
+      "sha256": "ad1a9fb87acfdb899bc4807aa0a758c0e588232fa2e1fe426f5857baf208d069"
+    },
+    {
+      "path": "frontend/src/inventory/MovementsPanel.tsx",
+      "sha256": "1496b20e245aa6bf860fcaa233c925fa8bc43b8b0b2f3dd15b2a14ec37cfdc90"
+    },
+    {
+      "path": "frontend/src/inventory/RecipesPanel.tsx",
+      "sha256": "15fda0dfd85306b842ce01c6172414660f7dfc086a91dce280ac3c8af2d11bcc"
+    },
+    {
+      "path": "frontend/src/inventory/StockPanel.tsx",
+      "sha256": "907520c1efda6d28cd68f9bb502a10593ab31dcec9db6a2ac388578530f3eefa"
+    },
+    {
+      "path": "frontend/src/inventory/catalog.tsx",
+      "sha256": "70484253b66645b5e46ef10642b8a3d0c0178a4cb5174d0ff1a0e61380ec9a6b"
+    },
+    {
+      "path": "frontend/src/inventory/inventory.css",
+      "sha256": "87d1efca1fb10b9f76b037d4982f022b6062bf248d38c0dc058128775d445dd8"
+    },
+    {
+      "path": "frontend/src/inventory/movementConfig.ts",
+      "sha256": "484510eca27b2b54039c1d9a27dbcc247467d604825cf9108201df35f73d5d65"
+    },
+    {
+      "path": "frontend/src/inventory/pendingMovement.ts",
+      "sha256": "5f2807ac076c7930e98c31ef555eb6297c9fb9d34a4d51cad187b224dfe47c81"
+    },
+    {
+      "path": "frontend/src/inventory/useIngredientCatalog.ts",
+      "sha256": "bd0fa44a9562445d7bf44d40542f1fc81e9f29bd178079b956cbc4ac9613fc81"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "42d524ae3877b9bb24b5d02790a7541033f441729198c69d5720c68a1ab1c1e9",
+      "source_sha256": "42d524ae3877b9bb24b5d02790a7541033f441729198c69d5720c68a1ab1c1e9"
+    },
+    {
+      "path": "frontend/src/shared/api.ts",
+      "sha256": "e1a0a6ee8c26fc83e5e23731bbb90aeb6e6c29aadca084d7d5feb038598d6179",
+      "source_sha256": "e1a0a6ee8c26fc83e5e23731bbb90aeb6e6c29aadca084d7d5feb038598d6179"
+    },
+    {
+      "path": "frontend/src/shared/inventoryApi.ts",
+      "sha256": "ff954f6eeb18eb0805bfd6958d18631126b9a8cd1c0436e57bf198716d18cc11",
+      "source_sha256": "ff954f6eeb18eb0805bfd6958d18631126b9a8cd1c0436e57bf198716d18cc11"
     },
     {
       "path": "frontend/src/shared/inventoryUnits.test.ts",
       "sha256": "02fc7d63750189eea8339abca11491642a5a4c7b86e334273948924ea8c511a4"
+    },
+    {
+      "path": "frontend/src/shared/inventoryUnits.ts",
+      "sha256": "4d31ceb5e5932be5b508c4bc37ca630ef3c5004d9a38b19afe63131602fbc8fe"
+    },
+    {
+      "path": "frontend/src/shared/orderingCustomer.ts",
+      "sha256": "02ab503d5800bd0bbdf6ab0707ef0a2b7050a4dac53201333c4c7a55c66f8605",
+      "source_sha256": "02ab503d5800bd0bbdf6ab0707ef0a2b7050a4dac53201333c4c7a55c66f8605"
+    },
+    {
+      "path": "frontend/src/shared/ui/ActionIcon.tsx",
+      "sha256": "3984021fbc9ee19f0b051ccf90d3d2beb39de8864e798f5e22ae826535bff55a"
+    },
+    {
+      "path": "frontend/src/shared/ui/AvailabilityLabel.tsx",
+      "sha256": "89397fa14523377ff24112163234e19b5383f5d34719a34dac3d3a23d9de1ae1"
+    },
+    {
+      "path": "frontend/src/shared/ui/CreateDialog.tsx",
+      "sha256": "838cd87bc20cd0a9e01b3dabe3cd854b71f2b34167e81e442dfed5aaf9208a07"
+    },
+    {
+      "path": "frontend/src/shared/ui/MenuPhotoField.tsx",
+      "sha256": "ff919e41cec64a9f5f3ca03a78eb7e5552aa032411656d177a18d4df7e7de06f"
+    },
+    {
+      "path": "frontend/src/shared/ui/Modal.tsx",
+      "sha256": "01feffa40287f7912191b707bdd0a2beefd42e1cc13312ae0ad05750248aefde"
+    },
+    {
+      "path": "frontend/src/shared/ui/NavigationGuard.tsx",
+      "sha256": "aba6c511f56ef632f25fb30592efdfad8de2fed48ba502d5241d0b11a0051b86"
+    },
+    {
+      "path": "frontend/src/shared/ui/controls.tsx",
+      "sha256": "198682189b69c65bf7eaa7d1f61996a5502972c38c36ef4bf80fdc5a552bb2ba"
+    },
+    {
+      "path": "frontend/src/shared/ui/format.ts",
+      "sha256": "e2b8486a5c50f0ef10a7352da040787801526f7353a35a9968e4ab31ab5a9ae8"
+    },
+    {
+      "path": "frontend/src/shared/ui/forms.ts",
+      "sha256": "f492f0bf52ea60125a0f58f38547d20b7d89e57b840e5e7fd3c99637922ddd9d"
+    },
+    {
+      "path": "frontend/src/shared/ui/navigation.ts",
+      "sha256": "ac0a7a412be332b07f9d195d5119c203096a6e160ccda959948f0f2fa21adea8"
+    },
+    {
+      "path": "frontend/src/shared/ui/ui.css",
+      "sha256": "abe84d634833cdf30f97fade08d2e2813d5e9e1f60f10b668c141b2103e6a993"
+    },
+    {
+      "path": "frontend/src/shared/ui/useResource.ts",
+      "sha256": "706b84daa04dbc1405fe50a46bcd058bfb31cb0089365744d4928e771a4b7e41"
+    },
+    {
+      "path": "frontend/src/styles/app-navigation.css",
+      "sha256": "7ffc05fcc604e87912237c932a2e528fe139b818cd91cc8348cd7dcb61d7b127",
+      "source_sha256": "7ffc05fcc604e87912237c932a2e528fe139b818cd91cc8348cd7dcb61d7b127"
+    },
+    {
+      "path": "frontend/src/styles/cash-shift.css",
+      "sha256": "71191727eb7b747a487acf4ef8f6c0bec8d834588f1ab868f59df4550a03684e",
+      "source_sha256": "71191727eb7b747a487acf4ef8f6c0bec8d834588f1ab868f59df4550a03684e"
+    },
+    {
+      "path": "frontend/src/styles/category-manager.css",
+      "sha256": "735b87dc8fc03b93fba8ee9ae1b3e6e98d7c524c21c8a3f37fe3ff54ded60a25",
+      "source_sha256": "735b87dc8fc03b93fba8ee9ae1b3e6e98d7c524c21c8a3f37fe3ff54ded60a25"
+    },
+    {
+      "path": "frontend/src/styles/customer-directory.css",
+      "sha256": "38a7de6b13ef581536ad6406260ae0f70ec80527688c1657f0dbe2dcc929790e",
+      "source_sha256": "38a7de6b13ef581536ad6406260ae0f70ec80527688c1657f0dbe2dcc929790e"
+    },
+    {
+      "path": "frontend/src/styles/customer-picker.css",
+      "sha256": "e586abbc15166b4504fbf3ef62a523e552ff44004da9fd5560564c5f85daf824",
+      "source_sha256": "e586abbc15166b4504fbf3ef62a523e552ff44004da9fd5560564c5f85daf824"
+    },
+    {
+      "path": "frontend/src/styles/desktop.css",
+      "sha256": "64ec610487d46af0f2bfc0f650340b48a9b1cd9a2e9054e212ca9a2a673a3d35",
+      "source_sha256": "64ec610487d46af0f2bfc0f650340b48a9b1cd9a2e9054e212ca9a2a673a3d35"
+    },
+    {
+      "path": "frontend/src/styles/help-guide.css",
+      "sha256": "65702ce353577b8555338aef276e7dfc55664936cfde652d78c02fdf1055dc52",
+      "source_sha256": "65702ce353577b8555338aef276e7dfc55664936cfde652d78c02fdf1055dc52"
+    },
+    {
+      "path": "frontend/src/styles/index.css",
+      "sha256": "4b9104f6a2a948f07225ab45dacf01b1f9c38c34c3a91ec9475167a82d7f620c",
+      "source_sha256": "4b9104f6a2a948f07225ab45dacf01b1f9c38c34c3a91ec9475167a82d7f620c"
+    },
+    {
+      "path": "frontend/src/styles/item-availability.css",
+      "sha256": "affeb35bef618a611af3729b0c9149b572fe03cc4f94fbe3c802a170d9276cce",
+      "source_sha256": "affeb35bef618a611af3729b0c9149b572fe03cc4f94fbe3c802a170d9276cce"
+    },
+    {
+      "path": "frontend/src/styles/menu-editor.css",
+      "sha256": "9fc0ca643c444f020f3d71c35998ce4b77214e9471a8ec29a27a44d39cdb2490",
+      "source_sha256": "9fc0ca643c444f020f3d71c35998ce4b77214e9471a8ec29a27a44d39cdb2490"
+    },
+    {
+      "path": "frontend/src/styles/open-order-cards.css",
+      "sha256": "b2b64a5b693884551a6c5c54c51bade13f02abc58ee7f476bcf672c0c19eac41",
+      "source_sha256": "b2b64a5b693884551a6c5c54c51bade13f02abc58ee7f476bcf672c0c19eac41"
+    },
+    {
+      "path": "frontend/src/styles/order-entry.css",
+      "sha256": "8c527f8ccabefa990ca242c2668a0681988d1c77b9b8d55dc2abd82e7d3b6514",
+      "source_sha256": "8c527f8ccabefa990ca242c2668a0681988d1c77b9b8d55dc2abd82e7d3b6514"
+    },
+    {
+      "path": "frontend/src/styles/range-report.css",
+      "sha256": "291f34443de57c326f79798178d0d6273fc0118a81dfed547ba3e5e5f41d1513",
+      "source_sha256": "291f34443de57c326f79798178d0d6273fc0118a81dfed547ba3e5e5f41d1513"
+    },
+    {
+      "path": "frontend/src/styles/receipt-archive.css",
+      "sha256": "7cba4cb82e1a8b4ea99b0ed7f19609240a0d62e9802798c3ad9e2cd138455767",
+      "source_sha256": "7cba4cb82e1a8b4ea99b0ed7f19609240a0d62e9802798c3ad9e2cd138455767"
+    },
+    {
+      "path": "frontend/src/styles/refinement.css",
+      "sha256": "7edf1386c7adaff0f82c12fefd36fd8730c0d4ca3314d2ad2bed99b7a8fddb2c",
+      "source_sha256": "7edf1386c7adaff0f82c12fefd36fd8730c0d4ca3314d2ad2bed99b7a8fddb2c"
+    },
+    {
+      "path": "frontend/src/styles/responsive.css",
+      "sha256": "9a938489ddd2eabaf00c28536c3bd003d6f4f1e5fd5d9ed35a0ebd986bda6b98",
+      "source_sha256": "9a938489ddd2eabaf00c28536c3bd003d6f4f1e5fd5d9ed35a0ebd986bda6b98"
+    },
+    {
+      "path": "frontend/src/styles/settlement.css",
+      "sha256": "f3ed27252de5167082505828ce975afeac63d6ef17abff2edfc738cb3f225c52",
+      "source_sha256": "f3ed27252de5167082505828ce975afeac63d6ef17abff2edfc738cb3f225c52"
+    },
+    {
+      "path": "frontend/src/styles/table-editor.css",
+      "sha256": "40dda94d874871cc62214f422179c9dc4de8a40fc7aa45077a4ebadcd83f300a",
+      "source_sha256": "40dda94d874871cc62214f422179c9dc4de8a40fc7aa45077a4ebadcd83f300a"
+    },
+    {
+      "path": "frontend/src/styles/table-status.css",
+      "sha256": "2d164de0e96d20e208c3e8b9037dac89a16438e8c3179075426d7fd092f126a5",
+      "source_sha256": "2d164de0e96d20e208c3e8b9037dac89a16438e8c3179075426d7fd092f126a5"
     }
   ]
 }

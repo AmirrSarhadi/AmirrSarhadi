@@ -1,0 +1,233 @@
+.dealer-registration-page {
+    padding-block: 40px 80px;
+
+    &__heading {
+        max-width: 720px;
+        margin-bottom: 28px;
+
+        >span {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--kc-primary);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        h1 {
+            margin-bottom: 7px;
+            color: var(--kc-text);
+            font-size: clamp(26px, 4vw, 38px);
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+    }
+
+    &__layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 290px;
+        gap: 22px;
+        align-items: start;
+    }
+}
+
+.dealer-register-form {
+    padding: 28px;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-lg);
+    box-shadow: var(--kc-shadow-sm);
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 27px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--kc-border);
+
+        >span {
+            display: grid;
+            width: 50px;
+            height: 50px;
+            place-items: center;
+            color: var(--kc-primary);
+            background: var(--kc-accent-soft);
+            border-radius: var(--kc-radius-md);
+        }
+
+        h2 {
+            margin-bottom: 3px;
+            color: var(--kc-text);
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        width: 100%;
+        min-height: 51px;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 22px;
+    }
+}
+
+.dealer-register-field {
+
+    .form-control,
+    .form-select {
+        min-height: 49px;
+    }
+
+    textarea.form-control {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    &__input {
+        position: relative;
+
+        >svg {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            right: 14px;
+            color: var(--kc-text-soft);
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .form-control,
+        .form-select {
+            padding-right: 42px;
+        }
+
+        &--textarea {
+            >svg {
+                top: 16px;
+                transform: none;
+            }
+        }
+    }
+
+    &__error {
+        display: block;
+        margin-top: 6px;
+        color: var(--kc-danger);
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+.dealer-register-terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin-top: 22px;
+    color: var(--kc-text-soft);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.9;
+
+    input {
+        width: 17px;
+        height: 17px;
+        flex: 0 0 auto;
+        margin-top: 2px;
+        accent-color: var(--kc-primary);
+    }
+}
+
+.dealer-register-benefits {
+    position: sticky;
+    top: calc(var(--kc-header-height) + 20px);
+    padding: 25px;
+    color: var(--kc-white);
+    background:
+        radial-gradient(circle at top right,
+            rgba(76, 164, 255, 0.2),
+            transparent 45%),
+        var(--kc-navy-950);
+    border-radius: var(--kc-radius-lg);
+    box-shadow: var(--kc-shadow-md);
+
+    &__icon {
+        display: grid;
+        width: 58px;
+        height: 58px;
+        place-items: center;
+        margin-bottom: 18px;
+        color: var(--kc-primary-light);
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: var(--kc-radius-md);
+    }
+
+    h2 {
+        margin-bottom: 18px;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-bottom: 20px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.77);
+            font-size: 12px;
+        }
+
+        svg {
+            color: var(--kc-primary-light);
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        padding-top: 16px;
+        color: rgba(255, 255, 255, 0.55);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 12px;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .dealer-registration-page {
+        &__layout {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .dealer-register-benefits {
+        position: static;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .dealer-registration-page {
+        padding-block: 25px 110px;
+    }
+
+    .dealer-register-form {
+        padding: 20px 14px;
+    }
+}

@@ -1,0 +1,19 @@
+.order-settlement-trigger { min-width: 76px; white-space: nowrap; }
+.open-order-card-total { display: none; }
+@media screen and (min-width: 1024px) {
+  .open-order-results { overflow: visible; }
+  .open-order-table { display: block; width: 100%; }
+  .open-order-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .open-order-table tbody { display: grid; grid-template-columns: repeat(auto-fill,minmax(min(100%,260px),1fr)); gap: 16px; }
+  .open-order-table tbody tr { display: grid; grid-template-columns: minmax(0,1fr) auto; align-content: start; align-items: center; gap: 12px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-panel); background: var(--surface); }
+  .open-order-table tbody tr:hover { background: var(--surface-soft); }
+  .open-order-table tbody tr:focus-within { border-color: var(--primary); background: var(--surface-soft); }
+  .open-order-table tbody th[scope=row] { grid-column: 1; grid-row: 1; min-width: 0; padding: 0; border: 0; font-size: 1.125rem; font-weight: 700; overflow-wrap: anywhere; }
+  .open-order-table tbody td { min-width: 0; padding: 0; border: 0; }
+  .open-order-table .open-order-customer { grid-column: 1/-1; grid-row: 2; display: grid; gap: 6px; overflow-wrap: anywhere; }
+  .open-order-table .open-order-customer::before { content: attr(data-label); font-size: .75rem; color: var(--muted); }
+  .open-order-table tbody td:last-child { grid-column: 2; grid-row: 1; justify-self: end; }
+  .open-order-card-total { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+  .open-order-card-total > span { font-size: .8125rem; color: var(--muted); }
+  .open-order-card-total strong { color: var(--primary); font-size: .9375rem; overflow-wrap: anywhere; }
+}

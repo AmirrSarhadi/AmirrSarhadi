@@ -1,0 +1,15 @@
+.admin-settings-toggle {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 17px;
+    color: var(--kc-text-soft);
+    cursor: pointer;
+    font-size: 12px;
+
+    input {
+        width: 17px;
+        height: 17px;
+        accent-color: var(--kc-primary);
+    }
+}

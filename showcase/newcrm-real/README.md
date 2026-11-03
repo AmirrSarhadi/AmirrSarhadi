@@ -1,5 +1,7 @@
 # NewCRM — Multi-Organization Sales Workspace
 
+**[Browse every captured tab and its code](COVERAGE.md) · [Full screenshot gallery](GALLERY.md) · [All 97 source files](SOURCE_INDEX.md)**
+
 A Persian RTL CRM built around organization-specific customer records, lead management, opportunities, orders, activities, and reports. This is a separate project from the earlier CRM / sales-operations showcase.
 
 **Stack:** Next.js 16.4 · React 19 · TypeScript · Django 5.2 · Django REST Framework
@@ -8,7 +10,7 @@ A Persian RTL CRM built around organization-specific customer records, lead mana
 
 ## Expanded source
 
-This collection contains **44 complete source files**, copied without code changes. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
+This collection contains **97 complete source files**. Files retain their original paths; any neutral school-identity or contact-placeholder substitutions are recorded in the manifest. It is a reading-oriented source selection, not a standalone runnable application. Imports into omitted modules are intentionally retained.
 
 - Customer and company workspaces, related records, timeline and import-preview UI.
 - Lead workspace, sales pipeline summary, order entry and product workspace.
@@ -41,6 +43,6 @@ This public selection excludes credentials, environment/deployment configuration
 
 ## Verification scope
 
-Copied-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
+Published-file hashes and Python / JavaScript / TypeScript syntax are checked as part of portfolio preparation. Interface captures demonstrate presentation only; they do not establish backend integration, concurrency correctness or production readiness.
 
 The existing money/date boundary test is included at `source/frontend/tests/sales-entry.cjs`; run it with a current Node.js version supporting TypeScript stripping: `node source/frontend/tests/sales-entry.cjs`. The earlier CRM showcase remains [separate](../crm-real/README.md).

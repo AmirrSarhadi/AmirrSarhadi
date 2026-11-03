@@ -1,0 +1,276 @@
+.dealer-subscription-page {
+    &__heading {
+        margin-bottom: 22px;
+
+        >span {
+            display: block;
+            color: var(--kc-primary);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        h1 {
+            margin: 4px 0;
+            color: var(--kc-text);
+            font-size: 29px;
+            font-weight: 800;
+        }
+
+        p {
+            margin: 0;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+    }
+}
+
+.dealer-subscription-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 23px;
+    color: var(--kc-white);
+    background:
+        radial-gradient(circle at left,
+            rgba(76, 164, 255, 0.25),
+            transparent 42%),
+        var(--kc-navy-950);
+    border-radius: var(--kc-radius-lg);
+
+    >div:first-child {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        small {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+
+        h2 {
+            margin: 2px 0;
+            font-size: 21px;
+            font-weight: 800;
+        }
+
+        >div>span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #7ef2b5;
+            font-size: 12px;
+        }
+    }
+
+    &__icon {
+        display: grid;
+        width: 58px;
+        height: 58px;
+        place-items: center;
+        color: var(--kc-primary-light);
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: var(--kc-radius-md);
+    }
+
+    &__price {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+
+        small {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+
+        strong {
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+}
+
+.dealer-subscription-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+    margin-top: 15px;
+
+    article {
+        display: flex;
+        min-height: 95px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 14px;
+        text-align: center;
+        background: var(--kc-card-bg);
+        border: 1px solid var(--kc-border);
+        border-radius: var(--kc-radius-sm);
+
+        svg {
+            margin-bottom: 7px;
+            color: var(--kc-primary);
+        }
+
+        span {
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+
+        strong {
+            color: var(--kc-text);
+            font-size: 12px;
+            font-weight: 800;
+        }
+    }
+}
+
+.dealer-subscription-usage,
+.dealer-subscription-features {
+    margin-top: 17px;
+    padding: 21px;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+
+    >h2,
+    >div h2 {
+        margin: 0;
+        color: var(--kc-text);
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    >div p {
+        margin: 3px 0 0;
+        color: var(--kc-text-soft);
+        font-size: 12px;
+    }
+}
+
+.dealer-usage-item {
+    padding: 15px;
+    background: var(--kc-silver-100);
+    border-radius: var(--kc-radius-sm);
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+
+        >span {
+            display: grid;
+            width: 38px;
+            height: 38px;
+            place-items: center;
+            color: var(--kc-primary);
+            background: var(--kc-card-bg);
+            border-radius: var(--kc-radius-sm);
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+
+            strong {
+                color: var(--kc-text);
+                font-size: 12px;
+                font-weight: 800;
+            }
+
+            small {
+                color: var(--kc-text-soft);
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__progress {
+        overflow: hidden;
+        height: 7px;
+        margin-top: 13px;
+        background: var(--kc-card-bg);
+        border-radius: var(--kc-radius-sm);
+
+        span {
+            display: block;
+            height: 100%;
+            background: var(--kc-action-bg);
+            border-radius: inherit;
+        }
+    }
+}
+
+.dealer-subscription-features {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-block: 18px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--kc-text-soft);
+            font-size: 12px;
+
+            svg {
+                color: var(--kc-success);
+            }
+        }
+    }
+}
+
+.dealer-no-subscription {
+    display: flex;
+    min-height: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+
+    svg {
+        color: var(--kc-primary);
+    }
+
+    h1 {
+        margin: 15px 0 6px;
+        color: var(--kc-text);
+        font-size: 23px;
+        font-weight: 800;
+    }
+
+    p {
+        color: var(--kc-text-soft);
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .dealer-subscription-hero {
+        align-items: flex-start;
+        flex-direction: column;
+
+        &__price {
+            align-items: flex-start;
+        }
+    }
+
+    .dealer-subscription-info {
+        grid-template-columns: 1fr;
+    }
+
+    .dealer-subscription-features ul {
+        grid-template-columns: 1fr;
+    }
+}

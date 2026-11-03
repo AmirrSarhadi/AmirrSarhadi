@@ -1,0 +1,112 @@
+.admin-listings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.admin-listing-card {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 190px minmax(0, 1fr);
+    background: var(--kc-card-bg);
+    border: 1px solid var(--kc-border);
+    border-radius: var(--kc-radius-md);
+
+    &__image {
+        min-height: 170px;
+        background: var(--kc-navy-900);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 15px;
+
+        >div {
+            min-width: 0;
+        }
+
+        >div>span {
+            color: var(--kc-text-soft);
+            font-size: 12px;
+        }
+
+        h2 {
+            overflow: hidden;
+            margin: 3px 0 0;
+            color: var(--kc-text);
+            font-size: 14px;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 16px;
+        margin-top: 14px;
+        color: var(--kc-text-soft);
+        font-size: 12px;
+
+        span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: auto;
+        padding-top: 14px;
+        border-top: 1px solid var(--kc-border);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .admin-listing-card {
+        grid-template-columns: 110px minmax(0, 1fr);
+
+        &__content {
+            padding: 11px;
+        }
+
+        &__top {
+            flex-direction: column;
+            gap: 7px;
+
+            h2 {
+                font-size: 12px;
+            }
+        }
+
+        &__meta {
+            gap: 5px 10px;
+        }
+
+        &__actions {
+            .admin-action-button {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+    }
+}

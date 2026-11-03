@@ -1,0 +1,3 @@
+from django.urls import path
+from .views import ProductBarcode,ProductList,ProductDetail,ProductArchive,ProductRestore,ProductCategories,ProductSales,ProductExport,ProductSpreadsheet,ProductPreview,ProductImport
+urlpatterns=[path('<uuid:record_id>/barcode/',ProductBarcode.as_view()),path('',ProductList.as_view()),path('categories/',ProductCategories.as_view()),path('export/',ProductExport.as_view()),path('spreadsheet/',ProductSpreadsheet.as_view()),path('import-preview/',ProductPreview.as_view()),path('import/',ProductImport.as_view()),path('<uuid:record_id>/',ProductDetail.as_view()),path('<uuid:record_id>/archive/',ProductArchive.as_view()),path('<uuid:record_id>/restore/',ProductRestore.as_view()),path('<uuid:record_id>/sales/',ProductSales.as_view())]

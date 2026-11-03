@@ -1,0 +1,176 @@
+.dealer-plans-page {
+  &__heading {
+    max-width: 700px;
+    margin-bottom: 28px;
+
+    > span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--kc-primary);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin-bottom: 7px;
+      color: var(--kc-text);
+      font-size: clamp(25px, 4vw, 36px);
+      font-weight: 800;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+  }
+
+  &__active {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 23px;
+    padding: 15px;
+    color: var(--kc-success);
+    background: rgba(32, 164, 100, 0.07);
+    border: 1px solid rgba(32, 164, 100, 0.16);
+    border-radius: var(--kc-radius-sm);
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    strong {
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    span {
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+  }
+}
+
+.dealer-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.dealer-plan-card {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 25px;
+  background: var(--kc-card-bg);
+  border: 1px solid var(--kc-border);
+  border-radius: var(--kc-radius-lg);
+  box-shadow: var(--kc-shadow-xs);
+
+  &--popular {
+    border-color: rgba(21, 120, 232, 0.4);
+    box-shadow: var(--kc-shadow-md);
+    transform: translateY(-7px);
+  }
+
+  &__popular {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 9px;
+    color: var(--kc-white);
+    background: var(--kc-action-bg);
+    border-radius: var(--kc-radius-pill);
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  &__icon {
+    display: grid;
+    width: 58px;
+    height: 58px;
+    place-items: center;
+    margin-bottom: 17px;
+    color: var(--kc-primary);
+    background: var(--kc-accent-soft);
+    border-radius: var(--kc-radius-md);
+  }
+
+  h2 {
+    margin-bottom: 7px;
+    color: var(--kc-text);
+    font-size: 21px;
+    font-weight: 800;
+  }
+
+  > p {
+    min-height: 45px;
+    margin-bottom: 18px;
+    color: var(--kc-text-soft);
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    padding-block: 16px;
+    border-top: 1px solid var(--kc-border);
+    border-bottom: 1px solid var(--kc-border);
+
+    strong {
+      color: var(--kc-text);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    span {
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-block: 20px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      color: var(--kc-text-soft);
+      font-size: 12px;
+    }
+
+    svg {
+      flex: 0 0 auto;
+      margin-top: 1px;
+      color: var(--kc-success);
+    }
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dealer-plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dealer-plan-card {
+    &--popular {
+      transform: none;
+    }
+  }
+}

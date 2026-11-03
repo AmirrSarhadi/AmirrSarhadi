@@ -1,0 +1,1205 @@
+{
+  "project": "Local Accounting",
+  "scope": "Actual source interfaces with disposable demo data or explicitly labelled API fixtures; desktop captures; selected mobile examples remain in the overview.",
+  "views": [
+    {
+      "id": "dashboard",
+      "label": "حسابداری آرن",
+      "route": "/",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Dashboard/Dashboard.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/dashboard.jpg",
+      "sha256": "bc0888a3061d7fb1e0192305db1e9fc8455e5c26719cb547e041bf97ad2a6214"
+    },
+    {
+      "id": "dashboard",
+      "label": "حسابداری آرن",
+      "route": "/dashboard",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Dashboard/Dashboard.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/dashboard.jpg",
+      "sha256": "bc0888a3061d7fb1e0192305db1e9fc8455e5c26719cb547e041bf97ad2a6214"
+    },
+    {
+      "id": "settings-commercial-tools",
+      "label": "نمایش این بخش با مشکل روبه‌رو شد",
+      "route": "/settings/commercial-tools",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Settings/CommercialTools/CommercialTools.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/settings-commercial-tools.jpg",
+      "sha256": "4da59b9c0a839eb25a323d371ae17634aaabcb532a26d09a381c9405ae1154ed"
+    },
+    {
+      "id": "banking-opening-balances",
+      "label": "حسابداری آرن",
+      "route": "/banking/opening-balances",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/OpeningBalance/TreasuryOpening.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-opening-balances.jpg",
+      "sha256": "5b1687fb8c2604dacf398257d3263e570bac41131abaf41b974f171d36cdddbb"
+    },
+    {
+      "id": "persons-customers",
+      "label": "حسابداری آرن",
+      "route": "/persons/customers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/CustomerList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-customers.jpg",
+      "sha256": "50e6ddad1122e335b0119a99a11fd8f956923acd8494f7e540a1f10eac21af49"
+    },
+    {
+      "id": "persons-customers-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/customers/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/CustomerForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-customers-add.jpg",
+      "sha256": "026f67ea52b015a1f3a13fdd2d3e613ca1a510707b40a67675c716865b0487ce"
+    },
+    {
+      "id": "persons-vendors",
+      "label": "حسابداری آرن",
+      "route": "/persons/vendors",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/VendorList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-vendors.jpg",
+      "sha256": "27de547b518ca2e9f855802bc4887187c3f2f4cecb73c9f6cb5346eefc115fe2"
+    },
+    {
+      "id": "persons-vendors-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/vendors/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/VendorForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-vendors-add.jpg",
+      "sha256": "2cc785c7356773e48b18ab5c1f450da74ceb1e1f653a940b127dc80fbe61b1f7"
+    },
+    {
+      "id": "persons-sellers",
+      "label": "حسابداری آرن",
+      "route": "/persons/sellers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/SellerList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-sellers.jpg",
+      "sha256": "5a393db146edfa3f040911782cfa99d75f755151ee6c45a4e99a9fba75592191"
+    },
+    {
+      "id": "persons-sellers-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/sellers/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/SellerForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-sellers-add.jpg",
+      "sha256": "09a3ce815c6fd27d87804cc22476f0928e80540de64d81d39fc2a48f66011e70"
+    },
+    {
+      "id": "persons-staff",
+      "label": "حسابداری آرن",
+      "route": "/persons/staff",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/StaffList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-staff.jpg",
+      "sha256": "79d55c2fb309b79b2803a904124f4ef6c3de56d08a17f36abcce525334e111a6"
+    },
+    {
+      "id": "persons-staff-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/staff/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/StaffForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-staff-add.jpg",
+      "sha256": "4b17b22b8edace63c4218c60c09d1aa21c1c0a104e92a1aea84edf288d1e848f"
+    },
+    {
+      "id": "persons-drivers",
+      "label": "حسابداری آرن",
+      "route": "/persons/drivers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/DriverList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-drivers.jpg",
+      "sha256": "7bfa231ad3626d185c83761e62978e7b3c83a79d2a359a731df04b59312d5670"
+    },
+    {
+      "id": "persons-drivers-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/drivers/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/DriverForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-drivers-add.jpg",
+      "sha256": "12597ba340db0d860ee76a57ddc71cd72ee68a180b7e2543e08ae1f9475a6927"
+    },
+    {
+      "id": "persons-shareholders",
+      "label": "حسابداری آرن",
+      "route": "/persons/shareholders",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/ShareHolderList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-shareholders.jpg",
+      "sha256": "35b60bf831de4d1db9f1fc8d60d721dd341823bf869a8aaf9967f805e2de8da4"
+    },
+    {
+      "id": "persons-shareholders-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/shareholders/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/ShareHolderForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-shareholders-add.jpg",
+      "sha256": "6c856e322ab8ca659d66819cccadf784df9854f169843ce3ec2e3773d06c4558"
+    },
+    {
+      "id": "persons-payment",
+      "label": "حسابداری آرن",
+      "route": "/persons/payment",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/Payment/PersonPaymentList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-payment.jpg",
+      "sha256": "d76119f6c9b79104045e2a40c41f77d6c80aa09e155f39e62eafda8e5d0c558e"
+    },
+    {
+      "id": "persons-payment-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/payment/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/Payment/PersonPaymentForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-payment-add.jpg",
+      "sha256": "a7684be6ac87dacb9785eae5f854ab5fc25ee95b12511bcb33b1aa1c33405790"
+    },
+    {
+      "id": "persons-receive",
+      "label": "حسابداری آرن",
+      "route": "/persons/receive",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/Receive/PersonReceiveList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-receive.jpg",
+      "sha256": "a6ce74a5bf8a4dc36e6ad6486010c6a693cb1553921f8c91844f1393ee0eb740"
+    },
+    {
+      "id": "persons-receive-add",
+      "label": "حسابداری آرن",
+      "route": "/persons/receive/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/Receive/PersonReceiveForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-receive-add.jpg",
+      "sha256": "35a0117c1eceec3b17c735a832cc654d1390dc2c2d5845da4fb9ce5f7177d576"
+    },
+    {
+      "id": "persons-balances-report",
+      "label": "حسابداری آرن",
+      "route": "/persons/balances-report",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/Reports/PersonBalancesReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-balances-report.jpg",
+      "sha256": "4d69c7faa6b3b23dbcb77040bea9f129044fed2d08b9b84b135ce94998ab112e"
+    },
+    {
+      "id": "persons-detail-audit",
+      "label": "حسابداری آرن",
+      "route": "/persons/detail-audit",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Persons/Reports/PersonDetailAudit.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/persons-detail-audit.jpg",
+      "sha256": "048ae65ab70dcce0f91a566a102e0c732d3c0e0908b8ea0d5bfc620747ebc98b"
+    },
+    {
+      "id": "banking-banks",
+      "label": "حسابداری آرن",
+      "route": "/banking/banks",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/BankTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-banks.jpg",
+      "sha256": "7a48ee227fd266ee3e7cc2672154cf5b8376389997bc331f393fe46694f2d2e4"
+    },
+    {
+      "id": "banking-cashboxes",
+      "label": "حسابداری آرن",
+      "route": "/banking/cashboxes",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Cashboxes/CashboxTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-cashboxes.jpg",
+      "sha256": "30abf37bfe46d00304311bbf3180b4af84325122705ee18d98a7247b6a7f6f73"
+    },
+    {
+      "id": "banking-imprest",
+      "label": "حسابداری آرن",
+      "route": "/banking/imprest",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Imprests/ImprestTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-imprest.jpg",
+      "sha256": "91b63c3a0dded923549b264954c6cdb3839ebcc624a5e3b2a6480ff5bdf5095c"
+    },
+    {
+      "id": "banking-transfers",
+      "label": "حسابداری آرن",
+      "route": "/banking/transfers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/Transfer/BankTransferList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-transfers.jpg",
+      "sha256": "64496433eee8b8c324bd5d6e4d123cccd4692aa0dc4ec0a0a2ea0625af96e9bf"
+    },
+    {
+      "id": "banking-transfers-new",
+      "label": "حسابداری آرن",
+      "route": "/banking/transfers/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/Transfer/NewTransfer.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-transfers-new.jpg",
+      "sha256": "134c836590ec7c4f8a9898e9a769452c886a99194454f1e798ca73b3caad24cc"
+    },
+    {
+      "id": "banking-received-checks",
+      "label": "حسابداری آرن",
+      "route": "/banking/received-checks",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/ReceivedChecks/ReceivedChecksTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-received-checks.jpg",
+      "sha256": "3792a87dcea6a32feaf03f38404d4de2dfa657be1774f496cfcfdd2c324fe3ab"
+    },
+    {
+      "id": "banking-paid-checks",
+      "label": "حسابداری آرن",
+      "route": "/banking/paid-checks",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/PaidChecks/PaidChecksTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-paid-checks.jpg",
+      "sha256": "0a877f0af76cac91c0c10fb27f831da791d96c2c288d2bf2ba53aacbbe7dd61b"
+    },
+    {
+      "id": "treasury-dashboard",
+      "label": "نمایش این بخش با مشکل روبه‌رو شد",
+      "route": "/treasury/dashboard",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/Treasury/Dashboard/TreasuryDashboard.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/treasury-dashboard.jpg",
+      "sha256": "4da59b9c0a839eb25a323d371ae17634aaabcb532a26d09a381c9405ae1154ed"
+    },
+    {
+      "id": "treasury-vouchers",
+      "label": "حسابداری آرن",
+      "route": "/treasury/vouchers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/Treasury/Vouchers/TreasuryVoucherList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/treasury-vouchers.jpg",
+      "sha256": "38d0f3fe0a49253fba450d34be8d30d005cc7d82d2e875544f592b749ae9d00e"
+    },
+    {
+      "id": "treasury-vouchers-new",
+      "label": "حسابداری آرن",
+      "route": "/treasury/vouchers/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/Treasury/Vouchers/TreasuryVoucherForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/treasury-vouchers-new.jpg",
+      "sha256": "1156b5f0d6822cab8e616bb24202a89fd73f26d4bd583ca424b4f8715dbbf56f"
+    },
+    {
+      "id": "banking-cheque-dashboard",
+      "label": "حسابداری آرن",
+      "route": "/banking/cheque-dashboard",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/ChequeDashboard/ChequeDashboard.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-cheque-dashboard.jpg",
+      "sha256": "e36a253a9f3786c11bb5525409519cebc07e71b2c21a121b22c18e2216a455b9"
+    },
+    {
+      "id": "banking-cheque-accounting-audit",
+      "label": "حسابداری آرن",
+      "route": "/banking/cheque-accounting-audit",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/BankTable/ChequeAccountingAudit/ChequeAccountingAudit.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/banking-cheque-accounting-audit.jpg",
+      "sha256": "23a38b7b32ebf94368d9c75c1806dbbbd93cabeb1a35a90dd3aa1a9ae1cafbb0"
+    },
+    {
+      "id": "products-items",
+      "label": "حسابداری آرن",
+      "route": "/products/items",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/ProductItemsTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/products-items.jpg",
+      "sha256": "214eec35751fa20dc2cffcb08435ad32e2eeee36df1211292cb85c2f08e938ea"
+    },
+    {
+      "id": "products-add",
+      "label": "حسابداری آرن",
+      "route": "/products/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/AddProductForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/products-add.jpg",
+      "sha256": "caacd26eec46e6596e44609158134a4fc9d3faf24832965189177aa44ed9a8db"
+    },
+    {
+      "id": "services-items",
+      "label": "حسابداری آرن",
+      "route": "/services/items",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Services/ServiceItemsTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/services-items.jpg",
+      "sha256": "29b8a1b7591a6418abb271985ced56040a44845afe1557382ae43dfd8f5da16d"
+    },
+    {
+      "id": "services-add",
+      "label": "حسابداری آرن",
+      "route": "/services/add",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Services/AddServices/AddProductForm.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/services-add.jpg",
+      "sha256": "7abddf32e0bb13bea33480ae5c6c54e3836148cecc8849b95e4f5a036bd666ae"
+    },
+    {
+      "id": "products-price-list",
+      "label": "حسابداری آرن",
+      "route": "/products/price-list",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/PriceList/PriceList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/products-price-list.jpg",
+      "sha256": "b0a60fd4419670c58eb2ffa7e30a70adc30eab6060681d488475fcb9569e59b2"
+    },
+    {
+      "id": "products-materialPrices",
+      "label": "حسابداری آرن",
+      "route": "/products/materialPrices",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/PriceList/PriceList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/products-materialPrices.jpg",
+      "sha256": "156a182b5ebcbc7aa65afcca9b2f3cc3b658097de1964b3e3ec1660006fab9be"
+    },
+    {
+      "id": "product-barcode-generator",
+      "label": "حسابداری آرن",
+      "route": "/product/barcode-generator",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/BarcodeGenerator/BarcodeGenerator.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/product-barcode-generator.jpg",
+      "sha256": "0709f3da4793724baae0c0d4bd705bfa2710dd67907a2b5c4e850635ad4bcbac"
+    },
+    {
+      "id": "product-barcode-print",
+      "label": "حسابداری آرن",
+      "route": "/product/barcode-print",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/BarcodePrint/BarcodePrint.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/product-barcode-print.jpg",
+      "sha256": "3a73563e7181a229680a55a73e2b8c5d948fd74db39831701af62be6ad758730"
+    },
+    {
+      "id": "product-barcode-bulk-print",
+      "label": "حسابداری آرن",
+      "route": "/product/barcode-bulk-print",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Products/Items/BarcodeBulkPrint/BarcodeBulkPrint.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/product-barcode-bulk-print.jpg",
+      "sha256": "319cc11d636a909c3310396267240faa4a1cae6a85d340ab3597fca3f077c1f4"
+    },
+    {
+      "id": "inventory-warehouses",
+      "label": "حسابداری آرن",
+      "route": "/inventory/warehouses",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Inventory/InventoryTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/inventory-warehouses.jpg",
+      "sha256": "e4de45d45ce1e9f3941f54c5b7088ef6498e88811c628a8c7a6c0d84a023a6a0"
+    },
+    {
+      "id": "inventory-transfers",
+      "label": "حسابداری آرن",
+      "route": "/inventory/transfers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Inventory/ReceiptsTable.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/inventory-transfers.jpg",
+      "sha256": "184bf7d63ac01e57d8124483d4e2b5f42ec2869c662013783de644fc7ba05b8e"
+    },
+    {
+      "id": "inventory-transfers-new-details",
+      "label": "AddReceiptStep2",
+      "route": "/inventory/transfers/new/details",
+      "status": "blocked",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Inventory/AddReceiptStep2.jsx"
+      ],
+      "method": "",
+      "limitation": "Internal warehouse wizard requires an existing in-memory draft; direct navigation redirects to the supported starting screen. Its source is included."
+    },
+    {
+      "id": "inventory-stock-items",
+      "label": "حسابداری آرن",
+      "route": "/inventory/stock/items",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Inventory/StockItems.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/inventory-stock-items.jpg",
+      "sha256": "5ccedcebb4856e60987c685308329273b7bedb695de0de50592c402ae947f273"
+    },
+    {
+      "id": "inventory-stock-all",
+      "label": "حسابداری آرن",
+      "route": "/inventory/stock/all",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Inventory/AllWarehousesInventory.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/inventory-stock-all.jpg",
+      "sha256": "cde65e08d9f00cb8c37d9dd06c2f4d5cbb0f9cb0b029f49f78313d7af59353ad"
+    },
+    {
+      "id": "inventory-stocktaking",
+      "label": "حسابداری آرن",
+      "route": "/inventory/stocktaking",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Inventory/StockTakingList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/inventory-stocktaking.jpg",
+      "sha256": "5448a689c948e4acd54dc747a2097acd7ec8a03d8de6907c94427c132abf1faa"
+    },
+    {
+      "id": "sales-new",
+      "label": "حسابداری آرن",
+      "route": "/sales/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Invoices/SalesCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-new.jpg",
+      "sha256": "b6db0bd52fecd6e6875172c50b5fba634c3d19c1f582f06788785860b8a0c6f0"
+    },
+    {
+      "id": "sales-list",
+      "label": "حسابداری آرن",
+      "route": "/sales/list",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Invoices/SalesList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-list.jpg",
+      "sha256": "2794d9ceecae8c55c149440ad291d711f24d0ac134703495f3be5cb91c857cd2"
+    },
+    {
+      "id": "sales-returns-new",
+      "label": "حسابداری آرن",
+      "route": "/sales/returns/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Invoices/ReturnedSalesInvoiceCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-returns-new.jpg",
+      "sha256": "2a1b7fa6fcd1afc1ca133d11c0dd9f5a3f6a29b547226d7669e157450ea1e642"
+    },
+    {
+      "id": "sales-returns",
+      "label": "حسابداری آرن",
+      "route": "/sales/returns",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Invoices/ReturnedSalesInvoiceList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-returns.jpg",
+      "sha256": "b52c0543b986fe92fdbe004596e7c2f3727658522ca67d495c3ffb28059417e7"
+    },
+    {
+      "id": "sales-discounts-new",
+      "label": "حسابداری آرن",
+      "route": "/sales/discounts/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/DiscountsCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-discounts-new.jpg",
+      "sha256": "f02aad4dba472808018ccd41ee453d48184565ff40c8c87c26afdc19d11474f7"
+    },
+    {
+      "id": "sales-discounts",
+      "label": "حسابداری آرن",
+      "route": "/sales/discounts",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/DiscountsList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-discounts.jpg",
+      "sha256": "1303b7249215d19ca54506c8f1d3fd0f38cbd619b0319c3f7a4c3ce0106dcb80"
+    },
+    {
+      "id": "sales-quick-invoice",
+      "label": "حسابداری آرن",
+      "route": "/sales/quick-invoice",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Invoices/QuickSalesInvoice.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-quick-invoice.jpg",
+      "sha256": "588fbb63c1feebb86fe3697e8cb9b1b86a9c4b009cb8403c9bce0df53217c269"
+    },
+    {
+      "id": "sales-income-new",
+      "label": "حسابداری آرن",
+      "route": "/sales/income/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Income/IncomeCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-income-new.jpg",
+      "sha256": "b9eb0b6ecd95342b9248268c1a3801299ecda6c5a22943f076dc69d9c90ee1bb"
+    },
+    {
+      "id": "sales-income",
+      "label": "حسابداری آرن",
+      "route": "/sales/income",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Income/IncomeList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-income.jpg",
+      "sha256": "02c823d523327a16680117d6b7ef37c25294785a11719e944931a9f5a12e8bef"
+    },
+    {
+      "id": "sales-installment-contracts-new",
+      "label": "حسابداری آرن",
+      "route": "/sales/installment/contracts/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Installments/ContractCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-installment-contracts-new.jpg",
+      "sha256": "d7936e641fce33e007e0d4fdbc20f619696534ae1435df1b622d9967ccf73674"
+    },
+    {
+      "id": "sales-installment-contracts",
+      "label": "حسابداری آرن",
+      "route": "/sales/installment/contracts",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Installments/ContractList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/sales-installment-contracts.jpg",
+      "sha256": "795c800fffb3199651678b824b563319290550811e56066a21db9717c047e5c7"
+    },
+    {
+      "id": "purchases-new",
+      "label": "حسابداری آرن",
+      "route": "/purchases/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Invoices/PurchaseCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-new.jpg",
+      "sha256": "fd5a0a450ef134f87eda3a8cde4a3549cb1be1039360ac70a140d313aae158af"
+    },
+    {
+      "id": "purchases-returns-new",
+      "label": "حسابداری آرن",
+      "route": "/purchases/returns/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Invoices/ReturnedPurchaseCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-returns-new.jpg",
+      "sha256": "9370bfc122082296512e423a9694c028c73023607e9273fb329b99e9fb722d18"
+    },
+    {
+      "id": "purchases-invoices",
+      "label": "حسابداری آرن",
+      "route": "/purchases/invoices",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Invoices/PurchaseList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-invoices.jpg",
+      "sha256": "f1dd8ed5f537a271bdba6c1e76780e3dc64b9355153251ad531c42b4a4e88b1e"
+    },
+    {
+      "id": "purchases-returns",
+      "label": "حسابداری آرن",
+      "route": "/purchases/returns",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Invoices/ReturnedPurchaseList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-returns.jpg",
+      "sha256": "fbedfd6fb7b56e698b9b4bc09291ee3afcc2a626a9213eb709fa73fd2bce981b"
+    },
+    {
+      "id": "purchases-expense-new",
+      "label": "حسابداری آرن",
+      "route": "/purchases/expense/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Expense/ExpenseCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-expense-new.jpg",
+      "sha256": "e196fe07716404ab5c0633e84ff4f17ce2887759629ffd42bc7e300aeb8fd102"
+    },
+    {
+      "id": "purchases-expense",
+      "label": "حسابداری آرن",
+      "route": "/purchases/expense",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Expense/ExpenseList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-expense.jpg",
+      "sha256": "7323c33d13a7f46486ec6edd8805904c1b273dd2d745cadac091640240420029"
+    },
+    {
+      "id": "purchases-waste-new",
+      "label": "حسابداری آرن",
+      "route": "/purchases/waste/new",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Waste/WasteCreate.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-waste-new.jpg",
+      "sha256": "7e6e120784a301692cacacaefbae77613c2d4e3a09492f4143423c54ea7e579e"
+    },
+    {
+      "id": "purchases-waste",
+      "label": "حسابداری آرن",
+      "route": "/purchases/waste",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Purchases/Waste/WasteList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/purchases-waste.jpg",
+      "sha256": "1be6a1d7c2d11d836d519c45edebbf424334e323b3c6602074e5bf6bd2cb6f76"
+    },
+    {
+      "id": "accounting-documents-create",
+      "label": "حسابداری آرن",
+      "route": "/accounting/documents/create",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/documents/CreateDocument/CreateDocument.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-documents-create.jpg",
+      "sha256": "2d064a7af2780869a9c90eb4ef34de571b974b8af5e0a945acdeb1cb41e4a550"
+    },
+    {
+      "id": "accounting-documents",
+      "label": "حسابداری آرن",
+      "route": "/accounting/documents",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/documents/DocumentList/DocumentList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-documents.jpg",
+      "sha256": "8d21d36c388d859a3379c71c592c39105e75b17c6a80feb121ef2656f39afc1a"
+    },
+    {
+      "id": "accounting-accounts",
+      "label": "حسابداری آرن",
+      "route": "/accounting/accounts",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/accounts/AccountList/AccountList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-accounts.jpg",
+      "sha256": "a20ebd10605b5657efba1acfad4a5fadde732fd2aa205e265e2e1ea65f8fd601"
+    },
+    {
+      "id": "accounting-journal",
+      "label": "حسابداری آرن",
+      "route": "/accounting/journal",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/journal/JournalList/JournalList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-journal.jpg",
+      "sha256": "896a904cd5a1465070cfe56d22fec260aae1b986a884295fb72e74697ca333bf"
+    },
+    {
+      "id": "accounting-ledger",
+      "label": "حسابداری آرن",
+      "route": "/accounting/ledger",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/ledger/LedgerList/LedgerList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-ledger.jpg",
+      "sha256": "58795c1090762d4c7eeaaef510d3e7e321e5b409794d040210f56108b61336f9"
+    },
+    {
+      "id": "accounting-trial-balance",
+      "label": "حسابداری آرن",
+      "route": "/accounting/trial-balance",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/reports/TrialBalance/TrialBalance.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-trial-balance.jpg",
+      "sha256": "d47b4e68549228220503da27f2aefd50dc07c41b53a1c8f18016f81dda63a3c5"
+    },
+    {
+      "id": "accounting-opening-balance",
+      "label": "حسابداری آرن",
+      "route": "/accounting/opening-balance",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/openingBalance/OpeningBalance/OpeningBalance.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-opening-balance.jpg",
+      "sha256": "4211cde4ffd92b301727a13ca69d8198be0f48a55f5d6dc95de51e17b6c0f400"
+    },
+    {
+      "id": "accounting-fiscal-years",
+      "label": "حسابداری آرن",
+      "route": "/accounting/fiscal-years",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/fiscalYears/FiscalYearList/FiscalYearList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-fiscal-years.jpg",
+      "sha256": "f19cb8dcb294494563fe9184f7381a5e4054328c6e1982773205d9ab5499e6cc"
+    },
+    {
+      "id": "accounting-profit-loss",
+      "label": "حسابداری آرن",
+      "route": "/accounting/profit-loss",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/reports/ProfitLoss/ProfitLoss.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-profit-loss.jpg",
+      "sha256": "a4513b673d3db83b2298b1c189ecd71605c5307152c1902218b4e13fffafc4a7"
+    },
+    {
+      "id": "accounting-balance-sheet",
+      "label": "حسابداری آرن",
+      "route": "/accounting/balance-sheet",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/reports/BalanceSheet/BalanceSheet.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-balance-sheet.jpg",
+      "sha256": "54c8e53ceafb66d43add029dca8bf4a45ac6835faf5c5aacc9affd3d0d23f52c"
+    },
+    {
+      "id": "accounting-document-summary",
+      "label": "حسابداری آرن",
+      "route": "/accounting/document-summary",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/reports/DocumentSummary/DocumentSummary.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-document-summary.jpg",
+      "sha256": "8a600acedf8ad4486ba9d0b780bc7701b3d780cfe3b99c7f7487fb95124f5455"
+    },
+    {
+      "id": "accounting-dashboard",
+      "label": "حسابداری آرن",
+      "route": "/accounting/dashboard",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/dashboard/AccountingDashboard/AccountingDashboard.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-dashboard.jpg",
+      "sha256": "97e134454ca87a80f0d4ee255d1ca8e2c3878bb7ee95b7dfdbe65d9c05da9d30"
+    },
+    {
+      "id": "accounting-year-end",
+      "label": "حسابداری آرن",
+      "route": "/accounting/year-end",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/yearEnd/YearEndOperations/YearEndOperations.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-year-end.jpg",
+      "sha256": "ed6fa84d0646732e4a2fb9ca7ea973fdef3ce116fdcc08be9894c091d9aabd0c"
+    },
+    {
+      "id": "accounting-details",
+      "label": "حسابداری آرن",
+      "route": "/accounting/details",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/details/DetailAccountList/DetailList.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-details.jpg",
+      "sha256": "083d8c9a838f41c0195349cfba1ec595b2b429293ebca21ce6f2ae4789a60800"
+    },
+    {
+      "id": "accounting-period-locks",
+      "label": "حسابداری آرن",
+      "route": "/accounting/period-locks",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Accounting/PeriodLocks/PeriodLocks.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/accounting-period-locks.jpg",
+      "sha256": "f1d64bea2f9facdc3e6eea4ba0e17dff3abf34f8c2e1fb54a9dcfbbb2ce6215e"
+    },
+    {
+      "id": "reports",
+      "label": "حسابداری آرن",
+      "route": "/reports",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/ReportsHub/ReportsHub.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports.jpg",
+      "sha256": "20c01e91f9c8275235543100d38f365124e052e216130b076f408907d030a880"
+    },
+    {
+      "id": "reports-installments",
+      "label": "حسابداری آرن",
+      "route": "/reports/installments",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Sales/Installments/InstallmentReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-installments.jpg",
+      "sha256": "27f3d05503cfabab51e86c2110fe3302e9e65f08c9f2784528fadcb40aab6b64"
+    },
+    {
+      "id": "reports-sales-by-invoice",
+      "label": "حسابداری آرن",
+      "route": "/reports/sales-by-invoice",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-sales-by-invoice.jpg",
+      "sha256": "266588ba35e990a7fc92ea44c7f7dedb5caa9509d8f5c38904d10e84437bce0f"
+    },
+    {
+      "id": "reports-sales-by-item",
+      "label": "حسابداری آرن",
+      "route": "/reports/sales-by-item",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-sales-by-item.jpg",
+      "sha256": "5e5e1da99a71d4c69e123d2c54570cb0f2433c2adff48d66487a9f403ab0a555"
+    },
+    {
+      "id": "reports-purchases-by-invoice",
+      "label": "حسابداری آرن",
+      "route": "/reports/purchases-by-invoice",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-purchases-by-invoice.jpg",
+      "sha256": "6ed48c8591aea0c66180dc740b330307f722736de16daa3737db723b12470255"
+    },
+    {
+      "id": "reports-purchases-by-item",
+      "label": "حسابداری آرن",
+      "route": "/reports/purchases-by-item",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-purchases-by-item.jpg",
+      "sha256": "30dea37e83ccc7e735d60db306e968e8729bdba13eeadbde2e72f85140083da4"
+    },
+    {
+      "id": "reports-tax",
+      "label": "حسابداری آرن",
+      "route": "/reports/tax",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-tax.jpg",
+      "sha256": "3f25a55ef4ba950c1932338da54eec395a1c418a1b2232149dfdfb2e41805fff"
+    },
+    {
+      "id": "reports-invoice-profit",
+      "label": "حسابداری آرن",
+      "route": "/reports/invoice-profit",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-invoice-profit.jpg",
+      "sha256": "21be12f50eaf9f2b80cc5689643d79fe1b31bf8df8c1a8bde1d56183c3fe6bc8"
+    },
+    {
+      "id": "reports-sales-by-seller",
+      "label": "حسابداری آرن",
+      "route": "/reports/sales-by-seller",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-sales-by-seller.jpg",
+      "sha256": "18991212b9b2ce087098bd531fc41a85379fed796375536ef75013bc6fd3f715"
+    },
+    {
+      "id": "reports-invoice-summary-by-person",
+      "label": "حسابداری آرن",
+      "route": "/reports/invoice-summary-by-person",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/CommercialReports/CommercialAdvancedReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-invoice-summary-by-person.jpg",
+      "sha256": "e5ebda91d764cc6924b0ef25fbc1c8291171a4e58a4874c959e9a0746740de8e"
+    },
+    {
+      "id": "reports-bank-ledger",
+      "label": "حسابداری آرن",
+      "route": "/reports/bank-ledger",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/BankingReports/TreasuryLedgerReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-bank-ledger.jpg",
+      "sha256": "ae8ed4c7f9336c75db345331dc3bbba380a8ec580658bc55f1000c538a858f74"
+    },
+    {
+      "id": "reports-cashbox-ledger",
+      "label": "حسابداری آرن",
+      "route": "/reports/cashbox-ledger",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/BankingReports/TreasuryLedgerReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-cashbox-ledger.jpg",
+      "sha256": "2db8513eb00867b939d9ebcfce3961df16cabbe235fcd65580bb671374bde8bc"
+    },
+    {
+      "id": "reports-imprest-ledger",
+      "label": "حسابداری آرن",
+      "route": "/reports/imprest-ledger",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/BankingReports/TreasuryLedgerReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-imprest-ledger.jpg",
+      "sha256": "0b45ab2c70a62e8e03b91db2ea6369080b594284bb90253f6364335470d191fb"
+    },
+    {
+      "id": "reports-material-ledger",
+      "label": "حسابداری آرن",
+      "route": "/reports/material-ledger",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/InventoryReports/MaterialLedgerReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-material-ledger.jpg",
+      "sha256": "4456b50a3b062061e8fc9e3c9e45abe5529c5ef48f0697f1e1c7bf0d169113f4"
+    },
+    {
+      "id": "reports-serial-numbers",
+      "label": "حسابداری آرن",
+      "route": "/reports/serial-numbers",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Reports/InventoryReports/SerialNumberReport.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/reports-serial-numbers.jpg",
+      "sha256": "a03226cdc0748d3ef9e4ddaad10237540378e8bffa7cc24c0fefadd192b29dcb"
+    },
+    {
+      "id": "settings",
+      "label": "حسابداری آرن",
+      "route": "/settings",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Settings/UserManagement/UserManagement.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/settings.jpg",
+      "sha256": "dea60053e25bda4ce9250a0ba66e0310d3d221a00a610d2914642ce3a2e279f9"
+    },
+    {
+      "id": "settings-audit-logs",
+      "label": "حسابداری آرن",
+      "route": "/settings/audit-logs",
+      "status": "captured",
+      "source_paths": [
+        "frontend/vet_clinic/src/Pages/Settings/AuditLogs/AuditLogs.jsx"
+      ],
+      "method": "actual components with temporary import-order preview shim and synthetic empty/demo API responses",
+      "image": "../../assets/screenshots/local-accounting/settings-audit-logs.jpg",
+      "sha256": "42e9fb05624e75a1c07c749867f08ac482035da423f524be60c185bfff4b0295"
+    }
+  ]
+}

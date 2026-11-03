@@ -1,0 +1,128 @@
+.container {
+    margin-top: 24px;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid #ececec;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 13px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.timelineItem {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.line {
+    width: 2px;
+    background: #ececec;
+    position: absolute;
+    right: 17px;
+    top: 36px;
+    bottom: -24px;
+}
+
+.timelineItem:last-child .line {
+    display: none;
+}
+
+.badge {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-weight: 700;
+}
+
+.create {
+    background: #16a34a;
+}
+
+.update {
+    background: var(--primary);
+}
+
+.approve {
+    background: #0891b2;
+}
+
+.lock {
+    background: var(--danger);
+}
+
+.unlock {
+    background: #ea580c;
+}
+
+.delete {
+    background: #7f1d1d;
+}
+
+.default {
+    background: #555;
+}
+
+.content {
+    flex: 1;
+    background: #fafafa;
+    border-radius: 18px;
+    padding: 14px;
+    border: 1px solid #ececec;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.topRow strong {
+    font-size: 14px;
+}
+
+.topRow span {
+    color: #666;
+    font-size: 12px;
+}
+
+.bottomRow {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    gap: 8px;
+}
+
+.loading,
+.empty {
+    padding: 32px;
+    text-align: center;
+    color: #777;
+}

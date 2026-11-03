@@ -1,0 +1,120 @@
+.monthly-report-module .monthly-toolbar > label,
+.monthly-report-module .monthly-period-form > label {
+  margin-bottom: 0;
+}
+
+.monthly-report-module .monthly-toolbar > .button,
+.monthly-report-module .monthly-period-form > .button {
+  align-self: flex-end;
+  height: 44px;
+  min-height: 44px;
+  margin: 0;
+}
+
+.monthly-report-module .monthly-toolbar > .download-icon-group {
+  align-self: flex-end;
+  min-height: 44px;
+}
+
+.monthly-student-picker {
+  position: relative;
+  flex: 1;
+  min-width: 240px;
+}
+
+.monthly-picker-label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.monthly-student-trigger {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 13px;
+  border: 1px solid #dddae7;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--ink);
+  text-align: right;
+}
+
+.monthly-student-trigger[aria-expanded="true"] {
+  border-color: #8b7cbc;
+  box-shadow: 0 0 0 3px #9184bd14;
+}
+
+.monthly-student-menu {
+  position: absolute;
+  z-index: 40;
+  top: calc(100% + 8px);
+  right: 0;
+  left: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 18px 45px #29245f24;
+}
+
+.monthly-student-menu label {
+  position: relative;
+  display: block;
+  margin: 0 0 8px;
+}
+
+.monthly-student-menu label > svg {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: var(--muted);
+}
+
+.monthly-student-menu input {
+  height: 42px;
+  padding-right: 38px;
+}
+
+.monthly-student-options {
+  max-height: 260px;
+  overflow-y: auto;
+  display: grid;
+  gap: 3px;
+  overscroll-behavior: contain;
+}
+
+.monthly-student-options button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-dark);
+  text-align: right;
+}
+
+.monthly-student-options button:hover,
+.monthly-student-options button[aria-selected="true"] {
+  background: #f0eef8;
+}
+
+.monthly-student-options small {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.monthly-student-options p {
+  padding: 16px 10px;
+  text-align: center;
+  font-size: 11px;
+}

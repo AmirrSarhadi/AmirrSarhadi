@@ -2,11 +2,12 @@
   "origin": "AmirrSarhadi/Smarthome-Ai",
   "source_commit": "bf62a9a410201b87ae35c0b633e367fe9de16dba",
   "kind": "selected complete source files for reading; incomplete application",
-  "modifications": "none; byte-for-byte copies",
+  "modifications": "Original files retained unless an entry explicitly records identity sanitization; hashes distinguish source and published content.",
   "files": [
     {
-      "path": "smart-home-ai/web/plan-editor.js",
-      "sha256": "c1a2609d49db3c3b0fbcbcf9185cd74de8a972dd4e8e6a060e9db3e7b096840e"
+      "path": "smart-home-ai/models.py",
+      "sha256": "dba0f27cf9b89a12022792605e26de33b217129e3d02bcdde46c382cb8f3d7f2",
+      "source_sha256": "dba0f27cf9b89a12022792605e26de33b217129e3d02bcdde46c382cb8f3d7f2"
     },
     {
       "path": "smart-home-ai/web/app.js",
@@ -15,6 +16,10 @@
     {
       "path": "smart-home-ai/web/index.html",
       "sha256": "057b165486b421b869f622770ded088170f94f364e1ffdb9276d1188eccc84e6"
+    },
+    {
+      "path": "smart-home-ai/web/plan-editor.js",
+      "sha256": "c1a2609d49db3c3b0fbcbcf9185cd74de8a972dd4e8e6a060e9db3e7b096840e"
     },
     {
       "path": "smart-home-ai/web/style.css",
