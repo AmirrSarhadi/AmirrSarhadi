@@ -74,6 +74,8 @@ Gregorian years are shown for reference; the original Solar Hijri months are ret
 
 ## Education
 
+**M.Sc. in Artificial Intelligence — in progress** — Shahid Bahonar University of Kerman.
+
 **B.Sc. in Computer Engineering** — Shahid Bahonar University of Kerman.
 
 ## Research and Additional Work

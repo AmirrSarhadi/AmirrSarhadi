@@ -74,6 +74,8 @@ Public code selections omit sensitive implementation and configuration. Screensh
 
 ## Education
 
+**M.Sc. in Artificial Intelligence — in progress** — Shahid Bahonar University of Kerman.
+
 **B.Sc. in Computer Engineering** — Shahid Bahonar University of Kerman.
 
 ## Opportunities & Links
