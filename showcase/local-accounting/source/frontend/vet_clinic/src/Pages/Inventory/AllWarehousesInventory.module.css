@@ -1,0 +1,313 @@
+.tableContainer {
+    padding: 24px;
+    margin: 0;
+    background: var(--surface);
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    border: 1px solid var(--border-soft);
+    direction: rtl;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.header h3 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.header p {
+    margin-top: 6px;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.addBtn {
+    min-width: 140px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: white;
+    border: none;
+    padding: 0 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.24);
+    transition: 0.2s ease;
+}
+
+.addBtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.3);
+}
+
+.tabsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    height: 38px;
+    border: 1px solid var(--border);
+    background: var(--surface-subtle);
+    color: var(--text);
+    padding: 0 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition: 0.2s ease;
+}
+
+.tab:hover {
+    background: var(--primary-soft);
+    color: var(--primary);
+}
+
+.activeTab {
+    background: var(--primary-soft);
+    color: var(--primary);
+    border-color: #bfdbfe;
+}
+
+.searchBox {
+    flex: 1;
+    max-width: 520px;
+    height: 46px;
+    background: var(--surface-subtle);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    color: var(--text-muted);
+}
+
+.searchBox input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--text);
+}
+
+.searchBox button {
+    height: 34px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 14px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.resultCount {
+    height: 38px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.hint {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+}
+
+.table {
+    width: 100%;
+    min-width: 1350px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    padding: 14px 12px;
+    text-align: center;
+    background: var(--surface-subtle);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 800;
+    border-bottom: 1px solid var(--border-soft);
+    white-space: nowrap;
+}
+
+.table td {
+    padding: 14px 12px;
+    text-align: center;
+    color: var(--text);
+    font-size: 14px;
+    border-bottom: 1px solid var(--surface-muted);
+    white-space: nowrap;
+}
+
+.groupHeader th {
+    background: #eef2ff !important;
+    color: #3730a3 !important;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.table tbody tr {
+    transition: 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background: var(--surface-subtle);
+}
+
+.nameCell {
+    text-align: right !important;
+    font-weight: 800;
+    color: var(--text-strong) !important;
+}
+
+.code {
+    background: #eef2ff;
+    color: #3730a3;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: 900;
+    color: var(--text-strong) !important;
+}
+
+.warn {
+    color: #ea580c !important;
+    font-weight: 800;
+}
+
+.negative {
+    color: var(--danger) !important;
+    font-weight: 800;
+}
+
+.okBadge,
+.negativeBadge {
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.okBadge {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.negativeBadge {
+    background: var(--danger-soft);
+    color: #b91c1c;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 40px;
+    color: var(--text-muted);
+}
+
+.emptyState strong {
+    display: block;
+    margin-top: 8px;
+}
+
+.emptyState p {
+    margin: 6px 0 0;
+}
+
+.errorText {
+    color: var(--danger) !important;
+    font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.pagination button,
+.pagination select {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+
+    .header,
+    .tabsHeader,
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .searchBox {
+        max-width: none;
+    }
+}

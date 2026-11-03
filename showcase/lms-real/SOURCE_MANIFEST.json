@@ -1,0 +1,128 @@
+{
+  "origin": "AmirrSarhadi/lms",
+  "source_commit": "4b21423b42a35c1da47166c1977027685acc595e",
+  "kind": "selected complete source files for reading; incomplete application",
+  "modifications": "none; byte-for-byte copies",
+  "files": [
+    {
+      "path": "frontend/components/assignment-progress.tsx",
+      "sha256": "223df7b43bcaf4c24fd1c93f0acbb1ea42a5842f007962f7e6f07c9fedb1c4f9"
+    },
+    {
+      "path": "frontend/components/assignment-report.tsx",
+      "sha256": "81dd46346ebaa007f490516938bce8ab6ee0ca29a6be492c989f02cb283f97ad"
+    },
+    {
+      "path": "frontend/components/attendance-report.tsx",
+      "sha256": "c71c45ce6eb04f901917554210443ae75c1b8263e79d6d117c58ca38eab57ccd"
+    },
+    {
+      "path": "frontend/components/attendance-class-report.tsx",
+      "sha256": "7664c73c1bb872ae276fc9fe27aee1eaffbec695791f3c73d33153f92ff0e5d5"
+    },
+    {
+      "path": "frontend/components/attendance-today-summary.tsx",
+      "sha256": "2b2e7af10289892dac61bce44fa47a7093f82b934a8e4156f0562256f4ca7500"
+    },
+    {
+      "path": "frontend/components/grade-list.tsx",
+      "sha256": "e0e7241304f0a256125efdcfe5202d1d8ce29516c58dbc73e68a455285b03efa"
+    },
+    {
+      "path": "frontend/components/grade-entry.tsx",
+      "sha256": "534d513c6fc42539a2f754e86a852dff7b95bb0be302e8dda0d5c9ab882e66c9"
+    },
+    {
+      "path": "frontend/components/academic-reports.tsx",
+      "sha256": "3bbbfc9943462f3b652cd7ab239052ef2f1adb8a2ee16153a70f984b33a091bc"
+    },
+    {
+      "path": "frontend/components/monthly-report-cards.tsx",
+      "sha256": "ada380b47dc388121c5dc24e6d49e7fd257e357f9e01e1196154a123b00149b3"
+    },
+    {
+      "path": "frontend/components/persian-date-picker.tsx",
+      "sha256": "0fd257d051ff4ee0e2d1c95aed97228b30acba6045f82a1bc35d36620f4582c2"
+    },
+    {
+      "path": "frontend/components/timetable.tsx",
+      "sha256": "eb40b80d2e24306198674409e3c28f3f0974c859c81c2375500a024b19e65304"
+    },
+    {
+      "path": "frontend/components/notification-center.tsx",
+      "sha256": "aa9b7846838e051c4a87ab4ce9cd6029e65ee1d1b074b1b462c89f37cfdbef2c"
+    },
+    {
+      "path": "frontend/components/panel-navigation-drawer.tsx",
+      "sha256": "9b3e07ca99f4e7956d494303cf52f9195d9e08025a507f83e4475734145e9f54"
+    },
+    {
+      "path": "frontend/components/panel-feedback.tsx",
+      "sha256": "b615e80f74413fd036bc34e8b93aa452974d90d166f72f122cd814b271cf61c5"
+    },
+    {
+      "path": "frontend/components/operation-overlay.tsx",
+      "sha256": "658227280b6198a9cc7a1dbfd565c10dd56f360e7de92b6082fe2cfa219e4b6e"
+    },
+    {
+      "path": "frontend/components/ui/form-dialog.tsx",
+      "sha256": "118f20c0b674c804b5874eef1559e0bc1ea1a8cd11643d492dea121d814158ed"
+    },
+    {
+      "path": "frontend/components/ui/searchable-person-select.tsx",
+      "sha256": "9cc523bef948d8cdd32bb2e8f8d3e1f744c2950601219828b476f934eca41809"
+    },
+    {
+      "path": "frontend/components/ui/searchable-dropdown.tsx",
+      "sha256": "465bf27ae769e9ce14d38faf466535de0997fcdd4750f1df929887500fd47aea"
+    },
+    {
+      "path": "frontend/components/ui/pagination.tsx",
+      "sha256": "9d7de78c60319325fbafe80122d49062dd29c9aca0635b867f6bf7489a844252"
+    },
+    {
+      "path": "frontend/components/ui/loader-1.tsx",
+      "sha256": "b6746169c4d80471973b3d6b929681068c02b3c3a20bf06730ac7ed7be8d86da"
+    },
+    {
+      "path": "frontend/components/ui/thumbnail-carousel.tsx",
+      "sha256": "b871bc81e7d1aab4bd91ec0565d99d24bb39c0023f1fb2532e46113de16fdc33"
+    },
+    {
+      "path": "frontend/lib/pagination.ts",
+      "sha256": "1bcec25ae5bb718b18f938e633201278ebcaa17cc7753ec462622d587c9aa8a2"
+    },
+    {
+      "path": "frontend/lib/operation-progress.ts",
+      "sha256": "9636a4afa628aeb3ab14d5ca34b3d919b08184b38f66bbd9bbc66efe71839bca"
+    },
+    {
+      "path": "frontend/lib/dialog-behavior.ts",
+      "sha256": "9625f0a70658a6ce789ed6f117dc9bcf77a8b6d3dc3c7d85cb5708ceefcf1911"
+    },
+    {
+      "path": "frontend/lib/panel-feedback.ts",
+      "sha256": "17c4002b0da66e1a2d35eb284cbe34be5ab691988765d5e162de5e071e6e0f1f"
+    },
+    {
+      "path": "frontend/lib/form-errors.ts",
+      "sha256": "ac84d3d69a51a1fa8016aa37f2efabe51ed604ec3b4befc204c9882411037086"
+    },
+    {
+      "path": "frontend/lib/class-context.ts",
+      "sha256": "bf3032b07c45930167580efa01a7a78a089e95cd0653dd0b3d99bf27aa5d072b"
+    },
+    {
+      "path": "frontend/lib/notifications.ts",
+      "sha256": "8d14d951c2b14f8e4cb1fa23c402412fc2049af0406e29b477d421c42e49446e"
+    },
+    {
+      "path": "frontend/lib/panel-navigation.ts",
+      "sha256": "361c8d4a92d6fd59ff9a8aa435f93edec2731ab6f9c9b152ae5f97a285066661"
+    },
+    {
+      "path": "frontend/components/dashboard-home.tsx",
+      "sha256": "1055c46e09f804b3f0d2a6fe8a464dd60f230edc85b7f17ef0802a22761bdcd6"
+    }
+  ]
+}

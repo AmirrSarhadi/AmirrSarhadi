@@ -1,0 +1,232 @@
+{
+  "origin": "AmirrSarhadi/local_accounting",
+  "source_commit": "0312cb1dc17520a04fcd65230c35aaa5a83e9b7b",
+  "kind": "selected complete source files for reading; incomplete application",
+  "modifications": "none; byte-for-byte copies",
+  "files": [
+    {
+      "path": "frontend/vet_clinic/src/components/ERP/ERP.module.css",
+      "sha256": "a539551b6fb26de5eaf966242ed70cde3cc8107c3c59b828471419383644a39d"
+    },
+    {
+      "path": "frontend/vet_clinic/src/components/ERP/ERP.jsx",
+      "sha256": "14ca57c60a6f74fb86bc581f2f39d7ed4ac29f092f3bf327eb23b9baab4129bc"
+    },
+    {
+      "path": "frontend/vet_clinic/src/components/ERP/index.js",
+      "sha256": "8fd3011b0cdb1f2da53ae91f2e9a3cc3c6d4769b4ea3ad2a05117f703459e5ab"
+    },
+    {
+      "path": "frontend/vet_clinic/src/components/PersianDateInput/PersianDateInput.jsx",
+      "sha256": "e2dd6f0f6f1d9e7bda76746c8b9b669cb6021f71bf1ff60d2a11a5c34fd7d177"
+    },
+    {
+      "path": "frontend/vet_clinic/src/components/ReportDownloads/ReportDownloads.jsx",
+      "sha256": "677b90e56ddc1bc9ec66b7009fd2e46d86d3da3891ff077822fb51347212f321"
+    },
+    {
+      "path": "frontend/vet_clinic/src/components/AppErrorBoundary/AppErrorBoundary.module.css",
+      "sha256": "0ba1dc086f2f138e78c01ab0cc8fcaa62f5172559bd71b73ae794143eb306beb"
+    },
+    {
+      "path": "frontend/vet_clinic/src/components/AppErrorBoundary/AppErrorBoundary.jsx",
+      "sha256": "05ad44fb4ac24b341930f68e8f44e1cb961185b2841a24143b64a07d51c0655d"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/StockItems.jsx",
+      "sha256": "c073d783e71b6eb5692e2308ba443a3a5bac03ba9961a49f0cc071cd1c63dcfe"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AddWarehouseModal.jsx",
+      "sha256": "18925ac54b03de3c8e368e3c006e4f7c05b1ba9ef7e5ad39353f943b1053427c"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AddReceiptStep2.module.css",
+      "sha256": "10cae202f2c7295bdd4bb390701208ea562b1c3baea7e5c2451365f48d3d6dc7"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/StockTaking.module.css",
+      "sha256": "91b5a5cd851cf9da85b92b11ea518807e2766ea5080b1c87405ddff8cbf0c709"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/StartStockTakingModal.jsx",
+      "sha256": "8645d4e5b571157dff429575c2592e38c1adb1e6c2f482770485c2a660880ab0"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AllWarehousesInventory.module.css",
+      "sha256": "8c8e5246b3a4eb1748b2356609d243e92425cd7373582c0c240f7f99f92b29f1"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AllWarehousesInventory.jsx",
+      "sha256": "9b53b40859355d6647cb7f55f6ddafcfdb42a79cafb73fb1f8d96eff984e3a28"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/StockTakingCreate.jsx",
+      "sha256": "a5dd3e91ef68392f07a5226f7c8f4b90364824eb1ac3ceb4be20ad6e0cc63bf3"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AddReceiptStep2.jsx",
+      "sha256": "228e6c88dd1f7e4d4ea22ee9f9e38aae0870305b3ac99828b0b3a6e659def5aa"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/InventoryTable.module.css",
+      "sha256": "561ebdb6797cd94ed5b42e2ab11c20b2f3d9899e9650f0abe50852e8373f120f"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AddReceiptStep1.module.css",
+      "sha256": "233646c57d8de7744392ad70d0bc61d4c45f6514ad4dba9c424da8b0931fb24a"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/StockItems.module.css",
+      "sha256": "ae4b962ff70529d1c83a768fd9e17d366696fc695e9b74510d665eb96f56da93"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/receiptContextStore.js",
+      "sha256": "ab62df35c062be13b2efdd65b040d5e9b4c7b1f61777088d327ada54f0f547c3"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/ReceiptContext.jsx",
+      "sha256": "26d53b29703902dc163dcc6118c3b46e71d716fce4269d502465b06a32ce091d"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/EditReceipt.jsx",
+      "sha256": "ebc184f5e4cd6f7848d0bc3e9c336d6cbf91fa0284a673cf8450c1f8df76d086"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/ReceiptsTable.jsx",
+      "sha256": "a8ba058b1620b9e0f47075106cf5efbd1fb6bf150e82b0928d78b10e58ef2138"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/ReceiptTable.module.css",
+      "sha256": "ad3d0b7e2bdb6d0fd6beeab8eff158ded881c16635a97462f42628584d76bd9d"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/InventoryTable.jsx",
+      "sha256": "f905aa4329b1baf5b4c93d4255b5fa4a7df1375b3e02c3266937b64dfa968e69"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/AddReceiptStep1.jsx",
+      "sha256": "4988d2d2b0570b08b5791c6520c591a5d2f30daed951694161ff3e7b3cdfcb7a"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Inventory/StockTakingList.jsx",
+      "sha256": "93e314d09f2d138f473acfe60f8c9b0fff68daa560875f609d1c1261b53b57b1"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/ProductDetailsModal.jsx",
+      "sha256": "04d6f691fb3e52e547ad260c2eef06e52fa948e9377a2bc6a98e580f2b42e332"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/ProductItemsTable.jsx",
+      "sha256": "e38cfe612ecb24a3060528763f4fa55a1796f0d9f65deaea950e2371d89ef3d2"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/ProductItemsTable.module.css",
+      "sha256": "90b641dadf612af75d0abdcb5f33c52e2797357d77af1472d15402004d3a4b89"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/BarcodeBulkPrint/BarcodeBulkPrint.jsx",
+      "sha256": "2fed85d7e7ae5b71d8a31d75c2a3dfcb92805e175434c3f3e5f8f14a5a34ef6c"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/BarcodeBulkPrint/BarcodeBulkPrint.module.css",
+      "sha256": "097ba62a6dfb6197c8a15b79d74da7efd0a906bf0b13d9066083bfee344b29bb"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/MaterialPrices/UpdatingPriceList.jsx",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/MaterialPrices/PriceListPage.jsx",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/PriceList/PriceList.module.css",
+      "sha256": "a969e7094065905304abd545d3a1bde395ac43a173d6779d6c250e035e185a33"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/PriceList/PriceList.jsx",
+      "sha256": "ea7ca728c852a6c2f0c962721f58f4d429fb034954bb12ae6dc854ff0b96c369"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/BarcodeGenerator/BarcodeGenerator.jsx",
+      "sha256": "55dbe0c11a90cd514dc4079d5dac74e8d503f71e31ea3bd87031e0b9388aa4f3"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/BarcodeGenerator/BarcodeGenerator.module.css",
+      "sha256": "9a46b1e640d0c45331ee20a1f34de4bd8103f402c93c3e468d3088169e55176d"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/BarcodePrint/BarcodePrint.module.css",
+      "sha256": "5e1fcb0ff6345febbd25d27f84cc25eb59a105a08dab7da0bc09ae7477474e07"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/BarcodePrint/BarcodePrint.jsx",
+      "sha256": "9ffc6192aa2758122303a9d388794edad3e8e8df884badbc9795f9abd3f089d4"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/EditProduct/MaterialEdit.jsx",
+      "sha256": "5bff507eef73e9c642673a7a36798f9f1fe86b92496420a823226338fd43700d"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/Step2Inventory.jsx",
+      "sha256": "dd3e0f423e7079e5ed974c3c7962e145935902ad81cee6100ae1e162b3c79618"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/Step3Category.jsx",
+      "sha256": "b5a56b2ec3f401828c9a007c11fe3612d56d04458625260ac0e60084b872738c"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/Step5Discount.jsx",
+      "sha256": "9a0be3da6d595f4efe446dc5e6471bebaadb71d490e16420b5778590b83a47a0"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/Step1General.jsx",
+      "sha256": "bc1e592f7db1ca7f8c8ee57157404b75db17bca6e4510fbddf202b88b4d161dc"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/AddProductForm.module.css",
+      "sha256": "d9a40bfafebe8f0651a55b45a406bd20722099aa8fd2aa5ee72c2f7e45722879"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/Step4Pricing.jsx",
+      "sha256": "46b0fb95020166fb49684496e45a4db9f2dc17866aa3e933bd21fa7b749397ab"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/AddProductForm.jsx",
+      "sha256": "2874679d327e1ed23f5bab9e40e16288109a2de25eb4d1e16f627696bb7edf41"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Products/Items/AddProduct/Step6Review.jsx",
+      "sha256": "f9ddbf0f9257ebf92fe5ba5994a66a11ae18a7424d0a6049d43da1101a86488c"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Dashboard/Dashboard.module.css",
+      "sha256": "415d52d46fbf47e5cb2062e23d1abae3152b87683cd064934e6300617305893e"
+    },
+    {
+      "path": "frontend/vet_clinic/src/Pages/Dashboard/Dashboard.jsx",
+      "sha256": "c20e3e2fa1224a03941257c93b61459a4fb8091da22f811b2f0111fa381c11fd"
+    },
+    {
+      "path": "frontend/vet_clinic/src/utils/download.js",
+      "sha256": "dce35be7883947dad7c78fcd79ef1997f12afa6441f40517a301388a1716facc"
+    },
+    {
+      "path": "frontend/vet_clinic/src/utils/formErrors.js",
+      "sha256": "40b73a7ce7ee178a8afa962eb1df6c465b376eb6b0a2a1ec30ff77da4984eef9"
+    },
+    {
+      "path": "frontend/vet_clinic/src/utils/escapeHtml.js",
+      "sha256": "76add7e67e6f615440a5fdfecbcfeb551dc5b0ad435b58f3aaaa53ffae143c15"
+    },
+    {
+      "path": "frontend/vet_clinic/src/hooks/useDialogFocus.js",
+      "sha256": "c9719f85ea704d16ef8c5733eb9de28dce45985184ac3450c2560068ecfcdd91"
+    },
+    {
+      "path": "frontend/vet_clinic/src/hooks/useTable.js",
+      "sha256": "c17c24425e5e72ca8615651a4f67af0cdcc7c1d2d8d3c3a81c094477a578f9dd"
+    }
+  ]
+}

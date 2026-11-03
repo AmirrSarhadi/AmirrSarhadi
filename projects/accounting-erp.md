@@ -279,3 +279,7 @@ The current source demonstrates a substantial accounting and treasury domain wit
 ---
 
 [← Back to Amir Sarhadi's GitHub profile](../README.md)
+
+## Expanded Source & Interface Gallery
+
+[Browse the Local Accounting source selection and dashboard captures](../showcase/local-accounting/README.md). The interface gallery uses demonstration data; financial posting internals remain outside this expanded source release.

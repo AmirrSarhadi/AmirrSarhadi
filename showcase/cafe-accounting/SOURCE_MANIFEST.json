@@ -1,0 +1,128 @@
+{
+  "origin": "AmirrSarhadi/Cafe-Accounting",
+  "source_commit": "2c328602d84a402c310e0485c062ac6389fdc362",
+  "kind": "selected complete source files for reading; incomplete application",
+  "modifications": "none; byte-for-byte copies",
+  "files": [
+    {
+      "path": "frontend/src/shared/ui/ActionIcon.tsx",
+      "sha256": "3984021fbc9ee19f0b051ccf90d3d2beb39de8864e798f5e22ae826535bff55a"
+    },
+    {
+      "path": "frontend/src/shared/ui/MenuPhotoField.tsx",
+      "sha256": "ff919e41cec64a9f5f3ca03a78eb7e5552aa032411656d177a18d4df7e7de06f"
+    },
+    {
+      "path": "frontend/src/shared/ui/controls.tsx",
+      "sha256": "198682189b69c65bf7eaa7d1f61996a5502972c38c36ef4bf80fdc5a552bb2ba"
+    },
+    {
+      "path": "frontend/src/shared/ui/CreateDialog.tsx",
+      "sha256": "838cd87bc20cd0a9e01b3dabe3cd854b71f2b34167e81e442dfed5aaf9208a07"
+    },
+    {
+      "path": "frontend/src/shared/ui/NavigationGuard.tsx",
+      "sha256": "aba6c511f56ef632f25fb30592efdfad8de2fed48ba502d5241d0b11a0051b86"
+    },
+    {
+      "path": "frontend/src/shared/ui/AvailabilityLabel.tsx",
+      "sha256": "89397fa14523377ff24112163234e19b5383f5d34719a34dac3d3a23d9de1ae1"
+    },
+    {
+      "path": "frontend/src/shared/ui/format.ts",
+      "sha256": "e2b8486a5c50f0ef10a7352da040787801526f7353a35a9968e4ab31ab5a9ae8"
+    },
+    {
+      "path": "frontend/src/shared/ui/Modal.tsx",
+      "sha256": "01feffa40287f7912191b707bdd0a2beefd42e1cc13312ae0ad05750248aefde"
+    },
+    {
+      "path": "frontend/src/shared/ui/useResource.ts",
+      "sha256": "706b84daa04dbc1405fe50a46bcd058bfb31cb0089365744d4928e771a4b7e41"
+    },
+    {
+      "path": "frontend/src/shared/ui/ui.css",
+      "sha256": "abe84d634833cdf30f97fade08d2e2813d5e9e1f60f10b668c141b2103e6a993"
+    },
+    {
+      "path": "frontend/src/shared/ui/navigation.ts",
+      "sha256": "ac0a7a412be332b07f9d195d5119c203096a6e160ccda959948f0f2fa21adea8"
+    },
+    {
+      "path": "frontend/src/shared/ui/forms.ts",
+      "sha256": "f492f0bf52ea60125a0f58f38547d20b7d89e57b840e5e7fd3c99637922ddd9d"
+    },
+    {
+      "path": "frontend/src/inventory/CostReportPanel.tsx",
+      "sha256": "bcc19d733f5bdd6ecb5e832dc04616427502a8ec5d48b6e32eab08c080948e10"
+    },
+    {
+      "path": "frontend/src/inventory/InventoryWorkspace.tsx",
+      "sha256": "8d4c4cfda40ed5980102bce08a9b4bb20db4a9f3d31a22c33e3665002b98bd69"
+    },
+    {
+      "path": "frontend/src/inventory/useIngredientCatalog.ts",
+      "sha256": "bd0fa44a9562445d7bf44d40542f1fc81e9f29bd178079b956cbc4ac9613fc81"
+    },
+    {
+      "path": "frontend/src/inventory/inventory.css",
+      "sha256": "87d1efca1fb10b9f76b037d4982f022b6062bf248d38c0dc058128775d445dd8"
+    },
+    {
+      "path": "frontend/src/inventory/StockPanel.tsx",
+      "sha256": "907520c1efda6d28cd68f9bb502a10593ab31dcec9db6a2ac388578530f3eefa"
+    },
+    {
+      "path": "frontend/src/inventory/MovementsPanel.tsx",
+      "sha256": "1496b20e245aa6bf860fcaa233c925fa8bc43b8b0b2f3dd15b2a14ec37cfdc90"
+    },
+    {
+      "path": "frontend/src/inventory/MovementForm.tsx",
+      "sha256": "ad1a9fb87acfdb899bc4807aa0a758c0e588232fa2e1fe426f5857baf208d069"
+    },
+    {
+      "path": "frontend/src/inventory/pendingMovement.ts",
+      "sha256": "5f2807ac076c7930e98c31ef555eb6297c9fb9d34a4d51cad187b224dfe47c81"
+    },
+    {
+      "path": "frontend/src/inventory/movementConfig.ts",
+      "sha256": "484510eca27b2b54039c1d9a27dbcc247467d604825cf9108201df35f73d5d65"
+    },
+    {
+      "path": "frontend/src/inventory/catalog.tsx",
+      "sha256": "70484253b66645b5e46ef10642b8a3d0c0178a4cb5174d0ff1a0e61380ec9a6b"
+    },
+    {
+      "path": "frontend/src/inventory/IngredientsPanel.tsx",
+      "sha256": "acdc9443c658949fb6bc9a2032bc153b486e9b9324f57b080a1df52fe7710957"
+    },
+    {
+      "path": "frontend/src/inventory/RecipesPanel.tsx",
+      "sha256": "15fda0dfd85306b842ce01c6172414660f7dfc086a91dce280ac3c8af2d11bcc"
+    },
+    {
+      "path": "frontend/src/app/CustomerPicker.tsx",
+      "sha256": "970f045e828046a6e32f4c02307180ab27b0f349fe434130abadefa1ee588cce"
+    },
+    {
+      "path": "frontend/src/app/TableStatusGrid.tsx",
+      "sha256": "efdc45d52fb0e61a312566090af2c25d5f4b23f3d20b0059a2d08f0f8e822bd7"
+    },
+    {
+      "path": "frontend/src/app/TableEditor.tsx",
+      "sha256": "feab9bb820565bb18b3b0d1c02697c234d6b357e71b7039c5276a8e9fc3de2b0"
+    },
+    {
+      "path": "frontend/src/app/OrderEntry.tsx",
+      "sha256": "f0b4f4e2c1c9cf5a764dcba52d7b2d26e121bcaefd7da4eb07e781d163708bed"
+    },
+    {
+      "path": "frontend/src/shared/inventoryUnits.ts",
+      "sha256": "4d31ceb5e5932be5b508c4bc37ca630ef3c5004d9a38b19afe63131602fbc8fe"
+    },
+    {
+      "path": "frontend/src/shared/inventoryUnits.test.ts",
+      "sha256": "02fc7d63750189eea8339abca11491642a5a4c7b86e334273948924ea8c511a4"
+    }
+  ]
+}

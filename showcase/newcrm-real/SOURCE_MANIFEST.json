@@ -1,0 +1,184 @@
+{
+  "origin": "user-uploaded NewCrm-main.zip",
+  "source_commit": null,
+  "kind": "selected complete source files for reading; incomplete application",
+  "modifications": "none; byte-for-byte copies",
+  "files": [
+    {
+      "path": "frontend/components/activity-fields.tsx",
+      "sha256": "cf13ae9405e4e2d738f2265861be0a9865db394b99bc014a1eb7170f480c2e69"
+    },
+    {
+      "path": "frontend/components/activity-summary.tsx",
+      "sha256": "7f1732e728d58ae1fe40ebd10dca088be7483933da44f9d4b7a59ddc004f68c8"
+    },
+    {
+      "path": "frontend/components/activity-reference-profile.tsx",
+      "sha256": "280e611dc72f42139b86b9f02318457808cca5e9a2e1e0ceab4dab6c7ec2e8d0"
+    },
+    {
+      "path": "frontend/components/activity-target-picker.tsx",
+      "sha256": "109dc1f756b64167a92f4544b969c9821dd876d58ab5293a6b4ad5d3cc6b276a"
+    },
+    {
+      "path": "frontend/components/customer-controls.tsx",
+      "sha256": "631a57d4cc38092bdc26f528b499d467ff38a8ff1a91f4a47796f47c40d9df5e"
+    },
+    {
+      "path": "frontend/components/customer-reference-fields.tsx",
+      "sha256": "a706979d5cc3b3f97bbfccb305ef36c3a46f5299dfbc7c5a0e4aa387765f1549"
+    },
+    {
+      "path": "frontend/components/customer-related-records.tsx",
+      "sha256": "bc4299724164f2c00f598e45912c5a5fff78f2daf0ec91d064cd1344c0a7e4d3"
+    },
+    {
+      "path": "frontend/components/customer-timeline.tsx",
+      "sha256": "5050f3fc392ba87c8a9ab3bb66155ca9a5df4a01fcd132d847e26d9a93402372"
+    },
+    {
+      "path": "frontend/components/customer-import-preview.tsx",
+      "sha256": "e37a3f4a770362169d7ea601a071a699d4379f0dbbbfdd3794fc69ac8df6150e"
+    },
+    {
+      "path": "frontend/components/lead-summary.tsx",
+      "sha256": "ec20f9c4b09763575574d85141468334a8dcbaa289ccaac37bbc66b37b913b29"
+    },
+    {
+      "path": "frontend/components/lead-reference-profile.tsx",
+      "sha256": "5fb5a0dcf741f09b34f216f7fb3a4d5ddf95a9470ce82955787c6df5239184e6"
+    },
+    {
+      "path": "frontend/components/lead-workspace.tsx",
+      "sha256": "fd9f47a368b67e70414074e4535b44aceb86dc47c1e9745d5920ead08d9984d8"
+    },
+    {
+      "path": "frontend/components/customer-workspace.tsx",
+      "sha256": "2a37bb03e4560370340d04a92e535485e16feb7507a84df73a4832a182a84811"
+    },
+    {
+      "path": "frontend/components/order-workspace.tsx",
+      "sha256": "112796b9c94931fb487b63478ac415d31a100951352faf28407d630c51238224"
+    },
+    {
+      "path": "frontend/components/pipeline-summary.tsx",
+      "sha256": "b656c7ce1f7365615d1eb610c4dd575cd701d1eb53ba7a8f1fb3b8f21b945776"
+    },
+    {
+      "path": "frontend/components/product-workspace.tsx",
+      "sha256": "0665822904503c74bdab70be0c375bdd968c4092c4296cf54cc2cf2c99ada405"
+    },
+    {
+      "path": "frontend/components/record-fields.tsx",
+      "sha256": "8ddf2d3433372d80e6e1a48ec7a2bc6833248b2d90efddf60a01fee08760f970"
+    },
+    {
+      "path": "frontend/components/reference-dashboard.tsx",
+      "sha256": "b9928ced9b929c180421a89baa0638ea59f5e4d67b8efbf74ee8d13af893f1fb"
+    },
+    {
+      "path": "frontend/components/reports-workspace.tsx",
+      "sha256": "fe8fa597c84414e1de68ef85ffb2f45c66eb9d24ce20b199463a33e91a587bfd"
+    },
+    {
+      "path": "frontend/components/sales-chart.tsx",
+      "sha256": "176c6f8b7c4334bd1ba7aaa94433fd49ebc262015584616a9542d863bc08fec4"
+    },
+    {
+      "path": "frontend/components/workspace-shell.tsx",
+      "sha256": "dcd179f45fd3b70879322623069acaed22c1949eb6549066f9a27b9c3793684f"
+    },
+    {
+      "path": "frontend/components/modal-form-surface.tsx",
+      "sha256": "e40f31b8b0cea4de518c8d221e24758698c7116c5fc3a49717ebb5b359ed6001"
+    },
+    {
+      "path": "frontend/lib/format.ts",
+      "sha256": "698b406a31b03ee75be63e77070d2dd75fa3d9d0970edbce9d792e458f2cd985"
+    },
+    {
+      "path": "frontend/lib/fields.ts",
+      "sha256": "02f40762b3aa6e50d2e4b7785ac348298128a8598850c3549894f093bf8bc625"
+    },
+    {
+      "path": "frontend/lib/sales-entry.ts",
+      "sha256": "acff9037d000e8f9e42c96d1a62d0c9763efa788f00930eed1e8f282b90f1f57"
+    },
+    {
+      "path": "frontend/lib/persian-time.ts",
+      "sha256": "1b6a87782f55244100fd8c530f6a7d308b882bfeb92d6b1054f55a5baefc8e91"
+    },
+    {
+      "path": "frontend/lib/leads.ts",
+      "sha256": "1047eb02b9760e73e794189662864463328ace4f0a5f1b8ace104dd6bb953cf4"
+    },
+    {
+      "path": "frontend/lib/sales.ts",
+      "sha256": "9c107c4d6a02a40642b59e5bfa9aa482f649a6bd260223fb4e3827522ff77d52"
+    },
+    {
+      "path": "frontend/lib/customers.ts",
+      "sha256": "4049801f7f11e5b98a53725496c3b1db52bd75a30b2b1aa680bb745403b6de6b"
+    },
+    {
+      "path": "frontend/lib/products.ts",
+      "sha256": "ed564c6e2922dbac9d2d0c4a959c5fb987e731f9ed4cb9a1e6a8bc6e69a90522"
+    },
+    {
+      "path": "frontend/lib/activities.ts",
+      "sha256": "175f40c48ba24475a9231bd75bf40798c50927d61424c84d71504394fe1cb924"
+    },
+    {
+      "path": "frontend/lib/timeline.ts",
+      "sha256": "26a4ae8e3b8bab939d336f1320d1c8b4817f97a8a2fadb5dae5e69a3d3262306"
+    },
+    {
+      "path": "frontend/lib/request-navigation.ts",
+      "sha256": "8c1fe1d6859499d779f0334977f2b5782a7382bd398842032bdf1bb686997b5a"
+    },
+    {
+      "path": "frontend/lib/use-draft-navigation.ts",
+      "sha256": "a27eb9826082733823b67addaf3deb953c2408525b12ae679f49a2353a6d42a7"
+    },
+    {
+      "path": "frontend/lib/api.ts",
+      "sha256": "999b03a29ff460b98c3b32121c3e71166896ee7659ec0cca89ec9bd0e3fd4d0a"
+    },
+    {
+      "path": "backend/customers/normalization.py",
+      "sha256": "0b3953821a87f2600ca6cd6324b17e7e72dd8c790a9d54c3a7e85556c19c1a24"
+    },
+    {
+      "path": "backend/customers/models.py",
+      "sha256": "af437842d645509799bd0ae43ba720b77226e7afc49af28625768745fa2faa54"
+    },
+    {
+      "path": "backend/customers/serializers.py",
+      "sha256": "ff0c678278664216a627c6e8003111c273b9c63724ca08c9ecbf4d8a7d4e3e72"
+    },
+    {
+      "path": "backend/leads/models.py",
+      "sha256": "1253bd3b1f28daba149ceb1a088e159c56b2857aeff8030c8a5f9837ccf1a9af"
+    },
+    {
+      "path": "backend/leads/serializers.py",
+      "sha256": "0444b8c90c2927e48e030c753b4e164c37aaabff50b3b6b11a1b91b974b4a89a"
+    },
+    {
+      "path": "backend/products/models.py",
+      "sha256": "ce70bf245341b36be5539882c1cfa970f0d0e8976ae7f1ebedba5219d9316729"
+    },
+    {
+      "path": "backend/activities/models.py",
+      "sha256": "03b2faae061541f1d9d36da013c1c42e762b3c957db6a227719281eab6ea93bc"
+    },
+    {
+      "path": "backend/activities/serializers.py",
+      "sha256": "39e5448e553d0e0c24aeaa6925ca38e4ae93af5e547eb805e6eb84eb8da7ccd4"
+    },
+    {
+      "path": "frontend/tests/sales-entry.cjs",
+      "sha256": "a608de523a1823c8a8fc4468e59f4dffdcc00050d9f2694fef0dbc411e3874a4"
+    }
+  ]
+}

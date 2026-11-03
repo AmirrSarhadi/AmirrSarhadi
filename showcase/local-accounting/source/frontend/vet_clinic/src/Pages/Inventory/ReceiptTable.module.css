@@ -1,0 +1,384 @@
+.tableContainer {
+  padding: 24px;
+  margin: 0;
+  background: var(--surface);
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--border-soft);
+  direction: rtl;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.header h3 {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.header p {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.addBtn {
+  min-width: 150px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  color: white;
+  border: none;
+  padding: 0 16px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.24);
+  transition: 0.2s ease;
+}
+
+.addBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.3);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.searchBox {
+  flex: 1;
+  height: 46px;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  color: var(--text-muted);
+}
+
+.searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text);
+}
+
+.resultCount {
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid var(--border-soft);
+}
+
+.table {
+  width: 100%;
+  min-width: 1150px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  padding: 14px 12px;
+  text-align: center;
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 800;
+  border-bottom: 1px solid var(--border-soft);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 14px 12px;
+  text-align: center;
+  color: var(--text);
+  font-size: 14px;
+  border-bottom: 1px solid var(--surface-muted);
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  transition: 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: var(--surface-subtle);
+}
+
+.code {
+  background: #eef2ff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #3730a3;
+}
+
+.statusBadge {
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #f0fdf4;
+  color: #15803d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.detailsBtn,
+.editBtn,
+.deleteBtn {
+  border: none;
+  padding: 7px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsBtn {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.detailsBtn:hover {
+  background: #e0e7ff;
+}
+
+.editBtn {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.editBtn:hover {
+  background: #bae6fd;
+}
+
+.deleteBtn {
+  background: var(--danger-soft);
+  color: #b91c1c;
+}
+
+.deleteBtn:hover {
+  background: #fecaca;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+}
+
+.emptyState strong {
+  display: block;
+  margin-top: 8px;
+}
+
+.skeletonWrapper {
+  padding: 10px;
+}
+
+.skeletonRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skeletonRow span {
+  flex: 1;
+  height: 12px;
+  background: var(--border);
+  border-radius: 6px;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.detailsModal,
+.confirmModal {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.2);
+  direction: rtl;
+}
+
+.detailsModal {
+  width: 680px;
+  max-width: 94vw;
+}
+
+.confirmModal {
+  width: 380px;
+  max-width: 94vw;
+  text-align: center;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.modalHeader h3 {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.modalHeader p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.closeIconBtn {
+  border: none;
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.detailsGrid div,
+.descriptionBox {
+  background: var(--surface-subtle);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.detailsGrid span,
+.descriptionBox span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.detailsGrid strong {
+  color: var(--text-strong);
+  font-size: 14px;
+}
+
+.descriptionBox {
+  margin-top: 12px;
+}
+
+.descriptionBox p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.modalIcon {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 12px;
+  border-radius: 14px;
+  background: var(--danger-soft);
+  color: #b91c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.confirmDeleteBtn {
+  background: var(--danger);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: #e5e7eb;
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled,
+.addBtn:disabled,
+.editBtn:disabled,
+.deleteBtn:disabled,
+.confirmDeleteBtn:disabled,
+.cancelBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:disabled:hover {
+  transform: none;
+  filter: none;
+}

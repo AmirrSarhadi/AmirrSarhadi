@@ -1,0 +1,24 @@
+{
+  "origin": "AmirrSarhadi/Smarthome-Ai",
+  "source_commit": "bf62a9a410201b87ae35c0b633e367fe9de16dba",
+  "kind": "selected complete source files for reading; incomplete application",
+  "modifications": "none; byte-for-byte copies",
+  "files": [
+    {
+      "path": "smart-home-ai/web/plan-editor.js",
+      "sha256": "c1a2609d49db3c3b0fbcbcf9185cd74de8a972dd4e8e6a060e9db3e7b096840e"
+    },
+    {
+      "path": "smart-home-ai/web/app.js",
+      "sha256": "b9ffc4299d4896d51b384636cf17a819ee7364e0dc591159616b1d2c26d265cc"
+    },
+    {
+      "path": "smart-home-ai/web/index.html",
+      "sha256": "057b165486b421b869f622770ded088170f94f364e1ffdb9276d1188eccc84e6"
+    },
+    {
+      "path": "smart-home-ai/web/style.css",
+      "sha256": "0fc82085f39bbf82bd8f53753334ce3af50f00ee2042cbfa9135bb7f22942d6f"
+    }
+  ]
+}

@@ -41,6 +41,34 @@ I enjoy turning complex requirements into practical products with clean architec
 
 ---
 
+## Project Code & Screenshots
+
+Explore complete selected source files, implementation details and actual interface captures. The expanded collections contain **181 files across six projects**, with customer data and private operational implementation areas excluded.
+
+| Project | Focus | Explore |
+| --- | --- | --- |
+| **School LMS** | Educational workflows, attendance, grading and reporting | [Code & gallery](showcase/lms-real/README.md) |
+| **Kerman Cars** | Vehicle marketplace, listing discovery and management | [Case study](projects/kerman-cars.md) · [Code & gallery](showcase/kerman-cars/README.md) |
+| **Local Accounting** | ERP workspace, inventory, catalog and financial dashboards | [Case study](projects/accounting-erp.md) · [Code & gallery](showcase/local-accounting/README.md) |
+| **Cafe Accounting** | Cafe orders, inventory, menu and operational forms | [Case study](projects/cafe-accounting.md) · [Code & gallery](showcase/cafe-accounting/README.md) |
+| **NewCRM** | Multi-organization customers, leads, sales and activities | [Case study](projects/newcrm.md) · [Code & gallery](showcase/newcrm-real/README.md) |
+| **Smart Home AI** | Human-reviewed architectural plan interface | [Case study](projects/smart-home-ai.md) · [Code & gallery](showcase/smart-home-ai/README.md) |
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="showcase/lms-real/README.md"><img width="100%" src="assets/screenshots/lms-dashboard-desktop.png" alt="Actual LMS dashboard component rendered with synthetic school data" /></a>
+<b>School LMS</b> — real dashboard component, demonstration data.
+</td>
+<td width="50%" valign="top">
+<a href="showcase/cafe-accounting/README.md"><img width="100%" src="assets/screenshots/cafe-inventory-desktop.png" alt="Cafe inventory interface with demonstration stock" /></a>
+<b>Cafe Accounting</b> — inventory interface, demonstration stock.
+</td>
+</tr>
+</table>
+
+[Browse every gallery and source index →](showcase/README.md)
+
 ## Public Code
 
 Production-derived, sanitized code samples from real private projects:
@@ -133,6 +161,22 @@ Delivery           Docker · CI/CD · Production Deployment
 <td><b>Delivery</b><br/>Docker, CI/CD and production operations</td>
 </tr>
 </table>
+
+---
+
+## Services
+
+Business systems · Full-stack web development · Persian RTL interfaces · Workflow automation · Operational reporting · Applied AI prototypes
+
+[View services and related project examples →](services.md)
+
+---
+
+## Certificates & Professional Development
+
+[Certificate gallery →](certificates/README.md)
+
+Certificate images and verified details will be added when available.
 
 ---
 

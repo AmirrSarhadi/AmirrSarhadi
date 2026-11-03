@@ -93,4 +93,23 @@ flowchart LR
 
 The uploaded customer project contains organization names, local demo credentials and environment placeholders. None of those values are included in this public showcase. The excerpts are simplified and renamed where needed while preserving the engineering pattern being demonstrated.
 
+## Expanded source and interface gallery
+
+The expanded collection adds **30 complete frontend files**: assignment progress, attendance reports, grade-entry presentation, timetable and academic-report components, Persian date inputs, reusable controls, navigation and form-error handling. Exam scoring, access policies, customer-specific content and authentication internals are not part of this expansion.
+
+[Browse all files](SOURCE_INDEX.md) · [Exact revision and file hashes](SOURCE_MANIFEST.json)
+
+These are unchanged source selections for reading; the omitted application modules and configuration are required to run them. Existing backend excerpts above remain separate from these full frontend files.
+
+![LMS dashboard component with synthetic school data](../../assets/screenshots/lms-dashboard-desktop.png)
+
+The actual `DashboardHome` component is rendered in an isolated preview with synthetic counts, class names and teacher labels. School branding and student records are not shown. This does not establish backend integration.
+
+<details>
+<summary>Mobile dashboard preview</summary>
+
+![Mobile LMS dashboard component with synthetic data](../../assets/screenshots/lms-dashboard-mobile.png)
+
+</details>
+
 [← Back to profile](../../README.md)
